@@ -1,0 +1,923 @@
+{
+  "description": "Hand-calculated reference examples for the WP3 metric contract. Expected values are explicit formulas in scripts/revision/wp3_build_reference_examples.py.",
+  "severity_table": {
+    "dirb": 3.0,
+    "webshell": 8.5,
+    "dnsteal": 9.0,
+    "privilege_escalation": 9.5
+  },
+  "examples": [
+    {
+      "name": "A_boundaries_unequal_windows_repeats_no_alert_interval_ties",
+      "purpose": "Half-open boundaries at 0, 50, 60, 100, 200, 300; windows of 50, 10, 100 and 10 s; three alerts in one dnsteal window; a critical interval without alerts; an exact duplicate label row; non-chronological label order; tied scores crossing cutoffs; a missing score.",
+      "tau": 8.0,
+      "intervals": [
+        {
+          "scenario": "ex",
+          "attack": "dnsteal",
+          "start": 100.0,
+          "end": 200.0
+        },
+        {
+          "scenario": "ex",
+          "attack": "dirb",
+          "start": 0.0,
+          "end": 50.0
+        },
+        {
+          "scenario": "ex",
+          "attack": "privilege_escalation",
+          "start": 300.0,
+          "end": 310.0
+        },
+        {
+          "scenario": "ex",
+          "attack": "webshell",
+          "start": 50.0,
+          "end": 60.0
+        },
+        {
+          "scenario": "ex",
+          "attack": "dnsteal",
+          "start": 100.0,
+          "end": 200.0
+        }
+      ],
+      "alerts": [
+        {
+          "id": "a1",
+          "t": 0.0,
+          "score": 3.0
+        },
+        {
+          "id": "a2",
+          "t": 50.0,
+          "score": 3.0
+        },
+        {
+          "id": "a3",
+          "t": 59.999,
+          "score": 1.0
+        },
+        {
+          "id": "a4",
+          "t": 60.0,
+          "score": 5.0
+        },
+        {
+          "id": "a5",
+          "t": 100.0,
+          "score": 3.0
+        },
+        {
+          "id": "a6",
+          "t": 150.0,
+          "score": 4.0
+        },
+        {
+          "id": "a7",
+          "t": 199.999,
+          "score": null
+        },
+        {
+          "id": "a8",
+          "t": 200.0,
+          "score": 2.0
+        },
+        {
+          "id": "a9",
+          "t": 250.0,
+          "score": 5.0
+        },
+        {
+          "id": "a10",
+          "t": 299.999,
+          "score": 2.0
+        }
+      ],
+      "expected_labels": {
+        "a1": {
+          "y": true,
+          "s_star": 3.0,
+          "z": false,
+          "critical": []
+        },
+        "a2": {
+          "y": true,
+          "s_star": 8.5,
+          "z": true,
+          "critical": [
+            "webshell@50-60"
+          ],
+          "note": "t=50 is dirb's end (excluded) and webshell's start (included)"
+        },
+        "a3": {
+          "y": true,
+          "s_star": 8.5,
+          "z": true,
+          "critical": [
+            "webshell@50-60"
+          ]
+        },
+        "a4": {
+          "y": false,
+          "s_star": 0.0,
+          "z": false,
+          "critical": [],
+          "note": "t=60 is webshell's end (excluded)"
+        },
+        "a5": {
+          "y": true,
+          "s_star": 9.0,
+          "z": true,
+          "critical": [
+            "dnsteal@100-200"
+          ],
+          "note": "start included"
+        },
+        "a6": {
+          "y": true,
+          "s_star": 9.0,
+          "z": true,
+          "critical": [
+            "dnsteal@100-200"
+          ]
+        },
+        "a7": {
+          "y": true,
+          "s_star": 9.0,
+          "z": true,
+          "critical": [
+            "dnsteal@100-200"
+          ]
+        },
+        "a8": {
+          "y": false,
+          "s_star": 0.0,
+          "z": false,
+          "critical": [],
+          "note": "t=200 is dnsteal's end (excluded)"
+        },
+        "a9": {
+          "y": false,
+          "s_star": 0.0,
+          "z": false,
+          "critical": []
+        },
+        "a10": {
+          "y": false,
+          "s_star": 0.0,
+          "z": false,
+          "critical": [],
+          "note": "t=299.999 precedes privilege_escalation's start"
+        }
+      },
+      "expected_intervals": {
+        "distinct": 4,
+        "defined_critical": 3,
+        "eligible_critical": 2
+      },
+      "expected_order": [
+        "a4",
+        "a9",
+        "a6",
+        "a1",
+        "a2",
+        "a5",
+        "a8",
+        "a10",
+        "a3",
+        "a7"
+      ],
+      "expected_at_k": {
+        "3": {
+          "n": 10,
+          "k_eff": 3,
+          "short_queue": false,
+          "negatives_in_top": 2,
+          "precision": 0.3333333333333333,
+          "attack_recall": 0.16666666666666666,
+          "critical_recall": 0.2,
+          "covered_intervals": 1,
+          "eligible_intervals": 2,
+          "defined_intervals": 3,
+          "coverage_eligible": 0.5,
+          "coverage_all": 0.3333333333333333,
+          "ndcg_linear": 0.23463936301137825,
+          "ndcg_exponential": 0.23463936301137822,
+          "derivation": "top = a4(0) a9(0) a6(dnsteal, r=9); DCG = 9/log2(4); IDCG uses r sorted 9,9,9"
+        },
+        "5": {
+          "n": 10,
+          "k_eff": 5,
+          "short_queue": false,
+          "negatives_in_top": 2,
+          "precision": 0.6,
+          "attack_recall": 0.5,
+          "critical_recall": 0.4,
+          "covered_intervals": 2,
+          "eligible_intervals": 2,
+          "defined_intervals": 3,
+          "coverage_eligible": 1.0,
+          "coverage_all": 0.6666666666666666,
+          "ndcg_linear": 0.34753897708581366,
+          "ndcg_exponential": 0.2876914099705813,
+          "derivation": "top adds a1(dirb, r=3) and a2(webshell, r=8.5); privilege_escalation has no alert so coverage_all < 1"
+        },
+        "25": {
+          "n": 10,
+          "k_eff": 10,
+          "short_queue": true,
+          "negatives_in_top": 4,
+          "precision": 0.6,
+          "attack_recall": 1.0,
+          "critical_recall": 1.0,
+          "covered_intervals": 2,
+          "eligible_intervals": 2,
+          "defined_intervals": 3,
+          "coverage_eligible": 1.0,
+          "coverage_all": 0.6666666666666666,
+          "ndcg_linear": 0.6415093656889719,
+          "derivation": "short queue: k_eff = n = 10; FP counts only existing alerts; precision divides by k_eff"
+        }
+      },
+      "expected_first_critical": {
+        "position": 3,
+        "critical_total": 5,
+        "prevalence": 0.5
+      },
+      "expected_subgroup_in_mixed_queue": {
+        "members": [
+          "a2",
+          "a3",
+          "a9",
+          "a10"
+        ],
+        "purpose": "Subgroup retrieval inside the original mixed order (e.g. unseen identifiers) versus reranking the subgroup alone.",
+        "at_k": {
+          "3": {
+            "n": 10,
+            "k_eff": 3,
+            "subgroup_n": 4,
+            "subgroup_in_top": 1,
+            "subgroup_share_of_top": 0.3333333333333333,
+            "subgroup_positives_in_top": 0,
+            "subgroup_negatives_in_top": 1,
+            "subgroup_positives_total": 2,
+            "subgroup_attack_recall": 0.0,
+            "subgroup_critical_in_top": 0,
+            "subgroup_critical_total": 2,
+            "subgroup_critical_recall": 0.0,
+            "subgroup_covered_intervals": 0,
+            "subgroup_eligible_intervals": 1,
+            "subgroup_coverage": 0.0,
+            "derivation": "mixed top 3 = a4 a9 a6; only a9 (negative) is a member; members a2, a3 lie in webshell"
+          },
+          "5": {
+            "n": 10,
+            "k_eff": 5,
+            "subgroup_n": 4,
+            "subgroup_in_top": 2,
+            "subgroup_share_of_top": 0.4,
+            "subgroup_positives_in_top": 1,
+            "subgroup_negatives_in_top": 1,
+            "subgroup_positives_total": 2,
+            "subgroup_attack_recall": 0.5,
+            "subgroup_critical_in_top": 1,
+            "subgroup_critical_total": 2,
+            "subgroup_critical_recall": 0.5,
+            "subgroup_covered_intervals": 1,
+            "subgroup_eligible_intervals": 1,
+            "subgroup_coverage": 1.0,
+            "derivation": "mixed top 5 adds a1 and a2; a2 is a critical member covering webshell"
+          }
+        },
+        "within_subgroup_at_k": {
+          "3": {
+            "n": 4,
+            "k_eff": 3,
+            "negatives_in_top": 2,
+            "critical_in_top": 1,
+            "covered_intervals": 1,
+            "eligible_intervals": 1,
+            "defined_intervals": 3,
+            "coverage_eligible": 1.0,
+            "coverage_all": 0.3333333333333333,
+            "derivation": "subgroup alone ordered a9(5) a2(3) a10(2) a3(1): a2 enters the top 3, unlike in the mixed queue"
+          }
+        }
+      },
+      "expected_effort_critical_recall": {
+        "1/2": {
+          "required": 3,
+          "position": 6,
+          "queue_fraction": 0.6
+        },
+        "4/5": {
+          "required": 4,
+          "position": 9,
+          "queue_fraction": 0.9
+        },
+        "9/10": {
+          "required": 5,
+          "position": 10,
+          "queue_fraction": 1.0
+        }
+      },
+      "expected_effort_interval_coverage": {
+        "1/2": {
+          "required": 1,
+          "position": 3,
+          "queue_fraction": 0.3
+        },
+        "4/5": {
+          "required": 2,
+          "position": 5,
+          "queue_fraction": 0.5
+        },
+        "1": {
+          "required": 2,
+          "position": 5,
+          "queue_fraction": 0.5
+        }
+      },
+      "expected_fraction_budgets": {
+        "1/1000": 1,
+        "1/100": 1,
+        "1/20": 1,
+        "1/10": 1,
+        "1/4": 3,
+        "1/2": 5
+      },
+      "expected_ties": {
+        "distinct_finite_scores": 5,
+        "missing_scores": 1,
+        "blocks": 6,
+        "tied_blocks": 3,
+        "alerts_in_tied_blocks": 7,
+        "share_in_tied_blocks": 0.7,
+        "max_block_size": 3,
+        "median_block_size": 1.5,
+        "cutoffs": {
+          "3": {
+            "cutoff_block_size": 1,
+            "crosses_cutoff": false,
+            "positions_in_tied_blocks": 2,
+            "order_share": 0.6666666666666666,
+            "members_selected_by_tie_rule": 0,
+            "membership_share": 0.0
+          },
+          "4": {
+            "cutoff_block_size": 3,
+            "crosses_cutoff": true,
+            "positions_in_tied_blocks": 3,
+            "order_share": 0.75,
+            "members_selected_by_tie_rule": 1,
+            "membership_share": 0.25
+          },
+          "5": {
+            "cutoff_block_size": 3,
+            "crosses_cutoff": true,
+            "positions_in_tied_blocks": 4,
+            "order_share": 0.8,
+            "members_selected_by_tie_rule": 2,
+            "membership_share": 0.4
+          },
+          "6": {
+            "cutoff_block_size": 3,
+            "crosses_cutoff": false,
+            "positions_in_tied_blocks": 5,
+            "order_share": 0.8333333333333334,
+            "members_selected_by_tie_rule": 0,
+            "membership_share": 0.0
+          },
+          "10": {
+            "cutoff_block_size": 1,
+            "crosses_cutoff": false,
+            "positions_in_tied_blocks": 7,
+            "order_share": 0.7,
+            "members_selected_by_tie_rule": 0,
+            "membership_share": 0.0
+          }
+        },
+        "derivation": "blocks along order: {a4,a9} {a6} {a1,a2,a5} {a8,a10} {a3} {a7:NaN}"
+      },
+      "expected_random_tie_expectations": {
+        "5": {
+          "expected_negatives_in_top": 2.0,
+          "expected_precision": 0.6,
+          "expected_attack_recall": 0.5,
+          "expected_critical_recall": 0.4666666666666666,
+          "expected_ndcg_linear": 0.38604925300876686,
+          "expected_ndcg_exponential": 0.3576759088310634,
+          "derivation": "block {a1,a2,a5} fills 2 of its 3 positions within the top 5: mean y = 1, mean z = 2/3, mean r = 20.5/3"
+        },
+        "3": {
+          "expected_negatives_in_top": 2.0,
+          "expected_critical_recall": 0.2,
+          "derivation": "no block crosses k = 3 and block {a4,a9} contains only negatives"
+        }
+      }
+    },
+    {
+      "name": "B_empty_queue",
+      "purpose": "No alerts in the queue; a defined critical interval remains uncovered.",
+      "tau": 8.0,
+      "intervals": [
+        {
+          "scenario": "ex",
+          "attack": "webshell",
+          "start": 0.0,
+          "end": 10.0
+        }
+      ],
+      "alerts": [],
+      "expected_at_k": {
+        "10": {
+          "n": 0,
+          "k_eff": 0,
+          "short_queue": true,
+          "empty_queue": true,
+          "negatives_in_top": 0,
+          "precision": null,
+          "attack_recall": null,
+          "critical_recall": null,
+          "ndcg_linear": null,
+          "covered_intervals": 0,
+          "eligible_intervals": 0,
+          "defined_intervals": 1,
+          "coverage_eligible": null,
+          "coverage_all": 0.0
+        }
+      },
+      "expected_first_critical": {
+        "position": null,
+        "critical_total": 0,
+        "prevalence": null
+      },
+      "expected_effort_critical_recall": {
+        "1/2": null
+      },
+      "expected_effort_interval_coverage": {
+        "1/2": null
+      },
+      "expected_fraction_budgets": {
+        "1/4": null
+      }
+    },
+    {
+      "name": "C_zero_relevant_alerts",
+      "purpose": "Alerts exist but none lies in an interval: ratio metrics with zero denominators are NA; FP counts all.",
+      "tau": 8.0,
+      "intervals": [
+        {
+          "scenario": "ex",
+          "attack": "webshell",
+          "start": 0.0,
+          "end": 10.0
+        }
+      ],
+      "alerts": [
+        {
+          "id": "n1",
+          "t": 20.0,
+          "score": 3.0
+        },
+        {
+          "id": "n2",
+          "t": 30.0,
+          "score": 2.0
+        },
+        {
+          "id": "n3",
+          "t": 40.0,
+          "score": 1.0
+        }
+      ],
+      "expected_at_k": {
+        "2": {
+          "n": 3,
+          "k_eff": 2,
+          "short_queue": false,
+          "empty_queue": false,
+          "negatives_in_top": 2,
+          "precision": 0.0,
+          "attack_recall": null,
+          "critical_recall": null,
+          "ndcg_linear": null,
+          "covered_intervals": 0,
+          "eligible_intervals": 0,
+          "defined_intervals": 1,
+          "coverage_eligible": null,
+          "coverage_all": 0.0
+        }
+      },
+      "expected_first_critical": {
+        "position": null,
+        "critical_total": 0,
+        "prevalence": 0.0
+      },
+      "expected_effort_critical_recall": {
+        "1/2": null
+      },
+      "expected_effort_interval_coverage": {
+        "1/2": null
+      }
+    },
+    {
+      "name": "D_effort_exact_integer_ceiling",
+      "purpose": "30 critical alerts ranked first in a 40-alert queue: required counts are exact ceilings (15, 24, 27) and effort positions equal them; queue-fraction budgets for n = 40. (Floating-point ceilings agree with exact arithmetic for the declared targets and fractions for every count up to 2,000,000; exact integer arithmetic is used regardless.)",
+      "tau": 8.0,
+      "intervals": [
+        {
+          "scenario": "ex",
+          "attack": "webshell",
+          "start": 0.0,
+          "end": 100.0
+        }
+      ],
+      "alerts": [
+        {
+          "id": "c0",
+          "t": 0.0,
+          "score": 100.0
+        },
+        {
+          "id": "c1",
+          "t": 1.0,
+          "score": 99.0
+        },
+        {
+          "id": "c2",
+          "t": 2.0,
+          "score": 98.0
+        },
+        {
+          "id": "c3",
+          "t": 3.0,
+          "score": 97.0
+        },
+        {
+          "id": "c4",
+          "t": 4.0,
+          "score": 96.0
+        },
+        {
+          "id": "c5",
+          "t": 5.0,
+          "score": 95.0
+        },
+        {
+          "id": "c6",
+          "t": 6.0,
+          "score": 94.0
+        },
+        {
+          "id": "c7",
+          "t": 7.0,
+          "score": 93.0
+        },
+        {
+          "id": "c8",
+          "t": 8.0,
+          "score": 92.0
+        },
+        {
+          "id": "c9",
+          "t": 9.0,
+          "score": 91.0
+        },
+        {
+          "id": "c10",
+          "t": 10.0,
+          "score": 90.0
+        },
+        {
+          "id": "c11",
+          "t": 11.0,
+          "score": 89.0
+        },
+        {
+          "id": "c12",
+          "t": 12.0,
+          "score": 88.0
+        },
+        {
+          "id": "c13",
+          "t": 13.0,
+          "score": 87.0
+        },
+        {
+          "id": "c14",
+          "t": 14.0,
+          "score": 86.0
+        },
+        {
+          "id": "c15",
+          "t": 15.0,
+          "score": 85.0
+        },
+        {
+          "id": "c16",
+          "t": 16.0,
+          "score": 84.0
+        },
+        {
+          "id": "c17",
+          "t": 17.0,
+          "score": 83.0
+        },
+        {
+          "id": "c18",
+          "t": 18.0,
+          "score": 82.0
+        },
+        {
+          "id": "c19",
+          "t": 19.0,
+          "score": 81.0
+        },
+        {
+          "id": "c20",
+          "t": 20.0,
+          "score": 80.0
+        },
+        {
+          "id": "c21",
+          "t": 21.0,
+          "score": 79.0
+        },
+        {
+          "id": "c22",
+          "t": 22.0,
+          "score": 78.0
+        },
+        {
+          "id": "c23",
+          "t": 23.0,
+          "score": 77.0
+        },
+        {
+          "id": "c24",
+          "t": 24.0,
+          "score": 76.0
+        },
+        {
+          "id": "c25",
+          "t": 25.0,
+          "score": 75.0
+        },
+        {
+          "id": "c26",
+          "t": 26.0,
+          "score": 74.0
+        },
+        {
+          "id": "c27",
+          "t": 27.0,
+          "score": 73.0
+        },
+        {
+          "id": "c28",
+          "t": 28.0,
+          "score": 72.0
+        },
+        {
+          "id": "c29",
+          "t": 29.0,
+          "score": 71.0
+        },
+        {
+          "id": "n0",
+          "t": 200.0,
+          "score": 1.0
+        },
+        {
+          "id": "n1",
+          "t": 201.0,
+          "score": 1.0
+        },
+        {
+          "id": "n2",
+          "t": 202.0,
+          "score": 1.0
+        },
+        {
+          "id": "n3",
+          "t": 203.0,
+          "score": 1.0
+        },
+        {
+          "id": "n4",
+          "t": 204.0,
+          "score": 1.0
+        },
+        {
+          "id": "n5",
+          "t": 205.0,
+          "score": 1.0
+        },
+        {
+          "id": "n6",
+          "t": 206.0,
+          "score": 1.0
+        },
+        {
+          "id": "n7",
+          "t": 207.0,
+          "score": 1.0
+        },
+        {
+          "id": "n8",
+          "t": 208.0,
+          "score": 1.0
+        },
+        {
+          "id": "n9",
+          "t": 209.0,
+          "score": 1.0
+        }
+      ],
+      "expected_effort_critical_recall": {
+        "1/2": {
+          "required": 15,
+          "position": 15,
+          "queue_fraction": 0.375
+        },
+        "4/5": {
+          "required": 24,
+          "position": 24,
+          "queue_fraction": 0.6
+        },
+        "9/10": {
+          "required": 27,
+          "position": 27,
+          "queue_fraction": 0.675
+        }
+      },
+      "expected_effort_interval_coverage": {
+        "1": {
+          "required": 1,
+          "position": 1,
+          "queue_fraction": 0.025
+        }
+      },
+      "expected_fraction_budgets": {
+        "1/1000": 1,
+        "1/100": 1,
+        "1/20": 2,
+        "1/10": 4,
+        "1/4": 10,
+        "1/2": 20
+      }
+    },
+    {
+      "name": "E_duplicates_anchored_windows",
+      "purpose": "Anchored 60 s windows; a cluster whose representative is negative but a member lies in a critical interval; chronological credit only from the investigated alert itself.",
+      "tau": 8.0,
+      "window_seconds": 60.0,
+      "intervals": [
+        {
+          "scenario": "ex",
+          "attack": "webshell",
+          "start": 50.0,
+          "end": 110.0
+        }
+      ],
+      "alerts": [
+        {
+          "id": "d1",
+          "t": 0.0,
+          "score": 1.0,
+          "detector": "wazuh",
+          "key": "k",
+          "host": "h1"
+        },
+        {
+          "id": "d2",
+          "t": 30.0,
+          "score": 1.0,
+          "detector": "wazuh",
+          "key": "k",
+          "host": "h1"
+        },
+        {
+          "id": "d3",
+          "t": 59.999,
+          "score": 1.0,
+          "detector": "wazuh",
+          "key": "k",
+          "host": "h1"
+        },
+        {
+          "id": "d4",
+          "t": 60.0,
+          "score": 1.0,
+          "detector": "wazuh",
+          "key": "k",
+          "host": "h1"
+        },
+        {
+          "id": "d5",
+          "t": 100.0,
+          "score": 1.0,
+          "detector": "wazuh",
+          "key": "k",
+          "host": "h1"
+        },
+        {
+          "id": "d6",
+          "t": 125.0,
+          "score": 1.0,
+          "detector": "wazuh",
+          "key": "k",
+          "host": "h1"
+        },
+        {
+          "id": "d7",
+          "t": 0.0,
+          "score": 1.0,
+          "detector": "wazuh",
+          "key": "k",
+          "host": "h2"
+        }
+      ],
+      "expected_representative_of": {
+        "d1": "d1",
+        "d2": "d1",
+        "d3": "d1",
+        "d4": "d4",
+        "d5": "d4",
+        "d6": "d6",
+        "d7": "d7"
+      },
+      "expected_cluster_summary": {
+        "clusters": 4,
+        "mixed_label_clusters": 1,
+        "member_conferred_positive_clusters": 1,
+        "multi_interval_clusters": 0
+      },
+      "expected_static_cluster_positive": {
+        "d1": true,
+        "d4": true,
+        "d6": false,
+        "d7": false
+      },
+      "expected_representative_own_positive": {
+        "d1": false,
+        "d4": true,
+        "d6": false,
+        "d7": false
+      },
+      "chronological_cases": [
+        {
+          "investigations": {
+            "d1": 10.0,
+            "d7": 5.0
+          },
+          "expected_detection": [
+            null
+          ],
+          "derivation": "d1 (t=0) is outside the interval; its suppressed member d3 (t=59.999) confers nothing"
+        },
+        {
+          "investigations": {
+            "d1": 10.0,
+            "d4": 70.0
+          },
+          "expected_detection": [
+            70.0
+          ]
+        },
+        {
+          "investigations": {
+            "d4": 55.0
+          },
+          "expected_error": "investigation before arrival (d4 arrives at 60)"
+        }
+      ]
+    },
+    {
+      "name": "F_near_tie_rounding",
+      "purpose": "Four significant digits (correctly rounded); values chosen away from exact halves.",
+      "scores": [
+        1.23456,
+        1.23464,
+        1.23449,
+        0.00012346,
+        12345.6,
+        -2.71828,
+        0.0
+      ],
+      "expected_rounded": [
+        1.235,
+        1.235,
+        1.234,
+        0.0001235,
+        12350.0,
+        -2.718,
+        0.0
+      ]
+    }
+  ]
+}

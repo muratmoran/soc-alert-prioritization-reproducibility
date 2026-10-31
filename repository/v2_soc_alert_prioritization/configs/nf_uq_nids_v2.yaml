@@ -1,0 +1,161 @@
+dataset:
+  name: nf_uq_nids_v2
+  role: cross_domain_robustness
+  raw_path: data/raw/nf_uq_nids_v2
+  processed_path: data/processed/nf_uq_nids_v2
+  official_page: https://www.cyber.uq.edu.au/project/machine-learning-based-nids-datasets
+  expected_records: 75987976
+  expected_benign_records: 25165295
+  expected_attack_records: 50822681
+  download_note: >
+    The official UQ RDM file pages are browser/application mediated, but the
+    app calls https://api.rdm.uq.edu.au/datasets/{uuid}/download to obtain a
+    temporary signed S3 URL. Stage the extracted NF-UQ-NIDS-v2 CSV under
+    raw_path. The loader is chunked because the full merged corpus is too large
+    for ordinary in-memory processing.
+
+splits:
+  strategy: leave_one_source_domain_out
+  seed: 42
+
+source_domains:
+  - NF-UNSW-NB15-v2
+  - NF-ToN-IoT-v2
+  - NF-BoT-IoT-v2
+  - NF-CSE-CIC-IDS2018-v2
+
+source_domain_aliases:
+  NF-UNSW-NB15-v2:
+    - unsw
+    - unsw-nb15
+    - nf-unsw-nb15-v2
+  NF-ToN-IoT-v2:
+    - ton
+    - ton-iot
+    - nf-ton-iot-v2
+  NF-BoT-IoT-v2:
+    - bot
+    - bot-iot
+    - nf-bot-iot-v2
+  NF-CSE-CIC-IDS2018-v2:
+    - cse-cic
+    - ids2018
+    - cse-cic-ids2018
+    - nf-cse-cic-ids2018-v2
+
+attack_categories:
+  - DDoS
+  - Reconnaissance
+  - Injection
+  - DoS
+  - Brute Force
+  - Password
+  - XSS
+  - Infiltration
+  - Exploits
+  - Scanning
+  - Fuzzers
+  - Backdoor
+  - Bot
+  - Generic
+  - Analysis
+  - Theft
+  - Shellcode
+  - MITM
+  - Worms
+  - Ransomware
+
+official_category_counts:
+  Benign: 25165295
+  DDoS: 21748351
+  Reconnaissance: 2633778
+  Injection: 684897
+  DoS: 17875585
+  Brute Force: 123982
+  Password: 1153323
+  XSS: 2455020
+  Infiltration: 116361
+  Exploits: 31551
+  Scanning: 3781419
+  Fuzzers: 22310
+  Backdoor: 18978
+  Bot: 143097
+  Generic: 16560
+  Analysis: 2299
+  Theft: 2431
+  Shellcode: 1427
+  MITM: 7723
+  Worms: 164
+  Ransomware: 3425
+
+source_domain_category_counts:
+  NF-UNSW-NB15-v2:
+    Benign: 2295222
+    Fuzzers: 22310
+    Analysis: 2299
+    Backdoor: 2169
+    DoS: 5794
+    Exploits: 31551
+    Generic: 16560
+    Reconnaissance: 12779
+    Shellcode: 1427
+    Worms: 164
+  NF-ToN-IoT-v2:
+    Benign: 6099469
+    Backdoor: 16809
+    DoS: 712609
+    DDoS: 2026234
+    Injection: 684465
+    MITM: 7723
+    Password: 1153323
+    Ransomware: 3425
+    Scanning: 3781419
+    XSS: 2455020
+  NF-BoT-IoT-v2:
+    Benign: 135037
+    Reconnaissance: 2620999
+    DDoS: 18331847
+    DoS: 16673183
+    Theft: 2431
+  NF-CSE-CIC-IDS2018-v2:
+    Benign: 16635567
+    Brute Force: 120912
+    Bot: 143097
+    DoS: 483999
+    DDoS: 1390270
+    Infiltration: 116361
+
+robustness_categories:
+  primary_shared:
+    - DoS
+    - DDoS
+    - Reconnaissance
+    - Backdoor
+  source_specific_high_impact:
+    - Injection
+    - XSS
+    - Password
+    - Infiltration
+    - Bot
+    - Exploits
+    - Shellcode
+    - MITM
+    - Ransomware
+  rare_stress:
+    - Worms
+    - Analysis
+    - Theft
+
+reliability:
+  calibration_unit:
+    - source_domain
+    - detector
+    - attack_category
+  shrinkage_lambda: 100
+  height_min: 0.05
+  height_max: 0.95
+
+detectors:
+  - logistic_regression
+  - random_forest
+  - isolation_forest

@@ -1,0 +1,118 @@
+{
+  "role": "ATT&CK mapping coverage and crosswalk consistency (supporting only; no independent severity validation)",
+  "input_directory": "/Users/murat/soc_revision_data/uwf_zeekdata24/csv",
+  "files": [
+    {
+      "file": "Benign.csv",
+      "rows": 47906,
+      "sha256": "272677c8c7bbe7ab57b040f63ed8bbf92d0b5716adb05444258274eed000ab3f",
+      "label_tactic_values": "none:47906"
+    },
+    {
+      "file": "Credential_Access.csv",
+      "rows": 43494,
+      "sha256": "6448eeebbb5dfaf88bb45f81a2fa8fd3b2a3e635090da2e50b0177bd71430424",
+      "label_tactic_values": "Credential Access:43494"
+    },
+    {
+      "file": "Defense_Evasion.csv",
+      "rows": 326,
+      "sha256": "801594d09ce3b9a18f86199a4dbff04511e375910f3d0d932a6dcde1153cb101",
+      "label_tactic_values": "Defense Evasion:326"
+    },
+    {
+      "file": "Exfiltration.csv",
+      "rows": 23,
+      "sha256": "b485153727b8a630582838eebf75c924cb0b49476b69de1b728b85d4371827f0",
+      "label_tactic_values": "Exfiltration:23"
+    },
+    {
+      "file": "Initial_Access.csv",
+      "rows": 561,
+      "sha256": "faf6b9e07a7dab23ce364898772af062f51ddef4feb9329778750f8ed699d0e6",
+      "label_tactic_values": "Initial Access:561"
+    },
+    {
+      "file": "Persistence.csv",
+      "rows": 326,
+      "sha256": "52b19554a53a7da044fbf25f8546702e00043cca43673ebe41ee091cfb2009c8",
+      "label_tactic_values": "Persistence:326"
+    },
+    {
+      "file": "Privilege_Escalation.csv",
+      "rows": 326,
+      "sha256": "5933fa87bf55f54821705754be357ea1fa0e347b440c3af0590be6e03bd04877",
+      "label_tactic_values": "Privilege Escalation:326"
+    },
+    {
+      "file": "Reconnaissance.csv",
+      "rows": 2909,
+      "sha256": "13bf1c7fe9364a91a18d858683fee999baf6567ca65e2077829df089107ff7b0",
+      "label_tactic_values": "Reconnaissance:2909"
+    }
+  ],
+  "coverage": {
+    "rows": 95871,
+    "benign_rows": 47906,
+    "attack_rows": 47965,
+    "attack_rows_with_tactic_in_severity_table": 47965,
+    "tactic_mapping_coverage": 1.0,
+    "attack_rows_with_valid_technique": 46995,
+    "technique_coverage": 0.9797769206713228,
+    "attack_rows_with_valid_cve": 0,
+    "cve_coverage": 0.0,
+    "technique_label_values_not_valid": {
+      "Duplicate": 970
+    }
+  },
+  "observed_attack_tactics": 7,
+  "overlapping_tactics": [
+    "Credential Access",
+    "Reconnaissance",
+    "Persistence",
+    "Privilege Escalation",
+    "Exfiltration"
+  ],
+  "credential_access_share": 0.9067861982695715,
+  "agreement_theta_8_max": {
+    "tactics": 5,
+    "spearman": 0.8720815992723809,
+    "kendall_tau_b": 0.7378647873726218,
+    "mean_absolute_discrepancy_unweighted": 0.7,
+    "mean_absolute_discrepancy_frequency_weighted": 1.8823441947406432,
+    "jaccard": 0.75,
+    "set_tactic_table": "Credential Access;Exfiltration;Persistence;Privilege Escalation",
+    "set_crosswalk": "Exfiltration;Persistence;Privilege Escalation"
+  },
+  "duplicates": {
+    "exact_full_row_duplicates_including_labels": 0,
+    "attack_connections_in_more_than_one_tactic_file": 328,
+    "attack_connection_file_patterns": {
+      "Defense_Evasion.csv+Persistence.csv+Privilege_Escalation.csv": 291,
+      "Defense_Evasion.csv+Initial_Access.csv+Persistence.csv+Privilege_Escalation.csv": 34,
+      "Exfiltration.csv+Initial_Access.csv": 2,
+      "Defense_Evasion.csv+Exfiltration.csv+Persistence.csv+Privilege_Escalation.csv": 1
+    },
+    "attack_uids_in_more_than_one_tactic_file": 328,
+    "rows_with_Duplicate_label_value": {
+      "label_tactic": 0,
+      "label_technique": 970,
+      "label_binary": 970,
+      "label_cve": 970
+    },
+    "rows_with_any_Duplicate_label_by_file": {
+      "Benign.csv": 0,
+      "Credential_Access.csv": 0,
+      "Defense_Evasion.csv": 0,
+      "Exfiltration.csv": 0,
+      "Initial_Access.csv": 318,
+      "Persistence.csv": 326,
+      "Privilege_Escalation.csv": 326,
+      "Reconnaissance.csv": 0
+    },
+    "three_326_row_tactics_distinct_connections": 326,
+    "three_326_row_tactics_connections_shared_by_all_three": 326
+  },
+  "script_sha256": "470fc89a89c46da6ba120a12bca5e5eddc1b59ae36084c70381a93a77e55aa29",
+  "severity_mapping_sha256": "a7c0383b6e69ebed42e3dcfef4c1f58952902fd490e7791f19c3b577be03d17a"
+}

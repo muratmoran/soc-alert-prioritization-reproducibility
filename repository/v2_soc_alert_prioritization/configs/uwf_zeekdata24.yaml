@@ -1,0 +1,74 @@
+dataset:
+  name: uwf_zeekdata24
+  role: enterprise_attack_mapping_validation
+  raw_path: data/raw/uwf_zeekdata24
+  processed_path: data/processed/uwf_zeekdata24
+  official_page: https://datasets.uwf.edu/
+  data_index: https://datasets.uwf.edu/data/UWF-ZeekData24/
+  article: https://doi.org/10.3390/data10050059
+
+local_subset:
+  type: public_csv_subset
+  note: >
+    The public CSV subset is used for the manuscript validation experiment.
+    Full parquet and PCAP files are not required for the narrow severity
+    mapping task.
+  tactic_csv_files:
+    - Benign.csv
+    - Credential_Access.csv
+    - Defense_Evasion.csv
+    - Exfiltration.csv
+    - Initial_Access.csv
+    - Persistence.csv
+    - Privilege_Escalation.csv
+    - Reconnaissance.csv
+  metric_files:
+    - tactic_metrics.csv
+    - technique_metrics.csv
+    - cve_metrics.csv
+    - binary_metrics.csv
+
+validation_task:
+  type: attack_severity_mapping_consistency
+  compare_against: ait_alert
+  question: >
+    Does the ATT&CK-to-severity table produce a severity ordering on UWF
+    enterprise Zeek tactics that is consistent with the independent AIT
+    attack-phase severity table for overlapping tactics?
+
+mapping:
+  primary_source: mitre_attack
+  cvss_anchor_policy: use_cvss_only_when_explicit_cve_or_vulnerability_exists
+  observed_cve_policy: >
+    The staged UWF-ZeekData24 CSV subset contains no valid CVE labels, so the
+    validation is ATT&CK tactic/technique based rather than CVE-CVSS based.
+  ait_phase_to_tactic_config: configs/severity_mapping.yaml
+
+metrics:
+  - spearman_correlation
+  - kendall_tau
+  - top_risk_tactic_agreement
+  - severity_table_sensitivity
+
+local_results:
+  rows: 95871
+  attack_rows: 47965
+  observed_attack_tactics: 7
+  overlap_tactics_with_ait: 5
+  mapped_tactic_rate: 1.0
+  valid_technique_rate: 0.9798
+  valid_cve_rate: 0.0
+  spearman: 0.8721
+  kendall_tau_b: 0.7379
+  top_risk_jaccard: 0.75
+  pairwise_order_stability_delta_0_5: 0.6667
+  sensitive_tactics_at_threshold_8_delta_0_5:
+    - Credential Access
+    - Persistence
+
+limitations_to_report:
+  - controlled_enterprise_cyber_range
+  - metasploitable_based_vulnerable_hosts
+  - mapping_validation_not_production_detection_claim
+  - public_csv_subset_not_full_parquet_corpus
+  - no_valid_cve_labels_in_staged_csv_subset

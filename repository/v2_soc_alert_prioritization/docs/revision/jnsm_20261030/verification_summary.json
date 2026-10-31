@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-30",
+  "tests_run": 131,
+  "unexpected_failures": 0,
+  "expected_failures": 1,
+  "expected_failure_scope": "withdrawn NF-UQ category-sampling diagnostic",
+  "baseline_folds_matched": 8,
+  "sensitivity_trace_checks_passed": 184,
+  "randomized_replays": 5600,
+  "deterministic_replay_comparisons": 56,
+  "grouped_replays": 168,
+  "visual_review": "All article and supplement pages inspected; detailed checks on changed tables, figure and result sections."
+}

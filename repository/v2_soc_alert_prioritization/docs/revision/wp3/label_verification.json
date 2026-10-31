@@ -1,0 +1,589 @@
+{
+  "analysis_role": "WP3 evaluation-label construction check; no method scores or metrics",
+  "inputs": {
+    "cache_sha256": "c5702421b4e563c909d7d4002f1cca96c5ba08265a47b6a6249726c6dde133be",
+    "labels_csv_sha256": "633e09b42772eabbbe5b48598220860eead60b7352efb01973fc45a5034290c0"
+  },
+  "interval_table": {
+    "label_rows": 79,
+    "distinct_intervals": 79,
+    "overlapping_pairs": 0,
+    "adjacent_pairs_end_equals_start": 62,
+    "file_order_inversions": [
+      [
+        "fox",
+        "privilege_escalation",
+        "service_stop"
+      ],
+      [
+        "santos",
+        "privilege_escalation",
+        "service_stop"
+      ],
+      [
+        "shaw",
+        "privilege_escalation",
+        "service_stop"
+      ],
+      [
+        "wardbeck",
+        "privilege_escalation",
+        "service_stop"
+      ],
+      [
+        "wheeler",
+        "wpscan",
+        "dirb"
+      ],
+      [
+        "wheeler",
+        "privilege_escalation",
+        "service_stop"
+      ],
+      [
+        "wilson",
+        "wpscan",
+        "dirb"
+      ],
+      [
+        "wilson",
+        "privilege_escalation",
+        "service_stop"
+      ]
+    ]
+  },
+  "critical_intervals": {
+    "by_tau": {
+      "tau_7": {
+        "critical_intervals": 40,
+        "critical_phases": [
+          "dnsteal",
+          "privilege_escalation",
+          "reverse_shell",
+          "service_stop",
+          "webshell"
+        ]
+      },
+      "tau_8": {
+        "critical_intervals": 32,
+        "critical_phases": [
+          "dnsteal",
+          "privilege_escalation",
+          "reverse_shell",
+          "webshell"
+        ]
+      },
+      "tau_9": {
+        "critical_intervals": 24,
+        "critical_phases": [
+          "dnsteal",
+          "privilege_escalation",
+          "reverse_shell"
+        ]
+      }
+    },
+    "per_scenario_tau_8": {
+      "fox": {
+        "alerts": 473104,
+        "defined_critical_intervals": 4,
+        "alert_containing_critical_intervals": 4
+      },
+      "harrison": {
+        "alerts": 593948,
+        "defined_critical_intervals": 4,
+        "alert_containing_critical_intervals": 4
+      },
+      "russellmitchell": {
+        "alerts": 45544,
+        "defined_critical_intervals": 4,
+        "alert_containing_critical_intervals": 4
+      },
+      "santos": {
+        "alerts": 130779,
+        "defined_critical_intervals": 4,
+        "alert_containing_critical_intervals": 4
+      },
+      "shaw": {
+        "alerts": 70782,
+        "defined_critical_intervals": 4,
+        "alert_containing_critical_intervals": 4
+      },
+      "wardbeck": {
+        "alerts": 91257,
+        "defined_critical_intervals": 4,
+        "alert_containing_critical_intervals": 4
+      },
+      "wheeler": {
+        "alerts": 616161,
+        "defined_critical_intervals": 4,
+        "alert_containing_critical_intervals": 4
+      },
+      "wilson": {
+        "alerts": 634246,
+        "defined_critical_intervals": 4,
+        "alert_containing_critical_intervals": 4
+      }
+    },
+    "defined_total_tau_8": 32,
+    "alert_containing_total_tau_8": 32,
+    "duration_seconds_by_phase": {
+      "dnsteal": {
+        "min": 3312.0,
+        "median": 3600.0,
+        "max": 7200.0
+      },
+      "privilege_escalation": {
+        "min": 22.0,
+        "median": 32.5,
+        "max": 49.0
+      },
+      "reverse_shell": {
+        "min": 38.0,
+        "median": 40.0,
+        "max": 43.0
+      },
+      "webshell": {
+        "min": 12.0,
+        "median": 34.0,
+        "max": 88.0
+      }
+    },
+    "alerts_per_interval_by_phase": {
+      "dnsteal": {
+        "min": 23,
+        "median": 588.5,
+        "max": 3239,
+        "sum": 8630
+      },
+      "privilege_escalation": {
+        "min": 17,
+        "median": 47.0,
+        "max": 94,
+        "sum": 371
+      },
+      "reverse_shell": {
+        "min": 1,
+        "median": 5.5,
+        "max": 25,
+        "sum": 82
+      },
+      "webshell": {
+        "min": 1,
+        "median": 12.5,
+        "max": 41,
+        "sum": 121
+      }
+    },
+    "no_alert_critical_intervals": []
+  },
+  "boundaries": {
+    "boundary_alert_groups": 36,
+    "alerts_on_start": 1028,
+    "alerts_on_end": 1022,
+    "violations": 0,
+    "groups": [
+      {
+        "scenario": "fox",
+        "interval": "network_scans",
+        "boundary": "start",
+        "alerts": 3,
+        "assigned_to": [
+          "network_scans"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "fox",
+        "interval": "wpscan",
+        "boundary": "end",
+        "alerts": 262,
+        "assigned_to": [
+          "dirb"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "fox",
+        "interval": "dirb",
+        "boundary": "start",
+        "alerts": 262,
+        "assigned_to": [
+          "dirb"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "harrison",
+        "interval": "network_scans",
+        "boundary": "start",
+        "alerts": 3,
+        "assigned_to": [
+          "network_scans"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "harrison",
+        "interval": "webshell",
+        "boundary": "end",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "harrison",
+        "interval": "cracking",
+        "boundary": "start",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "russellmitchell",
+        "interval": "webshell",
+        "boundary": "end",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "russellmitchell",
+        "interval": "cracking",
+        "boundary": "start",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "santos",
+        "interval": "webshell",
+        "boundary": "end",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "santos",
+        "interval": "cracking",
+        "boundary": "start",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "santos",
+        "interval": "reverse_shell",
+        "boundary": "end",
+        "alerts": 8,
+        "assigned_to": [
+          "privilege_escalation"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "santos",
+        "interval": "privilege_escalation",
+        "boundary": "start",
+        "alerts": 8,
+        "assigned_to": [
+          "privilege_escalation"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "shaw",
+        "interval": "wpscan",
+        "boundary": "end",
+        "alerts": 230,
+        "assigned_to": [
+          "dirb"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "shaw",
+        "interval": "dirb",
+        "boundary": "start",
+        "alerts": 230,
+        "assigned_to": [
+          "dirb"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "shaw",
+        "interval": "webshell",
+        "boundary": "end",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "shaw",
+        "interval": "cracking",
+        "boundary": "start",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wardbeck",
+        "interval": "wpscan",
+        "boundary": "end",
+        "alerts": 186,
+        "assigned_to": [
+          "dirb"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wardbeck",
+        "interval": "dirb",
+        "boundary": "start",
+        "alerts": 186,
+        "assigned_to": [
+          "dirb"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wardbeck",
+        "interval": "webshell",
+        "boundary": "end",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wardbeck",
+        "interval": "cracking",
+        "boundary": "start",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wheeler",
+        "interval": "network_scans",
+        "boundary": "end",
+        "alerts": 20,
+        "assigned_to": [
+          "service_scans"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wheeler",
+        "interval": "service_scans",
+        "boundary": "start",
+        "alerts": 20,
+        "assigned_to": [
+          "service_scans"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wheeler",
+        "interval": "service_scans",
+        "boundary": "end",
+        "alerts": 26,
+        "assigned_to": [
+          "dirb"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wheeler",
+        "interval": "dirb",
+        "boundary": "start",
+        "alerts": 26,
+        "assigned_to": [
+          "dirb"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wheeler",
+        "interval": "reverse_shell",
+        "boundary": "end",
+        "alerts": 5,
+        "assigned_to": [
+          "privilege_escalation"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wheeler",
+        "interval": "privilege_escalation",
+        "boundary": "start",
+        "alerts": 5,
+        "assigned_to": [
+          "privilege_escalation"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wilson",
+        "interval": "network_scans",
+        "boundary": "end",
+        "alerts": 25,
+        "assigned_to": [
+          "service_scans"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wilson",
+        "interval": "service_scans",
+        "boundary": "start",
+        "alerts": 25,
+        "assigned_to": [
+          "service_scans"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wilson",
+        "interval": "service_scans",
+        "boundary": "end",
+        "alerts": 245,
+        "assigned_to": [
+          "dirb"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wilson",
+        "interval": "dirb",
+        "boundary": "start",
+        "alerts": 245,
+        "assigned_to": [
+          "dirb"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wilson",
+        "interval": "dirb",
+        "boundary": "end",
+        "alerts": 3,
+        "assigned_to": [
+          "wpscan"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wilson",
+        "interval": "wpscan",
+        "boundary": "start",
+        "alerts": 3,
+        "assigned_to": [
+          "wpscan"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wilson",
+        "interval": "webshell",
+        "boundary": "end",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wilson",
+        "interval": "cracking",
+        "boundary": "start",
+        "alerts": 1,
+        "assigned_to": [
+          "cracking"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wilson",
+        "interval": "reverse_shell",
+        "boundary": "end",
+        "alerts": 6,
+        "assigned_to": [
+          "privilege_escalation"
+        ],
+        "violations": 0
+      },
+      {
+        "scenario": "wilson",
+        "interval": "privilege_escalation",
+        "boundary": "start",
+        "alerts": 6,
+        "assigned_to": [
+          "privilege_escalation"
+        ],
+        "violations": 0
+      }
+    ]
+  },
+  "historical_label_mismatches": {
+    "y": 0,
+    "s_star": 0,
+    "z": 0
+  },
+  "file_order_digests": {
+    "base": "5660056b0727d50d93eeee4e7228638a73de2d254db1e15183dbe69dac4823e6",
+    "reversed": "5660056b0727d50d93eeee4e7228638a73de2d254db1e15183dbe69dac4823e6",
+    "shuffle_seed_0": "5660056b0727d50d93eeee4e7228638a73de2d254db1e15183dbe69dac4823e6",
+    "shuffle_seed_1": "5660056b0727d50d93eeee4e7228638a73de2d254db1e15183dbe69dac4823e6",
+    "shuffle_seed_2": "5660056b0727d50d93eeee4e7228638a73de2d254db1e15183dbe69dac4823e6",
+    "shuffle_seed_3": "5660056b0727d50d93eeee4e7228638a73de2d254db1e15183dbe69dac4823e6",
+    "shuffle_seed_4": "5660056b0727d50d93eeee4e7228638a73de2d254db1e15183dbe69dac4823e6"
+  },
+  "duplicate_cluster_labels": {
+    "60s": {
+      "clusters": 101605,
+      "mixed_label_clusters": 25,
+      "member_conferred_positive_clusters": 11,
+      "multi_interval_clusters": 8
+    },
+    "300s": {
+      "clusters": 43439,
+      "mixed_label_clusters": 74,
+      "member_conferred_positive_clusters": 40,
+      "multi_interval_clusters": 9
+    },
+    "900s": {
+      "clusters": 24197,
+      "mixed_label_clusters": 119,
+      "member_conferred_positive_clusters": 65,
+      "multi_interval_clusters": 10
+    }
+  },
+  "checks": {
+    "79_rows_79_distinct_no_overlap": true,
+    "critical_counts_consistent": true,
+    "half_open_boundaries": true,
+    "matches_historical_loader_labels": true,
+    "file_order_invariant": true
+  },
+  "passed": true
+}

@@ -1,0 +1,15 @@
+{
+  "stage": "saved_static",
+  "source": {
+    "scripts/revision/review_run.py": "9515b1de79e8313907b6915d6b48b09dd233694bd327f74ef3aa2c8b232998ce",
+    "src/soc_alert_ranking/revision/review_extensions.py": "fd6708d4db2d497b091c58ffc093947c093d20224ac66b0de0f7bafcaeea5f50",
+    "docs/revision/jnsm_20261030/amendment.md": "bd74243bb8a8fa63d48417e0d27f85b4ff0068e4d49007a6315e9cc05ea73ea0"
+  },
+  "data": {
+    "canonical_cache_sha256": "c5702421b4e563c909d7d4002f1cca96c5ba08265a47b6a6249726c6dde133be",
+    "provenance_cache_sha256": "d2f4e1cf04987eff35526d4dcd6f1b0350748054de5a6e83fac2fca26c5e7522"
+  },
+  "python": "3.10.18 (main, Jun  5 2025, 08:37:47) [Clang 14.0.6 ]",
+  "numpy": "2.0.1",
+  "pandas": "2.3.1"
+}

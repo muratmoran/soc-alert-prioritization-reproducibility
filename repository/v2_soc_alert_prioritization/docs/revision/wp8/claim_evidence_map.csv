@@ -1,0 +1,61 @@
+macro,value,source,selection
+NAlerts,"2,655,821",~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,sum of held-out alerts over scenarios
+NCriticalAlerts,"9,204",~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,sum of critical alerts
+NCriticalIntervals,32,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,sum of defined critical intervals
+NCandidates,157,docs/revision/wp2/grid_registry.json,candidates
+NTuned,145,docs/revision/wp2/grid_registry.json,tuned per inner fold
+NUnseenAlerts,113,docs/revision/wp4/split_manifests.json,"LOSO unseen-identifier alerts, all folds"
+StaticClassCovered,8,docs/revision/wp4/stage2_tables/r1_t1_primary_long.csv,"covered intervals@100 summed over scenarios, every class-level ranker"
+StaticClassFPMedian,18,docs/revision/wp4/stage2_tables/r1_t1_primary_long.csv,"median FP@100, P"
+StaticSOneKeyCovered,21,docs/revision/wp4/stage2_tables/r1_t1_primary_long.csv,"covered intervals@100, S1_linear_log_constrained_key (primary rule)"
+StaticSZeroKeyCovered,21,docs/revision/wp4/stage2_tables/r1_t1_primary_long.csv,"covered intervals@100, S0_linear_log_historical_key[kappa=1]"
+StaticRSevKeyCovered,18,docs/revision/wp4/stage2_tables/r1_t1_primary_long.csv,"covered intervals@100, R_severity_key_reliability"
+StaticKeyFPMedian,77,docs/revision/wp4/stage2_tables/r1_t1_primary_long.csv,"median FP@100, S1_key"
+TieBlockMax,"430,178",docs/revision/wp4/stage2_tables/r1_t2_ties.csv,"largest cutoff block, P, k=100"
+TieExpectedFPMedian,0.6,docs/revision/wp4/stage2_tables/r1_t2_ties.csv,"median exact expected FP@100 under random tie order, P"
+TieOrderShareMin,99,docs/revision/wp4/stage2_tables/r1_t2_ties.csv,"min share of top-100 positions inside tied blocks, class-level formula scores"
+TieCutoffMembersMinP,85,docs/revision/wp4/stage2_tables/r1_t2_ties.csv,"min top-100 positions from the cutoff-crossing block, P"
+TieCutoffMembersMaxP,97,docs/revision/wp4/stage2_tables/r1_t2_ties.csv,"max top-100 positions from the cutoff-crossing block, P"
+TieCutoffMembersMedianP,96.5,docs/revision/wp4/stage2_tables/r1_t2_ties.csv,"median top-100 positions from the cutoff-crossing block, P"
+TieCutoffMembersMinClass,37,docs/revision/wp4/stage2_tables/r1_t2_ties.csv,"min top-100 positions from the cutoff-crossing block, class-level formula scores"
+DeferredCritical,"9,047",docs/revision/wp4/stage2_tables/r1_t5_deferral.csv,"critical alerts ranked beyond half the queue, P"
+DeferredShare,98.3,docs/revision/wp4/stage2_tables/r1_t5_deferral.csv,"share, P"
+DeferredMappingRejected,"8,999",docs/revision/wp4/stage2_tables/r1_t5_deferral.csv,"deferred with rejected mapping, P"
+DeferredPrecisionRejected,"8,996",docs/revision/wp4/stage2_tables/r1_t5_deferral.csv,"deferred with mapping rejected for precision < 0.5 (criteria overlap), P"
+DeferredShareSeverity,20.7,docs/revision/wp4/stage2_tables/r1_t5_deferral.csv,"share, O_severity"
+SZeroReversalShare,98.6,docs/revision/wp4/stage2_tables/r1_t5_coefficients.csv,"critical alerts with gamma <= 0, S0"
+PrimaryMinP,0.75,docs/revision/wp7/primary_family.csv,smallest unadjusted p in primary family
+ReplayInvestigations,"11,508",~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"eight-scenario investigations per full-stream ranker, 12/h"
+ReplayClassCovered,13,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"covered intervals, P_probability_proxy, 12/h"
+ReplayClassFP,"9,285",~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"FP investigations, P_probability_proxy, 12/h"
+ReplayClassStarvedShare,99.4,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"starved critical share, P_probability_proxy, 12/h"
+ReplaySOneKeyCovered,30,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"covered intervals, S1_linear_log_constrained_key (primary rule), 12/h"
+ReplaySOneKeyFP,"11,013",~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"FP investigations, S1_linear_log_constrained_key (primary rule), 12/h"
+ReplaySOneKeyStarvedShare,97.2,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"starved critical share, S1_linear_log_constrained_key (primary rule), 12/h"
+ReplaySZeroKeyCovered,28,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"covered intervals, S0_linear_log_historical_key[kappa=1], 12/h"
+ReplaySZeroKeyFP,"9,345",~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"FP investigations, S0_linear_log_historical_key[kappa=1], 12/h"
+ReplaySZeroKeyStarvedShare,98.1,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"starved critical share, S0_linear_log_historical_key[kappa=1], 12/h"
+ReplayRSevKeyCovered,25,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"covered intervals, R_severity_key_reliability, 12/h"
+ReplayRSevKeyFP,"9,308",~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"FP investigations, R_severity_key_reliability, 12/h"
+ReplayRSevKeyStarvedShare,98.8,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"starved critical share, R_severity_key_reliability, 12/h"
+ReplaySevOnlyCovered,8,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"covered intervals, O_severity, 12/h"
+ReplaySevOnlyFP,"11,479",~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"FP investigations, O_severity, 12/h"
+ReplaySevOnlyStarvedShare,99.7,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"starved critical share, O_severity, 12/h"
+ReplayFIFOCovered,0,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"covered intervals, O_oldest_first, 12/h"
+ReplayFIFOFP,"11,508",~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"FP investigations, O_oldest_first, 12/h"
+ReplayFIFOStarvedShare,100.0,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"starved critical share, O_oldest_first, 12/h"
+ReplaySixtyShare,2.1,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"investigations / alerts at 60/h, pooled"
+ReplaySixtyShareMax,12.3,~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,max per-scenario share at 60/h
+PeakBacklogMin,"44,399",~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"min per-scenario peak backlog, 12/h"
+PeakBacklogMax,"632,519",~/soc_revision_data/wp5_replay/P1/loso_*/summaries.csv.gz,"max per-scenario peak backlog, 12/h"
+HoldoutSOneKeyGroups,"9, 20, 8, 8, 8",docs/revision/wp7/holdout_forward.csv,S1_key covered by hold-out group
+ForwardSOneKey,13,docs/revision/wp7/holdout_forward.csv,"forward chaining covered, S1_key"
+ForwardP,5,docs/revision/wp7/holdout_forward.csv,"forward chaining covered, P"
+UWFRows,"95,871",docs/revision/wp7/uwf/uwf_summary.json,rows
+UWFAttackRows,"47,965",docs/revision/wp7/uwf/uwf_summary.json,attack rows
+UWFCredentialShare,90.68,docs/revision/wp7/uwf/uwf_summary.json,Credential Access share
+UWFSpearman,0.872,docs/revision/wp7/uwf/uwf_agreement_thresholds.csv,"Spearman, five tactics"
+UWFMADWeighted,1.88,docs/revision/wp7/uwf/uwf_agreement_thresholds.csv,weighted MAD
+UWFMADUnweighted,0.70,docs/revision/wp7/uwf/uwf_agreement_thresholds.csv,unweighted MAD
+UWFJaccardEightFive,0.50,docs/revision/wp7/uwf/uwf_agreement_thresholds.csv,Jaccard at 8.5
+UWFSharedConnections,326,docs/revision/wp7/uwf/uwf_summary.json,connections shared by three tactic files

@@ -1,0 +1,847 @@
+{
+ "held_out": "scn0",
+ "policy": "flat+table",
+ "training_scenarios": [
+  "scn1",
+  "scn2",
+  "scn3"
+ ],
+ "feature_requests": [
+  {
+   "role": "outer=scn0|inner=scn1:validation",
+   "target": "scn1",
+   "fit_set": [
+    "scn2",
+    "scn3"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn2",
+    "scn3"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn2",
+     "mapped_with": [
+      "scn3"
+     ]
+    },
+    {
+     "rows_from": "scn3",
+     "mapped_with": [
+      "scn2"
+     ]
+    }
+   ],
+   "key_height_fit_set": [
+    "scn2",
+    "scn3"
+   ]
+  },
+  {
+   "role": "outer=scn0|inner=scn1:training_features",
+   "target": "scn2",
+   "fit_set": [
+    "scn3"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn3"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn3",
+     "mapped_with": []
+    }
+   ],
+   "key_height_fit_set": [
+    "scn3"
+   ]
+  },
+  {
+   "role": "outer=scn0|inner=scn1:training_features",
+   "target": "scn3",
+   "fit_set": [
+    "scn2"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn2"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn2",
+     "mapped_with": []
+    }
+   ],
+   "key_height_fit_set": [
+    "scn2"
+   ]
+  },
+  {
+   "role": "outer=scn0|inner=scn2:validation",
+   "target": "scn2",
+   "fit_set": [
+    "scn1",
+    "scn3"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn1",
+    "scn3"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn1",
+     "mapped_with": [
+      "scn3"
+     ]
+    },
+    {
+     "rows_from": "scn3",
+     "mapped_with": [
+      "scn1"
+     ]
+    }
+   ],
+   "key_height_fit_set": [
+    "scn1",
+    "scn3"
+   ]
+  },
+  {
+   "role": "outer=scn0|inner=scn2:training_features",
+   "target": "scn1",
+   "fit_set": [
+    "scn3"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn3"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn3",
+     "mapped_with": []
+    }
+   ],
+   "key_height_fit_set": [
+    "scn3"
+   ]
+  },
+  {
+   "role": "outer=scn0|inner=scn2:training_features",
+   "target": "scn3",
+   "fit_set": [
+    "scn1"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn1"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn1",
+     "mapped_with": []
+    }
+   ],
+   "key_height_fit_set": [
+    "scn1"
+   ]
+  },
+  {
+   "role": "outer=scn0|inner=scn3:validation",
+   "target": "scn3",
+   "fit_set": [
+    "scn1",
+    "scn2"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn1",
+    "scn2"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn1",
+     "mapped_with": [
+      "scn2"
+     ]
+    },
+    {
+     "rows_from": "scn2",
+     "mapped_with": [
+      "scn1"
+     ]
+    }
+   ],
+   "key_height_fit_set": [
+    "scn1",
+    "scn2"
+   ]
+  },
+  {
+   "role": "outer=scn0|inner=scn3:training_features",
+   "target": "scn1",
+   "fit_set": [
+    "scn2"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn2"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn2",
+     "mapped_with": []
+    }
+   ],
+   "key_height_fit_set": [
+    "scn2"
+   ]
+  },
+  {
+   "role": "outer=scn0|inner=scn3:training_features",
+   "target": "scn2",
+   "fit_set": [
+    "scn1"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn1"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn1",
+     "mapped_with": []
+    }
+   ],
+   "key_height_fit_set": [
+    "scn1"
+   ]
+  },
+  {
+   "role": "outer=scn0:outer_validation",
+   "target": "scn0",
+   "fit_set": [
+    "scn1",
+    "scn2",
+    "scn3"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn1",
+    "scn2",
+    "scn3"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn1",
+     "mapped_with": [
+      "scn2",
+      "scn3"
+     ]
+    },
+    {
+     "rows_from": "scn2",
+     "mapped_with": [
+      "scn1",
+      "scn3"
+     ]
+    },
+    {
+     "rows_from": "scn3",
+     "mapped_with": [
+      "scn1",
+      "scn2"
+     ]
+    }
+   ],
+   "key_height_fit_set": [
+    "scn1",
+    "scn2",
+    "scn3"
+   ]
+  },
+  {
+   "role": "outer=scn0:training_features",
+   "target": "scn1",
+   "fit_set": [
+    "scn2",
+    "scn3"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn2",
+    "scn3"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn2",
+     "mapped_with": [
+      "scn3"
+     ]
+    },
+    {
+     "rows_from": "scn3",
+     "mapped_with": [
+      "scn2"
+     ]
+    }
+   ],
+   "key_height_fit_set": [
+    "scn2",
+    "scn3"
+   ]
+  },
+  {
+   "role": "outer=scn0:training_features",
+   "target": "scn2",
+   "fit_set": [
+    "scn1",
+    "scn3"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn1",
+    "scn3"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn1",
+     "mapped_with": [
+      "scn3"
+     ]
+    },
+    {
+     "rows_from": "scn3",
+     "mapped_with": [
+      "scn1"
+     ]
+    }
+   ],
+   "key_height_fit_set": [
+    "scn1",
+    "scn3"
+   ]
+  },
+  {
+   "role": "outer=scn0:training_features",
+   "target": "scn3",
+   "fit_set": [
+    "scn1",
+    "scn2"
+   ],
+   "policy": "flat+table",
+   "mapping_fit_set": [
+    "scn1",
+    "scn2"
+   ],
+   "height_row_sources": [
+    {
+     "rows_from": "scn1",
+     "mapped_with": [
+      "scn2"
+     ]
+    },
+    {
+     "rows_from": "scn2",
+     "mapped_with": [
+      "scn1"
+     ]
+    }
+   ],
+   "key_height_fit_set": [
+    "scn1",
+    "scn2"
+   ]
+  }
+ ],
+ "learner_diagnostics": [
+  {
+   "role": "outer=scn0|inner=scn1",
+   "candidate_id": "L1_logistic[C=0.01]",
+   "training_scenarios": [
+    "scn2",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200,
+   "converged": true,
+   "coef": [
+    0.25749050548138136,
+    -0.8275762210965916,
+    0.06107270182179554
+   ],
+   "intercept": 0.8766461978644561
+  },
+  {
+   "role": "outer=scn0|inner=scn1",
+   "candidate_id": "L1_logistic[C=1]",
+   "training_scenarios": [
+    "scn2",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200,
+   "converged": true,
+   "coef": [
+    0.6132464171159542,
+    -1.362606199703675,
+    0.061818587631134334
+   ],
+   "intercept": 1.0386433168933598
+  },
+  {
+   "role": "outer=scn0|inner=scn1",
+   "candidate_id": "L1_logistic[C=100]",
+   "training_scenarios": [
+    "scn2",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200,
+   "converged": true,
+   "coef": [
+    0.6225794013094063,
+    -1.3734872668490805,
+    0.061855701018531425
+   ],
+   "intercept": 1.0428856312999177
+  },
+  {
+   "role": "outer=scn0|inner=scn1",
+   "candidate_id": "L2_gradient_boosting[max_depth=2]",
+   "training_scenarios": [
+    "scn2",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200
+  },
+  {
+   "role": "outer=scn0|inner=scn1",
+   "candidate_id": "L2_gradient_boosting[max_depth=3]",
+   "training_scenarios": [
+    "scn2",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200
+  },
+  {
+   "role": "outer=scn0|inner=scn2",
+   "candidate_id": "L1_logistic[C=0.01]",
+   "training_scenarios": [
+    "scn1",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200,
+   "converged": true,
+   "coef": [
+    0.2226321957627926,
+    -0.7620082669232084,
+    -0.006579976963705452
+   ],
+   "intercept": 0.9888852749855984
+  },
+  {
+   "role": "outer=scn0|inner=scn2",
+   "candidate_id": "L1_logistic[C=1]",
+   "training_scenarios": [
+    "scn1",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200,
+   "converged": true,
+   "coef": [
+    0.5773158422823715,
+    -1.276706044917022,
+    -0.04297392824461649
+   ],
+   "intercept": 1.1555691123228353
+  },
+  {
+   "role": "outer=scn0|inner=scn2",
+   "candidate_id": "L1_logistic[C=100]",
+   "training_scenarios": [
+    "scn1",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200,
+   "converged": true,
+   "coef": [
+    0.5874015647220906,
+    -1.2876078648913551,
+    -0.04370716861361239
+   ],
+   "intercept": 1.1601802126133751
+  },
+  {
+   "role": "outer=scn0|inner=scn2",
+   "candidate_id": "L2_gradient_boosting[max_depth=2]",
+   "training_scenarios": [
+    "scn1",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200
+  },
+  {
+   "role": "outer=scn0|inner=scn2",
+   "candidate_id": "L2_gradient_boosting[max_depth=3]",
+   "training_scenarios": [
+    "scn1",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200
+  },
+  {
+   "role": "outer=scn0|inner=scn3",
+   "candidate_id": "L1_logistic[C=0.01]",
+   "training_scenarios": [
+    "scn1",
+    "scn2"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200,
+   "converged": true,
+   "coef": [
+    0.33070438037855043,
+    -0.8442218866956108,
+    0.05538606622706202
+   ],
+   "intercept": 1.0480453196007034
+  },
+  {
+   "role": "outer=scn0|inner=scn3",
+   "candidate_id": "L1_logistic[C=1]",
+   "training_scenarios": [
+    "scn1",
+    "scn2"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200,
+   "converged": true,
+   "coef": [
+    0.745736540037607,
+    -1.4214562102659611,
+    -0.017647968663673866
+   ],
+   "intercept": 1.2392802558267515
+  },
+  {
+   "role": "outer=scn0|inner=scn3",
+   "candidate_id": "L1_logistic[C=100]",
+   "training_scenarios": [
+    "scn1",
+    "scn2"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200,
+   "converged": true,
+   "coef": [
+    0.7565774309799955,
+    -1.4336473298383456,
+    -0.020079756041524954
+   ],
+   "intercept": 1.2443898893992742
+  },
+  {
+   "role": "outer=scn0|inner=scn3",
+   "candidate_id": "L2_gradient_boosting[max_depth=2]",
+   "training_scenarios": [
+    "scn1",
+    "scn2"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200
+  },
+  {
+   "role": "outer=scn0|inner=scn3",
+   "candidate_id": "L2_gradient_boosting[max_depth=3]",
+   "training_scenarios": [
+    "scn1",
+    "scn2"
+   ],
+   "fallback": null,
+   "sampled_rows": 1200,
+   "population_rows": 1200,
+   "training_rows": 1200
+  },
+  {
+   "role": "outer=scn0",
+   "candidate_id": "L1_logistic[C=0.01]",
+   "training_scenarios": [
+    "scn1",
+    "scn2",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1800,
+   "population_rows": 1800,
+   "training_rows": 1800,
+   "converged": true,
+   "coef": [
+    0.23399749649349344,
+    -0.5186652914199995,
+    0.5991133423876515
+   ],
+   "intercept": 1.0596109838354173
+  },
+  {
+   "role": "outer=scn0",
+   "candidate_id": "L2_gradient_boosting[max_depth=3]",
+   "training_scenarios": [
+    "scn1",
+    "scn2",
+    "scn3"
+   ],
+   "fallback": null,
+   "sampled_rows": 1800,
+   "population_rows": 1800,
+   "training_rows": 1800
+  }
+ ],
+ "runtime_seconds": {
+  "features": 0.0035457080230116844,
+  "learned_fit": 3.5783012921456248,
+  "score:W_weighted": 0.0013619568198919296,
+  "score:A_additive": 0.007337422575801611,
+  "score:M_multiplicative": 0.003490415634587407,
+  "score:C_cost_sensitive": 0.0004787924699485302,
+  "score:L1_logistic": 0.0011545817833393812,
+  "score:L2_gradient_boosting": 0.11546458397060633,
+  "score:S1_linear_log_constrained": 0.0010125464759767056,
+  "score:S2_exponential_discount": 0.0007010416593402624,
+  "score:S1_linear_log_constrained_key": 0.0008591259829699993,
+  "score:S2_exponential_discount_key": 0.0006619603373110294,
+  "outer_scoring": 0.7446139580570161
+ },
+ "label_access_log": [
+  [
+   "scn2",
+   "mapping"
+  ],
+  [
+   "scn3",
+   "mapping"
+  ],
+  [
+   "scn2",
+   "class_heights"
+  ],
+  [
+   "scn3",
+   "mapping"
+  ],
+  [
+   "scn3",
+   "class_heights"
+  ],
+  [
+   "scn2",
+   "mapping"
+  ],
+  [
+   "scn2",
+   "key_heights"
+  ],
+  [
+   "scn3",
+   "key_heights"
+  ],
+  [
+   "scn3",
+   "class_heights"
+  ],
+  [
+   "scn3",
+   "key_heights"
+  ],
+  [
+   "scn2",
+   "outer=scn0|inner=scn1:learned_training_targets"
+  ],
+  [
+   "scn2",
+   "class_heights"
+  ],
+  [
+   "scn2",
+   "key_heights"
+  ],
+  [
+   "scn3",
+   "outer=scn0|inner=scn1:learned_training_targets"
+  ],
+  [
+   "scn1",
+   "outer=scn0|inner=scn1:inner_evaluation"
+  ],
+  [
+   "scn1",
+   "mapping"
+  ],
+  [
+   "scn3",
+   "mapping"
+  ],
+  [
+   "scn1",
+   "class_heights"
+  ],
+  [
+   "scn3",
+   "class_heights"
+  ],
+  [
+   "scn1",
+   "mapping"
+  ],
+  [
+   "scn1",
+   "key_heights"
+  ],
+  [
+   "scn3",
+   "key_heights"
+  ],
+  [
+   "scn1",
+   "outer=scn0|inner=scn2:learned_training_targets"
+  ],
+  [
+   "scn1",
+   "class_heights"
+  ],
+  [
+   "scn1",
+   "key_heights"
+  ],
+  [
+   "scn3",
+   "outer=scn0|inner=scn2:learned_training_targets"
+  ],
+  [
+   "scn2",
+   "outer=scn0|inner=scn2:inner_evaluation"
+  ],
+  [
+   "scn1",
+   "mapping"
+  ],
+  [
+   "scn2",
+   "mapping"
+  ],
+  [
+   "scn1",
+   "class_heights"
+  ],
+  [
+   "scn2",
+   "class_heights"
+  ],
+  [
+   "scn1",
+   "key_heights"
+  ],
+  [
+   "scn2",
+   "key_heights"
+  ],
+  [
+   "scn1",
+   "outer=scn0|inner=scn3:learned_training_targets"
+  ],
+  [
+   "scn2",
+   "outer=scn0|inner=scn3:learned_training_targets"
+  ],
+  [
+   "scn3",
+   "outer=scn0|inner=scn3:inner_evaluation"
+  ],
+  [
+   "scn1",
+   "mapping"
+  ],
+  [
+   "scn2",
+   "mapping"
+  ],
+  [
+   "scn3",
+   "mapping"
+  ],
+  [
+   "scn1",
+   "class_heights"
+  ],
+  [
+   "scn2",
+   "class_heights"
+  ],
+  [
+   "scn3",
+   "class_heights"
+  ],
+  [
+   "scn1",
+   "key_heights"
+  ],
+  [
+   "scn2",
+   "key_heights"
+  ],
+  [
+   "scn3",
+   "key_heights"
+  ],
+  [
+   "scn1",
+   "outer=scn0:learned_training_targets"
+  ],
+  [
+   "scn2",
+   "outer=scn0:learned_training_targets"
+  ],
+  [
+   "scn3",
+   "outer=scn0:learned_training_targets"
+  ]
+ ]
+}

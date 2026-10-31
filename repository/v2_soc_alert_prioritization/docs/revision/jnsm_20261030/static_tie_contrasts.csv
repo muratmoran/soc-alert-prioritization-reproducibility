@@ -1,0 +1,7 @@
+design,contrast,outcome,mean_difference,positive,negative,zero,p_two_sided,scenarios
+static tie-averaged,S1key - S1,mean_coverage,1.64625,7,0,1,0.015625,8
+static tie-averaged,S1key - S1,expected_fp,70.74637978082691,8,0,0,0.0078125,8
+static tie-averaged,S0key - P,mean_coverage,1.625,7,0,1,0.015625,8
+static tie-averaged,S0key - P,expected_fp,59.44263173474726,8,0,0,0.0078125,8
+static tie-averaged,"Rsev,key - P",mean_coverage,1.25,6,0,2,0.03125,8
+static tie-averaged,"Rsev,key - P",expected_fp,30.849697035232303,8,0,0,0.0078125,8

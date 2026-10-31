@@ -1,0 +1,131 @@
+{
+  "work_package": "WP5 real-data replay precheck",
+  "scope": "Integrity, alignment, label invariance, runtime and output size only; no label-dependent replay metric computed.",
+  "stage2_sha256sums_sha256": "8ca414e8ebc92d24975c67c28c1d88a7f67787517216d1e6d79de98f4fea1f4c",
+  "canonical_cache_sha256": "c5702421b4e563c909d7d4002f1cca96c5ba08265a47b6a6249726c6dde133be",
+  "score_alignment_all_folds": true,
+  "score_alignment": {
+    "R1/fox": true,
+    "R1/harrison": true,
+    "R1/russellmitchell": true,
+    "R1/santos": true,
+    "R1/shaw": true,
+    "R1/wardbeck": true,
+    "R1/wheeler": true,
+    "R1/wilson": true,
+    "R2/fox": true,
+    "R2/harrison": true,
+    "R2/russellmitchell": true,
+    "R2/santos": true,
+    "R2/shaw": true,
+    "R2/wardbeck": true,
+    "R2/wheeler": true,
+    "R2/wilson": true
+  },
+  "oldest_first_primary_rate_by_fold": [
+    {
+      "held_out": "fox",
+      "alerts": 473104,
+      "horizon_hours": 119.92634444442061,
+      "investigations_at_primary_rate": 1440,
+      "integrity_passed": true,
+      "violations": [],
+      "seconds": 0.35,
+      "candidates": 24
+    },
+    {
+      "held_out": "harrison",
+      "alerts": 593948,
+      "horizon_hours": 119.995625,
+      "investigations_at_primary_rate": 1440,
+      "integrity_passed": true,
+      "violations": [],
+      "seconds": 0.47,
+      "candidates": 22
+    },
+    {
+      "held_out": "russellmitchell",
+      "alerts": 45544,
+      "horizon_hours": 95.65333333333334,
+      "investigations_at_primary_rate": 1148,
+      "integrity_passed": true,
+      "violations": [],
+      "seconds": 0.03,
+      "candidates": 24
+    },
+    {
+      "held_out": "santos",
+      "alerts": 130779,
+      "horizon_hours": 95.86118055555555,
+      "investigations_at_primary_rate": 1151,
+      "integrity_passed": true,
+      "violations": [],
+      "seconds": 0.09,
+      "candidates": 24
+    },
+    {
+      "held_out": "shaw",
+      "alerts": 70782,
+      "horizon_hours": 143.51805555555555,
+      "investigations_at_primary_rate": 1723,
+      "integrity_passed": true,
+      "violations": [],
+      "seconds": 0.05,
+      "candidates": 23
+    },
+    {
+      "held_out": "wardbeck",
+      "alerts": 91257,
+      "horizon_hours": 119.98838055557675,
+      "investigations_at_primary_rate": 1440,
+      "integrity_passed": true,
+      "violations": [],
+      "seconds": 0.06,
+      "candidates": 24
+    },
+    {
+      "held_out": "wheeler",
+      "alerts": 616161,
+      "horizon_hours": 119.90388888888889,
+      "investigations_at_primary_rate": 1439,
+      "integrity_passed": true,
+      "violations": [],
+      "seconds": 0.49,
+      "candidates": 23
+    },
+    {
+      "held_out": "wilson",
+      "alerts": 634246,
+      "horizon_hours": 143.83694444444444,
+      "investigations_at_primary_rate": 1727,
+      "integrity_passed": true,
+      "violations": [],
+      "seconds": 0.51,
+      "candidates": 25
+    }
+  ],
+  "largest_fold": {
+    "held_out": "wilson",
+    "alerts": 634246,
+    "replays": 100,
+    "all_integrity_passed": true,
+    "failed": [],
+    "identical_arrivals_across_candidates": true,
+    "seconds": 55.6,
+    "trace_npz_bytes": 1996947
+  },
+  "label_mutation_invariance_real_data": true,
+  "projection": {
+    "replays_total": 1616,
+    "per_replay_seconds_upper": 0.556,
+    "projected_seconds_single_process": 898,
+    "projected_output_bytes": 98405995
+  },
+  "code_sha256": {
+    "src/soc_alert_ranking/revision/replay.py": "94e3bb70f11762b41e8b81b65ddb7dca7b6604b0de66e8e2bf4ad2038630a6a6",
+    "scripts/revision/wp5_common.py": "eab6f015258d2f22680dd57297cbedff78923c789a81578404f235bd6cecce31",
+    "scripts/revision/wp5_real_data_precheck.py": "8391e8c6bec43ca09071a37572a8c18d23eb260a7097999338896f60ad6dc787"
+  },
+  "runtime_seconds": 71.6,
+  "passed": true
+}

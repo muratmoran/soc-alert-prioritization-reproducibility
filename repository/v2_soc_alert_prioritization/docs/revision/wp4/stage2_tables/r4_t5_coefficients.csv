@@ -1,0 +1,61 @@
+run,method,z,alerts,gamma_le_0,gamma_le_0_1,share_le_0,share_le_0_1
+R4_constant_0.5,S0_linear_log_historical[kappa=1],False,2646617,899472,899472,0.33985725928609994,0.33985725928609994
+R4_constant_0.5,S0_linear_log_historical[kappa=1],True,9204,9072,9072,0.9856584093872229,0.9856584093872229
+R4_constant_0.5,S0_linear_log_historical_key[kappa=1],False,2646617,894931,896328,0.3381414840152542,0.3386693276737813
+R4_constant_0.5,S0_linear_log_historical_key[kappa=1],True,9204,8876,8897,0.9643633202955237,0.9666449369839201
+R4_constant_0.5,S1_linear_log_constrained (primary rule),False,2646617,0,0,0.0,0.0
+R4_constant_0.5,S1_linear_log_constrained (primary rule),True,9204,0,0,0.0,0.0
+R4_constant_0.5,S1_linear_log_constrained_key (primary rule),False,2646617,0,0,0.0,0.0
+R4_constant_0.5,S1_linear_log_constrained_key (primary rule),True,9204,0,0,0.0,0.0
+R4_constant_0.5,S2_exponential_discount (primary rule),False,2646617,0,733962,0.0,0.27732082125974405
+R4_constant_0.5,S2_exponential_discount (primary rule),True,9204,0,5714,0.0,0.6208170360712734
+R4_constant_0.5,S2_exponential_discount_key (primary rule),False,2646617,0,0,0.0,0.0
+R4_constant_0.5,S2_exponential_discount_key (primary rule),True,9204,0,0,0.0,0.0
+R4_historical_combined,S0_linear_log_historical[kappa=1],False,2646617,899472,899472,0.33985725928609994,0.33985725928609994
+R4_historical_combined,S0_linear_log_historical[kappa=1],True,9204,9072,9072,0.9856584093872229,0.9856584093872229
+R4_historical_combined,S0_linear_log_historical_key[kappa=1],False,2646617,894931,896328,0.3381414840152542,0.3386693276737813
+R4_historical_combined,S0_linear_log_historical_key[kappa=1],True,9204,8876,8897,0.9643633202955237,0.9666449369839201
+R4_historical_combined,S1_linear_log_constrained (primary rule),False,2646617,0,0,0.0,0.0
+R4_historical_combined,S1_linear_log_constrained (primary rule),True,9204,0,0,0.0,0.0
+R4_historical_combined,S1_linear_log_constrained_key (primary rule),False,2646617,0,0,0.0,0.0
+R4_historical_combined,S1_linear_log_constrained_key (primary rule),True,9204,0,0,0.0,0.0
+R4_historical_combined,S2_exponential_discount (primary rule),False,2646617,0,733962,0.0,0.27732082125974405
+R4_historical_combined,S2_exponential_discount (primary rule),True,9204,0,5714,0.0,0.6208170360712734
+R4_historical_combined,S2_exponential_discount_key (primary rule),False,2646617,0,184020,0.0,0.069530272041629
+R4_historical_combined,S2_exponential_discount_key (primary rule),True,9204,0,509,0.0,0.05530204259017819
+R4_precision_only,S0_linear_log_historical[kappa=1],False,2646617,899472,899472,0.33985725928609994,0.33985725928609994
+R4_precision_only,S0_linear_log_historical[kappa=1],True,9204,9072,9072,0.9856584093872229,0.9856584093872229
+R4_precision_only,S0_linear_log_historical_key[kappa=1],False,2646617,894931,896328,0.3381414840152542,0.3386693276737813
+R4_precision_only,S0_linear_log_historical_key[kappa=1],True,9204,8876,8897,0.9643633202955237,0.9666449369839201
+R4_precision_only,S1_linear_log_constrained (primary rule),False,2646617,0,0,0.0,0.0
+R4_precision_only,S1_linear_log_constrained (primary rule),True,9204,0,0,0.0,0.0
+R4_precision_only,S1_linear_log_constrained_key (primary rule),False,2646617,0,0,0.0,0.0
+R4_precision_only,S1_linear_log_constrained_key (primary rule),True,9204,0,0,0.0,0.0
+R4_precision_only,S2_exponential_discount (primary rule),False,2646617,0,0,0.0,0.0
+R4_precision_only,S2_exponential_discount (primary rule),True,9204,0,0,0.0,0.0
+R4_precision_only,S2_exponential_discount_key (primary rule),False,2646617,0,0,0.0,0.0
+R4_precision_only,S2_exponential_discount_key (primary rule),True,9204,0,0,0.0,0.0
+R4_purity_only,S0_linear_log_historical[kappa=1],False,2646617,899472,899472,0.33985725928609994,0.33985725928609994
+R4_purity_only,S0_linear_log_historical[kappa=1],True,9204,9072,9072,0.9856584093872229,0.9856584093872229
+R4_purity_only,S0_linear_log_historical_key[kappa=1],False,2646617,894931,896328,0.3381414840152542,0.3386693276737813
+R4_purity_only,S0_linear_log_historical_key[kappa=1],True,9204,8876,8897,0.9643633202955237,0.9666449369839201
+R4_purity_only,S1_linear_log_constrained (primary rule),False,2646617,0,0,0.0,0.0
+R4_purity_only,S1_linear_log_constrained (primary rule),True,9204,0,0,0.0,0.0
+R4_purity_only,S1_linear_log_constrained_key (primary rule),False,2646617,0,0,0.0,0.0
+R4_purity_only,S1_linear_log_constrained_key (primary rule),True,9204,0,0,0.0,0.0
+R4_purity_only,S2_exponential_discount (primary rule),False,2646617,0,0,0.0,0.0
+R4_purity_only,S2_exponential_discount (primary rule),True,9204,0,0,0.0,0.0
+R4_purity_only,S2_exponential_discount_key (primary rule),False,2646617,0,0,0.0,0.0
+R4_purity_only,S2_exponential_discount_key (primary rule),True,9204,0,0,0.0,0.0
+R4_zero,S0_linear_log_historical[kappa=1],False,2646617,0,0,0.0,0.0
+R4_zero,S0_linear_log_historical[kappa=1],True,9204,0,0,0.0,0.0
+R4_zero,S0_linear_log_historical_key[kappa=1],False,2646617,0,0,0.0,0.0
+R4_zero,S0_linear_log_historical_key[kappa=1],True,9204,0,0,0.0,0.0
+R4_zero,S1_linear_log_constrained (primary rule),False,2646617,0,0,0.0,0.0
+R4_zero,S1_linear_log_constrained (primary rule),True,9204,0,0,0.0,0.0
+R4_zero,S1_linear_log_constrained_key (primary rule),False,2646617,0,0,0.0,0.0
+R4_zero,S1_linear_log_constrained_key (primary rule),True,9204,0,0,0.0,0.0
+R4_zero,S2_exponential_discount (primary rule),False,2646617,0,0,0.0,0.0
+R4_zero,S2_exponential_discount (primary rule),True,9204,0,0,0.0,0.0
+R4_zero,S2_exponential_discount_key (primary rule),False,2646617,0,0,0.0,0.0
+R4_zero,S2_exponential_discount_key (primary rule),True,9204,0,0,0.0,0.0

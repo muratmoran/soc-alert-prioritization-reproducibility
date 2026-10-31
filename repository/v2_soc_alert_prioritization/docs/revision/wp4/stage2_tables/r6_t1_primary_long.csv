@@ -1,0 +1,881 @@
+run,split,analysis_unit,method,candidate_id,covered_intervals,eligible_intervals,defined_intervals,negatives_in_top,coverage_eligible,coverage_all
+R6,holdout_group_0:fox,holdout_group_0:fox,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:fox,holdout_group_0:fox,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:fox,holdout_group_0:fox,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_0:fox,holdout_group_0:fox,O_native_suricata_severity,O_native_suricata_severity,1,4,4,75,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,O_severity,O_severity,1,4,4,96,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,O_reliability,O_reliability,0,4,4,14,0.0,0.0
+R6,holdout_group_0:fox,holdout_group_0:fox,H_weighted,H_weighted,1,4,4,19,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,P_probability_proxy,P_probability_proxy,1,4,4,19,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,R_key_reliability,R_key_reliability,0,4,4,58,0.0,0.0
+R6,holdout_group_0:fox,holdout_group_0:fox,R_severity_key_reliability,R_severity_key_reliability,1,4,4,82,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,19,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,82,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,A_additive (primary rule),"A_additive[a=0.3,b=0.2,d=0.5]",1,4,4,19,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,19,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,19,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],1,4,4,17,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,19,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,19,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,82,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,19,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,82,0.25,0.25
+R6,holdout_group_0:fox,holdout_group_0:fox,W_weighted (primary rule),W_weighted[alpha=0.3],1,4,4,19,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:harrison,holdout_group_0:harrison,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:harrison,holdout_group_0:harrison,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_0:harrison,holdout_group_0:harrison,O_native_suricata_severity,O_native_suricata_severity,0,4,4,88,0.0,0.0
+R6,holdout_group_0:harrison,holdout_group_0:harrison,O_severity,O_severity,1,4,4,96,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,O_reliability,O_reliability,0,4,4,17,0.0,0.0
+R6,holdout_group_0:harrison,holdout_group_0:harrison,H_weighted,H_weighted,1,4,4,17,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,P_probability_proxy,P_probability_proxy,1,4,4,17,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,R_key_reliability,R_key_reliability,0,4,4,48,0.0,0.0
+R6,holdout_group_0:harrison,holdout_group_0:harrison,R_severity_key_reliability,R_severity_key_reliability,1,4,4,12,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,17,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,12,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,17,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,17,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,17,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],1,4,4,17,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,17,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,17,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,12,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,17,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,12,0.25,0.25
+R6,holdout_group_0:harrison,holdout_group_0:harrison,W_weighted (primary rule),W_weighted[alpha=0.3],1,4,4,17,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,O_native_suricata_severity,O_native_suricata_severity,0,4,4,73,0.0,0.0
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,H_weighted,H_weighted,1,4,4,8,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,P_probability_proxy,P_probability_proxy,1,4,4,8,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,R_key_reliability,R_key_reliability,0,4,4,31,0.0,0.0
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,R_severity_key_reliability,R_severity_key_reliability,1,4,4,87,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,8,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,87,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,8,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,8,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,8,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],1,4,4,8,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,8,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,8,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,87,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,8,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,87,0.25,0.25
+R6,holdout_group_0:russellmitchell,holdout_group_0:russellmitchell,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,8,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:santos,holdout_group_0:santos,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:santos,holdout_group_0:santos,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_0:santos,holdout_group_0:santos,O_native_suricata_severity,O_native_suricata_severity,0,4,4,85,0.0,0.0
+R6,holdout_group_0:santos,holdout_group_0:santos,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_0:santos,holdout_group_0:santos,H_weighted,H_weighted,1,4,4,8,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,P_probability_proxy,P_probability_proxy,1,4,4,8,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,R_key_reliability,R_key_reliability,0,4,4,80,0.0,0.0
+R6,holdout_group_0:santos,holdout_group_0:santos,R_severity_key_reliability,R_severity_key_reliability,1,4,4,92,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,8,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,92,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,8,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,8,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,8,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],1,4,4,8,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,8,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,8,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,92,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,8,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,92,0.25,0.25
+R6,holdout_group_0:santos,holdout_group_0:santos,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,8,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:shaw,holdout_group_0:shaw,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:shaw,holdout_group_0:shaw,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_0:shaw,holdout_group_0:shaw,O_native_suricata_severity,O_native_suricata_severity,0,4,4,100,0.0,0.0
+R6,holdout_group_0:shaw,holdout_group_0:shaw,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,O_reliability,O_reliability,0,4,4,40,0.0,0.0
+R6,holdout_group_0:shaw,holdout_group_0:shaw,H_weighted,H_weighted,1,4,4,40,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,P_probability_proxy,P_probability_proxy,1,4,4,40,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,R_key_reliability,R_key_reliability,0,4,4,64,0.0,0.0
+R6,holdout_group_0:shaw,holdout_group_0:shaw,R_severity_key_reliability,R_severity_key_reliability,1,4,4,88,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,40,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,88,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,A_additive (primary rule),"A_additive[a=0.3,b=0.1,d=0.6]",1,4,4,40,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,40,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,40,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,40,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,40,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,40,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,88,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,40,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,88,0.25,0.25
+R6,holdout_group_0:shaw,holdout_group_0:shaw,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,40,0.25,0.25
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,O_native_rule_level,O_native_rule_level,0,4,4,99,0.0,0.0
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,O_native_suricata_severity,O_native_suricata_severity,0,4,4,91,0.0,0.0
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,O_severity,O_severity,1,4,4,95,0.25,0.25
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,O_reliability,O_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,H_weighted,H_weighted,1,4,4,95,0.25,0.25
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,P_probability_proxy,P_probability_proxy,1,4,4,95,0.25,0.25
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,R_key_reliability,R_key_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,R_severity_key_reliability,R_severity_key_reliability,2,4,4,92,0.5,0.5
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,95,0.25,0.25
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],2,4,4,92,0.5,0.5
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,A_additive (primary rule),"A_additive[a=0.3,b=0.1,d=0.6]",1,4,4,78,0.25,0.25
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,95,0.25,0.25
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,97,0.25,0.25
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],0,4,4,100,0.0,0.0
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,76,0.25,0.25
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.4],1,4,4,95,0.25,0.25
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],2,4,4,92,0.5,0.5
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,95,0.25,0.25
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],2,4,4,92,0.5,0.5
+R6,holdout_group_0:wardbeck,holdout_group_0:wardbeck,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,97,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,O_native_suricata_severity,O_native_suricata_severity,0,4,4,76,0.0,0.0
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,O_reliability,O_reliability,0,4,4,10,0.0,0.0
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,H_weighted,H_weighted,1,4,4,10,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,P_probability_proxy,P_probability_proxy,1,4,4,10,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,R_key_reliability,R_key_reliability,0,4,4,34,0.0,0.0
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,R_severity_key_reliability,R_severity_key_reliability,1,4,4,13,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,10,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,13,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,A_additive (primary rule),"A_additive[a=0.3,b=0.2,d=0.5]",1,4,4,10,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,10,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,10,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],0,4,4,10,0.0,0.0
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,10,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,10,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,13,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,10,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=2],1,4,4,13,0.25,0.25
+R6,holdout_group_0:wheeler,holdout_group_0:wheeler,W_weighted (primary rule),W_weighted[alpha=0.3],1,4,4,10,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:wilson,holdout_group_0:wilson,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_0:wilson,holdout_group_0:wilson,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_0:wilson,holdout_group_0:wilson,O_native_suricata_severity,O_native_suricata_severity,0,4,4,73,0.0,0.0
+R6,holdout_group_0:wilson,holdout_group_0:wilson,O_severity,O_severity,1,4,4,96,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,O_reliability,O_reliability,0,4,4,30,0.0,0.0
+R6,holdout_group_0:wilson,holdout_group_0:wilson,H_weighted,H_weighted,1,4,4,37,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,P_probability_proxy,P_probability_proxy,1,4,4,37,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,R_key_reliability,R_key_reliability,0,4,4,50,0.0,0.0
+R6,holdout_group_0:wilson,holdout_group_0:wilson,R_severity_key_reliability,R_severity_key_reliability,1,4,4,11,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,37,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,11,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,A_additive (primary rule),"A_additive[a=0.3,b=0.1,d=0.6]",1,4,4,35,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,37,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,L1_logistic (primary rule),L1_logistic[C=1],0,4,4,30,0.0,0.0
+R6,holdout_group_0:wilson,holdout_group_0:wilson,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],0,4,4,30,0.0,0.0
+R6,holdout_group_0:wilson,holdout_group_0:wilson,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,37,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,37,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,11,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,37,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=1],1,4,4,11,0.25,0.25
+R6,holdout_group_0:wilson,holdout_group_0:wilson,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,35,0.25,0.25
+R6,holdout_group_1:fox,holdout_group_1:fox,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:fox,holdout_group_1:fox,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:fox,holdout_group_1:fox,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_1:fox,holdout_group_1:fox,O_native_suricata_severity,O_native_suricata_severity,1,4,4,75,0.25,0.25
+R6,holdout_group_1:fox,holdout_group_1:fox,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_1:fox,holdout_group_1:fox,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_1:fox,holdout_group_1:fox,H_weighted,H_weighted,1,4,4,13,0.25,0.25
+R6,holdout_group_1:fox,holdout_group_1:fox,P_probability_proxy,P_probability_proxy,0,4,4,10,0.0,0.0
+R6,holdout_group_1:fox,holdout_group_1:fox,R_key_reliability,R_key_reliability,0,4,4,67,0.0,0.0
+R6,holdout_group_1:fox,holdout_group_1:fox,R_severity_key_reliability,R_severity_key_reliability,2,4,4,94,0.5,0.5
+R6,holdout_group_1:fox,holdout_group_1:fox,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,13,0.25,0.25
+R6,holdout_group_1:fox,holdout_group_1:fox,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],3,4,4,90,0.75,0.75
+R6,holdout_group_1:fox,holdout_group_1:fox,A_additive (primary rule),"A_additive[a=0.5,b=0.1,d=0.4]",1,4,4,13,0.25,0.25
+R6,holdout_group_1:fox,holdout_group_1:fox,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],0,4,4,10,0.0,0.0
+R6,holdout_group_1:fox,holdout_group_1:fox,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,13,0.25,0.25
+R6,holdout_group_1:fox,holdout_group_1:fox,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,13,0.25,0.25
+R6,holdout_group_1:fox,holdout_group_1:fox,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,13,0.25,0.25
+R6,holdout_group_1:fox,holdout_group_1:fox,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.4],1,4,4,13,0.25,0.25
+R6,holdout_group_1:fox,holdout_group_1:fox,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],3,4,4,90,0.75,0.75
+R6,holdout_group_1:fox,holdout_group_1:fox,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,13,0.25,0.25
+R6,holdout_group_1:fox,holdout_group_1:fox,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],3,4,4,90,0.75,0.75
+R6,holdout_group_1:fox,holdout_group_1:fox,W_weighted (primary rule),W_weighted[alpha=0.6],1,4,4,13,0.25,0.25
+R6,holdout_group_1:harrison,holdout_group_1:harrison,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:harrison,holdout_group_1:harrison,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:harrison,holdout_group_1:harrison,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_1:harrison,holdout_group_1:harrison,O_native_suricata_severity,O_native_suricata_severity,0,4,4,88,0.0,0.0
+R6,holdout_group_1:harrison,holdout_group_1:harrison,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_1:harrison,holdout_group_1:harrison,O_reliability,O_reliability,0,4,4,13,0.0,0.0
+R6,holdout_group_1:harrison,holdout_group_1:harrison,H_weighted,H_weighted,1,4,4,13,0.25,0.25
+R6,holdout_group_1:harrison,holdout_group_1:harrison,P_probability_proxy,P_probability_proxy,0,4,4,13,0.0,0.0
+R6,holdout_group_1:harrison,holdout_group_1:harrison,R_key_reliability,R_key_reliability,0,4,4,57,0.0,0.0
+R6,holdout_group_1:harrison,holdout_group_1:harrison,R_severity_key_reliability,R_severity_key_reliability,2,4,4,92,0.5,0.5
+R6,holdout_group_1:harrison,holdout_group_1:harrison,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,13,0.25,0.25
+R6,holdout_group_1:harrison,holdout_group_1:harrison,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],2,4,4,90,0.5,0.5
+R6,holdout_group_1:harrison,holdout_group_1:harrison,A_additive (primary rule),"A_additive[a=0.5,b=0.1,d=0.4]",1,4,4,13,0.25,0.25
+R6,holdout_group_1:harrison,holdout_group_1:harrison,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],0,4,4,13,0.0,0.0
+R6,holdout_group_1:harrison,holdout_group_1:harrison,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,13,0.25,0.25
+R6,holdout_group_1:harrison,holdout_group_1:harrison,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,13,0.25,0.25
+R6,holdout_group_1:harrison,holdout_group_1:harrison,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,13,0.25,0.25
+R6,holdout_group_1:harrison,holdout_group_1:harrison,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,13,0.25,0.25
+R6,holdout_group_1:harrison,holdout_group_1:harrison,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],2,4,4,90,0.5,0.5
+R6,holdout_group_1:harrison,holdout_group_1:harrison,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,13,0.25,0.25
+R6,holdout_group_1:harrison,holdout_group_1:harrison,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],2,4,4,90,0.5,0.5
+R6,holdout_group_1:harrison,holdout_group_1:harrison,W_weighted (primary rule),W_weighted[alpha=0.6],1,4,4,13,0.25,0.25
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,O_native_suricata_severity,O_native_suricata_severity,0,4,4,73,0.0,0.0
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,O_severity,O_severity,1,4,4,98,0.25,0.25
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,H_weighted,H_weighted,1,4,4,8,0.25,0.25
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,P_probability_proxy,P_probability_proxy,0,4,4,8,0.0,0.0
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,R_key_reliability,R_key_reliability,0,4,4,41,0.0,0.0
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,R_severity_key_reliability,R_severity_key_reliability,2,4,4,76,0.5,0.5
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,8,0.25,0.25
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],3,4,4,86,0.75,0.75
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,8,0.25,0.25
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],0,4,4,8,0.0,0.0
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,8,0.25,0.25
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],1,4,4,8,0.25,0.25
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,8,0.25,0.25
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,8,0.25,0.25
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],3,4,4,82,0.75,0.75
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,8,0.25,0.25
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],3,4,4,82,0.75,0.75
+R6,holdout_group_1:russellmitchell,holdout_group_1:russellmitchell,W_weighted (primary rule),W_weighted[alpha=0.6],1,4,4,8,0.25,0.25
+R6,holdout_group_1:santos,holdout_group_1:santos,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:santos,holdout_group_1:santos,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:santos,holdout_group_1:santos,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_1:santos,holdout_group_1:santos,O_native_suricata_severity,O_native_suricata_severity,0,4,4,85,0.0,0.0
+R6,holdout_group_1:santos,holdout_group_1:santos,O_severity,O_severity,1,4,4,98,0.25,0.25
+R6,holdout_group_1:santos,holdout_group_1:santos,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_1:santos,holdout_group_1:santos,H_weighted,H_weighted,1,4,4,8,0.25,0.25
+R6,holdout_group_1:santos,holdout_group_1:santos,P_probability_proxy,P_probability_proxy,0,4,4,8,0.0,0.0
+R6,holdout_group_1:santos,holdout_group_1:santos,R_key_reliability,R_key_reliability,0,4,4,90,0.0,0.0
+R6,holdout_group_1:santos,holdout_group_1:santos,R_severity_key_reliability,R_severity_key_reliability,3,4,4,91,0.75,0.75
+R6,holdout_group_1:santos,holdout_group_1:santos,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,8,0.25,0.25
+R6,holdout_group_1:santos,holdout_group_1:santos,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],3,4,4,79,0.75,0.75
+R6,holdout_group_1:santos,holdout_group_1:santos,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,8,0.25,0.25
+R6,holdout_group_1:santos,holdout_group_1:santos,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],0,4,4,8,0.0,0.0
+R6,holdout_group_1:santos,holdout_group_1:santos,L1_logistic (primary rule),L1_logistic[C=1],0,4,4,8,0.0,0.0
+R6,holdout_group_1:santos,holdout_group_1:santos,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,8,0.25,0.25
+R6,holdout_group_1:santos,holdout_group_1:santos,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,8,0.25,0.25
+R6,holdout_group_1:santos,holdout_group_1:santos,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.4],1,4,4,8,0.25,0.25
+R6,holdout_group_1:santos,holdout_group_1:santos,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],3,4,4,78,0.75,0.75
+R6,holdout_group_1:santos,holdout_group_1:santos,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,8,0.25,0.25
+R6,holdout_group_1:santos,holdout_group_1:santos,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],3,4,4,78,0.75,0.75
+R6,holdout_group_1:santos,holdout_group_1:santos,W_weighted (primary rule),W_weighted[alpha=0.6],1,4,4,8,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:shaw,holdout_group_1:shaw,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:shaw,holdout_group_1:shaw,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_1:shaw,holdout_group_1:shaw,O_native_suricata_severity,O_native_suricata_severity,0,4,4,100,0.0,0.0
+R6,holdout_group_1:shaw,holdout_group_1:shaw,O_severity,O_severity,1,4,4,98,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_1:shaw,holdout_group_1:shaw,H_weighted,H_weighted,1,4,4,8,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,P_probability_proxy,P_probability_proxy,0,4,4,8,0.0,0.0
+R6,holdout_group_1:shaw,holdout_group_1:shaw,R_key_reliability,R_key_reliability,0,4,4,42,0.0,0.0
+R6,holdout_group_1:shaw,holdout_group_1:shaw,R_severity_key_reliability,R_severity_key_reliability,1,4,4,95,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,8,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,93,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,8,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],0,4,4,8,0.0,0.0
+R6,holdout_group_1:shaw,holdout_group_1:shaw,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,8,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],1,4,4,8,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,8,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,8,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,93,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,8,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,93,0.25,0.25
+R6,holdout_group_1:shaw,holdout_group_1:shaw,W_weighted (primary rule),W_weighted[alpha=0.6],1,4,4,8,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,O_native_rule_level,O_native_rule_level,0,4,4,99,0.0,0.0
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,O_native_suricata_severity,O_native_suricata_severity,0,4,4,91,0.0,0.0
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,O_severity,O_severity,1,4,4,96,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,H_weighted,H_weighted,1,4,4,12,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,P_probability_proxy,P_probability_proxy,1,4,4,11,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,R_key_reliability,R_key_reliability,0,4,4,39,0.0,0.0
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,R_severity_key_reliability,R_severity_key_reliability,2,4,4,91,0.5,0.5
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,12,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],2,4,4,86,0.5,0.5
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,A_additive (primary rule),"A_additive[a=0.5,b=0.1,d=0.4]",1,4,4,12,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,11,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,11,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,11,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,12,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.4],1,4,4,12,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],2,4,4,86,0.5,0.5
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,12,0.25,0.25
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],2,4,4,86,0.5,0.5
+R6,holdout_group_1:wardbeck,holdout_group_1:wardbeck,W_weighted (primary rule),W_weighted[alpha=0.6],1,4,4,12,0.25,0.25
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,O_native_suricata_severity,O_native_suricata_severity,0,4,4,76,0.0,0.0
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,O_severity,O_severity,1,4,4,98,0.25,0.25
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,H_weighted,H_weighted,1,4,4,8,0.25,0.25
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,P_probability_proxy,P_probability_proxy,0,4,4,8,0.0,0.0
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,R_key_reliability,R_key_reliability,0,4,4,42,0.0,0.0
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,R_severity_key_reliability,R_severity_key_reliability,3,4,4,88,0.75,0.75
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,8,0.25,0.25
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],3,4,4,83,0.75,0.75
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,8,0.25,0.25
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],0,4,4,8,0.0,0.0
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,8,0.25,0.25
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],0,4,4,8,0.0,0.0
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,8,0.25,0.25
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.4],1,4,4,8,0.25,0.25
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],3,4,4,77,0.75,0.75
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,8,0.25,0.25
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=2],3,4,4,88,0.75,0.75
+R6,holdout_group_1:wheeler,holdout_group_1:wheeler,W_weighted (primary rule),W_weighted[alpha=0.6],1,4,4,8,0.25,0.25
+R6,holdout_group_1:wilson,holdout_group_1:wilson,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:wilson,holdout_group_1:wilson,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_1:wilson,holdout_group_1:wilson,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_1:wilson,holdout_group_1:wilson,O_native_suricata_severity,O_native_suricata_severity,0,4,4,73,0.0,0.0
+R6,holdout_group_1:wilson,holdout_group_1:wilson,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_1:wilson,holdout_group_1:wilson,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_1:wilson,holdout_group_1:wilson,H_weighted,H_weighted,1,4,4,19,0.25,0.25
+R6,holdout_group_1:wilson,holdout_group_1:wilson,P_probability_proxy,P_probability_proxy,1,4,4,19,0.25,0.25
+R6,holdout_group_1:wilson,holdout_group_1:wilson,R_key_reliability,R_key_reliability,0,4,4,39,0.0,0.0
+R6,holdout_group_1:wilson,holdout_group_1:wilson,R_severity_key_reliability,R_severity_key_reliability,3,4,4,87,0.75,0.75
+R6,holdout_group_1:wilson,holdout_group_1:wilson,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,19,0.25,0.25
+R6,holdout_group_1:wilson,holdout_group_1:wilson,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],3,4,4,90,0.75,0.75
+R6,holdout_group_1:wilson,holdout_group_1:wilson,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,19,0.25,0.25
+R6,holdout_group_1:wilson,holdout_group_1:wilson,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,19,0.25,0.25
+R6,holdout_group_1:wilson,holdout_group_1:wilson,L1_logistic (primary rule),L1_logistic[C=1],0,4,4,14,0.0,0.0
+R6,holdout_group_1:wilson,holdout_group_1:wilson,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,19,0.25,0.25
+R6,holdout_group_1:wilson,holdout_group_1:wilson,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,19,0.25,0.25
+R6,holdout_group_1:wilson,holdout_group_1:wilson,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.4],1,4,4,19,0.25,0.25
+R6,holdout_group_1:wilson,holdout_group_1:wilson,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],3,4,4,89,0.75,0.75
+R6,holdout_group_1:wilson,holdout_group_1:wilson,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,19,0.25,0.25
+R6,holdout_group_1:wilson,holdout_group_1:wilson,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],3,4,4,89,0.75,0.75
+R6,holdout_group_1:wilson,holdout_group_1:wilson,W_weighted (primary rule),W_weighted[alpha=0.6],1,4,4,19,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:fox,holdout_group_2:fox,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:fox,holdout_group_2:fox,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_2:fox,holdout_group_2:fox,O_native_suricata_severity,O_native_suricata_severity,1,4,4,75,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,O_severity,O_severity,1,4,4,99,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,O_reliability,O_reliability,0,4,4,14,0.0,0.0
+R6,holdout_group_2:fox,holdout_group_2:fox,H_weighted,H_weighted,1,4,4,16,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,P_probability_proxy,P_probability_proxy,1,4,4,16,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,R_key_reliability,R_key_reliability,0,4,4,29,0.0,0.0
+R6,holdout_group_2:fox,holdout_group_2:fox,R_severity_key_reliability,R_severity_key_reliability,1,4,4,85,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,16,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,85,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,A_additive (primary rule),"A_additive[a=0.3,b=0.2,d=0.5]",1,4,4,14,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,16,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,L1_logistic (primary rule),L1_logistic[C=100],1,4,4,16,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],0,4,4,14,0.0,0.0
+R6,holdout_group_2:fox,holdout_group_2:fox,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,16,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,16,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,85,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,16,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,85,0.25,0.25
+R6,holdout_group_2:fox,holdout_group_2:fox,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,14,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:harrison,holdout_group_2:harrison,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:harrison,holdout_group_2:harrison,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_2:harrison,holdout_group_2:harrison,O_native_suricata_severity,O_native_suricata_severity,0,4,4,88,0.0,0.0
+R6,holdout_group_2:harrison,holdout_group_2:harrison,O_severity,O_severity,1,4,4,99,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,O_reliability,O_reliability,0,4,4,17,0.0,0.0
+R6,holdout_group_2:harrison,holdout_group_2:harrison,H_weighted,H_weighted,1,4,4,17,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,P_probability_proxy,P_probability_proxy,1,4,4,17,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,R_key_reliability,R_key_reliability,0,4,4,30,0.0,0.0
+R6,holdout_group_2:harrison,holdout_group_2:harrison,R_severity_key_reliability,R_severity_key_reliability,1,4,4,83,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,17,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,83,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,17,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,17,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,17,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],0,4,4,17,0.0,0.0
+R6,holdout_group_2:harrison,holdout_group_2:harrison,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,17,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,17,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,83,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,17,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,83,0.25,0.25
+R6,holdout_group_2:harrison,holdout_group_2:harrison,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,17,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,O_native_suricata_severity,O_native_suricata_severity,0,4,4,73,0.0,0.0
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,O_severity,O_severity,1,4,4,99,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,H_weighted,H_weighted,1,4,4,8,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,P_probability_proxy,P_probability_proxy,1,4,4,8,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,R_key_reliability,R_key_reliability,0,4,4,18,0.0,0.0
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,R_severity_key_reliability,R_severity_key_reliability,1,4,4,58,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,8,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,58,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,A_additive (primary rule),"A_additive[a=0.3,b=0.3,d=0.4]",1,4,4,8,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,8,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,L1_logistic (primary rule),L1_logistic[C=100],0,4,4,8,0.0,0.0
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],0,4,4,8,0.0,0.0
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,8,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,8,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,58,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,8,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,58,0.25,0.25
+R6,holdout_group_2:russellmitchell,holdout_group_2:russellmitchell,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,8,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:santos,holdout_group_2:santos,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:santos,holdout_group_2:santos,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_2:santos,holdout_group_2:santos,O_native_suricata_severity,O_native_suricata_severity,0,4,4,85,0.0,0.0
+R6,holdout_group_2:santos,holdout_group_2:santos,O_severity,O_severity,1,4,4,99,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_2:santos,holdout_group_2:santos,H_weighted,H_weighted,1,4,4,8,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,P_probability_proxy,P_probability_proxy,1,4,4,8,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,R_key_reliability,R_key_reliability,0,4,4,18,0.0,0.0
+R6,holdout_group_2:santos,holdout_group_2:santos,R_severity_key_reliability,R_severity_key_reliability,1,4,4,75,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,8,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,75,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,A_additive (primary rule),"A_additive[a=0.3,b=0.1,d=0.6]",1,4,4,8,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,8,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,8,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],0,4,4,8,0.0,0.0
+R6,holdout_group_2:santos,holdout_group_2:santos,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,8,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,8,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,75,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,8,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,75,0.25,0.25
+R6,holdout_group_2:santos,holdout_group_2:santos,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,8,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:shaw,holdout_group_2:shaw,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:shaw,holdout_group_2:shaw,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_2:shaw,holdout_group_2:shaw,O_native_suricata_severity,O_native_suricata_severity,0,4,4,100,0.0,0.0
+R6,holdout_group_2:shaw,holdout_group_2:shaw,O_severity,O_severity,1,4,4,99,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,O_reliability,O_reliability,0,4,4,40,0.0,0.0
+R6,holdout_group_2:shaw,holdout_group_2:shaw,H_weighted,H_weighted,1,4,4,40,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,P_probability_proxy,P_probability_proxy,1,4,4,40,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,R_key_reliability,R_key_reliability,0,4,4,50,0.0,0.0
+R6,holdout_group_2:shaw,holdout_group_2:shaw,R_severity_key_reliability,R_severity_key_reliability,1,4,4,75,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,40,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,75,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,A_additive (primary rule),"A_additive[a=0.3,b=0.1,d=0.6]",1,4,4,40,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,40,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,40,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],0,4,4,40,0.0,0.0
+R6,holdout_group_2:shaw,holdout_group_2:shaw,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,40,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,40,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,75,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,40,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,75,0.25,0.25
+R6,holdout_group_2:shaw,holdout_group_2:shaw,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,40,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,O_native_rule_level,O_native_rule_level,0,4,4,99,0.0,0.0
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,O_native_suricata_severity,O_native_suricata_severity,0,4,4,91,0.0,0.0
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,O_reliability,O_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,H_weighted,H_weighted,1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,P_probability_proxy,P_probability_proxy,1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,R_key_reliability,R_key_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,R_severity_key_reliability,R_severity_key_reliability,1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,A_additive (primary rule),"A_additive[a=0.2,b=0.6,d=0.2]",1,4,4,95,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],1,4,4,98,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,M_multiplicative (primary rule),"M_multiplicative[a=4,b=4]",1,4,4,95,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=1],1,4,4,97,0.25,0.25
+R6,holdout_group_2:wardbeck,holdout_group_2:wardbeck,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,99,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,O_native_suricata_severity,O_native_suricata_severity,0,4,4,76,0.0,0.0
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,O_severity,O_severity,1,4,4,99,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,O_reliability,O_reliability,0,4,4,10,0.0,0.0
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,H_weighted,H_weighted,1,4,4,10,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,P_probability_proxy,P_probability_proxy,1,4,4,10,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,R_key_reliability,R_key_reliability,0,4,4,20,0.0,0.0
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,R_severity_key_reliability,R_severity_key_reliability,1,4,4,29,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,10,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,29,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,A_additive (primary rule),"A_additive[a=0.3,b=0.3,d=0.4]",1,4,4,10,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,10,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,10,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],0,4,4,10,0.0,0.0
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,10,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,10,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,29,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,10,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=2],1,4,4,29,0.25,0.25
+R6,holdout_group_2:wheeler,holdout_group_2:wheeler,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,10,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:wilson,holdout_group_2:wilson,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_2:wilson,holdout_group_2:wilson,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_2:wilson,holdout_group_2:wilson,O_native_suricata_severity,O_native_suricata_severity,0,4,4,73,0.0,0.0
+R6,holdout_group_2:wilson,holdout_group_2:wilson,O_severity,O_severity,1,4,4,99,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,O_reliability,O_reliability,0,4,4,30,0.0,0.0
+R6,holdout_group_2:wilson,holdout_group_2:wilson,H_weighted,H_weighted,1,4,4,36,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,P_probability_proxy,P_probability_proxy,1,4,4,36,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,R_key_reliability,R_key_reliability,0,4,4,41,0.0,0.0
+R6,holdout_group_2:wilson,holdout_group_2:wilson,R_severity_key_reliability,R_severity_key_reliability,1,4,4,98,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,36,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,98,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,A_additive (primary rule),"A_additive[a=0.3,b=0.2,d=0.5]",1,4,4,30,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,36,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,36,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],0,4,4,36,0.0,0.0
+R6,holdout_group_2:wilson,holdout_group_2:wilson,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,36,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,36,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,98,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,36,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=1],1,4,4,98,0.25,0.25
+R6,holdout_group_2:wilson,holdout_group_2:wilson,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,30,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:fox,holdout_group_3:fox,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:fox,holdout_group_3:fox,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_3:fox,holdout_group_3:fox,O_native_suricata_severity,O_native_suricata_severity,1,4,4,75,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,O_severity,O_severity,1,4,4,96,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,O_reliability,O_reliability,0,4,4,65,0.0,0.0
+R6,holdout_group_3:fox,holdout_group_3:fox,H_weighted,H_weighted,1,4,4,68,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,P_probability_proxy,P_probability_proxy,1,4,4,68,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,R_key_reliability,R_key_reliability,0,4,4,65,0.0,0.0
+R6,holdout_group_3:fox,holdout_group_3:fox,R_severity_key_reliability,R_severity_key_reliability,1,4,4,96,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,68,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,96,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,59,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=10],1,4,4,68,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,68,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,66,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,59,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,68,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,96,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=8],1,4,4,68,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,96,0.25,0.25
+R6,holdout_group_3:fox,holdout_group_3:fox,W_weighted (primary rule),W_weighted[alpha=0.3],1,4,4,68,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:harrison,holdout_group_3:harrison,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:harrison,holdout_group_3:harrison,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_3:harrison,holdout_group_3:harrison,O_native_suricata_severity,O_native_suricata_severity,0,4,4,88,0.0,0.0
+R6,holdout_group_3:harrison,holdout_group_3:harrison,O_severity,O_severity,1,4,4,96,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,O_reliability,O_reliability,0,4,4,48,0.0,0.0
+R6,holdout_group_3:harrison,holdout_group_3:harrison,H_weighted,H_weighted,1,4,4,48,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,P_probability_proxy,P_probability_proxy,1,4,4,48,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,R_key_reliability,R_key_reliability,0,4,4,48,0.0,0.0
+R6,holdout_group_3:harrison,holdout_group_3:harrison,R_severity_key_reliability,R_severity_key_reliability,1,4,4,96,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,48,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,96,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,A_additive (primary rule),"A_additive[a=0.5,b=0,d=0.5]",1,4,4,48,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,48,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,L1_logistic (primary rule),L1_logistic[C=1],0,4,4,48,0.0,0.0
+R6,holdout_group_3:harrison,holdout_group_3:harrison,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],1,4,4,48,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,M_multiplicative (primary rule),"M_multiplicative[a=0,b=2]",1,4,4,48,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,48,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,96,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,48,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=1],1,4,4,96,0.25,0.25
+R6,holdout_group_3:harrison,holdout_group_3:harrison,W_weighted (primary rule),W_weighted[alpha=0.3],1,4,4,48,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,O_native_suricata_severity,O_native_suricata_severity,0,4,4,73,0.0,0.0
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,O_reliability,O_reliability,0,4,4,33,0.0,0.0
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,H_weighted,H_weighted,1,4,4,33,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,P_probability_proxy,P_probability_proxy,1,4,4,33,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,R_key_reliability,R_key_reliability,0,4,4,33,0.0,0.0
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,R_severity_key_reliability,R_severity_key_reliability,1,4,4,97,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,33,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,97,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,33,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=10],1,4,4,33,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,33,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,33,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,33,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,33,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,97,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=8],1,4,4,33,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,97,0.25,0.25
+R6,holdout_group_3:russellmitchell,holdout_group_3:russellmitchell,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,33,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:santos,holdout_group_3:santos,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:santos,holdout_group_3:santos,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_3:santos,holdout_group_3:santos,O_native_suricata_severity,O_native_suricata_severity,0,4,4,85,0.0,0.0
+R6,holdout_group_3:santos,holdout_group_3:santos,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,O_reliability,O_reliability,0,4,4,82,0.0,0.0
+R6,holdout_group_3:santos,holdout_group_3:santos,H_weighted,H_weighted,1,4,4,82,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,P_probability_proxy,P_probability_proxy,1,4,4,82,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,R_key_reliability,R_key_reliability,0,4,4,82,0.0,0.0
+R6,holdout_group_3:santos,holdout_group_3:santos,R_severity_key_reliability,R_severity_key_reliability,1,4,4,97,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,82,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,97,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,71,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,82,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,82,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,82,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,71,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,82,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,97,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,82,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,97,0.25,0.25
+R6,holdout_group_3:santos,holdout_group_3:santos,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,82,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:shaw,holdout_group_3:shaw,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:shaw,holdout_group_3:shaw,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_3:shaw,holdout_group_3:shaw,O_native_suricata_severity,O_native_suricata_severity,0,4,4,100,0.0,0.0
+R6,holdout_group_3:shaw,holdout_group_3:shaw,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,O_reliability,O_reliability,0,4,4,66,0.0,0.0
+R6,holdout_group_3:shaw,holdout_group_3:shaw,H_weighted,H_weighted,1,4,4,66,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,P_probability_proxy,P_probability_proxy,1,4,4,66,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,R_key_reliability,R_key_reliability,0,4,4,66,0.0,0.0
+R6,holdout_group_3:shaw,holdout_group_3:shaw,R_severity_key_reliability,R_severity_key_reliability,1,4,4,97,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,66,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,97,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,A_additive (primary rule),"A_additive[a=0.5,b=0,d=0.5]",1,4,4,66,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,66,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,66,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,66,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,M_multiplicative (primary rule),"M_multiplicative[a=0,b=2]",1,4,4,66,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,66,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,97,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,66,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,97,0.25,0.25
+R6,holdout_group_3:shaw,holdout_group_3:shaw,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,66,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,O_native_rule_level,O_native_rule_level,0,4,4,99,0.0,0.0
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,O_native_suricata_severity,O_native_suricata_severity,0,4,4,91,0.0,0.0
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,O_reliability,O_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,H_weighted,H_weighted,1,4,4,97,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,P_probability_proxy,P_probability_proxy,1,4,4,97,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,R_key_reliability,R_key_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,R_severity_key_reliability,R_severity_key_reliability,1,4,4,96,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,97,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,96,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,78,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,97,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,L1_logistic (primary rule),L1_logistic[C=1],0,4,4,100,0.0,0.0
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],0,4,4,100,0.0,0.0
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,78,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.4],1,4,4,97,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,96,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,97,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=0.5],1,4,4,96,0.25,0.25
+R6,holdout_group_3:wardbeck,holdout_group_3:wardbeck,W_weighted (primary rule),W_weighted[alpha=0.2],1,4,4,97,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,O_native_suricata_severity,O_native_suricata_severity,0,4,4,76,0.0,0.0
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,O_reliability,O_reliability,0,4,4,36,0.0,0.0
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,H_weighted,H_weighted,1,4,4,36,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,P_probability_proxy,P_probability_proxy,1,4,4,36,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,R_key_reliability,R_key_reliability,0,4,4,36,0.0,0.0
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,R_severity_key_reliability,R_severity_key_reliability,1,4,4,96,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,36,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,96,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,36,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,36,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,L1_logistic (primary rule),L1_logistic[C=1],0,4,4,36,0.0,0.0
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,36,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,36,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,36,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.6676],1,4,4,96,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,36,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=1],1,4,4,96,0.25,0.25
+R6,holdout_group_3:wheeler,holdout_group_3:wheeler,W_weighted (primary rule),W_weighted[alpha=0.3],1,4,4,36,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:wilson,holdout_group_3:wilson,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_3:wilson,holdout_group_3:wilson,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_3:wilson,holdout_group_3:wilson,O_native_suricata_severity,O_native_suricata_severity,0,4,4,73,0.0,0.0
+R6,holdout_group_3:wilson,holdout_group_3:wilson,O_severity,O_severity,1,4,4,96,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,O_reliability,O_reliability,0,4,4,53,0.0,0.0
+R6,holdout_group_3:wilson,holdout_group_3:wilson,H_weighted,H_weighted,1,4,4,62,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,P_probability_proxy,P_probability_proxy,1,4,4,62,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,R_key_reliability,R_key_reliability,0,4,4,53,0.0,0.0
+R6,holdout_group_3:wilson,holdout_group_3:wilson,R_severity_key_reliability,R_severity_key_reliability,1,4,4,95,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,62,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,95,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,48,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=10],1,4,4,58,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,62,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,57,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,48,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,62,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.6676],1,4,4,95,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=8],1,4,4,58,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=1],1,4,4,95,0.25,0.25
+R6,holdout_group_3:wilson,holdout_group_3:wilson,W_weighted (primary rule),W_weighted[alpha=0.3],1,4,4,58,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:fox,holdout_group_4:fox,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:fox,holdout_group_4:fox,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_4:fox,holdout_group_4:fox,O_native_suricata_severity,O_native_suricata_severity,1,4,4,75,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,O_severity,O_severity,1,4,4,96,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,O_reliability,O_reliability,0,4,4,14,0.0,0.0
+R6,holdout_group_4:fox,holdout_group_4:fox,H_weighted,H_weighted,1,4,4,19,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,P_probability_proxy,P_probability_proxy,1,4,4,19,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,R_key_reliability,R_key_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_4:fox,holdout_group_4:fox,R_severity_key_reliability,R_severity_key_reliability,1,4,4,96,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,19,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,96,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,A_additive (primary rule),"A_additive[a=0.3,b=0.2,d=0.5]",1,4,4,17,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,19,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,19,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],1,4,4,19,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,19,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,19,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,96,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,19,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=2],1,4,4,96,0.25,0.25
+R6,holdout_group_4:fox,holdout_group_4:fox,W_weighted (primary rule),W_weighted[alpha=0.1],1,4,4,17,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:harrison,holdout_group_4:harrison,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:harrison,holdout_group_4:harrison,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_4:harrison,holdout_group_4:harrison,O_native_suricata_severity,O_native_suricata_severity,0,4,4,88,0.0,0.0
+R6,holdout_group_4:harrison,holdout_group_4:harrison,O_severity,O_severity,1,4,4,96,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,O_reliability,O_reliability,0,4,4,17,0.0,0.0
+R6,holdout_group_4:harrison,holdout_group_4:harrison,H_weighted,H_weighted,1,4,4,17,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,P_probability_proxy,P_probability_proxy,1,4,4,17,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,R_key_reliability,R_key_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_4:harrison,holdout_group_4:harrison,R_severity_key_reliability,R_severity_key_reliability,1,4,4,96,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,17,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,96,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,A_additive (primary rule),"A_additive[a=0.4,b=0.1,d=0.5]",1,4,4,17,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,17,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,17,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],0,4,4,17,0.0,0.0
+R6,holdout_group_4:harrison,holdout_group_4:harrison,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,17,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,17,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,96,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,17,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=2],1,4,4,96,0.25,0.25
+R6,holdout_group_4:harrison,holdout_group_4:harrison,W_weighted (primary rule),W_weighted[alpha=0.1],1,4,4,17,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,O_native_suricata_severity,O_native_suricata_severity,0,4,4,73,0.0,0.0
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,H_weighted,H_weighted,1,4,4,8,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,P_probability_proxy,P_probability_proxy,1,4,4,8,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,R_key_reliability,R_key_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,R_severity_key_reliability,R_severity_key_reliability,1,4,4,97,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,8,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,97,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,A_additive (primary rule),"A_additive[a=0.3,b=0.2,d=0.5]",1,4,4,8,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,8,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,L1_logistic (primary rule),L1_logistic[C=1],0,4,4,8,0.0,0.0
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],1,4,4,8,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,8,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,8,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,97,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,8,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=8],1,4,4,97,0.25,0.25
+R6,holdout_group_4:russellmitchell,holdout_group_4:russellmitchell,W_weighted (primary rule),W_weighted[alpha=0.1],1,4,4,8,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:santos,holdout_group_4:santos,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:santos,holdout_group_4:santos,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_4:santos,holdout_group_4:santos,O_native_suricata_severity,O_native_suricata_severity,0,4,4,85,0.0,0.0
+R6,holdout_group_4:santos,holdout_group_4:santos,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,O_reliability,O_reliability,0,4,4,8,0.0,0.0
+R6,holdout_group_4:santos,holdout_group_4:santos,H_weighted,H_weighted,1,4,4,8,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,P_probability_proxy,P_probability_proxy,1,4,4,8,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,R_key_reliability,R_key_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_4:santos,holdout_group_4:santos,R_severity_key_reliability,R_severity_key_reliability,1,4,4,97,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,8,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,97,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,A_additive (primary rule),"A_additive[a=0.3,b=0.2,d=0.5]",1,4,4,8,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,8,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,L1_logistic (primary rule),L1_logistic[C=1],0,4,4,8,0.0,0.0
+R6,holdout_group_4:santos,holdout_group_4:santos,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],0,4,4,8,0.0,0.0
+R6,holdout_group_4:santos,holdout_group_4:santos,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,8,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,8,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,97,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,8,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=2],1,4,4,97,0.25,0.25
+R6,holdout_group_4:santos,holdout_group_4:santos,W_weighted (primary rule),W_weighted[alpha=0.1],1,4,4,8,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:shaw,holdout_group_4:shaw,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:shaw,holdout_group_4:shaw,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_4:shaw,holdout_group_4:shaw,O_native_suricata_severity,O_native_suricata_severity,0,4,4,100,0.0,0.0
+R6,holdout_group_4:shaw,holdout_group_4:shaw,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,O_reliability,O_reliability,0,4,4,40,0.0,0.0
+R6,holdout_group_4:shaw,holdout_group_4:shaw,H_weighted,H_weighted,1,4,4,40,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,P_probability_proxy,P_probability_proxy,1,4,4,40,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,R_key_reliability,R_key_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_4:shaw,holdout_group_4:shaw,R_severity_key_reliability,R_severity_key_reliability,1,4,4,97,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,40,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,97,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,A_additive (primary rule),"A_additive[a=0.3,b=0.1,d=0.6]",1,4,4,40,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,40,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,L1_logistic (primary rule),L1_logistic[C=1],0,4,4,40,0.0,0.0
+R6,holdout_group_4:shaw,holdout_group_4:shaw,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=3],0,4,4,40,0.0,0.0
+R6,holdout_group_4:shaw,holdout_group_4:shaw,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,40,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,40,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,97,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,40,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=2],1,4,4,97,0.25,0.25
+R6,holdout_group_4:shaw,holdout_group_4:shaw,W_weighted (primary rule),W_weighted[alpha=0.1],1,4,4,40,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,O_native_rule_level,O_native_rule_level,0,4,4,99,0.0,0.0
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,O_native_suricata_severity,O_native_suricata_severity,0,4,4,91,0.0,0.0
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,O_severity,O_severity,1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,O_reliability,O_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,H_weighted,H_weighted,1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,P_probability_proxy,P_probability_proxy,1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,R_key_reliability,R_key_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,R_severity_key_reliability,R_severity_key_reliability,1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,A_additive (primary rule),"A_additive[a=0.1,b=0.9,d=0]",1,4,4,97,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,84,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,M_multiplicative (primary rule),"M_multiplicative[a=4,b=2]",1,4,4,97,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.4],1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=2],1,4,4,95,0.25,0.25
+R6,holdout_group_4:wardbeck,holdout_group_4:wardbeck,W_weighted (primary rule),W_weighted[alpha=0.1],1,4,4,97,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,O_native_suricata_severity,O_native_suricata_severity,0,4,4,76,0.0,0.0
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,O_severity,O_severity,1,4,4,97,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,O_reliability,O_reliability,0,4,4,10,0.0,0.0
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,H_weighted,H_weighted,1,4,4,10,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,P_probability_proxy,P_probability_proxy,1,4,4,10,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,R_key_reliability,R_key_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,R_severity_key_reliability,R_severity_key_reliability,1,4,4,97,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,10,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,97,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,A_additive (primary rule),"A_additive[a=0.3,b=0.2,d=0.5]",1,4,4,10,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,10,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,10,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],0,4,4,10,0.0,0.0
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,M_multiplicative (primary rule),"M_multiplicative[a=0.25,b=4]",1,4,4,10,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,10,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,97,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,10,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=2],1,4,4,97,0.25,0.25
+R6,holdout_group_4:wheeler,holdout_group_4:wheeler,W_weighted (primary rule),W_weighted[alpha=0.1],1,4,4,10,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,O_oldest_first,O_oldest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wilson,holdout_group_4:wilson,O_newest_first,O_newest_first,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wilson,holdout_group_4:wilson,O_native_rule_level,O_native_rule_level,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wilson,holdout_group_4:wilson,O_native_suricata_severity,O_native_suricata_severity,0,4,4,73,0.0,0.0
+R6,holdout_group_4:wilson,holdout_group_4:wilson,O_severity,O_severity,1,4,4,96,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,O_reliability,O_reliability,0,4,4,30,0.0,0.0
+R6,holdout_group_4:wilson,holdout_group_4:wilson,H_weighted,H_weighted,1,4,4,41,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,P_probability_proxy,P_probability_proxy,1,4,4,41,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,R_key_reliability,R_key_reliability,0,4,4,100,0.0,0.0
+R6,holdout_group_4:wilson,holdout_group_4:wilson,R_severity_key_reliability,R_severity_key_reliability,1,4,4,96,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,S0_linear_log_historical[kappa=1],S0_linear_log_historical[kappa=1],1,4,4,41,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,S0_linear_log_historical_key[kappa=1],S0_linear_log_historical_key[kappa=1],1,4,4,96,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,A_additive (primary rule),"A_additive[a=0.3,b=0.2,d=0.5]",1,4,4,35,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,C_cost_sensitive (primary rule),C_cost_sensitive[c_fp=0],1,4,4,41,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,L1_logistic (primary rule),L1_logistic[C=1],1,4,4,35,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,L2_gradient_boosting (primary rule),L2_gradient_boosting[max_depth=2],1,4,4,35,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,M_multiplicative (primary rule),"M_multiplicative[a=4,b=1]",1,4,4,35,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,S1_linear_log_constrained (primary rule),S1_linear_log_constrained[kappa=0.3],1,4,4,41,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,S1_linear_log_constrained_key (primary rule),S1_linear_log_constrained_key[kappa=0.1],1,4,4,96,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,S2_exponential_discount (primary rule),S2_exponential_discount[kappa=0.5],1,4,4,41,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,S2_exponential_discount_key (primary rule),S2_exponential_discount_key[kappa=2],1,4,4,96,0.25,0.25
+R6,holdout_group_4:wilson,holdout_group_4:wilson,W_weighted (primary rule),W_weighted[alpha=0.1],1,4,4,35,0.25,0.25

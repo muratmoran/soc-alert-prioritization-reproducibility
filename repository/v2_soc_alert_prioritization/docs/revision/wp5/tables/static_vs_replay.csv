@@ -1,0 +1,177 @@
+method,held_out,static_covered_k100,static_fp_k100,replay_covered_intervals_rate_6,replay_covered_intervals_rate_12,replay_covered_intervals_rate_30,replay_covered_intervals_rate_60,replay_fp_investigations_rate_6,replay_fp_investigations_rate_12,replay_fp_investigations_rate_30,replay_fp_investigations_rate_60,replay_investigations_rate_6,replay_investigations_rate_12,replay_investigations_rate_30,replay_investigations_rate_60
+O_oldest_first,fox,0,100,0,0,0,0,720,1440,3598,7106,720,1440,3598,7106
+O_newest_first,fox,0,100,1,2,1,3,706,1412,3532,6974,720,1440,3598,7106
+O_native_rule_level,fox,0,100,0,0,0,0,514,1015,2532,4971,720,1440,3598,7106
+O_native_suricata_severity,fox,1,75,1,1,1,1,695,1415,3573,7065,720,1440,3598,7106
+O_severity,fox,1,96,1,1,1,1,716,1436,3594,7102,720,1440,3598,7106
+O_reliability,fox,0,14,0,1,1,1,506,1003,2520,4958,720,1440,3598,7106
+H_weighted,fox,1,19,1,2,2,2,506,1003,2520,4958,720,1440,3598,7106
+P_probability_proxy,fox,1,19,1,2,2,2,506,1003,2520,4958,720,1440,3598,7106
+R_key_reliability,fox,0,73,0,1,1,1,504,1008,2525,4963,720,1440,3598,7106
+R_severity_key_reliability,fox,3,77,3,4,4,4,507,1011,2528,4966,720,1440,3598,7106
+S0_linear_log_historical[kappa=1],fox,1,19,1,2,2,2,506,1003,2520,4958,720,1440,3598,7106
+S0_linear_log_historical_key[kappa=1],fox,3,77,3,4,4,4,507,1011,2528,4966,720,1440,3598,7106
+A_additive (primary rule),fox,1,17,1,2,2,2,506,1003,2520,4958,720,1440,3598,7106
+C_cost_sensitive (primary rule),fox,1,19,1,2,2,2,506,1003,2520,4958,720,1440,3598,7106
+L1_logistic (primary rule),fox,1,19,1,2,2,2,506,1003,2520,4958,720,1440,3598,7106
+L2_gradient_boosting (primary rule),fox,1,19,1,2,2,2,506,1003,2520,4958,720,1440,3598,7106
+M_multiplicative (primary rule),fox,1,19,1,2,2,2,506,1003,2520,4958,720,1440,3598,7106
+S1_linear_log_constrained (primary rule),fox,1,19,1,2,2,2,506,1003,2520,4958,720,1440,3598,7106
+S1_linear_log_constrained_key (primary rule),fox,3,77,4,4,4,4,666,1381,3539,7047,720,1440,3598,7106
+S2_exponential_discount (primary rule),fox,1,19,1,2,2,2,506,1003,2520,4958,720,1440,3598,7106
+S2_exponential_discount_key (primary rule),fox,3,77,4,4,4,4,677,1138,2655,5094,720,1440,3598,7106
+W_weighted (primary rule),fox,1,19,1,2,2,2,506,1003,2520,4958,720,1440,3598,7106
+O_oldest_first,harrison,0,100,0,0,0,0,720,1440,3600,7200,720,1440,3600,7200
+O_newest_first,harrison,0,100,1,1,1,2,699,1396,3494,6986,720,1440,3600,7200
+O_native_rule_level,harrison,0,100,2,2,2,2,711,1431,3361,6198,720,1440,3600,7200
+O_native_suricata_severity,harrison,0,88,0,0,0,0,708,1428,3588,7188,720,1440,3600,7200
+O_severity,harrison,1,96,1,1,1,1,716,1436,3596,7196,720,1440,3600,7200
+O_reliability,harrison,0,17,0,0,0,0,620,1240,3099,6197,720,1440,3600,7200
+H_weighted,harrison,1,17,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+P_probability_proxy,harrison,1,17,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+R_key_reliability,harrison,0,61,0,0,0,0,620,1240,3099,6197,720,1440,3600,7200
+R_severity_key_reliability,harrison,1,72,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+S0_linear_log_historical[kappa=1],harrison,1,17,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+S0_linear_log_historical_key[kappa=1],harrison,3,61,3,3,3,3,620,1240,3099,6197,720,1440,3600,7200
+A_additive (primary rule),harrison,1,17,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+C_cost_sensitive (primary rule),harrison,1,17,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+L1_logistic (primary rule),harrison,1,17,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+L2_gradient_boosting (primary rule),harrison,1,17,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+M_multiplicative (primary rule),harrison,1,17,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+S1_linear_log_constrained (primary rule),harrison,1,17,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+S1_linear_log_constrained_key (primary rule),harrison,3,50,4,4,4,4,648,1349,3509,7109,720,1440,3600,7200
+S2_exponential_discount (primary rule),harrison,1,17,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+S2_exponential_discount_key (primary rule),harrison,3,50,4,4,4,4,640,1260,3119,6217,720,1440,3600,7200
+W_weighted (primary rule),harrison,1,17,1,1,1,1,620,1240,3099,6197,720,1440,3600,7200
+O_oldest_first,russellmitchell,0,100,0,0,0,0,574,1148,2870,5608,574,1148,2870,5608
+O_newest_first,russellmitchell,0,100,2,2,3,4,558,1117,2799,5462,574,1148,2870,5608
+O_native_rule_level,russellmitchell,0,100,0,0,1,1,457,913,2316,5049,574,1148,2870,5608
+O_native_suricata_severity,russellmitchell,0,73,0,0,0,0,547,1121,2843,5581,574,1148,2870,5608
+O_severity,russellmitchell,1,97,1,1,1,1,571,1145,2867,5605,574,1148,2870,5608
+O_reliability,russellmitchell,0,8,0,0,0,0,456,912,2279,4425,574,1148,2870,5608
+H_weighted,russellmitchell,1,8,1,1,1,1,456,912,2279,4425,574,1148,2870,5608
+P_probability_proxy,russellmitchell,1,8,1,1,1,1,456,912,2279,4425,574,1148,2870,5608
+R_key_reliability,russellmitchell,0,41,0,0,0,0,456,912,2279,4425,574,1148,2870,5608
+R_severity_key_reliability,russellmitchell,2,53,2,2,2,2,456,912,2279,4425,574,1148,2870,5608
+S0_linear_log_historical[kappa=1],russellmitchell,1,8,1,1,1,1,456,912,2279,4425,574,1148,2870,5608
+S0_linear_log_historical_key[kappa=1],russellmitchell,3,85,3,3,3,3,461,917,2284,4430,574,1148,2870,5608
+A_additive (primary rule),russellmitchell,1,8,1,1,1,1,456,912,2279,4425,574,1148,2870,5608
+C_cost_sensitive (primary rule),russellmitchell,1,8,1,1,1,1,456,912,2279,4425,574,1148,2870,5608
+L1_logistic (primary rule),russellmitchell,1,8,1,1,1,1,456,912,2279,4425,574,1148,2870,5608
+L2_gradient_boosting (primary rule),russellmitchell,1,8,1,1,1,1,456,912,2279,4425,574,1148,2870,5608
+M_multiplicative (primary rule),russellmitchell,1,8,1,1,1,1,456,912,2279,4425,574,1148,2870,5608
+S1_linear_log_constrained (primary rule),russellmitchell,1,8,1,1,1,1,456,912,2279,4425,574,1148,2870,5608
+S1_linear_log_constrained_key (primary rule),russellmitchell,3,81,4,4,4,4,539,1113,2835,5573,574,1148,2870,5608
+S2_exponential_discount (primary rule),russellmitchell,1,8,1,1,1,1,456,912,2279,4425,574,1148,2870,5608
+S2_exponential_discount_key (primary rule),russellmitchell,3,81,3,3,3,3,479,935,2302,4448,574,1148,2870,5608
+W_weighted (primary rule),russellmitchell,1,8,1,1,1,1,456,912,2279,4425,574,1148,2870,5608
+O_oldest_first,santos,0,100,0,0,0,0,576,1151,2876,5752,576,1151,2876,5752
+O_newest_first,santos,0,100,1,1,2,3,566,1131,2825,5648,576,1151,2876,5752
+O_native_rule_level,santos,0,100,0,0,1,2,575,1150,2506,5174,576,1151,2876,5752
+O_native_suricata_severity,santos,0,85,0,0,0,0,561,1136,2861,5737,576,1151,2876,5752
+O_severity,santos,1,97,1,1,1,1,573,1148,2873,5749,576,1151,2876,5752
+O_reliability,santos,0,8,0,1,1,1,500,997,2497,4998,576,1151,2876,5752
+H_weighted,santos,1,8,1,2,2,2,500,997,2497,4998,576,1151,2876,5752
+P_probability_proxy,santos,1,8,1,2,2,2,500,997,2497,4998,576,1151,2876,5752
+R_key_reliability,santos,0,90,1,1,1,1,496,989,2489,4990,576,1151,2876,5752
+R_severity_key_reliability,santos,3,86,4,4,4,4,496,989,2489,4990,576,1151,2876,5752
+S0_linear_log_historical[kappa=1],santos,1,8,1,2,2,2,500,997,2497,4998,576,1151,2876,5752
+S0_linear_log_historical_key[kappa=1],santos,3,76,4,4,4,4,497,990,2490,4991,576,1151,2876,5752
+A_additive (primary rule),santos,1,8,1,2,2,2,500,997,2497,4998,576,1151,2876,5752
+C_cost_sensitive (primary rule),santos,1,8,1,2,2,2,500,997,2497,4998,576,1151,2876,5752
+L1_logistic (primary rule),santos,1,8,1,2,2,2,500,997,2497,4998,576,1151,2876,5752
+L2_gradient_boosting (primary rule),santos,1,8,1,2,2,2,500,997,2497,4998,576,1151,2876,5752
+M_multiplicative (primary rule),santos,1,8,1,2,2,2,500,997,2497,4998,576,1151,2876,5752
+S1_linear_log_constrained (primary rule),santos,1,8,1,2,2,2,500,997,2497,4998,576,1151,2876,5752
+S1_linear_log_constrained_key (primary rule),santos,3,73,4,4,4,4,517,1090,2815,5691,576,1151,2876,5752
+S2_exponential_discount (primary rule),santos,1,8,1,2,2,2,500,997,2497,4998,576,1151,2876,5752
+S2_exponential_discount_key (primary rule),santos,3,73,4,4,4,4,509,1002,2502,5003,576,1151,2876,5752
+W_weighted (primary rule),santos,1,8,1,2,2,2,500,997,2497,4998,576,1151,2876,5752
+O_oldest_first,shaw,0,100,0,0,0,0,862,1723,4306,8502,862,1723,4306,8502
+O_newest_first,shaw,0,100,1,1,1,2,849,1684,4177,8351,862,1723,4306,8502
+O_native_rule_level,shaw,0,100,0,0,0,0,693,1352,3935,8131,862,1723,4306,8502
+O_native_suricata_severity,shaw,0,100,0,0,0,0,862,1723,4306,8502,862,1723,4306,8502
+O_severity,shaw,1,97,1,1,1,1,859,1720,4303,8499,862,1723,4306,8502
+O_reliability,shaw,0,40,0,0,0,0,664,1328,3320,6529,862,1723,4306,8502
+H_weighted,shaw,1,40,1,1,1,1,664,1328,3320,6529,862,1723,4306,8502
+P_probability_proxy,shaw,1,40,1,1,1,1,664,1328,3320,6529,862,1723,4306,8502
+R_key_reliability,shaw,0,74,0,0,0,0,662,1326,3317,6526,862,1723,4306,8502
+R_severity_key_reliability,shaw,1,90,3,3,3,3,712,1356,3323,6532,862,1723,4306,8502
+S0_linear_log_historical[kappa=1],shaw,1,40,1,1,1,1,664,1328,3320,6529,862,1723,4306,8502
+S0_linear_log_historical_key[kappa=1],shaw,1,90,3,3,3,3,729,1373,3333,6542,862,1723,4306,8502
+A_additive (primary rule),shaw,1,40,1,1,1,1,664,1328,3320,6529,862,1723,4306,8502
+C_cost_sensitive (primary rule),shaw,1,40,1,1,1,1,664,1328,3320,6529,862,1723,4306,8502
+L1_logistic (primary rule),shaw,0,40,0,0,0,0,664,1328,3320,6529,862,1723,4306,8502
+L2_gradient_boosting (primary rule),shaw,0,40,0,0,0,0,664,1328,3320,6529,862,1723,4306,8502
+M_multiplicative (primary rule),shaw,1,40,1,1,1,1,664,1328,3320,6529,862,1723,4306,8502
+S1_linear_log_constrained (primary rule),shaw,1,40,1,1,1,1,664,1328,3320,6529,862,1723,4306,8502
+S1_linear_log_constrained_key (primary rule),shaw,1,90,3,3,3,3,810,1665,4248,8444,862,1723,4306,8502
+S2_exponential_discount (primary rule),shaw,1,40,1,1,1,1,664,1328,3320,6529,862,1723,4306,8502
+S2_exponential_discount_key (primary rule),shaw,1,90,3,3,3,3,810,1565,3512,6721,862,1723,4306,8502
+W_weighted (primary rule),shaw,1,40,1,1,1,1,664,1328,3320,6529,862,1723,4306,8502
+O_oldest_first,wardbeck,0,100,0,0,0,0,720,1440,3600,7171,720,1440,3600,7171
+O_newest_first,wardbeck,0,100,1,2,1,4,707,1416,3553,7100,720,1440,3600,7171
+O_native_rule_level,wardbeck,0,99,0,0,0,1,661,1306,3252,6786,720,1440,3600,7171
+O_native_suricata_severity,wardbeck,0,91,0,0,0,0,711,1431,3591,7162,720,1440,3600,7171
+O_severity,wardbeck,1,95,1,1,1,1,715,1435,3595,7166,720,1440,3600,7171
+O_reliability,wardbeck,0,100,0,1,1,1,650,1291,3238,6455,720,1440,3600,7171
+H_weighted,wardbeck,1,95,1,2,2,2,650,1291,3238,6455,720,1440,3600,7171
+P_probability_proxy,wardbeck,1,95,1,2,2,2,650,1291,3238,6455,720,1440,3600,7171
+R_key_reliability,wardbeck,0,100,0,1,1,1,650,1291,3238,6455,720,1440,3600,7171
+R_severity_key_reliability,wardbeck,2,86,2,3,3,3,650,1291,3238,6455,720,1440,3600,7171
+S0_linear_log_historical[kappa=1],wardbeck,1,95,1,2,2,2,650,1291,3238,6455,720,1440,3600,7171
+S0_linear_log_historical_key[kappa=1],wardbeck,2,79,2,3,3,3,657,1298,3245,6462,720,1440,3600,7171
+A_additive (primary rule),wardbeck,1,97,1,2,2,2,650,1291,3238,6455,720,1440,3600,7171
+C_cost_sensitive (primary rule),wardbeck,1,95,1,2,2,2,650,1291,3238,6455,720,1440,3600,7171
+L1_logistic (primary rule),wardbeck,0,100,0,1,1,1,650,1291,3238,6455,720,1440,3600,7171
+L2_gradient_boosting (primary rule),wardbeck,1,97,1,2,2,2,650,1291,3238,6455,720,1440,3600,7171
+M_multiplicative (primary rule),wardbeck,1,97,1,2,2,2,650,1291,3238,6455,720,1440,3600,7171
+S1_linear_log_constrained (primary rule),wardbeck,1,95,1,2,2,2,650,1291,3238,6455,720,1440,3600,7171
+S1_linear_log_constrained_key (primary rule),wardbeck,2,79,3,3,3,3,683,1390,3539,7110,720,1440,3600,7171
+S2_exponential_discount (primary rule),wardbeck,1,95,1,2,2,2,650,1291,3238,6455,720,1440,3600,7171
+S2_exponential_discount_key (primary rule),wardbeck,2,79,3,3,3,3,683,1390,3287,6517,720,1440,3600,7171
+W_weighted (primary rule),wardbeck,1,97,1,2,2,2,650,1291,3238,6455,720,1440,3600,7171
+O_oldest_first,wheeler,0,100,0,0,0,0,720,1439,3598,7114,720,1439,3598,7114
+O_newest_first,wheeler,0,100,1,1,2,3,712,1423,3556,7036,720,1439,3598,7114
+O_native_rule_level,wheeler,0,100,0,1,1,1,720,1435,3151,6180,720,1439,3598,7114
+O_native_suricata_severity,wheeler,0,76,0,0,0,0,696,1415,3574,7090,720,1439,3598,7114
+O_severity,wheeler,1,97,1,1,1,1,717,1436,3595,7111,720,1439,3598,7114
+O_reliability,wheeler,0,10,0,1,1,1,622,1237,3103,6132,720,1439,3598,7114
+H_weighted,wheeler,1,10,1,2,2,2,622,1237,3103,6132,720,1439,3598,7114
+P_probability_proxy,wheeler,1,10,1,2,2,2,622,1237,3103,6132,720,1439,3598,7114
+R_key_reliability,wheeler,0,44,1,1,1,1,618,1237,3103,6132,720,1439,3598,7114
+R_severity_key_reliability,wheeler,3,70,4,4,4,4,621,1240,3106,6135,720,1439,3598,7114
+S0_linear_log_historical[kappa=1],wheeler,1,10,1,2,2,2,622,1237,3103,6132,720,1439,3598,7114
+S0_linear_log_historical_key[kappa=1],wheeler,3,76,4,4,4,4,621,1240,3106,6135,720,1439,3598,7114
+A_additive (primary rule),wheeler,1,10,1,2,2,2,622,1237,3103,6132,720,1439,3598,7114
+C_cost_sensitive (primary rule),wheeler,1,10,1,2,2,2,622,1237,3103,6132,720,1439,3598,7114
+L1_logistic (primary rule),wheeler,0,10,0,1,1,1,622,1237,3103,6132,720,1439,3598,7114
+L2_gradient_boosting (primary rule),wheeler,1,10,1,2,2,2,622,1237,3103,6132,720,1439,3598,7114
+M_multiplicative (primary rule),wheeler,1,10,1,2,2,2,622,1237,3103,6132,720,1439,3598,7114
+S1_linear_log_constrained (primary rule),wheeler,1,10,1,2,2,2,622,1237,3103,6132,720,1439,3598,7114
+S1_linear_log_constrained_key (primary rule),wheeler,3,70,4,4,4,4,658,1377,3536,7052,720,1439,3598,7114
+S2_exponential_discount (primary rule),wheeler,1,10,1,2,2,2,622,1237,3103,6132,720,1439,3598,7114
+S2_exponential_discount_key (primary rule),wheeler,3,70,4,4,4,4,657,1276,3142,6171,720,1439,3598,7114
+W_weighted (primary rule),wheeler,1,10,1,2,2,2,622,1237,3103,6132,720,1439,3598,7114
+O_oldest_first,wilson,0,100,0,0,0,0,864,1727,4316,8488,864,1727,4316,8488
+O_newest_first,wilson,0,100,1,1,2,3,853,1705,4260,8376,864,1727,4316,8488
+O_native_rule_level,wilson,0,100,1,1,1,1,854,1685,3250,6308,864,1727,4316,8488
+O_native_suricata_severity,wilson,0,73,0,0,0,0,837,1700,4289,8461,864,1727,4316,8488
+O_severity,wilson,1,96,1,1,1,1,860,1723,4312,8484,864,1727,4316,8488
+O_reliability,wilson,0,30,1,1,1,1,637,1277,3203,6270,864,1727,4316,8488
+H_weighted,wilson,1,41,2,2,2,2,637,1277,3203,6270,864,1727,4316,8488
+P_probability_proxy,wilson,1,41,2,2,2,2,637,1277,3203,6270,864,1727,4316,8488
+R_key_reliability,wilson,0,61,1,1,1,1,634,1268,3194,6261,864,1727,4316,8488
+R_severity_key_reliability,wilson,3,78,4,4,4,4,635,1269,3195,6262,864,1727,4316,8488
+S0_linear_log_historical[kappa=1],wilson,1,41,2,2,2,2,637,1277,3203,6270,864,1727,4316,8488
+S0_linear_log_historical_key[kappa=1],wilson,3,77,4,4,4,4,642,1276,3202,6269,864,1727,4316,8488
+A_additive (primary rule),wilson,1,35,2,2,2,2,637,1277,3203,6270,864,1727,4316,8488
+C_cost_sensitive (primary rule),wilson,1,41,2,2,2,2,637,1277,3203,6270,864,1727,4316,8488
+L1_logistic (primary rule),wilson,1,41,2,2,2,2,637,1277,3203,6270,864,1727,4316,8488
+L2_gradient_boosting (primary rule),wilson,1,41,2,2,2,2,637,1277,3203,6270,864,1727,4316,8488
+M_multiplicative (primary rule),wilson,1,41,2,2,2,2,637,1277,3203,6270,864,1727,4316,8488
+S1_linear_log_constrained (primary rule),wilson,1,41,2,2,2,2,637,1277,3203,6270,864,1727,4316,8488
+S1_linear_log_constrained_key (primary rule),wilson,3,77,4,4,4,4,809,1648,4237,8409,864,1727,4316,8488
+S2_exponential_discount (primary rule),wilson,1,41,2,2,2,2,637,1277,3203,6270,864,1727,4316,8488
+S2_exponential_discount_key (primary rule),wilson,3,77,4,4,4,4,799,1431,3357,6424,864,1727,4316,8488
+W_weighted (primary rule),wilson,1,35,2,2,2,2,637,1277,3203,6270,864,1727,4316,8488

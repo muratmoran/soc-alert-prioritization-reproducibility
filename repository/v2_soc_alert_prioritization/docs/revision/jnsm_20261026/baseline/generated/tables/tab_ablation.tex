@@ -1,0 +1,17 @@
+\begin{tabular}{llcccc}
+\toprule
+Ablated input & Variant & P & S1 & S1\textsubscript{key} & R\textsubscript{sev,key} \\
+\midrule
+-- & detector-class (primary) & 8\,/\,18 & 8\,/\,18 & 21\,/\,77 & 18\,/\,77.5 \\
+reliability & detector only & 8\,/\,96.5 & 8\,/\,96.5 & 21\,/\,77 & 18\,/\,77.5 \\
+reliability & global class & 8\,/\,96.5 & 8\,/\,96.5 & 21\,/\,77 & 18\,/\,77.5 \\
+reliability & native key & 18\,/\,77.5 & 21\,/\,77 & 21\,/\,77 & 18\,/\,77.5 \\
+reliability & none & 8\,/\,96.5 & 8\,/\,96.5 & 21\,/\,77 & 18\,/\,77.5 \\
+uncertainty & constant 0.5 & 8\,/\,18 & 8\,/\,18 & 21\,/\,77 & 18\,/\,77.5 \\
+uncertainty & historical combined & 8\,/\,18 & 8\,/\,8 & 21\,/\,77 & 18\,/\,77.5 \\
+uncertainty & precision only & 8\,/\,18 & 8\,/\,0 & 21\,/\,77 & 18\,/\,77.5 \\
+uncertainty & purity only & 8\,/\,18 & 8\,/\,10 & 21\,/\,77 & 18\,/\,77.5 \\
+uncertainty & zero & 8\,/\,18 & 8\,/\,96.5 & 8\,/\,96.5 & 18\,/\,77.5 \\
+context & asset profile & 8\,/\,21 & 8\,/\,21 & 21\,/\,80.5 & 18\,/\,78 \\
+\bottomrule
+\end{tabular}

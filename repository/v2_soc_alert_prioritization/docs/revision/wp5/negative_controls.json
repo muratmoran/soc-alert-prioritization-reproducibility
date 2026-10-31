@@ -1,0 +1,85 @@
+{
+  "work_package": "WP5 chronological replay",
+  "note": "Synthetic data only. Detected means at least one test failed and none errored.",
+  "controls": [
+    {
+      "control": "lookahead: alerts arriving during the next service are selectable",
+      "tests": 6,
+      "failures": 4,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "selection before enqueuing arrivals at the same instant",
+      "tests": 6,
+      "failures": 6,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "draining after the horizon",
+      "tests": 6,
+      "failures": 4,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "preemption / two alerts in service",
+      "tests": 6,
+      "failures": 6,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "tie hash reversed",
+      "tests": 2,
+      "failures": 112,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "interval credited at the detecting alert's arrival instead of investigation start",
+      "tests": 7,
+      "failures": 81,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "critical recall within delay divided by investigated critical alerts only",
+      "tests": 7,
+      "failures": 72,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "censored and uninvestigated intervals not reported",
+      "tests": 7,
+      "failures": 33,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "time-average backlog counts investigated alerts only",
+      "tests": 7,
+      "failures": 105,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "selection depends on held-out labels",
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "trace checker ignores selection before arrival and overlapping service",
+      "tests": 1,
+      "failures": 2,
+      "errors": 0,
+      "detected": true
+    }
+  ],
+  "all_detected": true,
+  "test_module_sha256": "8adb8353c1fada56cd16e002792ef7cd59ee2cfabd2e3f6be10b9626cce7bbf7"
+}

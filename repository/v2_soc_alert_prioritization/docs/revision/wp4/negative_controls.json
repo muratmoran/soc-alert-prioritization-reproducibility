@@ -1,0 +1,161 @@
+{
+  "work_package": "WP4 fitting boundaries",
+  "note": "Synthetic data only. Each control injects one defect; detected means at least one test failed.",
+  "controls": [
+    {
+      "control": "class-height rows classified by a mapping fitted on their own scenario (trace unchanged)",
+      "trace_would_show_it": false,
+      "tests": 7,
+      "failures": 2,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "excluded identifiers not removed from mapping/height tables",
+      "trace_would_show_it": false,
+      "tests": 13,
+      "failures": 8,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "excluded identifiers left in learned-ranker training samples",
+      "trace_would_show_it": false,
+      "tests": 3,
+      "failures": 4,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "inner validation queues keep excluded-identifier alerts",
+      "trace_would_show_it": true,
+      "tests": 2,
+      "failures": 4,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "feature cache ignores label versions",
+      "trace_would_show_it": false,
+      "tests": 6,
+      "failures": 2,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "feature cache ignores the exclusion set",
+      "trace_would_show_it": false,
+      "tests": 5,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "feature cache ignores fitting settings",
+      "trace_would_show_it": false,
+      "tests": 5,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "feature cache ignores the reliability policy",
+      "trace_would_show_it": false,
+      "tests": 5,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "training scenario's own labels shape its learned-ranker heights (manifest unchanged)",
+      "trace_would_show_it": false,
+      "tests": 5,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "unseen (detector, class) falls back to the global prior instead of the detector prior",
+      "trace_would_show_it": false,
+      "tests": 7,
+      "failures": 4,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "class heights not clipped to [0.05, 0.95]",
+      "trace_would_show_it": false,
+      "tests": 7,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "shrinkage ignores lambda (raw frequencies)",
+      "trace_would_show_it": false,
+      "tests": 7,
+      "failures": 3,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "forward chaining admits a scenario ending exactly when the test scenario starts",
+      "trace_would_show_it": false,
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "identifier groups hashed with an undeclared salt",
+      "trace_would_show_it": false,
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "unseen identifiers defined against all scenarios instead of the outer training scenarios",
+      "trace_would_show_it": false,
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "non-estimable learned families use the last grid point instead of the simplest",
+      "trace_would_show_it": false,
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "subgroup retrieval computed from a reranked subgroup rather than the mixed queue",
+      "trace_would_show_it": false,
+      "tests": 7,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "table reads not logged (verifier must reject an incomplete trace)",
+      "trace_would_show_it": true,
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "trace verifier ignores self-mapped height rows and held-out use",
+      "trace_would_show_it": true,
+      "tests": 1,
+      "failures": 3,
+      "errors": 0,
+      "detected": true
+    }
+  ],
+  "all_detected": true,
+  "undetectable_from_trace_alone": 16,
+  "test_module_sha256": "56bbe9b7baf5d90eccf6e27f06c6d484ab844062d18453b957298313f5faa4c8"
+}

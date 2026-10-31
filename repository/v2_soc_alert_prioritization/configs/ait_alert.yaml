@@ -1,0 +1,78 @@
+dataset:
+  name: ait_alert
+  role: primary_alert_native_validation
+  raw_path: data/raw/ait_alert
+  processed_path: data/processed/ait_alert
+
+splits:
+  strategy: leave_one_scenario_out
+  validation_fraction_within_train: 0.2
+  seed: 42
+
+labels:
+  preferred_label: event_label
+  fallback_label: time_label
+  benign_label: benign
+
+detectors:
+  - wazuh
+  - suricata
+  - aminer
+
+reliability:
+  calibration_unit:
+    - detector
+    - attack_phase
+  shrinkage_lambda: 50
+  height_min: 0.05
+  height_max: 0.95
+  smoothing_alpha: 0.9
+
+metrics:
+  k_values: [10, 25, 50, 100, 250, 500]
+  critical_phases:
+    - webshell
+    - reverse_shell
+    - privilege_escalation
+    - dnsteal
+    - data_exfiltration
+
+stress_tests:
+  default_context_mode: asset_profile
+  default_uncertainty_mode: ambiguity_aware
+  default_kappa: 1.0
+  seed: 42
+  perturbations:
+    reliability_overconfidence:
+      description: inflate low reliability with sqrt(height)
+    asset_criticality_shuffle:
+      description: shuffle asset criticality within each held-out scenario
+    high_severity_false_positives:
+      description: inject synthetic benign alerts with high severity and high reliability
+      fraction: 0.01
+      cap_per_fold: 5000
+    duplicate_false_positive_pressure:
+      description: duplicate benign alerts from frequent native keys
+      fraction: 0.02
+      cap_per_fold: 5000
+  local_results:
+    sgfn_baseline:
+      ndcg_at_100: 0.3659
+      false_positives_at_100: 7.25
+      rank_first_critical: 1.0
+    sgfn_reliability_overconfidence:
+      ndcg_at_100: 0.3659
+      false_positives_at_100: 7.25
+      rank_first_critical: 1.0
+    sgfn_asset_criticality_shuffle:
+      ndcg_at_100: 0.3813
+      false_positives_at_100: 4.25
+      rank_first_critical: 1.0
+    sgfn_duplicate_false_positive_pressure:
+      ndcg_at_100: 0.3659
+      false_positives_at_100: 7.25
+      rank_first_critical: 1.0
+    sgfn_high_severity_false_positives:
+      ndcg_at_100: 0.0
+      false_positives_at_100: 100.0
+      rank_first_critical: 2890.38

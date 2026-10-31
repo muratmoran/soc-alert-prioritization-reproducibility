@@ -1,0 +1,10 @@
+{
+  "version": "v2026.10.30",
+  "repository": "https://github.com/muratmoran/soc-alert-prioritization-reproducibility",
+  "release": "https://github.com/muratmoran/soc-alert-prioritization-reproducibility/releases/tag/v2026.10.30",
+  "zenodo_doi": null,
+  "manuscript_sha256": "9ef155b1e1bb761f9c08290619583e0549a113ec1c4db242f7f6f34ee8ec6ba6",
+  "supplement_sha256": "6dd6cfe7b01b43ff9135894e44919f5fefc3f865edb9946868501f5e18a943c6",
+  "primary_protocol_preserved": true,
+  "extension_is_exploratory": true
+}

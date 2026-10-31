@@ -1,0 +1,15 @@
+run,metric_rows,coverage_eligible_na,ndcg_na,critical_recall_na,empty_queues,coverage_selection_fallbacks,ndcg_selection_fallbacks,learned_simplest_grid_point_fallbacks,learner_fit_fallbacks,class_height_detector_prior,class_height_global_prior,key_height_detector_prior,key_height_global_prior,unmapped,excluded_identifier_alerts,alerts,fold_errors_logged
+R1,2457,0,0,0,0,0,0,0,0,0,0,113,0,908544,0,2655821,0
+R2,2795,0,0,0,0,0,0,0,0,0,0,113,0,908544,0,2655821,0
+R3_detector_only,2379,0,0,0,0,0,0,0,0,0,0,113,0,908544,0,2655821,0
+R3_global_class,2288,0,0,0,0,0,0,0,0,0,0,113,0,908544,0,2655821,0
+R3_native_key,2353,0,0,0,0,0,0,0,0,113,0,113,0,908544,0,2655821,0
+R3_none,2288,0,0,0,0,0,0,0,0,0,0,113,0,908544,0,2655821,0
+R4_constant_0.5,2496,0,0,0,0,0,0,0,0,0,0,113,0,908544,0,2655821,0
+R4_historical_combined,2704,0,0,0,0,0,0,0,0,0,0,113,0,908544,0,2655821,0
+R4_precision_only,2626,0,0,0,0,0,0,0,0,0,0,113,0,908544,0,2655821,0
+R4_purity_only,2587,0,0,0,0,0,0,0,0,0,0,113,0,908544,0,2655821,0
+R4_zero,2444,0,0,0,0,0,0,0,0,0,0,113,0,908544,0,2655821,0
+R5_asset_profile,2704,0,0,0,0,0,0,0,0,0,0,113,0,908544,0,2655821,0
+R6,12181,0,0,0,0,0,0,0,0,0,0,2656273,0,6289997,2655821,13279105,0
+R7,1508,0,0,0,0,0,0,4,0,2,0,8,0,651639,0,1960681,0

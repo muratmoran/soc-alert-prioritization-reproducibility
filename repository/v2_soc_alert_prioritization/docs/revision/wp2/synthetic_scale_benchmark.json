@@ -1,0 +1,23 @@
+{
+  "synthetic_rows": 2640000,
+  "setup_seconds": 7.4,
+  "one_outer_fold_seconds": 37.7,
+  "peak_rss_gb": 3.5,
+  "runtime_breakdown_seconds": {
+    "features": 0.34,
+    "learned_fit": 21.68,
+    "outer_scoring": 2.2,
+    "score:A_additive": 3.39,
+    "score:C_cost_sensitive": 0.23,
+    "score:L1_logistic": 0.47,
+    "score:L2_gradient_boosting": 4.17,
+    "score:M_multiplicative": 1.81,
+    "score:S1_linear_log_constrained": 0.45,
+    "score:S1_linear_log_constrained_key": 0.45,
+    "score:S2_exponential_discount": 0.36,
+    "score:S2_exponential_discount_key": 0.36,
+    "score:W_weighted": 0.54
+  },
+  "estimated_primary_policy_all_folds_minutes": 5.0,
+  "note": "Synthetic data at AIT scale; no real alerts or labels were read."
+}

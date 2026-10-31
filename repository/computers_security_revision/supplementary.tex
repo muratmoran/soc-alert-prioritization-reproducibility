@@ -1,0 +1,120 @@
+%% Electronic Supplementary Material for the JNSM submission.
+\documentclass[pdflatex,sn-basic,Numbered]{sn-jnl}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{placeins}
+\usepackage{url}
+\usepackage{orcidlink}
+
+\input{generated/numbers.tex}
+\input{generated/revision_numbers.tex}
+\newcommand{\key}{\textsubscript{key}}
+\newcommand{\Rsev}{R\textsubscript{sev,key}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\begin{document}
+
+\title{Online Resource 1: Supplementary Material for ``Evaluating Security Alert Prioritization under Limited Capacity: Rule Granularity, Score Ties, and Coverage Tradeoffs''}
+
+\author*{\fnm{Murat} \sur{Moran}\,\orcidlink{0000-0001-5557-4827}}
+\email{murat.moran@giresun.edu.tr}
+\affil*{\orgdiv{Department of Computer Engineering}, \orgname{Giresun University}, \orgaddress{\city{Giresun}, \postcode{28200}, \country{T\"{u}rkiye}}}
+\maketitle
+
+\noindent Journal of Network and Systems Management
+
+\section*{S1. Detailed method specification}
+
+\subsection*{Selection tie-breaker, learner configurations, and fallbacks}
+Within each outer training set, every tuned candidate is scored in leave-one-training-scenario-out inner folds, with fitting repeated within the inner boundary. The selection order is macro coverage@100, then macro FP@100, then NDCG@100, then the simplest candidate. NDCG uses linear relevance $r_i=y_i s_i^*$, where $s_i^*$ is the largest severity of any interval containing alert $i$. The discount at rank $j$ is $1/\log_2(j+1)$. Normalization uses the ideal ordering of held-out relevance values; NDCG is zero when ideal gain is zero. It is only a selection tie-breaker.
+
+L1 standardizes the three inputs with training-sample means and standard deviations and fits L2-penalized logistic regression (LBFGS; at most 1,000 iterations). L2 fits histogram gradient boosting to $r/10$ (learning rate 0.1, 200 iterations, L2 penalty 1, no early stopping). The published grids are the only tuning. Training samples contain at most 300,000 records, with equal total weight per scenario and seed 42; evaluation uses every alert. For a reliability cell with no fitted records, the score uses the clipped detector prior. If the detector has no fitting records, it uses the clipped global prior. Fitting fails if neither prior is available. Selected outer-fold candidates and configurations are supplied as machine-readable tables in the reproducibility archive.
+
+When an inner learner fit cannot be estimated in a small forward split, the frozen pipeline selects the simplest candidate in the grid. This occurred for the russellmitchell test scenario, for which the inner fitting sets required by the learned families were empty: L1 used $C=0.01$ and L2 used maximum depth 2. Their configurations were therefore not selected by inner validation in that fold.
+
+\subsection*{Identifier hold-out and forward outcomes}
+Table~\ref{tab:s-generalization} summarizes the static comparison under each splitting design.
+\begin{tableorg}[t]
+\centering
+\caption{Static coverage (critical intervals at $k=100$): leave-one-scenario-out without hold-out (of 32), strict identifier hold-out by hash group (of 32 each), and forward chaining over five eligible test scenarios (of 20).}
+\label{tab:s-generalization}
+\small
+\input{generated/tables/tab_generalization.tex}\unskip
+\end{tableorg}
+\FloatBarrier
+
+\section*{S2. Relation to the preprint and earlier version}
+Table~\ref{tab:s-versions} compares the earlier work with the submitted paper.
+
+\begin{tableorg}[t]
+\caption{Relation between the preprint, the earlier unpublished version of this study, and the submitted paper.}
+\label{tab:s-versions}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.21\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.26\textwidth}}
+\toprule
+Component & Preprint~\citep{Moran2026RiskAversePreprint} & Earlier unpublished version & Submitted paper \\
+\midrule
+SGFN score & Introduced the SGFN alert representation and scalar score & Same score, presented as the method & One heuristic family (S0, constrained S1, S2), with its admissible domain stated \\
+Reliability & Not assessed here & Detector-conditioned class heights & Cross-fitted class and identifier-level reliability, ablated in the main paper \\
+Comparators & Not assessed here & Severity only, untuned weighted formula, native score & 13 families, \NCandidates{} candidates; matched inputs and selection within each information block \\
+Target & Not assessed here & NDCG@100 & Critical-step interval coverage@100 with FP@100; alert-level recall and replay reported separately \\
+Chronology & Not assessed here & Static ranking of completed scenarios & Static ranking and causal queue replay \\
+Generalization & Not assessed here & Leave-one-scenario-out only & Seen/unseen identifiers, strict identifier hold-out, forward chaining \\
+External data & Not assessed here & NF-UQ domain shift; UWF ``validation'' & NF-UQ claim withdrawn; UWF reported as crosswalk consistency only (Section S3) \\
+\bottomrule
+\end{tabular}
+\end{tableorg}
+\FloatBarrier
+
+\section*{S3. UWF-ZeekData24 crosswalk consistency}
+This supporting analysis asks only whether the author's ATT\&CK tactic severity table is consistent with the AIT phase severities projected onto tactics through the author's own crosswalk. UWF-ZeekData24~\citep{Elam2025UWFZeekData24} supplies tactic and technique labels and their frequencies; it supplies no independent severity or impact reference. The dataset subset has \UWFRows{} rows (\UWFAttackRows{} attack rows); every attack row has a tactic present in the severity table, 97.98\% a valid technique identifier, and none a CVE.
+
+Over the five overlapping tactics, the unweighted Spearman correlation is \UWFSpearman{} and the mean absolute discrepancy is \UWFMADUnweighted{} severity points. Weighting by row frequency raises the discrepancy to \UWFMADWeighted. Credential Access accounts for \UWFCredentialShare\% of attack rows and differs by two severity points. The Jaccard similarity of the tactic sets with severity at least $\theta$ is 0.75 at $\theta \in \{7.5, 8.0\}$ and \UWFJaccardEightFive{} at $\theta = 8.5$; leaving out Credential Access raises it to 1.0. With five tactic scores, these statistics are fragile. The same \UWFSharedConnections{} connections appear in the Persistence, Privilege Escalation, and Defense Evasion files. Two of those files mark the technique as ``Duplicate''. These tactics label the same connections and are not independent observations; telemetry rows are not treated as replicates.
+
+\begin{tableorg}[t]
+\caption{Observed UWF tactics with both author-defined severities. Crosswalk: maximum severity of the AIT phases mapped to the tactic.}
+\centering\small\setlength{\tabcolsep}{5pt}
+\input{generated/tables/tab_uwf.tex}\unskip
+\end{tableorg}
+
+\section*{S4. Exploratory duration-normalized rate-score adaptation}
+For native identifier $q$, phase $p$, and training scenario $s$, let $A_{qps}$ count alerts during the phase, $B_{qs}$ count alerts during the normal window, and $D_{ps}$ and $D_{bs}$ denote their durations. The contribution is zero if $A_{qps}=0$; otherwise it is
+\begin{equation}
+ v_{qps}=\max\left\{0,1-\frac{B_{qs}/D_{bs}}{A_{qps}/D_{ps}}\right\}.
+\end{equation}
+The phase score averages contributions over training scenarios where that phase exists, including scenarios with zero alerts from the identifier. The identifier score is the maximum phase score; an unseen identifier receives zero. This follows the published rate and cross-scenario support construction~\citep{Landauer2024AITADS}. No severity multiplier or tuning is added. Timestamp/hash ties and the primary service model are retained.
+
+The normal windows follow the published implementation~\citep{AITDetectorScoreImplementation}, including its 4-hour harrison and 10.5-hour wheeler windows; all are verified to lie inside their trace and outside attack intervals. The original analysis aggregates detector abbreviations across all eight scenarios for filtering. This training-only native-key variant changes both fitting boundary and grouping, so it is an adaptation. An independent scalar calculation agrees with fitted scores, changes or deletion of held-out counts leave them unchanged, and all eight replay traces pass integrity checks.
+
+\input{generated/ait_rate_interpretation.tex}
+
+\begin{tableorg}[t]
+\centering\small
+\caption{Exploratory rate-score adaptation: static outcomes by held-out scenario.}
+\input{generated/tables/tab_ait_rate_static.tex}\unskip
+\end{tableorg}
+
+\section*{S5. Complete static outcomes}
+The two panels retain every original ranker and scenario, including methods with equal aggregate outcomes. Cells report critical intervals covered out of four / FP@100. The main article uses the compact aggregate table for readability.
+
+\clearpage
+\begin{center}
+\footnotesize
+\textbf{Table S5a. Static results, first four scenarios.}\par\medskip
+\input{generated/tables/tab_static_panel_a.tex}\unskip
+\par\bigskip
+\textbf{Table S5b. Static results, remaining four scenarios.}\par\medskip
+\input{generated/tables/tab_static_panel_b.tex}\unskip
+\end{center}
+
+\section*{S6. Reproducibility and artifact inventory}
+The artifact inventory records 141 static folds across the primary, secondary, ablation, identifier hold-out, and forward-chaining analyses. Identifier hold-out contributes 8 scenarios $\times$ 5 groups; forward chaining contributes five eligible test scenarios. The inventory also records 141 fitting-chain verifications without scores and 1,616 replays. The replay count spans two input policies $\times$ 8 scenarios $\times$ the outer candidates $\times$ four rates. The dated exploratory extension comprises 45 forward replays (nine rankers across five scenarios, at 12 investigations per hour), plus support and interval-end diagnostics computed from verified records. A separately declared rate-score adaptation adds eight static evaluations and eight replays. The original runs did not replay duplicate suppression, identifier hold-out, or input ablations. Sections~S7--S10 describe the separate exploratory sensitivity analyses, including grouped replay. Generated result tables and numerical macros are tied to verified outputs. The reproducibility archive includes an additional source-to-result inventory, per-scenario outputs, selected candidates, and exact reproduction commands.
+
+\input{generated/review_supplement.tex}
+
+\bibliography{references}
+\end{document}

@@ -1,0 +1,125 @@
+severity_scale:
+  min: 0.0
+  max: 10.0
+  default_unknown: 5.0
+
+ait_attack_phase_severity:
+  network_scans: 2.0
+  service_scans: 2.5
+  dirb: 3.0
+  wpscan: 3.0
+  webshell: 8.5
+  cracking: 6.5
+  reverse_shell: 9.0
+  privilege_escalation: 9.5
+  service_stop: 7.5
+  dnsteal: 9.0
+  data_exfiltration: 9.0
+
+nf_uq_attack_category_severity:
+  DDoS: 7.5
+  Reconnaissance: 3.0
+  Injection: 9.0
+  DoS: 7.5
+  Brute Force: 6.5
+  Password: 6.5
+  XSS: 6.1
+  Infiltration: 8.5
+  Exploits: 8.5
+  Scanning: 2.5
+  Fuzzers: 5.5
+  Backdoor: 9.0
+  Bot: 7.0
+  Generic: 5.5
+  Analysis: 4.0
+  Theft: 9.0
+  Shellcode: 9.0
+  MITM: 8.0
+  Worms: 8.5
+  Ransomware: 9.5
+
+mitre_tactic_severity:
+  Reconnaissance: 2.5
+  Resource Development: 3.0
+  Initial Access: 7.0
+  Execution: 8.0
+  Persistence: 8.0
+  Privilege Escalation: 9.5
+  Defense Evasion: 8.0
+  Credential Access: 8.5
+  Discovery: 4.0
+  Lateral Movement: 8.5
+  Collection: 7.5
+  Command and Control: 8.5
+  Exfiltration: 9.5
+  Impact: 9.0
+
+mitre_tactic_uncertainty:
+  Reconnaissance: low
+  Resource Development: moderate
+  Initial Access: moderate
+  Execution: high
+  Persistence: high
+  Privilege Escalation: high
+  Defense Evasion: high
+  Credential Access: high
+  Discovery: moderate
+  Lateral Movement: high
+  Collection: moderate
+  Command and Control: high
+  Exfiltration: high
+  Impact: high
+
+ait_phase_to_mitre_tactic:
+  network_scans: Reconnaissance
+  service_scans: Reconnaissance
+  dirb: Reconnaissance
+  wpscan: Reconnaissance
+  webshell: Persistence
+  cracking: Credential Access
+  reverse_shell: Command and Control
+  privilege_escalation: Privilege Escalation
+  service_stop: Impact
+  dnsteal: Exfiltration
+  data_exfiltration: Exfiltration
+
+uncertainty_factor:
+  low: 0.10
+  moderate: 0.20
+  high: 0.35
+  novel_or_ambiguous: 0.50
+
+ait_attack_phase_uncertainty:
+  network_scans: low
+  service_scans: low
+  dirb: moderate
+  wpscan: moderate
+  webshell: high
+  cracking: moderate
+  reverse_shell: high
+  privilege_escalation: high
+  service_stop: moderate
+  dnsteal: high
+  data_exfiltration: high
+
+nf_uq_attack_category_uncertainty:
+  DDoS: moderate
+  Reconnaissance: low
+  Injection: high
+  DoS: moderate
+  Brute Force: moderate
+  Password: moderate
+  XSS: high
+  Infiltration: high
+  Exploits: high
+  Scanning: low
+  Fuzzers: moderate
+  Backdoor: high
+  Bot: moderate
+  Generic: moderate
+  Analysis: moderate
+  Theft: high
+  Shellcode: high
+  MITM: high
+  Worms: high
+  Ransomware: high

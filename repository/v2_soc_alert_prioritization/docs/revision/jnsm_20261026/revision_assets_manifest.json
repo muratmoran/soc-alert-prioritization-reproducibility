@@ -1,0 +1,33 @@
+{
+  "inputs": {
+    "v2_soc_alert_prioritization/docs/revision/jnsm_20261026/baseline/generated/tables/tab_static_primary.tex": "58a5323e935c075b47349a082704bdb8e20ccbd72845fd112f4ca33486e45e35",
+    "v2_soc_alert_prioritization/configs/severity_mapping.yaml": "a7c0383b6e69ebed42e3dcfef4c1f58952902fd490e7791f19c3b577be03d17a",
+    "v2_soc_alert_prioritization/docs/revision/jnsm_20261026/loso_timing.csv": "1024dcd746cafc01d31e5a82e520e4fa9b12f9d3c173f9df12d9313e8ca44efc",
+    "v2_soc_alert_prioritization/docs/revision/jnsm_20261026/holdout_support.csv": "8275cf347d8084a1ab1fbcd361632ef2804c4ea8343b82bebfcff9f572a2b3a9",
+    "v2_soc_alert_prioritization/docs/revision/jnsm_20261026/holdout_selected.csv": "bffb7b8f14396cccc49367587aa03ae3705e33bc59c0c87b233258ac72fb0da1",
+    "v2_soc_alert_prioritization/docs/revision/jnsm_20261026/forward_replay.csv": "cbe9759dcb57a32fd96ea400b7e1ec4562c9b1ce59070c5aa69ee0477e94efa2",
+    "v2_soc_alert_prioritization/docs/revision/jnsm_20261026/baseline/generated/tables/tab_delay.tex": "62a6fa99d4e00ee104a02683e72d80a678f55cc722d4753200464aa7e37a0905",
+    "v2_soc_alert_prioritization/docs/revision/wp7/per_scenario_effects.csv": "79fd7a185f4eb05865a108de6f04de8270aefbaf6fe3b739574f8ea3bc6e8014",
+    "v2_soc_alert_prioritization/docs/revision/wp4/stage2_tables/r1_e12_selections.csv": "2b56c7503d99d4be3dbf6f813d788e776e88d683a5863778e82db3dd1db0230f",
+    "v2_soc_alert_prioritization/docs/revision/wp4/stage2_tables/r6_e12_selections.csv": "af876b759ed6b03a217867fb860ed8ba4c8976000f255a5cfb536592e012a2a0",
+    "v2_soc_alert_prioritization/docs/revision/wp4/stage2_tables/r7_e12_selections.csv": "f276124536bd7be64df41a9651c8ddfeeddb54960dcc084593692e74fc410bc3",
+    "v2_soc_alert_prioritization/docs/revision/jnsm_20261026/ait_rate_static.csv": "8b0187f4a16c511a8fa613823e507eb606226f81eba185eb6de84088fff463dd",
+    "v2_soc_alert_prioritization/docs/revision/jnsm_20261026/ait_rate_replay.csv": "ca3022b5ab36839b7bc3ba492617f640107621c674919f1ecf8f3854cd697b20"
+  },
+  "outputs": {
+    "computers_security_revision/generated/tables/tab_static_summary.tex": "7d8593c5e7d2e92800a0179ad87a1fa8d26b391baf6856b5c59fed8e802ae9bd",
+    "computers_security_revision/generated/tables/tab_static_panel_a.tex": "e3f68440eb0689820a6e259cf12b3c6dc00afb0c40b5b33fae520af42991143a",
+    "computers_security_revision/generated/tables/tab_static_panel_b.tex": "177a974c5a1f0744b37dcbe2cd40c2f7b0e294ee1b894c012f9888c892e354ee",
+    "computers_security_revision/generated/tables/tab_policy.tex": "3764907a38fa54f5cb04123d25f1575d422f225e45b5d18e0e9b291e8cb2e549",
+    "computers_security_revision/generated/tables/tab_replay_panels.tex": "cbff3886beb2a57aed3ec6a9dc3ff86a00674f6f033d8324888d687bc8b9ceae",
+    "computers_security_revision/generated/tables/tab_holdout_support.tex": "f686acb7f691ed4f65315c5b602bfdcec89e7960b50e53f9758157fa20a0401e",
+    "computers_security_revision/generated/tables/tab_forward_replay.tex": "d450693a5b9daf6a7dcfa17ace0bdf196a87ca2dc3468126d1021a9b843c34a7",
+    "computers_security_revision/generated/forward_interpretation.tex": "7e00f4d11a7ba59fc476437e98a70ae3350f13d2d3091d54f5487a3206b938c7",
+    "computers_security_revision/generated/revision_numbers.tex": "8876f29d2280d734917071b89dde1aa0250e7f2520c8282d4e455f3f40544dda",
+    "computers_security_revision/generated/tables/tab_delay.tex": "25edcebba3f175e328c99a34570b3143c73edefe8e1893dbc5e32a8d2fbdb6c9",
+    "computers_security_revision/generated/figures/fig_paired_effects.pdf": "64939100edbf6ec7217546c38ce6957b4753a9666a84c1a2ebaa14febc6bd79e",
+    "computers_security_revision/generated/ait_rate_interpretation.tex": "05fb9947d2394e9206484c62ff65e94b479a45b5f29aa187cb6c23bed370bee0",
+    "computers_security_revision/generated/tables/tab_ait_rate_static.tex": "849aabda09da85872488091eae4593a4d23eaf0cc6f12eccc170fbfb2012a7d2"
+  },
+  "script_sha256": "75d53b42cccf1a9bdb839f0991eebd6224672f0026b9acf2e12c15172b797166"
+}

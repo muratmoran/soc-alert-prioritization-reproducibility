@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-30",
+  "tests_run": 131,
+  "expected_failures": 1,
+  "unexpected_failures": 0,
+  "scientific_gates_passed": true,
+  "independent_asset_rebuild_passed": true,
+  "full_numerical_refit_performed": false,
+  "unchanged_numerical_csvs": 15,
+  "independent_pdf_text_and_all_page_renders_match": true,
+  "pdf_comparison_note": "Rendered pages and extracted text match. Rebuilt figure metadata can change PDF byte hashes.",
+  "manuscript_sha256": "9ef155b1e1bb761f9c08290619583e0549a113ec1c4db242f7f6f34ee8ec6ba6",
+  "supplement_sha256": "6dd6cfe7b01b43ff9135894e44919f5fefc3f865edb9946868501f5e18a943c6",
+  "manuscript": {
+    "pages": 27,
+    "undefined_references": 0,
+    "overfull_hboxes": 0
+  },
+  "supplementary": {
+    "pages": 13,
+    "undefined_references": 0,
+    "overfull_hboxes": 0
+  },
+  "flattened_source_matches_rendered_main": true,
+  "visual_review": "Current declarations and one-page cover letter inspected; all article and supplement page renders match the independently rebuilt documents."
+}

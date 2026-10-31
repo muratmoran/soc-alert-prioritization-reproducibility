@@ -1,0 +1,7 @@
+left_out,tactics,spearman,kendall_tau_b,mean_absolute_discrepancy_unweighted,mean_absolute_discrepancy_frequency_weighted,jaccard,set_tactic_table,set_crosswalk
+none,5,0.8720815992723809,0.7378647873726218,0.7,1.8823441947406432,0.75,Credential Access;Exfiltration;Persistence;Privilege Escalation,Exfiltration;Persistence;Privilege Escalation
+Credential Access,4,0.9486832980505139,0.9128709291752769,0.375,0.4545200892857143,1.0,Exfiltration;Persistence;Privilege Escalation,Exfiltration;Persistence;Privilege Escalation
+Reconnaissance,4,0.7378647873726218,0.5477225575051661,0.75,1.9733863116665535,0.75,Credential Access;Exfiltration;Persistence;Privilege Escalation,Exfiltration;Persistence;Privilege Escalation
+Persistence,4,0.9486832980505139,0.9128709291752769,0.75,1.8919832306639288,0.6666666666666666,Credential Access;Exfiltration;Privilege Escalation,Exfiltration;Privilege Escalation
+Privilege Escalation,4,0.7999999999999999,0.6666666666666666,0.875,1.8954697125256674,0.6666666666666666,Credential Access;Exfiltration;Persistence,Exfiltration;Persistence
+Exfiltration,4,0.7999999999999999,0.6666666666666666,0.75,1.8830198703644672,0.6666666666666666,Credential Access;Persistence;Privilege Escalation,Persistence;Privilege Escalation

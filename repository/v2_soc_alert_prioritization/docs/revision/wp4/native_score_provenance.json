@@ -1,0 +1,773 @@
+{
+  "analysis_role": "WP4 native-score provenance; label-free, no scores of methods",
+  "raw_files_verified": true,
+  "alignment_with_canonical_cache": {
+    "rows_cache": 2655821,
+    "rows_raw": 2655821,
+    "alert_id_equal": true,
+    "scenario_equal": true,
+    "detector_equal": true,
+    "native_key_equal": true,
+    "timestamp_equal": true,
+    "historical_detector_score_rederived": true
+  },
+  "by_detector_and_branch": [
+    {
+      "detector": "aminer",
+      "loader_detector_score_branch": "none",
+      "alerts": 55558,
+      "keys": 34,
+      "rule_level_missing": 55558,
+      "severity_missing": 55558
+    },
+    {
+      "detector": "suricata",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "alerts": 306635,
+      "keys": 29,
+      "rule_level_missing": 0,
+      "severity_missing": 0
+    },
+    {
+      "detector": "suricata",
+      "loader_detector_score_branch": "suricata_rule_level_fallback",
+      "alerts": 306723,
+      "keys": 6,
+      "rule_level_missing": 0,
+      "severity_missing": 306723
+    },
+    {
+      "detector": "wazuh",
+      "loader_detector_score_branch": "wazuh_rule_level",
+      "alerts": 1986905,
+      "keys": 24,
+      "rule_level_missing": 0,
+      "severity_missing": 1986905
+    }
+  ],
+  "value_provenance": {
+    "aminer|none": {
+      "historical_detector_score": {
+        "NaN": 55558
+      },
+      "raw_rule_level": {
+        "NaN": 55558
+      },
+      "raw_suricata_severity": {
+        "NaN": 55558
+      },
+      "suricata_event_type": {
+        "": 55558
+      },
+      "raw_files": {
+        "aminer.json": 55558
+      }
+    },
+    "suricata|suricata_inverted_alert_severity": {
+      "historical_detector_score": {
+        "0.5": 213971,
+        "0.75": 92514,
+        "1.0": 150
+      },
+      "raw_rule_level": {
+        "3.0": 306635
+      },
+      "raw_suricata_severity": {
+        "1.0": 150,
+        "2.0": 92514,
+        "3.0": 213971
+      },
+      "suricata_event_type": {
+        "alert": 306635
+      },
+      "raw_files": {
+        "wazuh.json": 306635
+      }
+    },
+    "suricata|suricata_rule_level_fallback": {
+      "historical_detector_score": {
+        "6.0": 295032,
+        "8.0": 626,
+        "10.0": 9398,
+        "11.0": 1667
+      },
+      "raw_rule_level": {
+        "6.0": 295032,
+        "8.0": 626,
+        "10.0": 9398,
+        "11.0": 1667
+      },
+      "raw_suricata_severity": {
+        "NaN": 306723
+      },
+      "suricata_event_type": {
+        "": 306723
+      },
+      "raw_files": {
+        "wazuh.json": 306723
+      }
+    },
+    "wazuh|wazuh_rule_level": {
+      "historical_detector_score": {
+        "3.0": 286087,
+        "4.0": 13,
+        "5.0": 1576278,
+        "6.0": 2650,
+        "8.0": 3,
+        "10.0": 121874
+      },
+      "raw_rule_level": {
+        "3.0": 286087,
+        "4.0": 13,
+        "5.0": 1576278,
+        "6.0": 2650,
+        "8.0": 3,
+        "10.0": 121874
+      },
+      "raw_suricata_severity": {
+        "NaN": 1986905
+      },
+      "suricata_event_type": {
+        "": 1986905
+      },
+      "raw_files": {
+        "wazuh.json": 1986905
+      }
+    }
+  },
+  "suricata_keys": [
+    {
+      "native_key": "suricata:20101::ids event.",
+      "loader_detector_score_branch": "suricata_rule_level_fallback",
+      "rule_id": "20101",
+      "rule_groups": "ids",
+      "suricata_event_type": "",
+      "alerts": 295032,
+      "rule_levels": [
+        6.0
+      ],
+      "severities": [],
+      "locations": [
+        "/var/log/suricata/fast.log"
+      ]
+    },
+    {
+      "native_key": "suricata:2230010:generic protocol command decode:suricata tls invalid record/traffic",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 105043,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2230003:generic protocol command decode:suricata tls invalid handshake message",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 105016,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2027863:potentially bad traffic:et info observed dns query to .biz tld",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 91761,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:20152::multiple ids alerts for same id.",
+      "loader_detector_score_branch": "suricata_rule_level_fallback",
+      "rule_id": "20152",
+      "rule_groups": "ids",
+      "suricata_event_type": "",
+      "alerts": 7036,
+      "rule_levels": [
+        10.0
+      ],
+      "severities": [],
+      "locations": [
+        "/var/log/suricata/fast.log"
+      ]
+    },
+    {
+      "native_key": "suricata:2013504:not suspicious traffic:et policy gnu/linux apt user-agent outbound likely related to package management",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 3422,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:20151::multiple ids events from same source ip.",
+      "loader_detector_score_branch": "suricata_rule_level_fallback",
+      "rule_id": "20151",
+      "rule_groups": "ids",
+      "suricata_event_type": "",
+      "alerts": 2362,
+      "rule_levels": [
+        10.0
+      ],
+      "severities": [],
+      "locations": [
+        "/var/log/suricata/fast.log"
+      ]
+    },
+    {
+      "native_key": "suricata:20162::multiple ids alerts for same id (ignoring now this id).",
+      "loader_detector_score_branch": "suricata_rule_level_fallback",
+      "rule_id": "20162",
+      "rule_groups": "ids",
+      "suricata_event_type": "",
+      "alerts": 1465,
+      "rule_levels": [
+        11.0
+      ],
+      "severities": [],
+      "locations": [
+        "/var/log/suricata/fast.log"
+      ]
+    },
+    {
+      "native_key": "suricata:20100::first time this ids alert is generated.",
+      "loader_detector_score_branch": "suricata_rule_level_fallback",
+      "rule_id": "20100",
+      "rule_groups": "ids,fts",
+      "suricata_event_type": "",
+      "alerts": 626,
+      "rule_levels": [
+        8.0
+      ],
+      "severities": [],
+      "locations": [
+        "/var/log/suricata/fast.log"
+      ]
+    },
+    {
+      "native_key": "suricata:2027865:potentially bad traffic:et info observed dns query to .cloud tld",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 464,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2221010:generic protocol command decode:suricata http unable to match response to request",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 379,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:20161::multiple ids events from same source ip (ignoring now this srcip and id).",
+      "loader_detector_score_branch": "suricata_rule_level_fallback",
+      "rule_id": "20161",
+      "rule_groups": "ids",
+      "suricata_event_type": "",
+      "alerts": 202,
+      "rule_levels": [
+        11.0
+      ],
+      "severities": [],
+      "locations": [
+        "/var/log/suricata/fast.log"
+      ]
+    },
+    {
+      "native_key": "suricata:2024364:web application attack:et scan possible nmap user-agent observed",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 138,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        1.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2027757:potentially bad traffic:et dns query for .to tld",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 85,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2027758:potentially bad traffic:et dns query for .cc tld",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 48,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2029706:potentially bad traffic:et hunting possible covid-19 domain in ssl certificate m2",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 47,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2029709:potentially bad traffic:et hunting suspicious domain request for possible covid-19 domain m1",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 27,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2221001:generic protocol command decode:suricata http gzip decompression failed",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 27,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2029707:potentially bad traffic:et hunting suspicious tls sni request for possible covid-19 domain m1",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 21,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2025105:potentially bad traffic:et info dns query for suspicious .ga domain",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 20,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2025109:potentially bad traffic:et info suspicious domain (*.ga) in tls sni",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 19,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2220000:generic protocol command decode:suricata smtp invalid reply",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 18,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2220006:generic protocol command decode:suricata smtp no server welcome message",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 18,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2230000:generic protocol command decode:suricata tls invalid sslv2 header",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 18,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2029340:potentially bad traffic:et info tls handshake failure",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 12,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2221004:generic protocol command decode:suricata http invalid response chunk len",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 12,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2016149:attempted user privilege gain:et info session traversal utilities for nat (stun binding request)",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 10,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        1.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2230002:generic protocol command decode:suricata tls invalid record type",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 9,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2016778:potentially bad traffic:et dns query to a *.pw domain - likely hostile",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 4,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2230027:generic protocol command decode:suricata tls certificate invalid der",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 4,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2011802:potentially bad traffic:et dns dns lookup for localhost.domain.tld",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 4,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2240001::suricata dns unsolicited response",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 3,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2016150:attempted user privilege gain:et info session traversal utilities for nat (stun binding response)",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 2,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        1.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2014169:potentially bad traffic:et dns query for .su tld (soviet union) often malware related",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 2,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        2.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    },
+    {
+      "native_key": "suricata:2001569:misc activity:et scan behavioral unusual port 445 traffic potential scan or infection",
+      "loader_detector_score_branch": "suricata_inverted_alert_severity",
+      "rule_id": "86601",
+      "rule_groups": "ids,suricata",
+      "suricata_event_type": "alert",
+      "alerts": 2,
+      "rule_levels": [
+        3.0
+      ],
+      "severities": [
+        3.0
+      ],
+      "locations": [
+        "/var/log/suricata/eve.json"
+      ]
+    }
+  ],
+  "wazuh_wrapper_fields": {
+    "suricata_alerts_with_rule_level": 613358,
+    "suricata_alerts": 613358,
+    "wazuh_alerts_with_rule_level": 1986905,
+    "wazuh_alerts": 1986905,
+    "aminer_alerts_with_rule_level": 0,
+    "wazuh_alerts_with_suricata_severity": 0,
+    "rule_level_by_detector": {
+      "aminer": [],
+      "suricata": [
+        3.0,
+        6.0,
+        8.0,
+        10.0,
+        11.0
+      ],
+      "wazuh": [
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        10.0
+      ]
+    },
+    "suricata_severity_values": [
+      1.0,
+      2.0,
+      3.0
+    ]
+  },
+  "provenance_cache": {
+    "path": "/Users/murat/soc_revision_data/cache/ait_native_score_provenance.pkl.gz",
+    "sha256": "d2f4e1cf04987eff35526d4dcd6f1b0350748054de5a6e83fac2fca26c5e7522",
+    "rows": 2655821,
+    "canonical_cache_sha256": "c5702421b4e563c909d7d4002f1cca96c5ba08265a47b6a6249726c6dde133be",
+    "columns": [
+      "alert_id",
+      "raw_file",
+      "raw_line",
+      "native_rule_level",
+      "native_suricata_severity",
+      "suricata_event_type",
+      "rule_id",
+      "rule_groups",
+      "location",
+      "loader_detector_score_branch"
+    ]
+  },
+  "runtime_seconds": 420.9
+}

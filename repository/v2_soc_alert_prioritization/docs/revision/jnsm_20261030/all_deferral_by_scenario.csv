@@ -1,0 +1,177 @@
+scenario,family,method,candidate_id,critical_total,deferred
+fox,O_oldest_first,FIFO,O_oldest_first,408,20
+fox,O_newest_first,LIFO,O_newest_first,408,388
+fox,O_native_rule_level,Native level,O_native_rule_level,408,391
+fox,O_native_suricata_severity,Native Suricata,O_native_suricata_severity,408,20
+fox,O_severity,Severity,O_severity,408,3
+fox,O_reliability,O_reliability,O_reliability,408,408
+fox,H_weighted,H,H_weighted,408,404
+fox,W_weighted,W,W_weighted[alpha=0.3],408,404
+fox,A_additive,A,"A_additive[a=0.3,b=0.2,d=0.5]",408,404
+fox,M_multiplicative,M,"M_multiplicative[a=0.25,b=4]",408,404
+fox,P_probability_proxy,P,P_probability_proxy,408,404
+fox,C_cost_sensitive,C,C_cost_sensitive[c_fp=0],408,404
+fox,L1_logistic,L1,L1_logistic[C=1],408,404
+fox,L2_gradient_boosting,L2,L2_gradient_boosting[max_depth=2],408,404
+fox,R_key_reliability,Rkey,R_key_reliability,408,408
+fox,R_severity_key_reliability,"Rsev,key",R_severity_key_reliability,408,401
+fox,S0_linear_log_historical,S0,S0_linear_log_historical[kappa=1],408,404
+fox,S1_linear_log_constrained,S1,S1_linear_log_constrained[kappa=0.3],408,404
+fox,S2_exponential_discount,S2,S2_exponential_discount[kappa=0.5],408,404
+fox,S0_linear_log_historical_key,S0key,S0_linear_log_historical_key[kappa=1],408,399
+fox,S1_linear_log_constrained_key,S1key,S1_linear_log_constrained_key[kappa=0.1],408,3
+fox,S2_exponential_discount_key,S2key,S2_exponential_discount_key[kappa=0.5],408,389
+harrison,O_oldest_first,FIFO,O_oldest_first,3385,3385
+harrison,O_newest_first,LIFO,O_newest_first,3385,0
+harrison,O_native_rule_level,Native level,O_native_rule_level,3385,2430
+harrison,O_native_suricata_severity,Native Suricata,O_native_suricata_severity,3385,2430
+harrison,O_severity,Severity,O_severity,3385,23
+harrison,O_reliability,O_reliability,O_reliability,3385,3385
+harrison,H_weighted,H,H_weighted,3385,3381
+harrison,W_weighted,W,W_weighted[alpha=0.3],3385,3381
+harrison,A_additive,A,"A_additive[a=0.4,b=0.1,d=0.5]",3385,3381
+harrison,M_multiplicative,M,"M_multiplicative[a=0.25,b=4]",3385,3381
+harrison,P_probability_proxy,P,P_probability_proxy,3385,3381
+harrison,C_cost_sensitive,C,C_cost_sensitive[c_fp=0],3385,3381
+harrison,L1_logistic,L1,L1_logistic[C=1],3385,3381
+harrison,L2_gradient_boosting,L2,L2_gradient_boosting[max_depth=3],3385,3381
+harrison,R_key_reliability,Rkey,R_key_reliability,3385,3385
+harrison,R_severity_key_reliability,"Rsev,key",R_severity_key_reliability,3385,3374
+harrison,S0_linear_log_historical,S0,S0_linear_log_historical[kappa=1],3385,3381
+harrison,S1_linear_log_constrained,S1,S1_linear_log_constrained[kappa=0.3],3385,3381
+harrison,S2_exponential_discount,S2,S2_exponential_discount[kappa=0.5],3385,3381
+harrison,S0_linear_log_historical_key,S0key,S0_linear_log_historical_key[kappa=1],3385,3361
+harrison,S1_linear_log_constrained_key,S1key,S1_linear_log_constrained_key[kappa=0.1],3385,23
+harrison,S2_exponential_discount_key,S2key,S2_exponential_discount_key[kappa=0.5],3385,3341
+russellmitchell,O_oldest_first,FIFO,O_oldest_first,743,743
+russellmitchell,O_newest_first,LIFO,O_newest_first,743,0
+russellmitchell,O_native_rule_level,Native level,O_native_rule_level,743,577
+russellmitchell,O_native_suricata_severity,Native Suricata,O_native_suricata_severity,743,577
+russellmitchell,O_severity,Severity,O_severity,743,740
+russellmitchell,O_reliability,O_reliability,O_reliability,743,718
+russellmitchell,H_weighted,H,H_weighted,743,718
+russellmitchell,W_weighted,W,W_weighted[alpha=0.2],743,718
+russellmitchell,A_additive,A,"A_additive[a=0.3,b=0.3,d=0.4]",743,718
+russellmitchell,M_multiplicative,M,"M_multiplicative[a=0.25,b=4]",743,718
+russellmitchell,P_probability_proxy,P,P_probability_proxy,743,718
+russellmitchell,C_cost_sensitive,C,C_cost_sensitive[c_fp=0],743,718
+russellmitchell,L1_logistic,L1,L1_logistic[C=100],743,718
+russellmitchell,L2_gradient_boosting,L2,L2_gradient_boosting[max_depth=3],743,718
+russellmitchell,R_key_reliability,Rkey,R_key_reliability,743,713
+russellmitchell,R_severity_key_reliability,"Rsev,key",R_severity_key_reliability,743,713
+russellmitchell,S0_linear_log_historical,S0,S0_linear_log_historical[kappa=1],743,718
+russellmitchell,S1_linear_log_constrained,S1,S1_linear_log_constrained[kappa=0.3],743,718
+russellmitchell,S2_exponential_discount,S2,S2_exponential_discount[kappa=0.5],743,718
+russellmitchell,S0_linear_log_historical_key,S0key,S0_linear_log_historical_key[kappa=1],743,713
+russellmitchell,S1_linear_log_constrained_key,S1key,S1_linear_log_constrained_key[kappa=0.1],743,722
+russellmitchell,S2_exponential_discount_key,S2key,S2_exponential_discount_key[kappa=0.5],743,713
+santos,O_oldest_first,FIFO,O_oldest_first,908,908
+santos,O_newest_first,LIFO,O_newest_first,908,0
+santos,O_native_rule_level,Native level,O_native_rule_level,908,749
+santos,O_native_suricata_severity,Native Suricata,O_native_suricata_severity,908,762
+santos,O_severity,Severity,O_severity,908,905
+santos,O_reliability,O_reliability,O_reliability,908,866
+santos,H_weighted,H,H_weighted,908,866
+santos,W_weighted,W,W_weighted[alpha=0.2],908,866
+santos,A_additive,A,"A_additive[a=0.3,b=0.3,d=0.4]",908,866
+santos,M_multiplicative,M,"M_multiplicative[a=0.25,b=4]",908,866
+santos,P_probability_proxy,P,P_probability_proxy,908,866
+santos,C_cost_sensitive,C,C_cost_sensitive[c_fp=0],908,866
+santos,L1_logistic,L1,L1_logistic[C=1],908,866
+santos,L2_gradient_boosting,L2,L2_gradient_boosting[max_depth=3],908,866
+santos,R_key_reliability,Rkey,R_key_reliability,908,849
+santos,R_severity_key_reliability,"Rsev,key",R_severity_key_reliability,908,849
+santos,S0_linear_log_historical,S0,S0_linear_log_historical[kappa=1],908,866
+santos,S1_linear_log_constrained,S1,S1_linear_log_constrained[kappa=0.3],908,866
+santos,S2_exponential_discount,S2,S2_exponential_discount[kappa=0.5],908,866
+santos,S0_linear_log_historical_key,S0key,S0_linear_log_historical_key[kappa=1],908,849
+santos,S1_linear_log_constrained_key,S1key,S1_linear_log_constrained_key[kappa=0.1],908,865
+santos,S2_exponential_discount_key,S2key,S2_exponential_discount_key[kappa=0.5],908,849
+shaw,O_oldest_first,FIFO,O_oldest_first,165,165
+shaw,O_newest_first,LIFO,O_newest_first,165,0
+shaw,O_native_rule_level,Native level,O_native_rule_level,165,164
+shaw,O_native_suricata_severity,Native Suricata,O_native_suricata_severity,165,165
+shaw,O_severity,Severity,O_severity,165,162
+shaw,O_reliability,O_reliability,O_reliability,165,146
+shaw,H_weighted,H,H_weighted,165,146
+shaw,W_weighted,W,W_weighted[alpha=0.2],165,146
+shaw,A_additive,A,"A_additive[a=0.3,b=0.1,d=0.6]",165,146
+shaw,M_multiplicative,M,"M_multiplicative[a=0.25,b=4]",165,146
+shaw,P_probability_proxy,P,P_probability_proxy,165,146
+shaw,C_cost_sensitive,C,C_cost_sensitive[c_fp=0],165,146
+shaw,L1_logistic,L1,L1_logistic[C=1],165,149
+shaw,L2_gradient_boosting,L2,L2_gradient_boosting[max_depth=2],165,146
+shaw,R_key_reliability,Rkey,R_key_reliability,165,117
+shaw,R_severity_key_reliability,"Rsev,key",R_severity_key_reliability,165,117
+shaw,S0_linear_log_historical,S0,S0_linear_log_historical[kappa=1],165,146
+shaw,S1_linear_log_constrained,S1,S1_linear_log_constrained[kappa=0.3],165,146
+shaw,S2_exponential_discount,S2,S2_exponential_discount[kappa=0.5],165,146
+shaw,S0_linear_log_historical_key,S0key,S0_linear_log_historical_key[kappa=1],165,117
+shaw,S1_linear_log_constrained_key,S1key,S1_linear_log_constrained_key[kappa=0.1],165,133
+shaw,S2_exponential_discount_key,S2key,S2_exponential_discount_key[kappa=0.5],165,117
+wardbeck,O_oldest_first,FIFO,O_oldest_first,85,62
+wardbeck,O_newest_first,LIFO,O_newest_first,85,23
+wardbeck,O_native_rule_level,Native level,O_native_rule_level,85,78
+wardbeck,O_native_suricata_severity,Native Suricata,O_native_suricata_severity,85,79
+wardbeck,O_severity,Severity,O_severity,85,57
+wardbeck,O_reliability,O_reliability,O_reliability,85,29
+wardbeck,H_weighted,H,H_weighted,85,29
+wardbeck,W_weighted,W,W_weighted[alpha=0.2],85,29
+wardbeck,A_additive,A,"A_additive[a=0.2,b=0.8,d=0]",85,29
+wardbeck,M_multiplicative,M,"M_multiplicative[a=4,b=1]",85,29
+wardbeck,P_probability_proxy,P,P_probability_proxy,85,29
+wardbeck,C_cost_sensitive,C,C_cost_sensitive[c_fp=0],85,29
+wardbeck,L1_logistic,L1,L1_logistic[C=1],85,34
+wardbeck,L2_gradient_boosting,L2,L2_gradient_boosting[max_depth=3],85,29
+wardbeck,R_key_reliability,Rkey,R_key_reliability,85,20
+wardbeck,R_severity_key_reliability,"Rsev,key",R_severity_key_reliability,85,20
+wardbeck,S0_linear_log_historical,S0,S0_linear_log_historical[kappa=1],85,29
+wardbeck,S1_linear_log_constrained,S1,S1_linear_log_constrained[kappa=0.4],85,29
+wardbeck,S2_exponential_discount,S2,S2_exponential_discount[kappa=0.5],85,29
+wardbeck,S0_linear_log_historical_key,S0key,S0_linear_log_historical_key[kappa=1],85,20
+wardbeck,S1_linear_log_constrained_key,S1key,S1_linear_log_constrained_key[kappa=0.1],85,34
+wardbeck,S2_exponential_discount_key,S2key,S2_exponential_discount_key[kappa=0.5],85,20
+wheeler,O_oldest_first,FIFO,O_oldest_first,554,88
+wheeler,O_newest_first,LIFO,O_newest_first,554,466
+wheeler,O_native_rule_level,Native level,O_native_rule_level,554,387
+wheeler,O_native_suricata_severity,Native Suricata,O_native_suricata_severity,554,64
+wheeler,O_severity,Severity,O_severity,554,14
+wheeler,O_reliability,O_reliability,O_reliability,554,554
+wheeler,H_weighted,H,H_weighted,554,551
+wheeler,W_weighted,W,W_weighted[alpha=0.3],554,551
+wheeler,A_additive,A,"A_additive[a=0.3,b=0.3,d=0.4]",554,551
+wheeler,M_multiplicative,M,"M_multiplicative[a=0.25,b=4]",554,551
+wheeler,P_probability_proxy,P,P_probability_proxy,554,551
+wheeler,C_cost_sensitive,C,C_cost_sensitive[c_fp=0],554,551
+wheeler,L1_logistic,L1,L1_logistic[C=1],554,554
+wheeler,L2_gradient_boosting,L2,L2_gradient_boosting[max_depth=3],554,551
+wheeler,R_key_reliability,Rkey,R_key_reliability,554,554
+wheeler,R_severity_key_reliability,"Rsev,key",R_severity_key_reliability,554,543
+wheeler,S0_linear_log_historical,S0,S0_linear_log_historical[kappa=1],554,551
+wheeler,S1_linear_log_constrained,S1,S1_linear_log_constrained[kappa=0.3],554,551
+wheeler,S2_exponential_discount,S2,S2_exponential_discount[kappa=0.5],554,551
+wheeler,S0_linear_log_historical_key,S0key,S0_linear_log_historical_key[kappa=1],554,536
+wheeler,S1_linear_log_constrained_key,S1key,S1_linear_log_constrained_key[kappa=0.1],554,14
+wheeler,S2_exponential_discount_key,S2key,S2_exponential_discount_key[kappa=0.5],554,526
+wilson,O_oldest_first,FIFO,O_oldest_first,2956,90
+wilson,O_newest_first,LIFO,O_newest_first,2956,2866
+wilson,O_native_rule_level,Native level,O_native_rule_level,2956,2046
+wilson,O_native_suricata_severity,Native Suricata,O_native_suricata_severity,2956,66
+wilson,O_severity,Severity,O_severity,2956,3
+wilson,O_reliability,O_reliability,O_reliability,2956,2956
+wilson,H_weighted,H,H_weighted,2956,2952
+wilson,W_weighted,W,W_weighted[alpha=0.2],2956,2952
+wilson,A_additive,A,"A_additive[a=0.3,b=0.2,d=0.5]",2956,2952
+wilson,M_multiplicative,M,"M_multiplicative[a=0.25,b=4]",2956,2952
+wilson,P_probability_proxy,P,P_probability_proxy,2956,2952
+wilson,C_cost_sensitive,C,C_cost_sensitive[c_fp=0],2956,2952
+wilson,L1_logistic,L1,L1_logistic[C=100],2956,2952
+wilson,L2_gradient_boosting,L2,L2_gradient_boosting[max_depth=3],2956,2952
+wilson,R_key_reliability,Rkey,R_key_reliability,2956,2956
+wilson,R_severity_key_reliability,"Rsev,key",R_severity_key_reliability,2956,2949
+wilson,S0_linear_log_historical,S0,S0_linear_log_historical[kappa=1],2956,2952
+wilson,S1_linear_log_constrained,S1,S1_linear_log_constrained[kappa=0.3],2956,2952
+wilson,S2_exponential_discount,S2,S2_exponential_discount[kappa=0.5],2956,2952
+wilson,S0_linear_log_historical_key,S0key,S0_linear_log_historical_key[kappa=1],2956,2942
+wilson,S1_linear_log_constrained_key,S1key,S1_linear_log_constrained_key[kappa=0.1],2956,8
+wilson,S2_exponential_discount_key,S2key,S2_exponential_discount_key[kappa=0.5],2956,2937

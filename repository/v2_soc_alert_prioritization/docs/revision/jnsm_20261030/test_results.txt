@@ -1,0 +1,165 @@
+test_mutating_held_out_labels_leaves_scores_and_queue_unchanged (test_information_boundary.AitHeldOutLabelIsolation) ... /Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/src/soc_alert_ranking/rankers/baselines.py:17: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  native = scored["native_severity"].fillna(0.0).astype(float)
+/Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/src/soc_alert_ranking/rankers/baselines.py:17: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  native = scored["native_severity"].fillna(0.0).astype(float)
+/Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/src/soc_alert_ranking/rankers/baselines.py:17: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  native = scored["native_severity"].fillna(0.0).astype(float)
+/Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/src/soc_alert_ranking/rankers/baselines.py:17: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  native = scored["native_severity"].fillna(0.0).astype(float)
+/Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/src/soc_alert_ranking/rankers/baselines.py:17: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  native = scored["native_severity"].fillna(0.0).astype(float)
+/Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/src/soc_alert_ranking/rankers/baselines.py:17: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  native = scored["native_severity"].fillna(0.0).astype(float)
+ok
+test_scoring_runs_without_evaluation_columns (test_information_boundary.AitHeldOutLabelIsolation) ... /Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/src/soc_alert_ranking/rankers/baselines.py:17: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  native = scored["native_severity"].fillna(0.0).astype(float)
+/Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/src/soc_alert_ranking/rankers/baselines.py:17: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  native = scored["native_severity"].fillna(0.0).astype(float)
+ok
+test_training_labels_do_change_fitted_components (test_information_boundary.AitHeldOutLabelIsolation)
+Sanity check that the test above is sensitive: training labels matter. ... /Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/src/soc_alert_ranking/rankers/baselines.py:17: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  native = scored["native_severity"].fillna(0.0).astype(float)
+/Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/src/soc_alert_ranking/rankers/baselines.py:17: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  native = scored["native_severity"].fillna(0.0).astype(float)
+ok
+test_mutating_target_domain_labels_leaves_generated_queue_unchanged (test_information_boundary.NfUqHeldOutLabelIsolation) ... ok
+test_sample_inclusion_is_label_independent (test_information_boundary.NfUqHeldOutLabelIsolation)
+Known violation N1: build_domain_category_sample filters and caps by true category. ... expected failure
+test_aggregation_keeps_counts_and_median_of_scenario_means (test_jnsm_revision.RevisionChecks) ... ok
+test_exclusive_end_and_uncovered (test_jnsm_revision.RevisionChecks) ... ok
+test_rate_score_support_zero_counts_and_exclusions (test_jnsm_revision.RevisionChecks) ... ok
+unittest.case.FunctionTestCase (test_closed_groups_do_not_look_ahead_or_shorten_horizon) ... ok
+unittest.case.FunctionTestCase (test_critical_reliability_excluded_label_mutation) ... ok
+unittest.case.FunctionTestCase (test_critical_target_preserves_mapping_and_enforces_lock) ... ok
+unittest.case.FunctionTestCase (test_group_coverage_never_precedes_last_member_and_end_is_late) ... ok
+unittest.case.FunctionTestCase (test_priority_prefix_and_permutation_invariance) ... ok
+unittest.case.FunctionTestCase (test_replay_independent_scan_and_original_agree) ... ok
+test_declared_constrained_grid_increases_in_severity (test_revision_score_foundations.ScoreFoundations) ... ok
+test_exponential_dominates_linear_pointwise_but_changes_pair_order (test_revision_score_foundations.ScoreFoundations) ... ok
+test_global_bound_and_boundary (test_revision_score_foundations.ScoreFoundations) ... ok
+test_historical_counterexample_reverses_severity_and_asset_importance (test_revision_score_foundations.ScoreFoundations) ... ok
+test_invalid_inputs_rejected_without_imputation_or_clipping (test_revision_score_foundations.ScoreFoundations) ... ok
+test_limiting_cases_are_explicit (test_revision_score_foundations.ScoreFoundations) ... ok
+test_membership_zero_spread_and_symmetric_positive_spread (test_revision_score_foundations.ScoreFoundations) ... ok
+test_monotonicity_does_not_prevent_deferral (test_revision_score_foundations.ScoreFoundations) ... ok
+test_reliability_and_uncertainty_directions (test_revision_score_foundations.ScoreFoundations) ... ok
+test_severity_difference_equals_total_derivative (test_revision_score_foundations.ScoreFoundations) ... ok
+test_underflow_is_not_silently_a_strictly_increasing_score (test_revision_score_foundations.ScoreFoundations) ... ok
+test_additive_simplex_sums_to_one_on_tenths (test_wp2_config_families.ConfigSchema) ... ok
+test_config_drift_is_rejected (test_wp2_config_families.ConfigSchema) ... ok
+test_protocol_grid_sizes_and_unique_ids (test_wp2_config_families.ConfigSchema) ... ok
+test_simplicity_counts (test_wp2_config_families.ConfigSchema) ... ok
+test_domain_checks_reject_without_clipping (test_wp2_config_families.FamilyFormulas) ... ok
+test_equivalences_are_exact (test_wp2_config_families.FamilyFormulas) ... ok
+test_hand_calculated_values (test_wp2_config_families.FamilyFormulas) ... ok
+test_native_scores_keep_single_scales_and_missing_values_last (test_wp2_config_families.FamilyFormulas) ... ok
+test_equalizing_weights_give_equal_scenario_totals (test_wp2_config_families.LearnedSampling) ... ok
+test_logistic_single_class_uses_logged_constant_probability (test_wp2_config_families.LearnedSampling) ... ok
+test_training_rows_ignore_row_order_and_respect_cap (test_wp2_config_families.LearnedSampling) ... ok
+test_fit_set_components_never_read_outside_labels (test_wp2_fitting_isolation.FittingIsolation) ... ok
+test_isolation_check_is_sensitive_to_permitted_labels (test_wp2_fitting_isolation.FittingIsolation) ... ok
+test_learned_training_sample_is_isolated_and_label_independent (test_wp2_fitting_isolation.FittingIsolation) ... ok
+test_locked_labels_raise (test_wp2_fitting_isolation.FittingIsolation) ... ok
+test_training_scenario_features_exclude_its_own_labels (test_wp2_fitting_isolation.FittingIsolation) ... ok
+test_fallbacks_detector_then_global_then_failure (test_wp2_fitting_isolation.HeightArithmetic) ... ok
+test_key_heights (test_wp2_fitting_isolation.HeightArithmetic) ... ok
+test_shrinkage_priors_and_clipping (test_wp2_fitting_isolation.HeightArithmetic) ... ok
+test_tables_are_summed_over_the_fit_set (test_wp2_fitting_isolation.MappingArithmetic) ... ok
+test_thresholds_purity_and_alphabetical_ties (test_wp2_fitting_isolation.MappingArithmetic) ... ok
+test_inner_evaluation_reads_labels_only_after_scoring (test_wp2_fitting_isolation.PipelineIsolation) ... ok
+test_inner_validation_labels_only_change_its_metrics (test_wp2_fitting_isolation.PipelineIsolation) ... ok
+test_outer_label_mutation_changes_nothing (test_wp2_fitting_isolation.PipelineIsolation) ... ok
+test_outer_labels_never_accessed_during_fold (test_wp2_fitting_isolation.PipelineIsolation) ... ok
+test_all_overlapping_intervals_half_open (test_wp2_labels_ordering_metrics.IntervalLabels) ... ok
+test_duplicates_repeats_and_validation (test_wp2_labels_ordering_metrics.IntervalLabels) ... ok
+test_hash_keys_are_salted_sha256_prefixes (test_wp2_labels_ordering_metrics.Ordering) ... ok
+test_rule_order_and_row_order_independence (test_wp2_labels_ordering_metrics.Ordering) ... ok
+test_top_k_matches_full_order_under_heavy_ties (test_wp2_labels_ordering_metrics.Ordering) ... ok
+test_short_queue_and_not_applicable (test_wp2_labels_ordering_metrics.SelectionMetricsByHand) ... ok
+test_values (test_wp2_labels_ordering_metrics.SelectionMetricsByHand) ... ok
+test_deterministic_rerun (test_wp2_pipeline.EndToEnd) ... ok
+test_outputs_written (test_wp2_pipeline.EndToEnd) ... ok
+test_secondary_policy_changes_inputs_not_protocol (test_wp2_pipeline.EndToEnd) ... ok
+test_structure (test_wp2_pipeline.EndToEnd) ... ok
+test_common_eligibility_denominators_and_fallbacks (test_wp2_tuning.PrimaryRule) ... ok
+test_coverage_dominates_false_positives (test_wp2_tuning.PrimaryRule) ... ok
+test_inconsistent_or_incomplete_tables_are_rejected (test_wp2_tuning.PrimaryRule) ... ok
+test_macro_averages_not_pooled_and_tolerance_is_roundoff_only (test_wp2_tuning.PrimaryRule) ... ok
+test_ties_break_by_fp_then_ndcg_then_simplicity_then_grid (test_wp2_tuning.PrimaryRule) ... ok
+test_ndcg_fallback_flag (test_wp2_tuning.SecondaryRule) ... ok
+test_ndcg_only_then_simplicity (test_wp2_tuning.SecondaryRule) ... ok
+test_declared_variants (test_wp3_constancy_variants.SeverityVariants) ... ok
+test_restricted_queue_uses_subset_denominators_and_keeps_defined_intervals (test_wp3_constancy_variants.WithinDetectorQueues) ... ok
+test_asset_context_policy_is_audited_separately (test_wp3_constancy_variants.WithinKeyConstancy) ... ok
+test_every_family_has_declared_inputs (test_wp3_constancy_variants.WithinKeyConstancy) ... ok
+test_primary_policy_class_inputs_are_constant_within_keys (test_wp3_constancy_variants.WithinKeyConstancy) ... ok
+test_clusters_match_reference (test_wp3_properties.RandomizedAgreement) ... ok
+test_float_ceilings_agree_with_exact_arithmetic_for_declared_fractions (test_wp3_properties.RandomizedAgreement) ... ok
+test_label_file_order_never_changes_labels (test_wp3_properties.RandomizedAgreement) ... ok
+test_labels_order_and_all_budgets_match_reference (test_wp3_properties.RandomizedAgreement) ... ok
+test_permutations_only_reorder_within_score_blocks_and_are_seeded (test_wp3_properties.RandomizedAgreement) ... ok
+test_queue_report_is_complete (test_wp3_properties.RandomizedAgreement) ... ok
+test_score_availability (test_wp3_properties.RandomizedAgreement) ... ok
+test_tie_diagnostic_invariants (test_wp3_properties.RandomizedAgreement) ... ok
+test_tie_expectations_match_exhaustive_enumeration (test_wp3_properties.RandomizedAgreement) ... ok
+test_duplicates_example (test_wp3_reference_examples.ExampleChecks) ... ok
+test_example_a (test_wp3_reference_examples.ExampleChecks) ... ok
+test_example_effort_integer_ceiling (test_wp3_reference_examples.ExampleChecks) ... ok
+test_example_empty_queue (test_wp3_reference_examples.ExampleChecks) ... ok
+test_example_zero_relevant (test_wp3_reference_examples.ExampleChecks) ... ok
+test_near_tie_rounding (test_wp3_reference_examples.ExampleChecks) ... ok
+test_shuffled_label_file_order_gives_identical_labels (test_wp3_reference_examples.ExampleChecks) ... ok
+test_in_place_label_mutation_is_impossible (test_wp4_fitting_boundaries.CacheInvalidation) ... ok
+test_label_replacement_invalidates_only_fits_that_used_the_scenario (test_wp4_fitting_boundaries.CacheInvalidation) ... ok
+test_population_exclusion_policy_settings_and_severity_are_cache_keys (test_wp4_fitting_boundaries.CacheInvalidation) ... ok
+test_repeated_request_is_cached (test_wp4_fitting_boundaries.CacheInvalidation) ... ok
+test_uncertainty_and_context_are_applied_from_the_same_fit (test_wp4_fitting_boundaries.CacheInvalidation) ... ok
+test_adding_excluded_rows_including_a_new_identifier (test_wp4_fitting_boundaries.ExcludedIdentifierData) ... ok
+test_class_level_exclusion_makes_the_class_unseen (test_wp4_fitting_boundaries.ExcludedIdentifierData) ... ok
+test_deleting_excluded_rows (test_wp4_fitting_boundaries.ExcludedIdentifierData) ... /Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/tests/test_wp4_fitting_boundaries.py:173: FutureWarning: Logical ops (and, or, xor) between Pandas objects and dtype-less sequences (e.g. list, tuple) are deprecated and will raise in a future version. Wrap the object in a Series, Index, or np.array before operating instead.
+  keep = ~(BASE_ALERTS["scenario"].isin(self.training)
+/Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/tests/test_wp4_fitting_boundaries.py:173: FutureWarning: Logical ops (and, or, xor) between Pandas objects and dtype-less sequences (e.g. list, tuple) are deprecated and will raise in a future version. Wrap the object in a Series, Index, or np.array before operating instead.
+  keep = ~(BASE_ALERTS["scenario"].isin(self.training)
+ok
+test_learned_sample_under_a_cap_ignores_excluded_rows (test_wp4_fitting_boundaries.ExcludedIdentifierData) ... ok
+test_mutating_excluded_labels (test_wp4_fitting_boundaries.ExcludedIdentifierData) ... ok
+test_sensitivity_without_exclusion (test_wp4_fitting_boundaries.ExcludedIdentifierData)
+The mutation below does change fits when the identifier is not excluded (non-vacuous test). ... ok
+/Users/murat/Documents/GitHub/ids_alert_ranking_experiment/v2_soc_alert_prioritization/tests/test_wp4_fitting_boundaries.py:222: FutureWarning: Logical ops (and, or, xor) between Pandas objects and dtype-less sequences (e.g. list, tuple) are deprecated and will raise in a future version. Wrap the object in a Series, Index, or np.array before operating instead.
+  keep = ~(BASE_ALERTS["scenario"].isin(cls.training)
+test_excluded_alerts_stay_in_the_outer_queue_with_fallback_inputs (test_wp4_fitting_boundaries.ExcludedIdentifierPipeline) ... ok
+test_variants_leave_the_fold_unchanged (test_wp4_fitting_boundaries.ExcludedIdentifierPipeline) ... ok
+test_empty_and_fully_excluded_training_fail_explicitly (test_wp4_fitting_boundaries.ReliabilityArithmetic) ... ok
+test_heights_match_reference (test_wp4_fitting_boundaries.ReliabilityArithmetic) ... ok
+test_heights_match_reference_with_exclusions (test_wp4_fitting_boundaries.ReliabilityArithmetic) ... ok
+test_heights_use_interval_labels_not_other_columns (test_wp4_fitting_boundaries.ReliabilityArithmetic) ... ok
+test_single_class_training (test_wp4_fitting_boundaries.ReliabilityArithmetic) ... ok
+test_uncertainty_variants (test_wp4_fitting_boundaries.ReliabilityArithmetic) ... ok
+test_unseen_class_and_unseen_detector_fallbacks (test_wp4_fitting_boundaries.ReliabilityArithmetic) ... ok
+test_forward_chaining_eligibility (test_wp4_fitting_boundaries.SplitMachinery) ... ok
+test_holdout_splits_partition_keys_within_each_loso_fold (test_wp4_fitting_boundaries.SplitMachinery) ... ok
+test_identifier_groups_follow_the_protocol_hash (test_wp4_fitting_boundaries.SplitMachinery) ... ok
+test_two_fit_scenarios_use_simplest_learned_grid_point (test_wp4_fitting_boundaries.SplitMachinery) ... ok
+test_unseen_identifiers (test_wp4_fitting_boundaries.SplitMachinery) ... ok
+test_executed_traces_pass (test_wp4_fitting_boundaries.TraceVerification) ... ok
+test_forged_traces_are_rejected (test_wp4_fitting_boundaries.TraceVerification) ... ok
+test_arrival_at_completion_is_selectable_and_simultaneous_ties_use_hash (test_wp5_replay.HandExamples) ... ok
+test_horizon_censoring_and_recall_denominators (test_wp5_replay.HandExamples) ... ok
+test_metrics_intervals_boundaries_delays_and_backlog (test_wp5_replay.HandExamples) ... ok
+test_missing_scores_last_then_oldest_then_hash (test_wp5_replay.HandExamples) ... ok
+test_no_lookahead_non_preemption_idle_and_accounting (test_wp5_replay.HandExamples) ... ok
+test_service_in_progress_at_horizon_counts_and_is_truncated (test_wp5_replay.HandExamples) ... ok
+test_arrivals_identical_across_rankers (test_wp5_replay.Integrity) ... ok
+test_forged_traces_are_rejected (test_wp5_replay.Integrity) ... ok
+test_label_mutation_changes_metrics_not_traces (test_wp5_replay.LabelInvariance) ... ok
+test_random_instances_match_reference_trace_and_metrics (test_wp5_replay.ReferenceAgreement) ... ok
+test_hand_values (test_wp7_paired_stats.Holm) ... ok
+test_monotone_and_bounded (test_wp7_paired_stats.Holm) ... ok
+test_hand_values (test_wp7_paired_stats.SignFlip) ... ok
+test_invalid_input (test_wp7_paired_stats.SignFlip) ... ok
+test_random_against_brute_force (test_wp7_paired_stats.SignFlip) ... ok
+
+----------------------------------------------------------------------
+Ran 131 tests in 11.818s
+
+OK (expected failures=1)

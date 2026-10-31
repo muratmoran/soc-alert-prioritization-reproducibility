@@ -1,0 +1,145 @@
+family,id,contrast,source,metric,scenario,first,second,difference
+primary,PF1,S1 - A,static,coverage@100,fox,0.25,0.25,0.0
+primary,PF1,S1 - A,static,coverage@100,harrison,0.25,0.25,0.0
+primary,PF1,S1 - A,static,coverage@100,russellmitchell,0.25,0.25,0.0
+primary,PF1,S1 - A,static,coverage@100,santos,0.25,0.25,0.0
+primary,PF1,S1 - A,static,coverage@100,shaw,0.25,0.25,0.0
+primary,PF1,S1 - A,static,coverage@100,wardbeck,0.25,0.25,0.0
+primary,PF1,S1 - A,static,coverage@100,wheeler,0.25,0.25,0.0
+primary,PF1,S1 - A,static,coverage@100,wilson,0.25,0.25,0.0
+primary,PF1,S1 - A,static,FP@100,fox,19.0,17.0,2.0
+primary,PF1,S1 - A,static,FP@100,harrison,17.0,17.0,0.0
+primary,PF1,S1 - A,static,FP@100,russellmitchell,8.0,8.0,0.0
+primary,PF1,S1 - A,static,FP@100,santos,8.0,8.0,0.0
+primary,PF1,S1 - A,static,FP@100,shaw,40.0,40.0,0.0
+primary,PF1,S1 - A,static,FP@100,wardbeck,95.0,97.0,-2.0
+primary,PF1,S1 - A,static,FP@100,wheeler,10.0,10.0,0.0
+primary,PF1,S1 - A,static,FP@100,wilson,41.0,35.0,6.0
+primary,PF2,S1 - M,static,coverage@100,fox,0.25,0.25,0.0
+primary,PF2,S1 - M,static,coverage@100,harrison,0.25,0.25,0.0
+primary,PF2,S1 - M,static,coverage@100,russellmitchell,0.25,0.25,0.0
+primary,PF2,S1 - M,static,coverage@100,santos,0.25,0.25,0.0
+primary,PF2,S1 - M,static,coverage@100,shaw,0.25,0.25,0.0
+primary,PF2,S1 - M,static,coverage@100,wardbeck,0.25,0.25,0.0
+primary,PF2,S1 - M,static,coverage@100,wheeler,0.25,0.25,0.0
+primary,PF2,S1 - M,static,coverage@100,wilson,0.25,0.25,0.0
+primary,PF2,S1 - M,static,FP@100,fox,19.0,19.0,0.0
+primary,PF2,S1 - M,static,FP@100,harrison,17.0,17.0,0.0
+primary,PF2,S1 - M,static,FP@100,russellmitchell,8.0,8.0,0.0
+primary,PF2,S1 - M,static,FP@100,santos,8.0,8.0,0.0
+primary,PF2,S1 - M,static,FP@100,shaw,40.0,40.0,0.0
+primary,PF2,S1 - M,static,FP@100,wardbeck,95.0,97.0,-2.0
+primary,PF2,S1 - M,static,FP@100,wheeler,10.0,10.0,0.0
+primary,PF2,S1 - M,static,FP@100,wilson,41.0,41.0,0.0
+primary,PF3,S1 - P,static,coverage@100,fox,0.25,0.25,0.0
+primary,PF3,S1 - P,static,coverage@100,harrison,0.25,0.25,0.0
+primary,PF3,S1 - P,static,coverage@100,russellmitchell,0.25,0.25,0.0
+primary,PF3,S1 - P,static,coverage@100,santos,0.25,0.25,0.0
+primary,PF3,S1 - P,static,coverage@100,shaw,0.25,0.25,0.0
+primary,PF3,S1 - P,static,coverage@100,wardbeck,0.25,0.25,0.0
+primary,PF3,S1 - P,static,coverage@100,wheeler,0.25,0.25,0.0
+primary,PF3,S1 - P,static,coverage@100,wilson,0.25,0.25,0.0
+primary,PF3,S1 - P,static,FP@100,fox,19.0,19.0,0.0
+primary,PF3,S1 - P,static,FP@100,harrison,17.0,17.0,0.0
+primary,PF3,S1 - P,static,FP@100,russellmitchell,8.0,8.0,0.0
+primary,PF3,S1 - P,static,FP@100,santos,8.0,8.0,0.0
+primary,PF3,S1 - P,static,FP@100,shaw,40.0,40.0,0.0
+primary,PF3,S1 - P,static,FP@100,wardbeck,95.0,95.0,0.0
+primary,PF3,S1 - P,static,FP@100,wheeler,10.0,10.0,0.0
+primary,PF3,S1 - P,static,FP@100,wilson,41.0,41.0,0.0
+exploratory,X1,S1_key - S1,static,covered intervals@100,fox,3.0,1.0,2.0
+exploratory,X1,S1_key - S1,static,covered intervals@100,harrison,3.0,1.0,2.0
+exploratory,X1,S1_key - S1,static,covered intervals@100,russellmitchell,3.0,1.0,2.0
+exploratory,X1,S1_key - S1,static,covered intervals@100,santos,3.0,1.0,2.0
+exploratory,X1,S1_key - S1,static,covered intervals@100,shaw,1.0,1.0,0.0
+exploratory,X1,S1_key - S1,static,covered intervals@100,wardbeck,2.0,1.0,1.0
+exploratory,X1,S1_key - S1,static,covered intervals@100,wheeler,3.0,1.0,2.0
+exploratory,X1,S1_key - S1,static,covered intervals@100,wilson,3.0,1.0,2.0
+exploratory,X1,S1_key - S1,static,FP@100,fox,77.0,19.0,58.0
+exploratory,X1,S1_key - S1,static,FP@100,harrison,50.0,17.0,33.0
+exploratory,X1,S1_key - S1,static,FP@100,russellmitchell,81.0,8.0,73.0
+exploratory,X1,S1_key - S1,static,FP@100,santos,73.0,8.0,65.0
+exploratory,X1,S1_key - S1,static,FP@100,shaw,90.0,40.0,50.0
+exploratory,X1,S1_key - S1,static,FP@100,wardbeck,79.0,95.0,-16.0
+exploratory,X1,S1_key - S1,static,FP@100,wheeler,70.0,10.0,60.0
+exploratory,X1,S1_key - S1,static,FP@100,wilson,77.0,41.0,36.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay covered intervals,fox,4.0,2.0,2.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay covered intervals,harrison,4.0,1.0,3.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay covered intervals,russellmitchell,4.0,1.0,3.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay covered intervals,santos,4.0,2.0,2.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay covered intervals,shaw,3.0,1.0,2.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay covered intervals,wardbeck,3.0,2.0,1.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay covered intervals,wheeler,4.0,2.0,2.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay covered intervals,wilson,4.0,2.0,2.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay FP investigations,fox,1381.0,1003.0,378.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay FP investigations,harrison,1349.0,1240.0,109.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay FP investigations,russellmitchell,1113.0,912.0,201.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay FP investigations,santos,1090.0,997.0,93.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay FP investigations,shaw,1665.0,1328.0,337.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay FP investigations,wardbeck,1390.0,1291.0,99.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay FP investigations,wheeler,1377.0,1237.0,140.0
+exploratory,X1,S1_key - S1,replay P1 12/h,replay FP investigations,wilson,1648.0,1277.0,371.0
+exploratory,X2,S0_key - P,static,covered intervals@100,fox,3.0,1.0,2.0
+exploratory,X2,S0_key - P,static,covered intervals@100,harrison,3.0,1.0,2.0
+exploratory,X2,S0_key - P,static,covered intervals@100,russellmitchell,3.0,1.0,2.0
+exploratory,X2,S0_key - P,static,covered intervals@100,santos,3.0,1.0,2.0
+exploratory,X2,S0_key - P,static,covered intervals@100,shaw,1.0,1.0,0.0
+exploratory,X2,S0_key - P,static,covered intervals@100,wardbeck,2.0,1.0,1.0
+exploratory,X2,S0_key - P,static,covered intervals@100,wheeler,3.0,1.0,2.0
+exploratory,X2,S0_key - P,static,covered intervals@100,wilson,3.0,1.0,2.0
+exploratory,X2,S0_key - P,static,FP@100,fox,77.0,19.0,58.0
+exploratory,X2,S0_key - P,static,FP@100,harrison,61.0,17.0,44.0
+exploratory,X2,S0_key - P,static,FP@100,russellmitchell,85.0,8.0,77.0
+exploratory,X2,S0_key - P,static,FP@100,santos,76.0,8.0,68.0
+exploratory,X2,S0_key - P,static,FP@100,shaw,90.0,40.0,50.0
+exploratory,X2,S0_key - P,static,FP@100,wardbeck,79.0,95.0,-16.0
+exploratory,X2,S0_key - P,static,FP@100,wheeler,76.0,10.0,66.0
+exploratory,X2,S0_key - P,static,FP@100,wilson,77.0,41.0,36.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay covered intervals,fox,4.0,2.0,2.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay covered intervals,harrison,3.0,1.0,2.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay covered intervals,russellmitchell,3.0,1.0,2.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay covered intervals,santos,4.0,2.0,2.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay covered intervals,shaw,3.0,1.0,2.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay covered intervals,wardbeck,3.0,2.0,1.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay covered intervals,wheeler,4.0,2.0,2.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay covered intervals,wilson,4.0,2.0,2.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay FP investigations,fox,1011.0,1003.0,8.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay FP investigations,harrison,1240.0,1240.0,0.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay FP investigations,russellmitchell,917.0,912.0,5.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay FP investigations,santos,990.0,997.0,-7.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay FP investigations,shaw,1373.0,1328.0,45.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay FP investigations,wardbeck,1298.0,1291.0,7.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay FP investigations,wheeler,1240.0,1237.0,3.0
+exploratory,X2,S0_key - P,replay P1 12/h,replay FP investigations,wilson,1276.0,1277.0,-1.0
+exploratory,X3,R_severity_key - P,static,covered intervals@100,fox,3.0,1.0,2.0
+exploratory,X3,R_severity_key - P,static,covered intervals@100,harrison,1.0,1.0,0.0
+exploratory,X3,R_severity_key - P,static,covered intervals@100,russellmitchell,2.0,1.0,1.0
+exploratory,X3,R_severity_key - P,static,covered intervals@100,santos,3.0,1.0,2.0
+exploratory,X3,R_severity_key - P,static,covered intervals@100,shaw,1.0,1.0,0.0
+exploratory,X3,R_severity_key - P,static,covered intervals@100,wardbeck,2.0,1.0,1.0
+exploratory,X3,R_severity_key - P,static,covered intervals@100,wheeler,3.0,1.0,2.0
+exploratory,X3,R_severity_key - P,static,covered intervals@100,wilson,3.0,1.0,2.0
+exploratory,X3,R_severity_key - P,static,FP@100,fox,77.0,19.0,58.0
+exploratory,X3,R_severity_key - P,static,FP@100,harrison,72.0,17.0,55.0
+exploratory,X3,R_severity_key - P,static,FP@100,russellmitchell,53.0,8.0,45.0
+exploratory,X3,R_severity_key - P,static,FP@100,santos,86.0,8.0,78.0
+exploratory,X3,R_severity_key - P,static,FP@100,shaw,90.0,40.0,50.0
+exploratory,X3,R_severity_key - P,static,FP@100,wardbeck,86.0,95.0,-9.0
+exploratory,X3,R_severity_key - P,static,FP@100,wheeler,70.0,10.0,60.0
+exploratory,X3,R_severity_key - P,static,FP@100,wilson,78.0,41.0,37.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay covered intervals,fox,4.0,2.0,2.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay covered intervals,harrison,1.0,1.0,0.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay covered intervals,russellmitchell,2.0,1.0,1.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay covered intervals,santos,4.0,2.0,2.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay covered intervals,shaw,3.0,1.0,2.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay covered intervals,wardbeck,3.0,2.0,1.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay covered intervals,wheeler,4.0,2.0,2.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay covered intervals,wilson,4.0,2.0,2.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay FP investigations,fox,1011.0,1003.0,8.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay FP investigations,harrison,1240.0,1240.0,0.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay FP investigations,russellmitchell,912.0,912.0,0.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay FP investigations,santos,989.0,997.0,-8.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay FP investigations,shaw,1356.0,1328.0,28.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay FP investigations,wardbeck,1291.0,1291.0,0.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay FP investigations,wheeler,1240.0,1237.0,3.0
+exploratory,X3,R_severity_key - P,replay P1 12/h,replay FP investigations,wilson,1269.0,1277.0,-8.0

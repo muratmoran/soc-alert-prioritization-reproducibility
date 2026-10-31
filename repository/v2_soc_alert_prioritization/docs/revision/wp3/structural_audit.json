@@ -1,0 +1,675 @@
+{
+  "analysis_role": "WP3 label-free structural audit; no labels read, nothing fitted, no scores or metrics",
+  "cache_sha256": "c5702421b4e563c909d7d4002f1cca96c5ba08265a47b6a6249726c6dde133be",
+  "rows": 2655821,
+  "native_score_by_detector": {
+    "native_rule_level": {
+      "by_detector": {
+        "aminer": {
+          "alerts": 55558,
+          "missing": 55558,
+          "missing_rate": 1.0,
+          "distinct_values": 0,
+          "values": []
+        },
+        "suricata": {
+          "alerts": 613358,
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct_values": 5,
+          "values": [
+            3.0,
+            6.0,
+            8.0,
+            10.0,
+            11.0
+          ]
+        },
+        "wazuh": {
+          "alerts": 1986905,
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct_values": 6,
+          "values": [
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            8.0,
+            10.0
+          ]
+        }
+      },
+      "by_detector_and_record_type": {
+        "aminer|aminer": {
+          "alerts": 55558,
+          "missing": 55558,
+          "missing_rate": 1.0,
+          "distinct_values": 0,
+          "values": []
+        },
+        "suricata|suricata_eve_alert": {
+          "alerts": 306635,
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct_values": 1,
+          "values": [
+            3.0
+          ]
+        },
+        "suricata|suricata_fast_log_ids_rule": {
+          "alerts": 306723,
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct_values": 4,
+          "values": [
+            6.0,
+            8.0,
+            10.0,
+            11.0
+          ]
+        },
+        "wazuh|wazuh": {
+          "alerts": 1986905,
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct_values": 6,
+          "values": [
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            8.0,
+            10.0
+          ]
+        }
+      }
+    },
+    "native_suricata_severity": {
+      "by_detector": {
+        "aminer": {
+          "alerts": 55558,
+          "missing": 55558,
+          "missing_rate": 1.0,
+          "distinct_values": 0,
+          "values": []
+        },
+        "suricata": {
+          "alerts": 613358,
+          "missing": 306723,
+          "missing_rate": 0.5000717362453901,
+          "distinct_values": 3,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ]
+        },
+        "wazuh": {
+          "alerts": 1986905,
+          "missing": 1986905,
+          "missing_rate": 1.0,
+          "distinct_values": 0,
+          "values": []
+        }
+      },
+      "by_detector_and_record_type": {
+        "aminer|aminer": {
+          "alerts": 55558,
+          "missing": 55558,
+          "missing_rate": 1.0,
+          "distinct_values": 0,
+          "values": []
+        },
+        "suricata|suricata_eve_alert": {
+          "alerts": 306635,
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct_values": 3,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ]
+        },
+        "suricata|suricata_fast_log_ids_rule": {
+          "alerts": 306723,
+          "missing": 306723,
+          "missing_rate": 1.0,
+          "distinct_values": 0,
+          "values": []
+        },
+        "wazuh|wazuh": {
+          "alerts": 1986905,
+          "missing": 1986905,
+          "missing_rate": 1.0,
+          "distinct_values": 0,
+          "values": []
+        }
+      }
+    },
+    "historical_pooled_detector_score_provenance_only": {
+      "by_detector_and_record_type": {
+        "aminer|aminer": {
+          "alerts": 55558,
+          "missing": 55558,
+          "missing_rate": 1.0,
+          "distinct_values": 0,
+          "values": []
+        },
+        "suricata|suricata_eve_alert": {
+          "alerts": 306635,
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct_values": 3,
+          "values": [
+            0.5,
+            0.75,
+            1.0
+          ]
+        },
+        "suricata|suricata_fast_log_ids_rule": {
+          "alerts": 306723,
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct_values": 4,
+          "values": [
+            6.0,
+            8.0,
+            10.0,
+            11.0
+          ]
+        },
+        "wazuh|wazuh": {
+          "alerts": 1986905,
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct_values": 6,
+          "values": [
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            8.0,
+            10.0
+          ]
+        }
+      }
+    }
+  },
+  "native_score_within_key": {
+    "native_rule_level": {
+      "groups": 628,
+      "varying_groups": 0,
+      "alerts_in_varying_groups": 0,
+      "share_alerts_in_varying_groups": 0.0,
+      "max_distinct_scores_in_group": 1
+    },
+    "native_suricata_severity": {
+      "groups": 628,
+      "varying_groups": 0,
+      "alerts_in_varying_groups": 0,
+      "share_alerts_in_varying_groups": 0.0,
+      "max_distinct_scores_in_group": 1
+    }
+  },
+  "native_record_type_within_key": {
+    "groups": 628,
+    "varying_groups": 0,
+    "alerts_in_varying_groups": 0,
+    "share_alerts_in_varying_groups": 0.0,
+    "max_distinct_scores_in_group": 1
+  },
+  "provenance_cache_sha256": "d2f4e1cf04987eff35526d4dcd6f1b0350748054de5a6e83fac2fca26c5e7522",
+  "asset_profile_q_within_key": {
+    "all": {
+      "groups": 628,
+      "varying_groups": 28,
+      "alerts_in_varying_groups": 1876,
+      "share_alerts_in_varying_groups": 0.0007063729069090123,
+      "max_distinct_scores_in_group": 5
+    },
+    "by_scenario": {
+      "fox": {
+        "groups": 77,
+        "varying_groups": 5,
+        "share_alerts_in_varying_groups": 0.0034263079576583584,
+        "max_distinct_scores_in_group": 5
+      },
+      "harrison": {
+        "groups": 78,
+        "varying_groups": 1,
+        "share_alerts_in_varying_groups": 3.3672981473125595e-06,
+        "max_distinct_scores_in_group": 2
+      },
+      "russellmitchell": {
+        "groups": 72,
+        "varying_groups": 4,
+        "share_alerts_in_varying_groups": 0.0008782715615668365,
+        "max_distinct_scores_in_group": 5
+      },
+      "santos": {
+        "groups": 84,
+        "varying_groups": 4,
+        "share_alerts_in_varying_groups": 0.0001758692144763303,
+        "max_distinct_scores_in_group": 4
+      },
+      "shaw": {
+        "groups": 73,
+        "varying_groups": 3,
+        "share_alerts_in_varying_groups": 0.00024017405555084627,
+        "max_distinct_scores_in_group": 2
+      },
+      "wardbeck": {
+        "groups": 80,
+        "varying_groups": 4,
+        "share_alerts_in_varying_groups": 0.0006903579999342517,
+        "max_distinct_scores_in_group": 2
+      },
+      "wheeler": {
+        "groups": 78,
+        "varying_groups": 1,
+        "share_alerts_in_varying_groups": 9.737714655747442e-06,
+        "max_distinct_scores_in_group": 4
+      },
+      "wilson": {
+        "groups": 86,
+        "varying_groups": 6,
+        "share_alerts_in_varying_groups": 0.0001639742308189567,
+        "max_distinct_scores_in_group": 5
+      }
+    },
+    "by_detector": {
+      "aminer": {
+        "groups": 272,
+        "varying_groups": 1,
+        "share_alerts_in_varying_groups": 0.028186759782569567
+      },
+      "suricata": {
+        "groups": 176,
+        "varying_groups": 0,
+        "share_alerts_in_varying_groups": 0.0
+      },
+      "wazuh": {
+        "groups": 180,
+        "varying_groups": 27,
+        "share_alerts_in_varying_groups": 0.00015602155110586564
+      }
+    }
+  },
+  "timestamp_within_key": {
+    "groups": 628,
+    "varying_groups": 568,
+    "alerts_in_varying_groups": 2655732,
+    "share_alerts_in_varying_groups": 0.9999664887053759,
+    "max_distinct_scores_in_group": 54352
+  },
+  "family_within_key_constancy": {
+    "flat+table": {
+      "inputs_varying_within_keys": [
+        "timestamp"
+      ],
+      "families": {
+        "O_oldest_first": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 1
+        },
+        "O_newest_first": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 1
+        },
+        "O_native_rule_level": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "O_native_suricata_severity": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "O_severity": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "O_reliability": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "H_weighted": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "W_weighted": {
+          "candidates": 11,
+          "guaranteed_constant_within_key": 11,
+          "may_vary_within_key": 0
+        },
+        "A_additive": {
+          "candidates": 66,
+          "guaranteed_constant_within_key": 66,
+          "may_vary_within_key": 0
+        },
+        "M_multiplicative": {
+          "candidates": 30,
+          "guaranteed_constant_within_key": 30,
+          "may_vary_within_key": 0
+        },
+        "P_probability_proxy": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "C_cost_sensitive": {
+          "candidates": 5,
+          "guaranteed_constant_within_key": 5,
+          "may_vary_within_key": 0
+        },
+        "L1_logistic": {
+          "candidates": 3,
+          "guaranteed_constant_within_key": 3,
+          "may_vary_within_key": 0
+        },
+        "L2_gradient_boosting": {
+          "candidates": 2,
+          "guaranteed_constant_within_key": 2,
+          "may_vary_within_key": 0
+        },
+        "R_key_reliability": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "R_severity_key_reliability": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "S0_linear_log_historical": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "S1_linear_log_constrained": {
+          "candidates": 8,
+          "guaranteed_constant_within_key": 8,
+          "may_vary_within_key": 0
+        },
+        "S2_exponential_discount": {
+          "candidates": 6,
+          "guaranteed_constant_within_key": 6,
+          "may_vary_within_key": 0
+        },
+        "S0_linear_log_historical_key": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "S1_linear_log_constrained_key": {
+          "candidates": 8,
+          "guaranteed_constant_within_key": 8,
+          "may_vary_within_key": 0
+        },
+        "S2_exponential_discount_key": {
+          "candidates": 6,
+          "guaranteed_constant_within_key": 6,
+          "may_vary_within_key": 0
+        }
+      }
+    },
+    "asset_profile+ambiguity_aware": {
+      "inputs_varying_within_keys": [
+        "c",
+        "timestamp"
+      ],
+      "families": {
+        "O_oldest_first": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 1
+        },
+        "O_newest_first": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 1
+        },
+        "O_native_rule_level": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "O_native_suricata_severity": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "O_severity": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 1
+        },
+        "O_reliability": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "H_weighted": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 1
+        },
+        "W_weighted": {
+          "candidates": 11,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 10
+        },
+        "A_additive": {
+          "candidates": 66,
+          "guaranteed_constant_within_key": 11,
+          "may_vary_within_key": 55
+        },
+        "M_multiplicative": {
+          "candidates": 30,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 30
+        },
+        "P_probability_proxy": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 1
+        },
+        "C_cost_sensitive": {
+          "candidates": 5,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 5
+        },
+        "L1_logistic": {
+          "candidates": 3,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 3
+        },
+        "L2_gradient_boosting": {
+          "candidates": 2,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 2
+        },
+        "R_key_reliability": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 1,
+          "may_vary_within_key": 0
+        },
+        "R_severity_key_reliability": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 1
+        },
+        "S0_linear_log_historical": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 1
+        },
+        "S1_linear_log_constrained": {
+          "candidates": 8,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 8
+        },
+        "S2_exponential_discount": {
+          "candidates": 6,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 6
+        },
+        "S0_linear_log_historical_key": {
+          "candidates": 1,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 1
+        },
+        "S1_linear_log_constrained_key": {
+          "candidates": 8,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 8
+        },
+        "S2_exponential_discount_key": {
+          "candidates": 6,
+          "guaranteed_constant_within_key": 0,
+          "may_vary_within_key": 6
+        }
+      }
+    }
+  },
+  "key_blocks": {
+    "fox": {
+      "alerts": 473104,
+      "keys_present": 77,
+      "largest_key_block": 380062,
+      "largest_key_share": 0.8033371098109506,
+      "keys_with_more_than_100_alerts": 20,
+      "share_alerts_in_keys_over_100": 0.9979391423450235
+    },
+    "harrison": {
+      "alerts": 593948,
+      "keys_present": 78,
+      "largest_key_block": 384489,
+      "largest_key_share": 0.6473445486810293,
+      "keys_with_more_than_100_alerts": 22,
+      "share_alerts_in_keys_over_100": 0.998550378147582
+    },
+    "russellmitchell": {
+      "alerts": 45544,
+      "keys_present": 72,
+      "largest_key_block": 14436,
+      "largest_key_share": 0.3169682065694713,
+      "keys_with_more_than_100_alerts": 11,
+      "share_alerts_in_keys_over_100": 0.9816880379413314
+    },
+    "santos": {
+      "alerts": 130779,
+      "keys_present": 84,
+      "largest_key_block": 42007,
+      "largest_key_share": 0.32120600402205246,
+      "keys_with_more_than_100_alerts": 16,
+      "share_alerts_in_keys_over_100": 0.9918259047706436
+    },
+    "shaw": {
+      "alerts": 70782,
+      "keys_present": 73,
+      "largest_key_block": 28080,
+      "largest_key_share": 0.39671102822751547,
+      "keys_with_more_than_100_alerts": 16,
+      "share_alerts_in_keys_over_100": 0.9871012404283575
+    },
+    "wardbeck": {
+      "alerts": 91257,
+      "keys_present": 80,
+      "largest_key_block": 32433,
+      "largest_key_share": 0.35540287320424735,
+      "keys_with_more_than_100_alerts": 17,
+      "share_alerts_in_keys_over_100": 0.9887789429851956
+    },
+    "wheeler": {
+      "alerts": 616161,
+      "keys_present": 78,
+      "largest_key_block": 387550,
+      "largest_key_share": 0.6289752191391536,
+      "keys_with_more_than_100_alerts": 22,
+      "share_alerts_in_keys_over_100": 0.9983932770818017
+    },
+    "wilson": {
+      "alerts": 634246,
+      "keys_present": 86,
+      "largest_key_block": 395133,
+      "largest_key_share": 0.6229964398671809,
+      "keys_with_more_than_100_alerts": 25,
+      "share_alerts_in_keys_over_100": 0.99848954506611
+    }
+  },
+  "timestamp_ties_within_key": {
+    "fox": {
+      "alerts_sharing_key_and_timestamp": 457468,
+      "share": 0.9669501843146538,
+      "largest_same_key_same_timestamp_group": 395
+    },
+    "harrison": {
+      "alerts_sharing_key_and_timestamp": 475022,
+      "share": 0.7997703502663532,
+      "largest_same_key_same_timestamp_group": 294
+    },
+    "russellmitchell": {
+      "alerts_sharing_key_and_timestamp": 34652,
+      "share": 0.7608466537853504,
+      "largest_same_key_same_timestamp_group": 365
+    },
+    "santos": {
+      "alerts_sharing_key_and_timestamp": 58449,
+      "share": 0.44692955290987085,
+      "largest_same_key_same_timestamp_group": 448
+    },
+    "shaw": {
+      "alerts_sharing_key_and_timestamp": 51001,
+      "share": 0.7205362945381594,
+      "largest_same_key_same_timestamp_group": 381
+    },
+    "wardbeck": {
+      "alerts_sharing_key_and_timestamp": 63373,
+      "share": 0.694445357616402,
+      "largest_same_key_same_timestamp_group": 440
+    },
+    "wheeler": {
+      "alerts_sharing_key_and_timestamp": 521805,
+      "share": 0.8468646993237157,
+      "largest_same_key_same_timestamp_group": 514
+    },
+    "wilson": {
+      "alerts_sharing_key_and_timestamp": 560900,
+      "share": 0.8843571737149308,
+      "largest_same_key_same_timestamp_group": 407
+    }
+  },
+  "duplicate_clusters": {
+    "60s": {
+      "clusters": 101605,
+      "representative_share": 0.03825747292456833,
+      "max_cluster_size": 25020,
+      "median_cluster_size": 6.0,
+      "singleton_clusters": 18978
+    },
+    "300s": {
+      "clusters": 43439,
+      "representative_share": 0.01635614749638624,
+      "max_cluster_size": 121456,
+      "median_cluster_size": 10.0,
+      "singleton_clusters": 9701
+    },
+    "900s": {
+      "clusters": 24197,
+      "representative_share": 0.009110930292365337,
+      "max_cluster_size": 340956,
+      "median_cluster_size": 6.0,
+      "singleton_clusters": 6685
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "work_package": "WP5 chronological replay (verification before full runs)",
+  "verified": true,
+  "generated_at": "2026-09-15T19:14:59+03:00",
+  "scope": "Replay semantics verified by hand examples, an independent reference simulator, integrity and label-invariance tests, injected faults and a label-free real-data precheck. No label-dependent replay outcome was computed on AIT.",
+  "specification": {
+    "path": "docs/revision/wp5/replay_specification.md",
+    "version": "1.0",
+    "sha256": "2b5a7f96795664e699154d7d0a4e897e6fe811ca7a83a34fc1ec813aa01c69c8"
+  },
+  "capacity_assessment": {
+    "free_bytes_now": 8664289280,
+    "projected_output_bytes": 98405995,
+    "reserve_bytes": 5368709120,
+    "output_root": "~/soc_revision_data/wp5_replay (outside iCloud)",
+    "adequate": true
+  },
+  "code_identity": {
+    "git_head": "7d4806971304c7a575d37be504ae544f691c9f8f",
+    "working_tree_note": "revision code is uncommitted; identity is established by file hashes",
+    "file_sha256": {
+      "docs/revision/protocol_v1.md": "2c910b81d41fb34c70f82d18988709e3618842d678e38e2657011362a5837bb8",
+      "docs/revision/protocol_v1_1.md": "a96035f752fa00c03dbb4f2d5947a97558d18f54c5a4d3ae0be182ce9ca7fefb",
+      "docs/revision/wp3/metric_verification.json": "2b6524f47f088b5f4e1f795c4ac4ccd6cebfe6767026f048e07fcd605d4220d1",
+      "docs/revision/wp4/fitting_boundary_verification.json": "965d6bb6c4152f9c05f551c411464d77793a24bd932346c0d1d9d13a079b9045",
+      "docs/revision/wp4/stage2_output_manifest.json": "9f0ee77f90c9accfd22f5e7a9d1569f6d4332037ba3bd300dc0dce101ad4e3f8",
+      "docs/revision/wp5/negative_controls.json": "cb9f9e3451c3e1681aa86797a3f33a87a14174c07b8364740bc32be6e7862887",
+      "docs/revision/wp5/real_data_precheck.json": "b14863b4dbc3c8a98cf5f9a7d2ca802bb04a5ae4962a560427246e713390b6ed",
+      "docs/revision/wp5/replay_specification.md": "2b5a7f96795664e699154d7d0a4e897e6fe811ca7a83a34fc1ec813aa01c69c8",
+      "scripts/revision/wp5_common.py": "eab6f015258d2f22680dd57297cbedff78923c789a81578404f235bd6cecce31",
+      "scripts/revision/wp5_negative_controls.py": "9fed21745cb63e623bdc0be834a7ed449602071b621f6a7e4e825c754693d82e",
+      "scripts/revision/wp5_real_data_precheck.py": "8391e8c6bec43ca09071a37572a8c18d23eb260a7097999338896f60ad6dc787",
+      "scripts/revision/wp5_run_replay.py": "818709738d56f9cb12879792af2287841f6e1d65134e068867f2a59d355d60e8",
+      "scripts/revision/wp5_write_verification_record.py": "0a8616ea0cdfaf45f248f16a27572601b863c15114f6ae038f26e753a36eea8f",
+      "src/soc_alert_ranking/revision/evaluation.py": "25a44e6a33ffc85841f3af434b14683d87980ab56004d1b1b38985f196620851",
+      "src/soc_alert_ranking/revision/labels.py": "4453858fe88ba95c6fd3a839c6d831ce0f4da8be7874222ad2dd814223e7500b",
+      "src/soc_alert_ranking/revision/metrics.py": "c254dcd07774bb3b4ecf3eff156c0540321c86e0d7550df0c4dea094f15911de",
+      "src/soc_alert_ranking/revision/replay.py": "94e3bb70f11762b41e8b81b65ddb7dca7b6604b0de66e8e2bf4ad2038630a6a6",
+      "tests/test_wp5_replay.py": "8adb8353c1fada56cd16e002792ef7cd59ee2cfabd2e3f6be10b9626cce7bbf7",
+      "tests/wp2_fixtures.py": "a4cac21187cba08adfc61889348f7303a313e666d2d2797677a9df3ab0c5639f",
+      "tests/wp3_support.py": "93cdeda94068d00d358ed12232c6475d4e867efad1340aa516ab63a532e5fdb9",
+      "tests/wp5_reference_replay.py": "3ec4459f36b1c04b211bd268ae9e9215fa163e39c09a625b402fd9ea9a7afdfc"
+    }
+  },
+  "environment": {
+    "python": "3.10.18",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.0.1",
+    "pandas": "2.3.1"
+  },
+  "checks": {
+    "unit_tests": {
+      "exit_code": 0,
+      "tests_run": 122,
+      "expected_failures": 1,
+      "wp5_tests_run": 10,
+      "wp5_exit_code": 0,
+      "passed": true
+    },
+    "negative_controls": {
+      "exit_code": 0,
+      "controls": 11,
+      "detected": 11,
+      "test_module_matches": true,
+      "passed": true
+    },
+    "real_data_precheck": {
+      "passed_record": true,
+      "stale_files": [],
+      "score_alignment_all_folds": true,
+      "largest_fold": {
+        "held_out": "wilson",
+        "replays": 100,
+        "all_integrity_passed": true,
+        "identical_arrivals_across_candidates": true
+      },
+      "label_mutation_invariance_real_data": true,
+      "projection": {
+        "replays_total": 1616,
+        "per_replay_seconds_upper": 0.556,
+        "projected_seconds_single_process": 898,
+        "projected_output_bytes": 98405995
+      },
+      "passed": true
+    },
+    "stage2_scores": {
+      "sha256sums_sha256": "8ca414e8ebc92d24975c67c28c1d88a7f67787517216d1e6d79de98f4fea1f4c",
+      "files": 2520,
+      "matches_precheck": true,
+      "passed": true
+    },
+    "wp3_metric_record": {
+      "verified": true,
+      "generated_at": "2026-09-15T19:07:19+03:00",
+      "stale_files": [],
+      "passed": true
+    },
+    "wp4_fitting_record": {
+      "verified": true,
+      "generated_at": "2026-09-15T19:12:15+03:00",
+      "stale_files": [],
+      "passed": true
+    }
+  }
+}

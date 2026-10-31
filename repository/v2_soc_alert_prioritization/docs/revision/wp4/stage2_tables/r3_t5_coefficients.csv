@@ -1,0 +1,49 @@
+run,method,z,alerts,gamma_le_0,gamma_le_0_1,share_le_0,share_le_0_1
+R3_detector_only,S0_linear_log_historical[kappa=1],False,2646617,608444,608444,0.22989499425115156,0.22989499425115156
+R3_detector_only,S0_linear_log_historical[kappa=1],True,9204,4722,4722,0.5130378096479792,0.5130378096479792
+R3_detector_only,S0_linear_log_historical_key[kappa=1],False,2646617,894931,896328,0.3381414840152542,0.3386693276737813
+R3_detector_only,S0_linear_log_historical_key[kappa=1],True,9204,8876,8897,0.9643633202955237,0.9666449369839201
+R3_detector_only,S1_linear_log_constrained (primary rule),False,2646617,0,0,0.0,0.0
+R3_detector_only,S1_linear_log_constrained (primary rule),True,9204,0,0,0.0,0.0
+R3_detector_only,S1_linear_log_constrained_key (primary rule),False,2646617,0,0,0.0,0.0
+R3_detector_only,S1_linear_log_constrained_key (primary rule),True,9204,0,0,0.0,0.0
+R3_detector_only,S2_exponential_discount (primary rule),False,2646617,0,0,0.0,0.0
+R3_detector_only,S2_exponential_discount (primary rule),True,9204,0,0,0.0,0.0
+R3_detector_only,S2_exponential_discount_key (primary rule),False,2646617,0,0,0.0,0.0
+R3_detector_only,S2_exponential_discount_key (primary rule),True,9204,0,0,0.0,0.0
+R3_global_class,S0_linear_log_historical[kappa=1],False,2646617,899472,899472,0.33985725928609994,0.33985725928609994
+R3_global_class,S0_linear_log_historical[kappa=1],True,9204,9072,9072,0.9856584093872229,0.9856584093872229
+R3_global_class,S0_linear_log_historical_key[kappa=1],False,2646617,894931,896328,0.3381414840152542,0.3386693276737813
+R3_global_class,S0_linear_log_historical_key[kappa=1],True,9204,8876,8897,0.9643633202955237,0.9666449369839201
+R3_global_class,S1_linear_log_constrained (primary rule),False,2646617,0,0,0.0,0.0
+R3_global_class,S1_linear_log_constrained (primary rule),True,9204,0,0,0.0,0.0
+R3_global_class,S1_linear_log_constrained_key (primary rule),False,2646617,0,0,0.0,0.0
+R3_global_class,S1_linear_log_constrained_key (primary rule),True,9204,0,0,0.0,0.0
+R3_global_class,S2_exponential_discount (primary rule),False,2646617,0,0,0.0,0.0
+R3_global_class,S2_exponential_discount (primary rule),True,9204,0,0,0.0,0.0
+R3_global_class,S2_exponential_discount_key (primary rule),False,2646617,0,0,0.0,0.0
+R3_global_class,S2_exponential_discount_key (primary rule),True,9204,0,0,0.0,0.0
+R3_native_key,S0_linear_log_historical[kappa=1],False,2646617,894931,896328,0.3381414840152542,0.3386693276737813
+R3_native_key,S0_linear_log_historical[kappa=1],True,9204,8876,8897,0.9643633202955237,0.9666449369839201
+R3_native_key,S0_linear_log_historical_key[kappa=1],False,2646617,894931,896328,0.3381414840152542,0.3386693276737813
+R3_native_key,S0_linear_log_historical_key[kappa=1],True,9204,8876,8897,0.9643633202955237,0.9666449369839201
+R3_native_key,S1_linear_log_constrained (primary rule),False,2646617,0,0,0.0,0.0
+R3_native_key,S1_linear_log_constrained (primary rule),True,9204,0,0,0.0,0.0
+R3_native_key,S1_linear_log_constrained_key (primary rule),False,2646617,0,0,0.0,0.0
+R3_native_key,S1_linear_log_constrained_key (primary rule),True,9204,0,0,0.0,0.0
+R3_native_key,S2_exponential_discount (primary rule),False,2646617,0,0,0.0,0.0
+R3_native_key,S2_exponential_discount (primary rule),True,9204,0,0,0.0,0.0
+R3_native_key,S2_exponential_discount_key (primary rule),False,2646617,0,0,0.0,0.0
+R3_native_key,S2_exponential_discount_key (primary rule),True,9204,0,0,0.0,0.0
+R3_none,S0_linear_log_historical[kappa=1],False,2646617,0,0,0.0,0.0
+R3_none,S0_linear_log_historical[kappa=1],True,9204,0,0,0.0,0.0
+R3_none,S0_linear_log_historical_key[kappa=1],False,2646617,894931,896328,0.3381414840152542,0.3386693276737813
+R3_none,S0_linear_log_historical_key[kappa=1],True,9204,8876,8897,0.9643633202955237,0.9666449369839201
+R3_none,S1_linear_log_constrained (primary rule),False,2646617,0,0,0.0,0.0
+R3_none,S1_linear_log_constrained (primary rule),True,9204,0,0,0.0,0.0
+R3_none,S1_linear_log_constrained_key (primary rule),False,2646617,0,0,0.0,0.0
+R3_none,S1_linear_log_constrained_key (primary rule),True,9204,0,0,0.0,0.0
+R3_none,S2_exponential_discount (primary rule),False,2646617,0,0,0.0,0.0
+R3_none,S2_exponential_discount (primary rule),True,9204,0,0,0.0,0.0
+R3_none,S2_exponential_discount_key (primary rule),False,2646617,0,0,0.0,0.0
+R3_none,S2_exponential_discount_key (primary rule),True,9204,0,0,0.0,0.0

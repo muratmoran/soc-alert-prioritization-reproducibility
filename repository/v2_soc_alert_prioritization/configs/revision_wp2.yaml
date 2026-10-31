@@ -1,0 +1,53 @@
+# WP2 comparison configuration (COSE-D-26-04000). Must match protocol_v1_1.md exactly;
+# soc_alert_ranking.revision.config validates every value below against the protocol.
+schema_version: 1
+protocol: docs/revision/protocol_v1_1.md
+
+policies:
+  primary: {context: flat, uncertainty: table}
+  secondary: {context: asset_profile, uncertainty: ambiguity_aware}
+
+mapping_thresholds:
+  min_support: 5
+  min_positive: 3
+  min_precision: 0.5
+  min_phase_purity: 0.7
+
+reliability:
+  target: observed_interval_label
+  class_lambda: 50
+  key_lambda: 50
+  height_min: 0.05
+  height_max: 0.95
+
+uncertainty:
+  unmapped: 0.5
+  maximum: 0.5
+  ambiguity_precision_weight: 0.20
+  ambiguity_purity_weight: 0.15
+
+evaluation:
+  tau: 8.0
+  selection_k: 100
+  tie_salt: "cose04000|"
+
+selection:
+  primary: [max_macro_coverage, min_macro_fp, max_macro_ndcg, min_nonzero_params, grid_order]
+  secondary: [max_macro_ndcg, min_nonzero_params, grid_order]
+  tolerance: 1.0e-12
+
+learned:
+  max_training_alerts: 300000
+  seed: 42
+  weights: equalize_scenarios
+
+grids:
+  W: {alpha: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]}
+  A: {simplex_step: 0.1}
+  M: {a: [0.0, 0.25, 0.5, 1.0, 2.0, 4.0], b: [0.0, 1.0, 2.0, 4.0, 8.0]}
+  C: {c_fp: [0.0, 1.0, 2.5, 5.0, 10.0]}
+  L1: {C: [0.01, 1.0, 100.0]}
+  L2: {max_depth: [2, 3], learning_rate: 0.1, max_iter: 200, l2_regularization: 1.0}
+  S0: {kappa: 1.0}
+  S1: {kappa: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.6676]}
+  S2: {kappa: [0.0, 0.5, 1.0, 2.0, 4.0, 8.0]}

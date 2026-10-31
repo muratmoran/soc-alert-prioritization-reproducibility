@@ -1,0 +1,12 @@
+{
+ "python": "3.10.18",
+ "platform": "Darwin 27.0.0 arm64",
+ "macos": "27.0.1",
+ "cpu": "Apple M4 Pro",
+ "logical_cpus": "14",
+ "memory_bytes": "51539607552",
+ "pdflatex": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2024)",
+ "latexmk": "Latexmk, John Collins, 31 Jan. 2024. Version 4.83",
+ "ghostscript": "10.05.0",
+ "conda": "conda 25.7.0"
+}

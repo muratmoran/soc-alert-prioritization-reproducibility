@@ -1,0 +1,23 @@
+{
+ "script_sha256": "eaf4caabfbfab9552f946a9b0b670e6310af4025a954cd7cd36d14b7f13111a7",
+ "tables": {
+  "tab_ablation.tex": "3969ac68b48280601043e645121b808a0aa84e9618b89894712b0f01ffef1440",
+  "tab_data.tex": "55dab53c5c01696bb1dfce128ccca940e416e17a6057a940f62b713566dca886",
+  "tab_delay.tex": "62a6fa99d4e00ee104a02683e72d80a678f55cc722d4753200464aa7e37a0905",
+  "tab_generalization.tex": "0b68c121ceb6f531ff024866f1dee26b54a8c71885023b1bf16338d2c803a823",
+  "tab_rates.tex": "3256813b26cac5d9bd289dc8eae8b2a92fb1d009f69e2ade83aacad538e74577",
+  "tab_replay.tex": "403272a850f0a0ebd1f31a482e561b56b3bea88753ca70a657d9e468c1d647c7",
+  "tab_static_primary.tex": "58a5323e935c075b47349a082704bdb8e20ccbd72845fd112f4ca33486e45e35",
+  "tab_tests.tex": "f3684dd11b614e31043fef45ad9a0215b0775ec1700f7ba495f74c642a29b4d3",
+  "tab_ties.tex": "baa5c74237eeff7352c278a99dd079262287e2ed1cb5f466f32f88bb0d93ce3a",
+  "tab_uwf.tex": "5fcba7374bc95e525ad04c5137c2999e71d13159097c45bea1d36a3d1e900cf0"
+ },
+ "figures": {
+  "fig_paired_effects.pdf": "79423a31e13a2e4579df1dd351f3bdaf3841c8cdc3122fc9161e56ed02397719",
+  "fig_protocol.pdf": "658b7f36e2efda4fa451cb8fba4e026445f0926aa903195add3ec8a2147b99db",
+  "fig_rank_curves.pdf": "00e814385cdf4d632bf9de4a3a5ea708c08eb592a6c5637f982132341d64b5d5",
+  "fig_replay.pdf": "fa3387df1c04a59e2410c784f9ddc930ee6966da5349fa2db902280f51cd8f6a",
+  "fig_static_tradeoff.pdf": "be12d5e9e09462b704f9e548b260f707a704067be56ea955d9ccd6ce40d11561"
+ },
+ "numbers_sha256": "5ba7744e13af27179b1ab5601a656f496557bda9f0727623f57532fd396d021f"
+}

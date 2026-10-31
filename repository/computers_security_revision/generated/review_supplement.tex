@@ -1,0 +1,114 @@
+\section*{S7. Tie diagnostics, chronology, and utilization}
+The main static table fixes the selected candidates and reports exact expected FP and mean coverage over 100 within-block permutations. Its coverage range is the minimum--maximum of the 100 totals obtained by summing scenarios for each seed. The tie-diagnostic table instead sums each scenario's minimum and maximum; those bounds need not occur together in one seed. Neither range is a confidence interval.
+
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Complete tie diagnostics at $k=100$. Tied is the median percentage of top-100 positions inside tied blocks; Crossed counts scenarios with a tied block crossing rank 100. Cutoff block and From block are median block size and selected members. Sum of extrema adds per-scenario coverage minima and maxima over 100 permutations. These bounds need not occur together in one seed; they differ from the aggregate seed ranges in the main static table. FP columns are medians across scenarios; Expected FP uses exact within-block expectations.}
+\label{tab:s-ties-full}
+\resizebox{\textwidth}{!}{\input{generated/tables/tab_ties.tex}}
+\end{tableorg}
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Distinct finite score values per scenario for the nine class-level formulas.}
+\label{tab:s-distinct}
+\resizebox{\textwidth}{!}{\input{generated/tables/tab_review_distinct.tex}}
+\end{tableorg}
+
+All nine formulas defer 9,047 critical records beyond half the original raw queue. Of these, 8,999 have mapping-rejected identifiers, 8,996 fail precision and 8,856 fail purity; these last two counts overlap. Exact tie-averaged FP contrasts use the eight per-scenario expectations; coverage contrasts use the eight within-scenario seed means. Tests in Table~\ref{tab:s-tie-tests} are exploratory and unadjusted.
+
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Scenario-paired exploratory static contrasts under random ties.}
+\label{tab:s-tie-tests}
+\resizebox{\textwidth}{!}{\input{generated/tables/tab_review_tie_tests.tex}}
+\end{tableorg}
+
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Forward-eligible scenarios in chronological order. Exact timestamp extents are supplied in forward\_split\_extents.csv. Training scenarios must end strictly before the test begins.}
+\label{tab:s-forward}
+\resizebox{\textwidth}{!}{\input{generated/tables/tab_review_forward.tex}}
+\end{tableorg}
+
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Raw-alert service accounting, summed over scenarios. Starts include service extending past the horizon; busy time is truncated there. Aggregate overload permits temporary empty backlogs. The rates have identical accounting across rankers.}
+\label{tab:s-util}
+\resizebox{\textwidth}{!}{\input{generated/tables/tab_review_utilization.tex}}
+\end{tableorg}
+\FloatBarrier
+\section*{S8. Input-policy sensitivity specification and results}
+Each of the 23 cases repeats the original inner selection rule and fitting exclusions for the formula families and operational references (152 candidates, including 140 tuned candidates per inner fold). The learned L1/L2 families are excluded by design to focus on the response of explicit scoring formulas to input-policy changes; their policy robustness is not assessed. The unchanged setting reproduces the saved selections and static outcomes exactly. The six original primary tests are retained; the additional paired comparisons are exploratory and unadjusted. No outer result selects a preferred sensitivity policy.
+
+One-factor precision values are 0.3, 0.4, 0.5, 0.6, and 0.7; purity values are 0.5, 0.7, and 0.9. Joint corners pair precision 0.3/0.7 with purity 0.5/0.9. Support and positive minima are (1,1), (5,3), and (10,5). Shrinkage $\lambda=0,10,50,200$ applies to both class and native-key estimates. Clipping remains [0.05,0.95]. These grids quantify local policy dependence; they do not exhaust possible SOC policies.
+
+Severity input cases add or subtract one from every phase severity, clipping to [0,10], and leave the unknown default at 5. Evaluation labels remain fixed in these cases. Severity endpoint cases change both ranking severities and interval-label severities at $\tau=8$. The $\tau=7/9$ cases retain the original severity table but change the criticality threshold. Denominators are shown rather than comparing raw covered counts as if the endpoint were identical. The critical-reliability case substitutes critical positives in reliability counts and detector/global priors only; mapping still uses any-interval precision and phase purity, and all cross-fitting exclusions remain in force.
+
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Sensitivity outcomes: covered intervals / median FP@100. Denominators and critical-record counts vary only in endpoint-changing cases. All nine class-level formulas cover eight intervals in each case; P and S1 show the corresponding burdens.}
+\label{tab:s-policy}
+\resizebox{\textwidth}{!}{\input{generated/tables/tab_review_sensitivity.tex}}
+\end{tableorg}
+
+The archive supplies per-scenario coverage, FP, top-100 critical recall, half-queue recall, deferral counts, mapping acceptance, failed mapping criteria, selected candidates, inner outcomes, and fitting traces. Aggregate coverage equality is accompanied by zero per-scenario S1-minus-P/A/M coverage differences in every case; it is not inferred solely from non-significant tests. Policy changes can alter deep-queue behavior while leaving top-100 interval coverage unchanged.
+
+\FloatBarrier
+\section*{S9. Grouping and randomized-replay details}
+The main article reports five-minute groups; Tables~\ref{tab:s-group60} and~\ref{tab:s-group900} give the other prespecified windows. Group membership uses ranking-time fields only. Windows are half-open and do not extend with later members. Missing host values remain their supplied missing-host category within detector/key; the resulting groups are a reproducible sensitivity unit, not adjudicated incidents. A group is critical if it contains any critical member. It is noncritical-positive if it contains an interval-positive member but no critical member. It is interval-negative if it contains no interval-positive member. Mixed groups are assigned by this rule, not by their representative alone. Group closure delays availability by the chosen window. Groups closing after the raw horizon remain in retrieval denominators and cannot be selected.
+
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Closed 60-second groups at 12 groups/h. Definitions match the main grouped-replay table.}
+\label{tab:s-group60}
+\resizebox{\textwidth}{!}{\input{generated/tables/tab_review_grouped_60.tex}}
+\end{tableorg}
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Closed 900-second groups at 12 groups/h. Definitions match the main grouped-replay table.}
+\label{tab:s-group900}
+\resizebox{\textwidth}{!}{\input{generated/tables/tab_review_grouped_900.tex}}
+\end{tableorg}
+
+The static grouping diagnostic evaluates representative-own and cluster-union labels at 60, 300, and 900 seconds: P covered 8, 8, and 9 intervals, and S1\key{} covered 24 in all three cases. P's median FP@100 was 50.5, 70.5, and 74.5. These results do not imply online behavior because a complete static group has access to members unavailable before closure. The closed-group replay makes that availability explicit and uses a different service budget measured in groups.
+
+For randomized raw-alert replay, the tie priority is a SplitMix64 permutation of the stable per-alert hash with a seed offset. It is independent of labels and future arrivals and shared across rankers. This is a fixed per-arrival random-priority policy, not a fresh uniform draw from the backlog at each decision. For each of 100 seeds, seven rankers are replayed on eight scenarios (5,600 traces), with 56 deterministic traces checked against the historical engine. The grouped analyses add 168 traces. Coverage, interval-end timing, FP burden, queue-unit recall, contained critical records, utilization, and per-scenario paired contrasts are retained in machine-readable form.
+
+\FloatBarrier
+\paragraph{Investigation-start accounting.}
+For raw records and closed groups alike, total starts equal interval-negative plus noncritical interval-positive plus critical starts. The main raw-alert table gives the complete partition for its nine rankers. Table~\ref{tab:s-forward-starts} gives the two five-scenario fitting designs, Table~\ref{tab:s-random-starts} the randomized raw-alert means, and Tables~\ref{tab:s-group-starts60}--\ref{tab:s-group-starts900} the grouped partitions. Counts refer to starts, including those whose completion would exceed the horizon. Randomized means are rounded to two decimals, so displayed components may differ from the total by rounding. Critical members in the grouped outcome tables count contained raw records and must not be added to group starts.
+
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Raw-alert starts on the same five forward-eligible scenarios at 12/h. Each cell is LOSO / forward fitting. Both designs have 7,477 starts per ranker.}
+\label{tab:s-forward-starts}
+\input{generated/tables/tab_review_forward_starts.tex}
+\end{tableorg}
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Randomized raw-alert starts at 12/h. Means over 100 seed totals across eight scenarios; each seed has 11,508 starts per ranker.}
+\label{tab:s-random-starts}
+\input{generated/tables/tab_review_random_starts.tex}
+\end{tableorg}
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Investigation-start partition for 60-second groups at 12 groups/h.}
+\label{tab:s-group-starts60}
+\input{generated/tables/tab_review_group_starts_60.tex}
+\end{tableorg}
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Investigation-start partition for 300-second groups at 12 groups/h.}
+\label{tab:s-group-starts300}
+\input{generated/tables/tab_review_group_starts_300.tex}
+\end{tableorg}
+\begin{tableorg}[htbp]
+\centering\small
+\caption{Investigation-start partition for 900-second groups at 12 groups/h.}
+\label{tab:s-group-starts900}
+\input{generated/tables/tab_review_group_starts_900.tex}
+\end{tableorg}
+\FloatBarrier
+\section*{S10. Verification of the exploratory extension}
+All 184 sensitivity folds pass fitting-trace checks. Tests compare the extended replay with the historical engine and an independent exhaustive backlog scan. Cases cover missing scores, simultaneous arrivals, idling, non-preemption, unchanged horizons, closed groups, late boundary credit, and prefix-invariant random priorities. Excluded-label mutations check isolation when fitting critical-target reliability. The full test suite reports 131 tests with one pre-existing expected failure for the withdrawn NF-UQ category-sampling diagnostic. No new test failure is accepted. Code, input, amendment, output and build checksums are supplied with environment versions and reproduction commands.
+

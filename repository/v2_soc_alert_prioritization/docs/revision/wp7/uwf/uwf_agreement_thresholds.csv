@@ -1,0 +1,7 @@
+crosswalk,threshold,tactics,spearman,kendall_tau_b,mean_absolute_discrepancy_unweighted,mean_absolute_discrepancy_frequency_weighted,jaccard,set_tactic_table,set_crosswalk
+max over mapped AIT phases (historical),7.5,5,0.8720815992723809,0.7378647873726218,0.7,1.8823441947406432,0.75,Credential Access;Exfiltration;Persistence;Privilege Escalation,Exfiltration;Persistence;Privilege Escalation
+max over mapped AIT phases (historical),8.0,5,0.8720815992723809,0.7378647873726218,0.7,1.8823441947406432,0.75,Credential Access;Exfiltration;Persistence;Privilege Escalation,Exfiltration;Persistence;Privilege Escalation
+max over mapped AIT phases (historical),8.5,5,0.8720815992723809,0.7378647873726218,0.7,1.8823441947406432,0.5,Credential Access;Exfiltration;Privilege Escalation,Exfiltration;Persistence;Privilege Escalation
+mean over mapped AIT phases (sensitivity),7.5,5,0.8720815992723809,0.7378647873726218,0.625,1.8591725434385489,0.75,Credential Access;Exfiltration;Persistence;Privilege Escalation,Exfiltration;Persistence;Privilege Escalation
+mean over mapped AIT phases (sensitivity),8.0,5,0.8720815992723809,0.7378647873726218,0.625,1.8591725434385489,0.75,Credential Access;Exfiltration;Persistence;Privilege Escalation,Exfiltration;Persistence;Privilege Escalation
+mean over mapped AIT phases (sensitivity),8.5,5,0.8720815992723809,0.7378647873726218,0.625,1.8591725434385489,0.5,Credential Access;Exfiltration;Privilege Escalation,Exfiltration;Persistence;Privilege Escalation

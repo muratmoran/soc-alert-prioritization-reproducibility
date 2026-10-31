@@ -1,0 +1,8 @@
+tactic,uwf_rows,uwf_attack_share,tactic_table_severity,overlaps_ait_crosswalk,ait_phases,crosswalk_severity_max,crosswalk_severity_mean,techniques,discrepancy_max,discrepancy_mean
+Credential Access,43494,0.9067861982695715,8.5,True,cracking:6.5,6.5,6.5,T1110:43494,2.0,2.0
+Reconnaissance,2909,0.06064838945064109,2.5,True,network_scans:2;service_scans:2.5;dirb:3;wpscan:3,3.0,2.625,T1595:2909,-0.5,-0.125
+Initial Access,561,0.01169602835400813,7.0,False,,,,Duplicate:318;T1190:243,,
+Defense Evasion,326,0.006796622537266757,8.0,False,,,,T1078:326,,
+Persistence,326,0.006796622537266757,8.0,True,webshell:8.5,8.5,8.5,Duplicate:326,-0.5,-0.5
+Privilege Escalation,326,0.006796622537266757,9.5,True,privilege_escalation:9.5,9.5,9.5,Duplicate:326,0.0,0.0
+Exfiltration,23,0.000479516313978943,9.5,True,dnsteal:9;data_exfiltration:9,9.0,9.0,T1048:23,0.5,0.5

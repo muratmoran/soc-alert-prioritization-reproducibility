@@ -1,0 +1,9 @@
+run,method,folds,critical_total,deep_deferred,median_rank_fraction_p50,top_half_recurring_benign_share_median,cause_mapping_rejection,cause_mapping_rejection_support_lt_5,cause_mapping_rejection_positives_lt_3,cause_mapping_rejection_precision_lt_0_5,cause_mapping_rejection_purity_lt_0_7,cause_mapping_rejection_no_positives,cause_low_reliability,cause_low_reliability_clipped_at_min,cause_low_reliability_fallback_detector,cause_low_reliability_fallback_global,cause_severity_reversal,cause_tie_rule_displacement,deep_deferred_share
+R7,A_additive (primary rule),5,7803,7638,0.8785179567549499,0.0,7593,3,137,7590,7480,119,0,0,0,0,0.0,387,0.9788542868127643
+R7,H_weighted,5,7803,7037,0.8785179567549499,0.1519957413797021,6967,1,127,6966,6911,119,0,0,0,0,0.0,0,0.9018326284762271
+R7,O_severity,5,7803,944,0.2674981648225097,0.6059257764337497,879,3,11,876,837,0,0,0,0,0,0.0,919,0.12097911059848776
+R7,P_probability_proxy,5,7803,7081,0.8785179567549499,0.1514861351397846,7011,1,129,7010,6919,119,0,0,0,0,0.0,0,0.9074714853261566
+R7,S0_linear_log_historical[kappa=1],5,7803,7037,0.8785179567549499,0.1519957413797021,6967,1,127,6966,6911,119,0,0,0,0,6967.0,0,0.9018326284762271
+R7,S1_linear_log_constrained (primary rule),5,7803,7437,0.8784422763407258,0.1519957413797021,7367,2,134,7365,7297,119,0,0,0,0,0.0,732,0.9530949634755863
+R7,S2_exponential_discount (primary rule),5,7803,7050,0.8785179567549499,0.1519957413797021,6980,1,133,6979,6914,119,0,0,0,0,0.0,0,0.9034986543637062
+R7,W_weighted (primary rule),5,7803,7477,0.8785179567549499,0.1514861351397846,7407,1,135,7406,7305,119,0,0,0,0,0.0,383,0.9582211969755222

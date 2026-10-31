@@ -1,0 +1,23 @@
+method,fox,harrison,russellmitchell,santos,shaw,wardbeck,wheeler,wilson,units,macro_coverage_eligible,macro_coverage_all,fp_median,fp_min,fp_max,units_covering_0,units_covering_1,units_covering_2,units_covering_3,units_covering_4,selected_candidates
+A_additive (primary rule),1/4 · FP 0,1/4 · FP 0,1/4 · FP 8,1/4 · FP 8,1/4 · FP 8,1/4 · FP 8,1/4 · FP 0,1/4 · FP 1,8,0.25,0.25,4.5,0,8,0,8,0,0,0,"A_additive[a=0.3,b=0.3,d=0.4]"
+C_cost_sensitive (primary rule),1/4 · FP 17,1/4 · FP 17,1/4 · FP 8,1/4 · FP 8,1/4 · FP 40,1/4 · FP 97,1/4 · FP 10,1/4 · FP 35,8,0.25,0.25,17.0,8,97,0,8,0,0,0,C_cost_sensitive[c_fp=10]; C_cost_sensitive[c_fp=1]; C_cost_sensitive[c_fp=5]
+H_weighted,1/4 · FP 25,1/4 · FP 17,1/4 · FP 8,1/4 · FP 8,1/4 · FP 40,1/4 · FP 95,1/4 · FP 10,1/4 · FP 41,8,0.25,0.25,21.0,8,95,0,8,0,0,0,H_weighted
+L1_logistic (primary rule),1/4 · FP 11,1/4 · FP 0,1/4 · FP 8,1/4 · FP 8,1/4 · FP 8,1/4 · FP 12,1/4 · FP 0,1/4 · FP 11,8,0.25,0.25,8.0,0,12,0,8,0,0,0,L1_logistic[C=0.01]
+L2_gradient_boosting (primary rule),1/4 · FP 5,1/4 · FP 0,1/4 · FP 8,1/4 · FP 0,0/4 · FP 32,0/4 · FP 100,0/4 · FP 2,1/4 · FP 11,8,0.15625,0.15625,6.5,0,100,3,5,0,0,0,L2_gradient_boosting[max_depth=2]; L2_gradient_boosting[max_depth=3]
+M_multiplicative (primary rule),1/4 · FP 1,1/4 · FP 0,1/4 · FP 8,1/4 · FP 8,1/4 · FP 8,1/4 · FP 9,1/4 · FP 0,1/4 · FP 2,8,0.25,0.25,5.0,0,9,0,8,0,0,0,"M_multiplicative[a=2,b=4]; M_multiplicative[a=4,b=2]"
+O_native_rule_level,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 99,0/4 · FP 100,0/4 · FP 100,8,0.0,0.0,100.0,99,100,8,0,0,0,0,O_native_rule_level
+O_native_suricata_severity,1/4 · FP 75,0/4 · FP 88,0/4 · FP 73,0/4 · FP 85,0/4 · FP 100,0/4 · FP 91,0/4 · FP 76,0/4 · FP 73,8,0.03125,0.03125,80.5,73,100,7,1,0,0,0,O_native_suricata_severity
+O_newest_first,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,8,0.0,0.0,100.0,100,100,8,0,0,0,0,O_newest_first
+O_oldest_first,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,0/4 · FP 100,8,0.0,0.0,100.0,100,100,8,0,0,0,0,O_oldest_first
+O_reliability,0/4 · FP 14,0/4 · FP 17,0/4 · FP 8,0/4 · FP 8,0/4 · FP 40,0/4 · FP 100,0/4 · FP 10,0/4 · FP 30,8,0.0,0.0,15.5,8,100,8,0,0,0,0,O_reliability
+O_severity,1/4 · FP 96,1/4 · FP 96,1/4 · FP 97,1/4 · FP 97,1/4 · FP 97,1/4 · FP 95,1/4 · FP 97,1/4 · FP 96,8,0.25,0.25,96.5,95,97,0,8,0,0,0,O_severity
+P_probability_proxy,1/4 · FP 25,1/4 · FP 17,1/4 · FP 8,1/4 · FP 8,1/4 · FP 40,1/4 · FP 95,1/4 · FP 10,1/4 · FP 41,8,0.25,0.25,21.0,8,95,0,8,0,0,0,P_probability_proxy
+R_key_reliability,0/4 · FP 73,0/4 · FP 61,0/4 · FP 41,0/4 · FP 90,0/4 · FP 74,0/4 · FP 100,0/4 · FP 44,0/4 · FP 61,8,0.0,0.0,67.0,41,100,8,0,0,0,0,R_key_reliability
+R_severity_key_reliability,3/4 · FP 77,1/4 · FP 66,2/4 · FP 46,3/4 · FP 90,1/4 · FP 94,2/4 · FP 88,3/4 · FP 63,3/4 · FP 79,8,0.5625,0.5625,78.0,46,94,0,2,2,4,0,R_severity_key_reliability
+S0_linear_log_historical[kappa=1],1/4 · FP 11,1/4 · FP 0,1/4 · FP 8,1/4 · FP 8,1/4 · FP 8,1/4 · FP 12,1/4 · FP 0,1/4 · FP 11,8,0.25,0.25,8.0,0,12,0,8,0,0,0,S0_linear_log_historical[kappa=1]
+S0_linear_log_historical_key[kappa=1],3/4 · FP 75,3/4 · FP 14,3/4 · FP 33,3/4 · FP 27,1/4 · FP 97,2/4 · FP 69,3/4 · FP 27,3/4 · FP 73,8,0.65625,0.65625,51.0,14,97,0,1,1,6,0,S0_linear_log_historical_key[kappa=1]
+S1_linear_log_constrained (primary rule),1/4 · FP 11,1/4 · FP 0,1/4 · FP 8,1/4 · FP 8,1/4 · FP 8,1/4 · FP 12,1/4 · FP 0,1/4 · FP 11,8,0.25,0.25,8.0,0,12,0,8,0,0,0,S1_linear_log_constrained[kappa=0.4]
+S1_linear_log_constrained_key (primary rule),3/4 · FP 77,3/4 · FP 58,3/4 · FP 86,3/4 · FP 57,1/4 · FP 97,2/4 · FP 84,3/4 · FP 82,3/4 · FP 73,8,0.65625,0.65625,79.5,57,97,0,1,1,6,0,S1_linear_log_constrained_key[kappa=0.2]; S1_linear_log_constrained_key[kappa=0.4]; S1_linear_log_constrained_key[kappa=0.6676]; S1_linear_log_constrained_key[kappa=0.6]
+S2_exponential_discount (primary rule),1/4 · FP 3,1/4 · FP 0,1/4 · FP 8,1/4 · FP 8,1/4 · FP 8,1/4 · FP 9,1/4 · FP 0,1/4 · FP 5,8,0.25,0.25,6.5,0,9,0,8,0,0,0,S2_exponential_discount[kappa=8]
+S2_exponential_discount_key (primary rule),3/4 · FP 71,3/4 · FP 67,3/4 · FP 86,3/4 · FP 83,1/4 · FP 97,2/4 · FP 84,3/4 · FP 19,3/4 · FP 73,8,0.65625,0.65625,78.0,19,97,0,1,1,6,0,S2_exponential_discount_key[kappa=0.5]; S2_exponential_discount_key[kappa=2]
+W_weighted (primary rule),1/4 · FP 17,1/4 · FP 17,1/4 · FP 8,1/4 · FP 8,1/4 · FP 40,1/4 · FP 97,1/4 · FP 10,1/4 · FP 35,8,0.25,0.25,17.0,8,97,0,8,0,0,0,W_weighted[alpha=0.2]; W_weighted[alpha=0.3]

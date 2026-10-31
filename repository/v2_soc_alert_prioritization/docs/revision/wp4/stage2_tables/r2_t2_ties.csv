@@ -1,0 +1,177 @@
+method,analysis_unit,order_share,crosses_cutoff,cutoff_block_size,members_selected_by_tie_rule,perm_covered_p2_5,perm_covered_p97_5,perm_covered_min,perm_covered_max,perm_fp_p2_5,perm_fp_p97_5,expected_negatives_in_top,expected_critical_recall,near_tie_covered,near_tie_fp
+A_additive (primary rule),fox,0.96,True,182,64,1.0,1.0,1,1,0.0,0.0,0.0,0.0024509803921568,1,0
+A_additive (primary rule),harrison,0.97,True,184,81,1.0,1.0,1,1,0.0,0.0,0.0,0.0002954209748892,1,0
+A_additive (primary rule),russellmitchell,0.98,True,3177,52,1.0,1.0,1,1,0.0,1.0,0.1309411394397273,0.0013458950201884,1,8
+A_additive (primary rule),santos,0.96,True,3274,73,1.0,1.0,1,1,0.0,1.0,0.1783750763592024,0.001101321585903,1,8
+A_additive (primary rule),shaw,0.98,True,739,96,1.0,1.0,1,1,0.0,3.0,1.0392422192151545,0.006060606060606,1,8
+A_additive (primary rule),wardbeck,0.98,True,749,80,1.0,1.0,1,1,0.0,3.0,0.8544726301735608,0.0117647058823529,1,8
+A_additive (primary rule),wheeler,0.97,True,172,65,1.0,1.0,1,1,0.0,0.0,0.0,0.0018050541516245,1,0
+A_additive (primary rule),wilson,0.98,True,184,52,1.0,1.0,1,1,1.0,1.0,1.0,0.0010148849797023,1,1
+C_cost_sensitive (primary rule),fox,1.0,True,415393,93,1.0,1.0,1,1,3.0,3.0,3.0035821499158715,0.0098039215686274,1,17
+C_cost_sensitive (primary rule),harrison,1.0,True,420243,96,1.0,1.0,1,1,0.0,0.0,0.0047972244629903,0.0011816838995568,1,17
+C_cost_sensitive (primary rule),russellmitchell,1.0,True,10872,97,1.0,1.0,1,1,0.0,1.0,0.071376011773367,0.0040376850605652,1,8
+C_cost_sensitive (primary rule),santos,1.0,True,11010,97,1.0,1.0,1,1,0.0,0.5249999999999915,0.0704813805631232,0.0033039647577092,1,8
+C_cost_sensitive (primary rule),shaw,1.0,True,5989,97,1.0,1.0,1,1,0.0,4.0,1.133745199532484,0.0181818181818181,1,40
+C_cost_sensitive (primary rule),wardbeck,1.0,True,6092,96,1.0,1.0,1,1,1.0,6.0,3.2376887721602117,0.0352941176470588,1,97
+C_cost_sensitive (primary rule),wheeler,1.0,True,425969,97,1.0,1.0,1,1,0.0,0.0,0.0027325932168764,0.0054151624548736,1,10
+C_cost_sensitive (primary rule),wilson,1.0,True,430178,91,1.0,1.0,1,1,5.0,5.0,5.011000097633996,0.0013531799729364,1,35
+H_weighted,fox,1.0,True,415393,85,1.0,1.0,1,1,11.0,11.0,11.003274007987612,0.0098039215686274,1,25
+H_weighted,harrison,1.0,True,420243,96,1.0,1.0,1,1,0.0,0.0,0.0047972244629903,0.0011816838995568,1,17
+H_weighted,russellmitchell,1.0,True,10872,97,1.0,1.0,1,1,0.0,1.0,0.071376011773367,0.0040376850605652,1,8
+H_weighted,santos,1.0,True,11010,97,1.0,1.0,1,1,0.0,0.5249999999999915,0.0704813805631232,0.0033039647577092,1,8
+H_weighted,shaw,1.0,True,5989,97,1.0,1.0,1,1,0.0,4.0,1.133745199532484,0.0181818181818181,1,40
+H_weighted,wardbeck,1.0,True,6092,91,1.0,1.0,1,1,4.0,9.0,6.1211424819435365,0.0588235294117647,1,95
+H_weighted,wheeler,1.0,True,425969,97,1.0,1.0,1,1,0.0,0.0,0.0027325932168764,0.0054151624548736,1,10
+H_weighted,wilson,1.0,True,430178,85,1.0,1.0,1,1,11.0,11.0,11.010274816471323,0.0013531799729364,1,41
+L1_logistic (primary rule),fox,0.99,True,182,85,1.0,1.0,1,1,11.0,11.0,11.0,0.0098039215686274,1,19
+L1_logistic (primary rule),harrison,0.99,True,184,96,1.0,1.0,1,1,0.0,0.0,0.0,0.0011816838995568,1,13
+L1_logistic (primary rule),russellmitchell,0.99,True,3177,95,1.0,1.0,1,1,0.0,2.0,0.2392193893610255,0.0040376850605652,1,8
+L1_logistic (primary rule),santos,0.99,True,3274,95,1.0,1.0,1,1,0.0,1.0,0.2321319486866286,0.0033039647577092,1,8
+L1_logistic (primary rule),shaw,0.99,True,739,95,1.0,1.0,1,1,0.0,3.0,1.028416779431666,0.0181818181818181,1,8
+L1_logistic (primary rule),wardbeck,0.99,True,749,89,1.0,1.0,1,1,4.0,7.0,4.9506008010680915,0.0588235294117647,1,95
+L1_logistic (primary rule),wheeler,0.99,True,172,97,1.0,1.0,1,1,0.0,0.0,0.0,0.0054151624548736,1,10
+L1_logistic (primary rule),wilson,0.98,True,184,85,1.0,1.0,1,1,11.0,11.0,11.0,0.0013531799729364,1,19
+L2_gradient_boosting (primary rule),fox,0.99,True,182,91,1.0,1.0,1,1,5.0,5.0,5.0,0.0098039215686274,1,5
+L2_gradient_boosting (primary rule),harrison,1.0,True,569,80,1.0,1.0,1,1,0.0,0.0,0.0,0.0011816838995568,1,0
+L2_gradient_boosting (primary rule),russellmitchell,1.0,True,3177,90,1.0,1.0,1,1,0.0,2.0,0.2266288951841346,0.0040376850605652,1,8
+L2_gradient_boosting (primary rule),santos,0.99,True,7714,82,1.0,1.0,1,1,0.0,0.0,0.0,0.0033039647577092,1,0
+L2_gradient_boosting (primary rule),shaw,1.0,True,5228,98,0.0,0.0,0,0,0.0,4.0,1.162203519510328,0.0,0,32
+L2_gradient_boosting (primary rule),wardbeck,1.0,True,5321,100,0.0,0.0,0,0,0.0,5.0,2.518323623379061,0.0,0,100
+L2_gradient_boosting (primary rule),wheeler,1.0,True,387550,100,0.0,0.0,0,0,0.0,0.0,0.0010321248871179,0.0,0,10
+L2_gradient_boosting (primary rule),wilson,1.0,True,184,85,1.0,1.0,1,1,11.0,11.0,11.0,0.0013531799729364,1,11
+M_multiplicative (primary rule),fox,0.97,True,182,89,1.0,1.0,1,1,1.0,1.0,1.0,0.0098039215686274,1,1
+M_multiplicative (primary rule),harrison,0.97,True,184,94,1.0,1.0,1,1,0.0,0.0,0.0,0.0011816838995568,1,0
+M_multiplicative (primary rule),russellmitchell,0.99,True,3177,86,1.0,1.0,1,1,0.0,2.0,0.2165564998426106,0.0040376850605652,1,8
+M_multiplicative (primary rule),santos,0.96,True,3274,90,1.0,1.0,1,1,0.0,1.0,0.2199144777031136,0.0033039647577092,1,8
+M_multiplicative (primary rule),shaw,0.98,True,739,94,1.0,1.0,1,1,0.0,3.0,1.0175913396481633,0.0181818181818181,1,8
+M_multiplicative (primary rule),wardbeck,0.98,True,749,90,1.0,1.0,1,1,1.0,4.0,1.9612817089452648,0.0352941176470588,1,9
+M_multiplicative (primary rule),wheeler,0.99,True,172,97,1.0,1.0,1,1,0.0,0.0,0.0,0.0054151624548736,1,0
+M_multiplicative (primary rule),wilson,0.98,True,184,87,1.0,1.0,1,1,2.0,2.0,2.0,0.0010148849797023,1,2
+O_native_rule_level,fox,1.0,True,29568,80,0.0,0.0,0,0,20.0,23.0,20.738636363636378,0.0,0,100
+O_native_rule_level,harrison,1.0,True,630,100,0.0,1.0,0,2,96.475,100.0,98.57142857142856,0.0001406766547091,0,100
+O_native_rule_level,russellmitchell,1.0,True,729,93,0.0,1.0,0,1,21.0,35.52499999999999,29.32510288065843,0.0003433970833402,0,100
+O_native_rule_level,santos,1.0,True,347,100,0.0,0.0,0,0,99.0,100.0,99.71181556195964,0.0,0,100
+O_native_rule_level,shaw,1.0,True,773,67,0.0,0.0,0,0,61.0,74.0,67.84346701164296,0.0,0,100
+O_native_rule_level,wardbeck,1.0,True,856,49,0.0,0.0,0,0,70.95,83.0,77.5911214953271,0.0,0,99
+O_native_rule_level,wheeler,1.0,True,269,100,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_native_rule_level,wilson,1.0,True,310,100,0.0,1.0,0,1,94.0,99.0,96.7741935483871,0.0006547645030337,0,100
+O_native_suricata_severity,fox,1.0,True,11009,25,1.0,1.0,1,1,72.0,75.0,74.27786356617312,0.0025400340897554,1,75
+O_native_suricata_severity,harrison,1.0,True,47286,88,0.0,0.0,0,0,85.0,88.0,86.67123461489659,8.246747173661689e-06,0,88
+O_native_suricata_severity,russellmitchell,1.0,True,9141,55,0.0,1.0,0,1,69.475,73.0,71.88086642599278,0.0013442754112591,0,73
+O_native_suricata_severity,santos,1.0,True,25863,85,0.0,0.0,0,0,85.0,85.0,84.99342690329814,0.0,0,85
+O_native_suricata_severity,shaw,1.0,True,118,100,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_native_suricata_severity,wardbeck,1.0,True,24433,23,0.0,0.0,0,0,90.0,91.0,90.81361273687226,6.644822214892588e-05,0,91
+O_native_suricata_severity,wheeler,1.0,True,19003,76,0.0,1.0,0,1,71.475,76.0,74.75619639004367,0.0008301938265115,0,76
+O_native_suricata_severity,wilson,1.0,True,108,62,0.0,0.0,0,0,73.0,73.0,73.0,0.0,0,73
+O_newest_first,fox,0.54,True,3,2,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_newest_first,harrison,0.71,True,4,3,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_newest_first,russellmitchell,0.81,True,4,2,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_newest_first,santos,0.67,False,3,0,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_newest_first,shaw,0.61,True,3,1,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_newest_first,wardbeck,0.57,True,4,3,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_newest_first,wheeler,0.89,True,4,1,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_newest_first,wilson,0.64,True,3,2,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_oldest_first,fox,0.76,False,1,0,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_oldest_first,harrison,0.94,False,2,0,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_oldest_first,russellmitchell,0.86,False,2,0,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_oldest_first,santos,0.96,False,2,0,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_oldest_first,shaw,0.88,True,12,2,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_oldest_first,wardbeck,0.79,True,12,4,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_oldest_first,wheeler,0.65,False,1,0,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_oldest_first,wilson,0.76,False,1,0,0.0,0.0,0,0,100.0,100.0,100.0,0.0,0,100
+O_reliability,fox,1.0,True,415393,100,0.0,0.0,0,0,0.0,0.0,0.003851774103083,0.0,0,14
+O_reliability,harrison,1.0,True,420243,100,0.0,0.0,0,0,0.0,0.0,0.0049971088156155,0.0,0,17
+O_reliability,russellmitchell,1.0,True,10872,100,0.0,0.0,0,0,0.0,1.0,0.0735835172921355,0.0,0,8
+O_reliability,santos,1.0,True,11010,100,0.0,0.0,0,0,0.0,0.5249999999999915,0.0726612170753924,0.0,0,8
+O_reliability,shaw,1.0,True,5989,100,0.0,0.0,0,0,0.0,4.0,1.168809484054094,0.0,0,40
+O_reliability,wardbeck,1.0,True,6092,100,0.0,0.0,0,0,0.0,5.0,2.330925804333546,0.0,0,100
+O_reliability,wheeler,1.0,True,425969,100,0.0,0.0,0,0,0.0,0.0,0.0028171064091537,0.0,0,10
+O_reliability,wilson,1.0,True,430178,100,0.0,0.0,0,0,0.0,0.0,0.0120880193780266,0.0,0,30
+O_severity,fox,1.0,True,766,91,1.0,2.0,1,2,93.0,96.0,94.9308093994778,0.0121333128551681,1,96
+O_severity,harrison,1.0,True,47571,96,1.0,1.0,1,2,93.0,96.0,94.55912215425364,0.0011906264528738,1,96
+O_severity,russellmitchell,1.0,True,141,97,1.0,1.0,1,1,96.0,97.0,96.31205673758863,0.0040376850605652,1,97
+O_severity,santos,1.0,True,26259,97,1.0,1.0,1,2,97.0,97.0,96.98891808522792,0.0033080330083597,1,97
+O_severity,shaw,1.0,True,939,97,1.0,1.0,1,1,81.0,92.52499999999999,86.46325878594249,0.0181818181818181,1,97
+O_severity,wardbeck,1.0,True,1446,91,1.0,2.0,1,2,93.0,95.0,94.62240663900415,0.06326580424701,1,95
+O_severity,wheeler,1.0,True,19363,97,1.0,2.0,1,2,92.0,97.0,95.42199039405052,0.0064912219535154,1,97
+O_severity,wilson,1.0,True,732,85,1.0,1.0,1,1,95.0,96.0,95.88387978142076,0.0013531799729364,1,96
+P_probability_proxy,fox,1.0,True,415393,85,1.0,1.0,1,1,11.0,11.0,11.003274007987612,0.0098039215686274,1,25
+P_probability_proxy,harrison,1.0,True,420243,96,1.0,1.0,1,1,0.0,0.0,0.0047972244629903,0.0011816838995568,1,17
+P_probability_proxy,russellmitchell,1.0,True,10872,97,1.0,1.0,1,1,0.0,1.0,0.071376011773367,0.0040376850605652,1,8
+P_probability_proxy,santos,1.0,True,11010,97,1.0,1.0,1,1,0.0,0.5249999999999915,0.0704813805631232,0.0033039647577092,1,8
+P_probability_proxy,shaw,1.0,True,5989,97,1.0,1.0,1,1,0.0,4.0,1.133745199532484,0.0181818181818181,1,40
+P_probability_proxy,wardbeck,1.0,True,6092,91,1.0,1.0,1,1,4.0,9.0,6.1211424819435365,0.0588235294117647,1,95
+P_probability_proxy,wheeler,1.0,True,425969,97,1.0,1.0,1,1,0.0,0.0,0.0027325932168764,0.0054151624548736,1,10
+P_probability_proxy,wilson,1.0,True,430178,85,1.0,1.0,1,1,11.0,11.0,11.010274816471323,0.0013531799729364,1,41
+R_key_reliability,fox,1.0,True,418702,100,0.0,0.0,0,0,0.0,1.0,0.0265105015022584,0.0,0,73
+R_key_reliability,harrison,1.0,True,423540,100,0.0,0.0,0,0,0.0,0.0,0.0158190489682255,1.3950086173169813e-07,0,61
+R_key_reliability,russellmitchell,1.0,True,10974,100,0.0,0.0,0,0,0.0,1.5249999999999915,0.3736103517404672,0.0,0,41
+R_key_reliability,santos,1.0,True,11160,100,0.0,0.0,0,0,0.0,3.0,0.98566308243727,0.0,0,90
+R_key_reliability,shaw,1.0,True,6071,100,0.0,0.0,0,0,0.0,5.0,1.7130620985010694,0.0,0,74
+R_key_reliability,wardbeck,1.0,True,6171,100,0.0,0.0,0,0,0.0,6.0,2.8034354237562837,0.0,0,100
+R_key_reliability,wheeler,1.0,True,429253,100,0.0,0.0,0,0,0.0,0.0,0.0107162908587667,0.0,0,44
+R_key_reliability,wilson,1.0,True,433461,100,0.0,0.0,0,0,0.0,0.5249999999999915,0.0191482047981281,0.0,0,61
+R_severity_key_reliability,fox,0.99,True,418702,43,3.0,3.0,3,3,34.0,34.0,34.01139951564598,0.017156862745098,3,77
+R_severity_key_reliability,harrison,0.98,True,423540,77,1.0,1.0,1,1,5.0,5.0,5.012180667705536,0.0014772122901096,1,66
+R_severity_key_reliability,russellmitchell,0.98,True,10974,90,2.0,2.0,2,2,5.0,6.5249999999999915,5.336249316566423,0.0053835800807537,2,46
+R_severity_key_reliability,santos,0.97,True,11160,77,3.0,3.0,3,3,13.0,15.524999999999991,13.7589605734767,0.0066079295154185,3,90
+R_severity_key_reliability,shaw,0.98,True,123,94,1.0,1.0,1,1,85.0,90.0,87.1219512195122,0.0242424242424242,1,94
+R_severity_key_reliability,wardbeck,0.98,True,6171,68,2.0,2.0,2,2,20.0,24.0,21.906336088154276,0.0823529411764705,2,88
+R_severity_key_reliability,wheeler,0.96,True,429253,68,3.0,3.0,3,3,19.0,19.0,19.007287077783957,0.0126353790613718,3,63
+R_severity_key_reliability,wilson,0.97,True,433461,51,3.0,3.0,3,3,28.0,28.52499999999999,28.009765584447052,0.0020297699594046,3,79
+S0_linear_log_historical[kappa=1],fox,0.99,True,182,85,1.0,1.0,1,1,11.0,11.0,11.0,0.0098039215686274,1,25
+S0_linear_log_historical[kappa=1],harrison,0.99,True,184,96,1.0,1.0,1,1,0.0,0.0,0.0,0.0011816838995568,1,17
+S0_linear_log_historical[kappa=1],russellmitchell,0.99,True,3177,95,1.0,1.0,1,1,0.0,2.0,0.2392193893610255,0.0040376850605652,1,8
+S0_linear_log_historical[kappa=1],santos,0.99,True,3274,95,1.0,1.0,1,1,0.0,1.0,0.2321319486866286,0.0033039647577092,1,8
+S0_linear_log_historical[kappa=1],shaw,0.99,True,739,95,1.0,1.0,1,1,0.0,3.0,1.028416779431666,0.0181818181818181,1,40
+S0_linear_log_historical[kappa=1],wardbeck,0.99,True,749,89,1.0,1.0,1,1,4.0,7.0,4.9506008010680915,0.0588235294117647,1,95
+S0_linear_log_historical[kappa=1],wheeler,0.99,True,172,97,1.0,1.0,1,1,0.0,0.0,0.0,0.0054151624548736,1,10
+S0_linear_log_historical[kappa=1],wilson,0.98,True,184,85,1.0,1.0,1,1,11.0,11.0,11.0,0.0013531799729364,1,41
+S0_linear_log_historical_key[kappa=1],fox,0.99,True,182,2,3.0,3.0,3,3,75.0,75.0,75.0,0.017156862745098,3,77
+S0_linear_log_historical_key[kappa=1],harrison,0.97,True,184,64,3.0,3.0,3,3,14.0,14.0,14.0,0.0020679468242245,3,31
+S0_linear_log_historical_key[kappa=1],russellmitchell,0.98,True,3177,64,3.0,3.0,3,3,25.0,26.52499999999999,25.16115832546427,0.0080753701211305,3,33
+S0_linear_log_historical_key[kappa=1],santos,0.97,True,3274,69,3.0,3.0,3,3,19.0,20.0,19.168601099572385,0.0066079295154185,3,90
+S0_linear_log_historical_key[kappa=1],shaw,0.99,True,123,97,1.0,1.0,1,1,88.0,92.52499999999999,89.90243902439025,0.0181818181818181,1,97
+S0_linear_log_historical_key[kappa=1],wardbeck,0.98,True,749,19,2.0,2.0,2,2,61.0,62.0,61.20293724966622,0.1529411764705882,2,82
+S0_linear_log_historical_key[kappa=1],wheeler,0.94,True,172,60,3.0,3.0,3,3,27.0,27.0,27.0,0.0126353790613718,3,37
+S0_linear_log_historical_key[kappa=1],wilson,0.97,True,25,1,3.0,3.0,3,3,73.0,73.0,73.0,0.0040595399188092,3,73
+S1_linear_log_constrained (primary rule),fox,0.99,True,182,85,1.0,1.0,1,1,11.0,11.0,11.0,0.0098039215686274,1,25
+S1_linear_log_constrained (primary rule),harrison,0.99,True,184,96,1.0,1.0,1,1,0.0,0.0,0.0,0.0011816838995568,1,17
+S1_linear_log_constrained (primary rule),russellmitchell,0.99,True,3177,95,1.0,1.0,1,1,0.0,2.0,0.2392193893610255,0.0040376850605652,1,8
+S1_linear_log_constrained (primary rule),santos,0.99,True,3274,95,1.0,1.0,1,1,0.0,1.0,0.2321319486866286,0.0033039647577092,1,8
+S1_linear_log_constrained (primary rule),shaw,0.99,True,739,95,1.0,1.0,1,1,0.0,3.0,1.028416779431666,0.0181818181818181,1,40
+S1_linear_log_constrained (primary rule),wardbeck,0.99,True,749,89,1.0,1.0,1,1,4.0,7.0,4.9506008010680915,0.0588235294117647,1,95
+S1_linear_log_constrained (primary rule),wheeler,0.99,True,172,97,1.0,1.0,1,1,0.0,0.0,0.0,0.0054151624548736,1,10
+S1_linear_log_constrained (primary rule),wilson,0.98,True,184,85,1.0,1.0,1,1,11.0,11.0,11.0,0.0013531799729364,1,41
+S1_linear_log_constrained_key (primary rule),fox,0.99,True,13,8,3.0,3.0,3,3,73.0,76.0,74.53846153846155,0.0231900452488687,3,77
+S1_linear_log_constrained_key (primary rule),harrison,0.96,True,184,6,3.0,3.0,3,3,58.0,58.0,58.0,0.0053175775480059,3,64
+S1_linear_log_constrained_key (primary rule),russellmitchell,0.97,True,2,1,3.0,3.0,3,3,85.0,86.0,85.5,0.0141318977119784,3,86
+S1_linear_log_constrained_key (primary rule),santos,0.94,True,3274,31,3.0,3.0,3,3,49.0,49.52499999999999,49.075748320097745,0.0154185022026431,3,80
+S1_linear_log_constrained_key (primary rule),shaw,0.99,True,123,97,1.0,1.0,1,1,88.0,92.52499999999999,89.90243902439025,0.0181818181818181,1,97
+S1_linear_log_constrained_key (primary rule),wardbeck,0.98,True,12,7,2.0,2.0,2,2,82.0,84.0,82.83333333333334,0.1431372549019607,2,84
+S1_linear_log_constrained_key (primary rule),wheeler,0.95,True,39,36,3.0,3.0,3,3,82.0,82.0,82.0,0.0216606498194945,3,82
+S1_linear_log_constrained_key (primary rule),wilson,0.97,True,25,1,3.0,3.0,3,3,73.0,73.0,73.0,0.0040595399188092,3,73
+S2_exponential_discount (primary rule),fox,0.99,True,182,93,1.0,1.0,1,1,3.0,3.0,3.0,0.0098039215686274,1,11
+S2_exponential_discount (primary rule),harrison,0.99,True,184,96,1.0,1.0,1,1,0.0,0.0,0.0,0.0011816838995568,1,13
+S2_exponential_discount (primary rule),russellmitchell,0.99,True,3177,95,1.0,1.0,1,1,0.0,2.0,0.2392193893610255,0.0040376850605652,1,8
+S2_exponential_discount (primary rule),santos,0.99,True,3274,95,1.0,1.0,1,1,0.0,1.0,0.2321319486866286,0.0033039647577092,1,8
+S2_exponential_discount (primary rule),shaw,0.99,True,739,95,1.0,1.0,1,1,0.0,3.0,1.028416779431666,0.0181818181818181,1,8
+S2_exponential_discount (primary rule),wardbeck,0.99,True,749,94,1.0,1.0,1,1,1.0,4.0,2.0040053404539435,0.0352941176470588,1,9
+S2_exponential_discount (primary rule),wheeler,0.99,True,172,97,1.0,1.0,1,1,0.0,0.0,0.0,0.0054151624548736,1,8
+S2_exponential_discount (primary rule),wilson,0.98,True,184,91,1.0,1.0,1,1,5.0,5.0,5.0,0.0013531799729364,1,13
+S2_exponential_discount_key (primary rule),fox,0.99,True,25,5,3.0,3.0,3,3,71.0,71.0,71.0,0.0318627450980392,3,71
+S2_exponential_discount_key (primary rule),harrison,0.97,True,37,11,3.0,3.0,3,3,67.0,67.0,67.0,0.0044313146233382,3,67
+S2_exponential_discount_key (primary rule),russellmitchell,0.98,True,30,2,3.0,3.0,3,3,85.0,86.0,85.93333333333334,0.0134589502018842,3,86
+S2_exponential_discount_key (primary rule),santos,0.95,True,28,12,3.0,3.0,3,3,83.0,83.0,83.0,0.01431718061674,3,83
+S2_exponential_discount_key (primary rule),shaw,0.99,True,123,97,1.0,1.0,1,1,88.0,92.52499999999999,89.90243902439025,0.0181818181818181,1,97
+S2_exponential_discount_key (primary rule),wardbeck,0.98,True,12,7,2.0,2.0,2,2,82.0,84.0,82.83333333333334,0.1431372549019607,2,84
+S2_exponential_discount_key (primary rule),wheeler,0.96,True,172,68,3.0,3.0,3,3,19.0,19.0,19.0,0.0126353790613718,3,27
+S2_exponential_discount_key (primary rule),wilson,0.97,True,10,9,3.0,3.0,3,3,73.0,73.0,73.0,0.0040595399188092,3,73
+W_weighted (primary rule),fox,1.0,True,415393,93,1.0,1.0,1,1,3.0,3.0,3.0035821499158715,0.0098039215686274,1,17
+W_weighted (primary rule),harrison,1.0,True,420243,96,1.0,1.0,1,1,0.0,0.0,0.0047972244629903,0.0011816838995568,1,17
+W_weighted (primary rule),russellmitchell,1.0,True,10872,97,1.0,1.0,1,1,0.0,1.0,0.071376011773367,0.0040376850605652,1,8
+W_weighted (primary rule),santos,1.0,True,11010,97,1.0,1.0,1,1,0.0,0.5249999999999915,0.0704813805631232,0.0033039647577092,1,8
+W_weighted (primary rule),shaw,1.0,True,5989,97,1.0,1.0,1,1,0.0,4.0,1.133745199532484,0.0181818181818181,1,40
+W_weighted (primary rule),wardbeck,1.0,True,6092,96,1.0,1.0,1,1,1.0,6.0,3.2376887721602117,0.0352941176470588,1,97
+W_weighted (primary rule),wheeler,1.0,True,425969,97,1.0,1.0,1,1,0.0,0.0,0.0027325932168764,0.0054151624548736,1,10
+W_weighted (primary rule),wilson,1.0,True,430178,91,1.0,1.0,1,1,5.0,5.0,5.011000097633996,0.0013531799729364,1,35

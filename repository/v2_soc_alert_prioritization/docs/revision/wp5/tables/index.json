@@ -1,0 +1,57 @@
+{
+ "source_root": "/Users/murat/soc_revision_data/wp5_replay",
+ "tables": {
+  "primary_replay_cells": {
+   "rows": 22,
+   "sha256": "73687b62ef210e307130508a53e44902bd35c8d98162ebb486307f9bdf85bef3"
+  },
+  "primary_replay_summary": {
+   "rows": 22,
+   "sha256": "957dd345172fe6956f9e75909d90dae05d7531518deffd7578d6b66f8cefc6aa"
+  },
+  "capacity_response": {
+   "rows": 176,
+   "sha256": "f38a50b5573b2a9186f433da361a1a87a3b3e148e015f30d655ff15c8b2724ad"
+  },
+  "delay_summary": {
+   "rows": 176,
+   "sha256": "6d0aef3bd248788e65619cf61d3b6385526db9fe82a4f09b042ea651ba81ccbb"
+  },
+  "delay_intervals_primary_rate": {
+   "rows": 1408,
+   "sha256": "2eb80fb6449e2e207d083529e039ae71e78c64e243753e78e03ef6e821137a7f"
+  },
+  "backlog_queue_age": {
+   "rows": 176,
+   "sha256": "6e5c74857c076e87f1bcdf0a41de0a02a70d92db88ca3d7efc091bec05dff558"
+  },
+  "starvation": {
+   "rows": 176,
+   "sha256": "bd5e8fd7df88e6dbf93c31658a6fb7ac42d43d2b0d5bf9d3660a1ba0f7dc4c38"
+  },
+  "static_vs_replay": {
+   "rows": 176,
+   "sha256": "5d451aa3e0ad993d31e97f0ba604313acce0a06ecb07319ed995c6c28ab7219c"
+  },
+  "static_vs_replay_totals": {
+   "rows": 22,
+   "sha256": "7d8d35ecfb8a3fbdc544230f702f7a142b39790ea7827b86613e9a444409b90a"
+  },
+  "tie_decided": {
+   "rows": 176,
+   "sha256": "d562d8f6aaffa4a413e9bb508c567494e129ba3804fed2940e53ed9debb6dabe"
+  },
+  "trace_samples_fox": {
+   "rows": 150,
+   "sha256": "56249553aa79e8fa9ed42f8f2c6bc6bdb7a409fec6bb50cf92b80b577cd04115"
+  },
+  "integrity": {
+   "rows": 8,
+   "sha256": "cda898fb7b1bc7e14f48c1ee9f9e088b78f069f4e76c6b284a498d18ac934d74"
+  },
+  "secondary_rule_summary": {
+   "rows": 208,
+   "sha256": "3ab15660cafeddb251be7ac4c89e2c241cddb80a151b339d65a97899b87694e3"
+  }
+ }
+}

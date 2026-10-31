@@ -1,0 +1,122 @@
+{
+  "baseline_without_faults": {
+    "tests": 16,
+    "failures": 0,
+    "errors": 0
+  },
+  "controls": [
+    {
+      "control": "coverage over all defined intervals instead of alert-containing intervals",
+      "bindings_replaced": 5,
+      "tests": 16,
+      "failures": 4,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "critical recall divided by k_eff instead of total critical alerts",
+      "bindings_replaced": 5,
+      "tests": 16,
+      "failures": 3,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "precision divided by k instead of k_eff for short queues",
+      "bindings_replaced": 5,
+      "tests": 16,
+      "failures": 2,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "NDCG normalized by the ranked list's own DCG instead of the ideal DCG",
+      "bindings_replaced": 5,
+      "tests": 16,
+      "failures": 2,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "zero-relevance NDCG reported as 0 instead of not applicable",
+      "bindings_replaced": 5,
+      "tests": 16,
+      "failures": 3,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "empty-queue coverage over defined intervals reported as not applicable",
+      "bindings_replaced": 5,
+      "tests": 16,
+      "failures": 2,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "closed interval end (t == end included)",
+      "bindings_replaced": 3,
+      "tests": 16,
+      "failures": 3,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "open interval start (t == start excluded)",
+      "bindings_replaced": 3,
+      "tests": 16,
+      "failures": 4,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "duplicate label rows not de-duplicated",
+      "bindings_replaced": 4,
+      "tests": 16,
+      "failures": 4,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "critical-recall effort requirement uses floor instead of ceiling",
+      "bindings_replaced": 3,
+      "tests": 16,
+      "failures": 2,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "critical-recall effort stops when cumulative count exceeds (not reaches) the requirement",
+      "bindings_replaced": 3,
+      "tests": 16,
+      "failures": 3,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "queue-fraction budget with floor instead of ceiling",
+      "bindings_replaced": 3,
+      "tests": 16,
+      "failures": 2,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "tie expectation not truncated at the cutoff",
+      "bindings_replaced": 3,
+      "tests": 16,
+      "failures": 2,
+      "errors": 0,
+      "detected": true
+    },
+    {
+      "control": "chronological coverage credited from cluster members",
+      "bindings_replaced": 2,
+      "tests": 16,
+      "failures": 1,
+      "errors": 0,
+      "detected": true
+    }
+  ],
+  "all_detected": true
+}

@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-26",
+  "analysis": "exploratory native-key adaptation; not a replication",
+  "spec_sha256": "6d011227fe785269e4a86779fd5b489bfb54aead041ca47abb0e3fa7abbeef24",
+  "script_sha256": "3badffacb064a788497f591c04f617204a4a1856f7b35cd5dd70e043b5adee6a",
+  "data": {
+    "canonical_cache_sha256": "c5702421b4e563c909d7d4002f1cca96c5ba08265a47b6a6249726c6dde133be",
+    "provenance_cache_sha256": "d2f4e1cf04987eff35526d4dcd6f1b0350748054de5a6e83fac2fca26c5e7522"
+  },
+  "folds": 8,
+  "independent_scores_agree": true,
+  "held_out_invariance": true,
+  "replay_integrity_passed": true,
+  "normal_windows_utc": {
+    "fox": [
+      "2022-01-17 11:00",
+      "2022-01-17 16:00"
+    ],
+    "harrison": [
+      "2022-02-07 05:00",
+      "2022-02-07 09:00"
+    ],
+    "russellmitchell": [
+      "2022-01-23 01:00",
+      "2022-01-23 06:00"
+    ],
+    "santos": [
+      "2022-01-16 10:00",
+      "2022-01-16 15:00"
+    ],
+    "shaw": [
+      "2022-01-28 12:00",
+      "2022-01-28 17:00"
+    ],
+    "wardbeck": [
+      "2022-01-22 10:00",
+      "2022-01-22 15:00"
+    ],
+    "wheeler": [
+      "2022-01-29 07:30",
+      "2022-01-29 18:00"
+    ],
+    "wilson": [
+      "2022-02-06 13:00",
+      "2022-02-06 18:00"
+    ]
+  },
+  "outputs": {
+    "docs/revision/jnsm_20261026/ait_rate_fitted_scores.csv": "22b67435ccdc901b7b80811629a3bf8f592ab59b8abc97feeefc9b5fa49bea2a",
+    "docs/revision/jnsm_20261026/ait_rate_replay_by_scenario.csv": "9161d7a54aa366cf387d84f5989b44155288d369b654793b614b92e77c1afd9b",
+    "docs/revision/jnsm_20261026/ait_rate_replay.csv": "ca3022b5ab36839b7bc3ba492617f640107621c674919f1ecf8f3854cd697b20",
+    "docs/revision/jnsm_20261026/ait_rate_static.csv": "8b0187f4a16c511a8fa613823e507eb606226f81eba185eb6de84088fff463dd",
+    "docs/revision/jnsm_20261026/ait_rate_training_counts.csv": "e956e32ccdc8508a18fd6615930c381c5f08b5b8b002cdce54d5a9d260c7016a",
+    "results/jnsm_20261026/ait_rate/wilson/integrity.csv.gz": "0e322c5418a678b5f78cb80063303a5fdb08b5135a07ee9ae98b497e14749e58",
+    "results/jnsm_20261026/ait_rate/wilson/traces.npz": "4f2e9c35c4154194225b906b44e2fa2ca3efdb7f2e273c62ef8ee1afdf98479a",
+    "results/jnsm_20261026/ait_rate/wilson/intervals.csv.gz": "3df058acd6a5eed9ca2477e415f61f37e5a926138b5ff11dacd37da0459b3330",
+    "results/jnsm_20261026/ait_rate/wilson/summaries.csv.gz": "0a1730fe9ea41a96d91e73f7a0337ca419e91dbe4f0d005d2e8e6c9d5b69ef30",
+    "results/jnsm_20261026/ait_rate/wilson/samples.csv.gz": "d2cec7d08e428b7119c69bf62cfa9297eb25214a44a821607e4bddc4c227b9ca",
+    "results/jnsm_20261026/ait_rate/shaw/integrity.csv.gz": "5cbcf55f0740f02e8aa91a9b2b9221ce25e3558ac9cf8ce9060b2784e303bcc7",
+    "results/jnsm_20261026/ait_rate/shaw/traces.npz": "b6d1b8ba661f4e5bf0b556b911ae555b26b9c8dee36a126604ba4404ff7b5ba3",
+    "results/jnsm_20261026/ait_rate/shaw/intervals.csv.gz": "213afc33c0cb3d87374391948c7faa65f6136e8caa161244ae14906d28cb4245",
+    "results/jnsm_20261026/ait_rate/shaw/summaries.csv.gz": "d8e13dade4ace0891e8341e383cc06d7d44cc61510241b8e25eae92176929ec1",
+    "results/jnsm_20261026/ait_rate/shaw/samples.csv.gz": "b9530c29c39459949add3b71f1d5ebe47d4999b9f5575e04fdf64fb742b22913",
+    "results/jnsm_20261026/ait_rate/fox/integrity.csv.gz": "bea4a88e46a9dbeb0d268409f1beaff3fdd6a6c3eaa95434c2dace349162e07f",
+    "results/jnsm_20261026/ait_rate/fox/traces.npz": "f925869dbcaed164173a7685e9785563747a5893d10296eaeacd77a4b2cd356b",
+    "results/jnsm_20261026/ait_rate/fox/intervals.csv.gz": "7c71e93dc7bd5d11cc8ef03182b0e04bb391dc32adbf38e10d3c6c7ff426e6bc",
+    "results/jnsm_20261026/ait_rate/fox/summaries.csv.gz": "9bdc5543be9863de3ecedf5d65a08d353958f123a42cae1058fc1bea6a546ef5",
+    "results/jnsm_20261026/ait_rate/fox/samples.csv.gz": "499bdae3eccaa2930bfc0c88d38eb17b36a0121f0809414cb87374d7608b5d85",
+    "results/jnsm_20261026/ait_rate/wheeler/integrity.csv.gz": "0eee1a2b74372ca21127bd5d2a61b6a8fa40bcf569f8ca5bf9d71b0016e5c179",
+    "results/jnsm_20261026/ait_rate/wheeler/traces.npz": "dcb0d5b2d7bca933a04270746004c5a7e5b18a733c5e66593292029c3e83efbc",
+    "results/jnsm_20261026/ait_rate/wheeler/intervals.csv.gz": "326668e0e54c2b96c9f5f8ce23c4fd1a4db8c83c9952a8b695f2c26f96557309",
+    "results/jnsm_20261026/ait_rate/wheeler/summaries.csv.gz": "6264c4546868a4d8295c6749e2bdd126f2990b3d497496adec6799c1652b3dd3",
+    "results/jnsm_20261026/ait_rate/wheeler/samples.csv.gz": "0cf905259cb2fcc548a4eae904c02197dd9fc3781cb3e799fff0e0ea7dc1820e",
+    "results/jnsm_20261026/ait_rate/wardbeck/integrity.csv.gz": "2c348ee0812c77b8fa79fe46a95af6a91ce19aadd02ffb3180da2e9964aeb144",
+    "results/jnsm_20261026/ait_rate/wardbeck/traces.npz": "3cfd76907386fec4254c1d067f8225eab19b0817b3494677fd5b9f68ec08680e",
+    "results/jnsm_20261026/ait_rate/wardbeck/intervals.csv.gz": "2b33ac27d126a1e25b257c2038b7aa60f3d310f810ba0331e5834e93a10a8efb",
+    "results/jnsm_20261026/ait_rate/wardbeck/summaries.csv.gz": "c5e47c9f40c9f18fc73427aac4a89ce5e414ea91cf1f6709564218d2e3bd9897",
+    "results/jnsm_20261026/ait_rate/wardbeck/samples.csv.gz": "b9530c29c39459949add3b71f1d5ebe47d4999b9f5575e04fdf64fb742b22913",
+    "results/jnsm_20261026/ait_rate/russellmitchell/integrity.csv.gz": "b7429061a384d40d358cddbbc17160973934ee70b9b16344945053f22b19153a",
+    "results/jnsm_20261026/ait_rate/russellmitchell/traces.npz": "4090ac92944726930c3c5addbe125ecaf58fac0fc9f526336ae43329ad6033d4",
+    "results/jnsm_20261026/ait_rate/russellmitchell/intervals.csv.gz": "bbe5fce52295fdd8fc056a8f1a1da4187370ca35ab15778c316e85d082b47f50",
+    "results/jnsm_20261026/ait_rate/russellmitchell/summaries.csv.gz": "4e0b69a6e91c9fb90573febbe298b9c89608daeba3c5efb125d6dfd4ded5b440",
+    "results/jnsm_20261026/ait_rate/russellmitchell/samples.csv.gz": "b9530c29c39459949add3b71f1d5ebe47d4999b9f5575e04fdf64fb742b22913",
+    "results/jnsm_20261026/ait_rate/santos/integrity.csv.gz": "630eac009b46ee0b3aa77c81434b438c51828bfcb41a199afa482bbc423e4f28",
+    "results/jnsm_20261026/ait_rate/santos/traces.npz": "91d2d8ddb0ac18522ae4924a633975529d086a1f51186773e0e1e9eecde07773",
+    "results/jnsm_20261026/ait_rate/santos/intervals.csv.gz": "0fd8fbfeeddb9666a024e9f5a85c2d1e2b098577c9cafb1e1e672e70ace0cb85",
+    "results/jnsm_20261026/ait_rate/santos/summaries.csv.gz": "45156f757e1c75689ec39c5f3fba79e397f5c737eef0dbffe11a512246b65b72",
+    "results/jnsm_20261026/ait_rate/santos/samples.csv.gz": "b9530c29c39459949add3b71f1d5ebe47d4999b9f5575e04fdf64fb742b22913",
+    "results/jnsm_20261026/ait_rate/harrison/integrity.csv.gz": "a7b6136214a92cc883e5d5bfe7daf85d52cbc6afea69df07d6da2ba6c873612b",
+    "results/jnsm_20261026/ait_rate/harrison/traces.npz": "f965679bba70f81b5d9c46d23b0e5c5c3a96cb017c07857606eb84f9cf741f77",
+    "results/jnsm_20261026/ait_rate/harrison/intervals.csv.gz": "d693fd1f4e69aec1ec47cc7fc536ef20aef9585a24d96b1606736a2bbc540b58",
+    "results/jnsm_20261026/ait_rate/harrison/summaries.csv.gz": "89cf39872801b116293a55e3134e69a3c1752409cbb384cb863fc59b39ed9899",
+    "results/jnsm_20261026/ait_rate/harrison/samples.csv.gz": "b9530c29c39459949add3b71f1d5ebe47d4999b9f5575e04fdf64fb742b22913"
+  }
+}

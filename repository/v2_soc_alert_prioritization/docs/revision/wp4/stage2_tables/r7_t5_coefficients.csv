@@ -1,0 +1,13 @@
+run,method,z,alerts,gamma_le_0,gamma_le_0_1,share_le_0,share_le_0_1
+R7,S0_linear_log_historical[kappa=1],False,1952878,550017,550017,0.28164432186752064,0.28164432186752064
+R7,S0_linear_log_historical[kappa=1],True,7803,6967,6967,0.8928617198513392,0.8928617198513392
+R7,S0_linear_log_historical_key[kappa=1],False,1952878,640868,641515,0.32816591717454957,0.3284972230728187
+R7,S0_linear_log_historical_key[kappa=1],True,7803,7588,7593,0.9724464949378444,0.9730872741253364
+R7,S1_linear_log_constrained (primary rule),False,1952878,0,0,0.0,0.0
+R7,S1_linear_log_constrained (primary rule),True,7803,0,0,0.0,0.0
+R7,S1_linear_log_constrained_key (primary rule),False,1952878,0,0,0.0,0.0
+R7,S1_linear_log_constrained_key (primary rule),True,7803,0,0,0.0,0.0
+R7,S2_exponential_discount (primary rule),False,1952878,0,379678,0.0,0.19441972309586159
+R7,S2_exponential_discount (primary rule),True,7803,0,6633,0.0,0.8500576701268743
+R7,S2_exponential_discount_key (primary rule),False,1952878,0,0,0.0,0.0
+R7,S2_exponential_discount_key (primary rule),True,7803,0,0,0.0,0.0

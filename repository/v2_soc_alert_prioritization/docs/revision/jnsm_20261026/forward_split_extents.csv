@@ -1,0 +1,9 @@
+test_scenario,start,end,fit_scenarios,eligible,learned_estimable
+santos,1642118401.75,1642463502.0,[],False,False
+fox,1642204801.16,1642636536.0,[],False,False
+wardbeck,1642550401.0,1642982359.17,['santos'],False,False
+russellmitchell,1642723201.0,1643067553.0,"['fox', 'santos']",True,False
+shaw,1643068801.0,1643585466.0,"['fox', 'russellmitchell', 'santos', 'wardbeck']",True,True
+wheeler,1643155201.0,1643586855.0,"['fox', 'russellmitchell', 'santos', 'wardbeck']",True,True
+wilson,1643846401.0,1644364214.0,"['fox', 'russellmitchell', 'santos', 'shaw', 'wardbeck', 'wheeler']",True,True
+harrison,1643932801.88,1644364786.13,"['fox', 'russellmitchell', 'santos', 'shaw', 'wardbeck', 'wheeler']",True,True

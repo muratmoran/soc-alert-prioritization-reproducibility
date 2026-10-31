@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.aux
+*.log
+*.blg
+*.fls
+*.fdb_latexmk
+external_data/
+repository/v2_soc_alert_prioritization/results/

@@ -1,0 +1,831 @@
+{
+  "note": "Label-free split manifests computed from alert timestamps, detectors and native keys only.",
+  "cache_sha256": "c5702421b4e563c909d7d4002f1cca96c5ba08265a47b6a6249726c6dde133be",
+  "provenance_cache_sha256": "d2f4e1cf04987eff35526d4dcd6f1b0350748054de5a6e83fac2fca26c5e7522",
+  "loso": [
+    {
+      "name": "loso:fox",
+      "held_out": "fox",
+      "training": [
+        "harrison",
+        "russellmitchell",
+        "santos",
+        "shaw",
+        "wardbeck",
+        "wheeler",
+        "wilson"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    },
+    {
+      "name": "loso:harrison",
+      "held_out": "harrison",
+      "training": [
+        "fox",
+        "russellmitchell",
+        "santos",
+        "shaw",
+        "wardbeck",
+        "wheeler",
+        "wilson"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    },
+    {
+      "name": "loso:russellmitchell",
+      "held_out": "russellmitchell",
+      "training": [
+        "fox",
+        "harrison",
+        "santos",
+        "shaw",
+        "wardbeck",
+        "wheeler",
+        "wilson"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    },
+    {
+      "name": "loso:santos",
+      "held_out": "santos",
+      "training": [
+        "fox",
+        "harrison",
+        "russellmitchell",
+        "shaw",
+        "wardbeck",
+        "wheeler",
+        "wilson"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    },
+    {
+      "name": "loso:shaw",
+      "held_out": "shaw",
+      "training": [
+        "fox",
+        "harrison",
+        "russellmitchell",
+        "santos",
+        "wardbeck",
+        "wheeler",
+        "wilson"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    },
+    {
+      "name": "loso:wardbeck",
+      "held_out": "wardbeck",
+      "training": [
+        "fox",
+        "harrison",
+        "russellmitchell",
+        "santos",
+        "shaw",
+        "wheeler",
+        "wilson"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    },
+    {
+      "name": "loso:wheeler",
+      "held_out": "wheeler",
+      "training": [
+        "fox",
+        "harrison",
+        "russellmitchell",
+        "santos",
+        "shaw",
+        "wardbeck",
+        "wilson"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    },
+    {
+      "name": "loso:wilson",
+      "held_out": "wilson",
+      "training": [
+        "fox",
+        "harrison",
+        "russellmitchell",
+        "santos",
+        "shaw",
+        "wardbeck",
+        "wheeler"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    }
+  ],
+  "forward_chaining_eligibility": [
+    {
+      "test_scenario": "santos",
+      "start": 1642118401.75,
+      "end": 1642463502.0,
+      "fit_scenarios": [],
+      "eligible": false,
+      "learned_estimable": false
+    },
+    {
+      "test_scenario": "fox",
+      "start": 1642204801.16,
+      "end": 1642636536.0,
+      "fit_scenarios": [],
+      "eligible": false,
+      "learned_estimable": false
+    },
+    {
+      "test_scenario": "wardbeck",
+      "start": 1642550401.0,
+      "end": 1642982359.17,
+      "fit_scenarios": [
+        "santos"
+      ],
+      "eligible": false,
+      "learned_estimable": false
+    },
+    {
+      "test_scenario": "russellmitchell",
+      "start": 1642723201.0,
+      "end": 1643067553.0,
+      "fit_scenarios": [
+        "fox",
+        "santos"
+      ],
+      "eligible": true,
+      "learned_estimable": false
+    },
+    {
+      "test_scenario": "shaw",
+      "start": 1643068801.0,
+      "end": 1643585466.0,
+      "fit_scenarios": [
+        "fox",
+        "russellmitchell",
+        "santos",
+        "wardbeck"
+      ],
+      "eligible": true,
+      "learned_estimable": true
+    },
+    {
+      "test_scenario": "wheeler",
+      "start": 1643155201.0,
+      "end": 1643586855.0,
+      "fit_scenarios": [
+        "fox",
+        "russellmitchell",
+        "santos",
+        "wardbeck"
+      ],
+      "eligible": true,
+      "learned_estimable": true
+    },
+    {
+      "test_scenario": "wilson",
+      "start": 1643846401.0,
+      "end": 1644364214.0,
+      "fit_scenarios": [
+        "fox",
+        "russellmitchell",
+        "santos",
+        "shaw",
+        "wardbeck",
+        "wheeler"
+      ],
+      "eligible": true,
+      "learned_estimable": true
+    },
+    {
+      "test_scenario": "harrison",
+      "start": 1643932801.88,
+      "end": 1644364786.13,
+      "fit_scenarios": [
+        "fox",
+        "russellmitchell",
+        "santos",
+        "shaw",
+        "wardbeck",
+        "wheeler"
+      ],
+      "eligible": true,
+      "learned_estimable": true
+    }
+  ],
+  "forward_chaining_splits": [
+    {
+      "name": "forward:russellmitchell",
+      "held_out": "russellmitchell",
+      "training": [
+        "fox",
+        "santos"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": false,
+      "note": "learned inner selection not estimable (inner role-T fit sets empty); simplest grid point used"
+    },
+    {
+      "name": "forward:shaw",
+      "held_out": "shaw",
+      "training": [
+        "fox",
+        "russellmitchell",
+        "santos",
+        "wardbeck"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    },
+    {
+      "name": "forward:wheeler",
+      "held_out": "wheeler",
+      "training": [
+        "fox",
+        "russellmitchell",
+        "santos",
+        "wardbeck"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    },
+    {
+      "name": "forward:wilson",
+      "held_out": "wilson",
+      "training": [
+        "fox",
+        "russellmitchell",
+        "santos",
+        "shaw",
+        "wardbeck",
+        "wheeler"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    },
+    {
+      "name": "forward:harrison",
+      "held_out": "harrison",
+      "training": [
+        "fox",
+        "russellmitchell",
+        "santos",
+        "shaw",
+        "wardbeck",
+        "wheeler"
+      ],
+      "excluded_key_ids": [],
+      "learned_estimable": true,
+      "note": ""
+    }
+  ],
+  "identifier_groups": {
+    "rule": "SHA-256(detector:identifier) mod 5",
+    "groups": [
+      {
+        "group": 0,
+        "identifiers": [
+          "aminer:13",
+          "aminer:14",
+          "aminer:18",
+          "aminer:24",
+          "aminer:31",
+          "aminer:35",
+          "aminer:4",
+          "suricata:20101",
+          "suricata:2014169",
+          "suricata:2025109",
+          "suricata:2027863",
+          "suricata:2029707",
+          "suricata:2029709",
+          "suricata:2230010",
+          "wazuh:30306"
+        ],
+        "keys": 15,
+        "keys_by_detector": {
+          "aminer": 7,
+          "suricata": 7,
+          "wazuh": 1
+        },
+        "alerts_by_scenario": {
+          "fox": 17014,
+          "harrison": 121744,
+          "russellmitchell": 13503,
+          "santos": 76819,
+          "shaw": 24420,
+          "wardbeck": 36035,
+          "wheeler": 110926,
+          "wilson": 95786
+        }
+      },
+      {
+        "group": 1,
+        "identifiers": [
+          "aminer:21",
+          "aminer:36",
+          "aminer:8",
+          "aminer:9",
+          "suricata:2001569",
+          "suricata:2011802",
+          "suricata:20152",
+          "suricata:2024364",
+          "suricata:2230000",
+          "suricata:2240001",
+          "wazuh:2501",
+          "wazuh:31101",
+          "wazuh:31151",
+          "wazuh:31509",
+          "wazuh:5304",
+          "wazuh:5503"
+        ],
+        "keys": 16,
+        "keys_by_detector": {
+          "suricata": 6,
+          "wazuh": 6,
+          "aminer": 4
+        },
+        "alerts_by_scenario": {
+          "fox": 409844,
+          "harrison": 417042,
+          "russellmitchell": 7883,
+          "santos": 9339,
+          "shaw": 5799,
+          "wardbeck": 5884,
+          "wheeler": 419300,
+          "wilson": 427057
+        }
+      },
+      {
+        "group": 2,
+        "identifiers": [
+          "aminer:10",
+          "aminer:20",
+          "aminer:22",
+          "aminer:26",
+          "aminer:27",
+          "aminer:29",
+          "aminer:7",
+          "suricata:2013504",
+          "suricata:20161",
+          "suricata:2016150",
+          "suricata:2029340",
+          "suricata:2221001",
+          "wazuh:30305",
+          "wazuh:31104",
+          "wazuh:31516",
+          "wazuh:5402",
+          "wazuh:5403",
+          "wazuh:5551",
+          "wazuh:80730",
+          "wazuh:9751"
+        ],
+        "keys": 20,
+        "keys_by_detector": {
+          "wazuh": 8,
+          "aminer": 7,
+          "suricata": 5
+        },
+        "alerts_by_scenario": {
+          "fox": 4268,
+          "harrison": 4387,
+          "russellmitchell": 480,
+          "santos": 591,
+          "shaw": 1451,
+          "wardbeck": 1368,
+          "wheeler": 4315,
+          "wilson": 4466
+        }
+      },
+      {
+        "group": 3,
+        "identifiers": [
+          "aminer:12",
+          "aminer:15",
+          "aminer:17",
+          "aminer:25",
+          "aminer:3",
+          "aminer:30",
+          "aminer:5",
+          "suricata:20100",
+          "suricata:2027758",
+          "suricata:2027865",
+          "suricata:2029706",
+          "suricata:2221010",
+          "suricata:2230003",
+          "suricata:2230027",
+          "wazuh:31122",
+          "wazuh:52507",
+          "wazuh:5715"
+        ],
+        "keys": 17,
+        "keys_by_detector": {
+          "aminer": 7,
+          "suricata": 7,
+          "wazuh": 3
+        },
+        "alerts_by_scenario": {
+          "fox": 13407,
+          "harrison": 17455,
+          "russellmitchell": 8973,
+          "santos": 13645,
+          "shaw": 10420,
+          "wardbeck": 14838,
+          "wheeler": 34594,
+          "wilson": 38876
+        }
+      },
+      {
+        "group": 4,
+        "identifiers": [
+          "aminer:11",
+          "aminer:16",
+          "aminer:19",
+          "aminer:23",
+          "aminer:28",
+          "aminer:32",
+          "aminer:33",
+          "aminer:34",
+          "aminer:6",
+          "suricata:20151",
+          "suricata:2016149",
+          "suricata:20162",
+          "suricata:2016778",
+          "suricata:2025105",
+          "suricata:2027757",
+          "suricata:2220000",
+          "suricata:2220006",
+          "suricata:2221004",
+          "suricata:2230002",
+          "wazuh:31510",
+          "wazuh:5501",
+          "wazuh:5502",
+          "wazuh:5706",
+          "wazuh:9701",
+          "wazuh:9705"
+        ],
+        "keys": 25,
+        "keys_by_detector": {
+          "suricata": 10,
+          "aminer": 9,
+          "wazuh": 6
+        },
+        "alerts_by_scenario": {
+          "fox": 28571,
+          "harrison": 33320,
+          "russellmitchell": 14705,
+          "santos": 30385,
+          "shaw": 28692,
+          "wardbeck": 33132,
+          "wheeler": 47026,
+          "wilson": 68061
+        }
+      }
+    ],
+    "near_equivalent_identifier_pairs": [
+      {
+        "pair": [
+          "suricata:20151",
+          "suricata:20161"
+        ],
+        "groups": [
+          4,
+          2
+        ]
+      },
+      {
+        "pair": [
+          "suricata:20152",
+          "suricata:20162"
+        ],
+        "groups": [
+          1,
+          4
+        ]
+      },
+      {
+        "pair": [
+          "suricata:2016149",
+          "suricata:2016150"
+        ],
+        "groups": [
+          4,
+          2
+        ]
+      }
+    ]
+  },
+  "identifier_holdout_splits": [
+    {
+      "name": "holdout_group_0:fox",
+      "held_out": "fox",
+      "excluded_keys": 15
+    },
+    {
+      "name": "holdout_group_1:fox",
+      "held_out": "fox",
+      "excluded_keys": 16
+    },
+    {
+      "name": "holdout_group_2:fox",
+      "held_out": "fox",
+      "excluded_keys": 20
+    },
+    {
+      "name": "holdout_group_3:fox",
+      "held_out": "fox",
+      "excluded_keys": 17
+    },
+    {
+      "name": "holdout_group_4:fox",
+      "held_out": "fox",
+      "excluded_keys": 25
+    },
+    {
+      "name": "holdout_group_0:harrison",
+      "held_out": "harrison",
+      "excluded_keys": 15
+    },
+    {
+      "name": "holdout_group_1:harrison",
+      "held_out": "harrison",
+      "excluded_keys": 16
+    },
+    {
+      "name": "holdout_group_2:harrison",
+      "held_out": "harrison",
+      "excluded_keys": 20
+    },
+    {
+      "name": "holdout_group_3:harrison",
+      "held_out": "harrison",
+      "excluded_keys": 17
+    },
+    {
+      "name": "holdout_group_4:harrison",
+      "held_out": "harrison",
+      "excluded_keys": 25
+    },
+    {
+      "name": "holdout_group_0:russellmitchell",
+      "held_out": "russellmitchell",
+      "excluded_keys": 15
+    },
+    {
+      "name": "holdout_group_1:russellmitchell",
+      "held_out": "russellmitchell",
+      "excluded_keys": 16
+    },
+    {
+      "name": "holdout_group_2:russellmitchell",
+      "held_out": "russellmitchell",
+      "excluded_keys": 20
+    },
+    {
+      "name": "holdout_group_3:russellmitchell",
+      "held_out": "russellmitchell",
+      "excluded_keys": 17
+    },
+    {
+      "name": "holdout_group_4:russellmitchell",
+      "held_out": "russellmitchell",
+      "excluded_keys": 25
+    },
+    {
+      "name": "holdout_group_0:santos",
+      "held_out": "santos",
+      "excluded_keys": 15
+    },
+    {
+      "name": "holdout_group_1:santos",
+      "held_out": "santos",
+      "excluded_keys": 16
+    },
+    {
+      "name": "holdout_group_2:santos",
+      "held_out": "santos",
+      "excluded_keys": 20
+    },
+    {
+      "name": "holdout_group_3:santos",
+      "held_out": "santos",
+      "excluded_keys": 17
+    },
+    {
+      "name": "holdout_group_4:santos",
+      "held_out": "santos",
+      "excluded_keys": 25
+    },
+    {
+      "name": "holdout_group_0:shaw",
+      "held_out": "shaw",
+      "excluded_keys": 15
+    },
+    {
+      "name": "holdout_group_1:shaw",
+      "held_out": "shaw",
+      "excluded_keys": 16
+    },
+    {
+      "name": "holdout_group_2:shaw",
+      "held_out": "shaw",
+      "excluded_keys": 20
+    },
+    {
+      "name": "holdout_group_3:shaw",
+      "held_out": "shaw",
+      "excluded_keys": 17
+    },
+    {
+      "name": "holdout_group_4:shaw",
+      "held_out": "shaw",
+      "excluded_keys": 25
+    },
+    {
+      "name": "holdout_group_0:wardbeck",
+      "held_out": "wardbeck",
+      "excluded_keys": 15
+    },
+    {
+      "name": "holdout_group_1:wardbeck",
+      "held_out": "wardbeck",
+      "excluded_keys": 16
+    },
+    {
+      "name": "holdout_group_2:wardbeck",
+      "held_out": "wardbeck",
+      "excluded_keys": 20
+    },
+    {
+      "name": "holdout_group_3:wardbeck",
+      "held_out": "wardbeck",
+      "excluded_keys": 17
+    },
+    {
+      "name": "holdout_group_4:wardbeck",
+      "held_out": "wardbeck",
+      "excluded_keys": 25
+    },
+    {
+      "name": "holdout_group_0:wheeler",
+      "held_out": "wheeler",
+      "excluded_keys": 15
+    },
+    {
+      "name": "holdout_group_1:wheeler",
+      "held_out": "wheeler",
+      "excluded_keys": 16
+    },
+    {
+      "name": "holdout_group_2:wheeler",
+      "held_out": "wheeler",
+      "excluded_keys": 20
+    },
+    {
+      "name": "holdout_group_3:wheeler",
+      "held_out": "wheeler",
+      "excluded_keys": 17
+    },
+    {
+      "name": "holdout_group_4:wheeler",
+      "held_out": "wheeler",
+      "excluded_keys": 25
+    },
+    {
+      "name": "holdout_group_0:wilson",
+      "held_out": "wilson",
+      "excluded_keys": 15
+    },
+    {
+      "name": "holdout_group_1:wilson",
+      "held_out": "wilson",
+      "excluded_keys": 16
+    },
+    {
+      "name": "holdout_group_2:wilson",
+      "held_out": "wilson",
+      "excluded_keys": 20
+    },
+    {
+      "name": "holdout_group_3:wilson",
+      "held_out": "wilson",
+      "excluded_keys": 17
+    },
+    {
+      "name": "holdout_group_4:wilson",
+      "held_out": "wilson",
+      "excluded_keys": 25
+    }
+  ],
+  "seen_unseen_by_loso_fold": [
+    {
+      "held_out": "fox",
+      "held_out_keys": 77,
+      "unseen_keys": 0,
+      "unseen_alerts": 0,
+      "unseen_alert_share": 0.0,
+      "unseen_alerts_by_detector": {},
+      "unseen_identifiers": []
+    },
+    {
+      "held_out": "harrison",
+      "held_out_keys": 78,
+      "unseen_keys": 0,
+      "unseen_alerts": 0,
+      "unseen_alert_share": 0.0,
+      "unseen_alerts_by_detector": {},
+      "unseen_identifiers": []
+    },
+    {
+      "held_out": "russellmitchell",
+      "held_out_keys": 72,
+      "unseen_keys": 0,
+      "unseen_alerts": 0,
+      "unseen_alert_share": 0.0,
+      "unseen_alerts_by_detector": {},
+      "unseen_identifiers": []
+    },
+    {
+      "held_out": "santos",
+      "held_out_keys": 84,
+      "unseen_keys": 4,
+      "unseen_alerts": 99,
+      "unseen_alert_share": 0.000757002271006813,
+      "unseen_alerts_by_detector": {
+        "suricata": 99
+      },
+      "unseen_identifiers": [
+        "suricata:2029706",
+        "suricata:2029707",
+        "suricata:2029709",
+        "suricata:2230027"
+      ]
+    },
+    {
+      "held_out": "shaw",
+      "held_out_keys": 73,
+      "unseen_keys": 1,
+      "unseen_alerts": 2,
+      "unseen_alert_share": 2.825577124127603e-05,
+      "unseen_alerts_by_detector": {
+        "suricata": 2
+      },
+      "unseen_identifiers": [
+        "suricata:2001569"
+      ]
+    },
+    {
+      "held_out": "wardbeck",
+      "held_out_keys": 80,
+      "unseen_keys": 2,
+      "unseen_alerts": 6,
+      "unseen_alert_share": 6.574838094611921e-05,
+      "unseen_alerts_by_detector": {
+        "suricata": 6
+      },
+      "unseen_identifiers": [
+        "suricata:2011802",
+        "suricata:2014169"
+      ]
+    },
+    {
+      "held_out": "wheeler",
+      "held_out_keys": 78,
+      "unseen_keys": 0,
+      "unseen_alerts": 0,
+      "unseen_alert_share": 0.0,
+      "unseen_alerts_by_detector": {},
+      "unseen_identifiers": []
+    },
+    {
+      "held_out": "wilson",
+      "held_out_keys": 86,
+      "unseen_keys": 2,
+      "unseen_alerts": 6,
+      "unseen_alert_share": 9.460051778016732e-06,
+      "unseen_alerts_by_detector": {
+        "suricata": 6
+      },
+      "unseen_identifiers": [
+        "suricata:2016150",
+        "suricata:2016778"
+      ]
+    }
+  ]
+}

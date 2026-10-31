@@ -1,0 +1,43 @@
+{
+  "mode": "construction_check",
+  "generated_at": "2026-09-14T12:32:50+03:00",
+  "note": "No features fitted, no candidates scored, no metrics computed.",
+  "cache_sha256": "c5702421b4e563c909d7d4002f1cca96c5ba08265a47b6a6249726c6dde133be",
+  "rows": 2655821,
+  "rows_per_scenario": {
+    "fox": 473104,
+    "harrison": 593948,
+    "russellmitchell": 45544,
+    "santos": 130779,
+    "shaw": 70782,
+    "wardbeck": 91257,
+    "wheeler": 616161,
+    "wilson": 634246
+  },
+  "ranking_columns": [
+    "alert_id",
+    "scenario",
+    "timestamp",
+    "detector",
+    "native_key",
+    "native_category",
+    "native_name",
+    "native_short",
+    "host",
+    "ip",
+    "detector_score"
+  ],
+  "keys": 93,
+  "keys_per_detector": {
+    "aminer": 34,
+    "suricata": 35,
+    "wazuh": 24
+  },
+  "tie_hash_unique_within_scenarios": true,
+  "label_rows": 79,
+  "intervals_after_exact_deduplication": 79,
+  "critical_intervals_tau_8": 32,
+  "overlapping_interval_pairs": 0,
+  "setup_seconds": 7.8,
+  "registry_sha256": "eab4ca3f86ace522f26f740afee70b31ad7e9099c578b7f2c82ee3e884e363ac"
+}

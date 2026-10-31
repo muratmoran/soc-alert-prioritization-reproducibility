@@ -1,0 +1,94 @@
+key_id,detector,native_key,identifier,group
+0,aminer,aminer:10:entropydetector:aminer: high entropy in apache access user agent.,aminer:10,2
+1,aminer,aminer:11:eventcountclusterdetector:aminer: unusual occurrence frequencies of apache access request methods.,aminer:11,4
+2,aminer,aminer:12:eventfrequencydetector:aminer: unusual occurrence frequencies of apache access logs.,aminer:12,3
+3,aminer,aminer:13:newmatchpathvaluecombodetector:aminer: new syscall parameter combination in audit logs.,aminer:13,0
+4,aminer,aminer:14:newmatchpathvaluecombodetector:aminer: new service_start parameter combination in audit logs.,aminer:14,0
+5,aminer,aminer:15:newmatchpathvaluecombodetector:aminer: new service_stop parameter combination in audit logs.,aminer:15,3
+6,aminer,aminer:16:newmatchpathvaluecombodetector:aminer: new login parameter combination in audit logs.,aminer:16,4
+7,aminer,aminer:17:newmatchpathvaluecombodetector:aminer: new cred_refr parameter combination in audit logs.,aminer:17,3
+8,aminer,aminer:18:newmatchpathvaluecombodetector:aminer: new user_start parameter combination in audit logs.,aminer:18,0
+9,aminer,aminer:19:newmatchpathvaluecombodetector:aminer: new user_acct parameter combination in audit logs.,aminer:19,4
+10,aminer,aminer:20:newmatchpathvaluecombodetector:aminer: new user_auth parameter combination in audit logs.,aminer:20,2
+11,aminer,aminer:21:newmatchpathvaluecombodetector:aminer: new user_login parameter combination in audit logs.,aminer:21,1
+12,aminer,aminer:22:newmatchpathvaluecombodetector:aminer: new cred_disp parameter combination in audit logs.,aminer:22,2
+13,aminer,aminer:23:newmatchpathvaluecombodetector:aminer: new user_end parameter combination in audit logs.,aminer:23,4
+14,aminer,aminer:24:newmatchpathvaluecombodetector:aminer: new user_cmd parameter combination in audit logs.,aminer:24,0
+15,aminer,aminer:25:newmatchpathvaluecombodetector:aminer: new cred_acq parameter combination in audit logs.,aminer:25,3
+16,aminer,aminer:26:newmatchpathvaluecombodetector:aminer: new apparmor parameter combination in audit logs.,aminer:26,2
+17,aminer,aminer:27:newmatchpathvaluedetector:aminer: new ip address in dns logs.,aminer:27,2
+18,aminer,aminer:28:newmatchpathvaluecombodetector:aminer: new query record in dns logs.,aminer:28,4
+19,aminer,aminer:29:charsetdetector:aminer: new characters in dns domain.,aminer:29,2
+20,aminer,aminer:30:entropydetector:aminer: high entropy in dns domain.,aminer:30,3
+21,aminer,aminer:31:eventfrequencydetector:aminer: unusual occurrence frequencies of query records in dns logs.,aminer:31,0
+22,aminer,aminer:32:eventcountclusterdetector:aminer: unusual occurrence frequencies of dns log events.,aminer:32,4
+23,aminer,aminer:33:eventcountclusterdetector:aminer: unusual occurrence frequencies of dns query ips.,aminer:33,4
+24,aminer,aminer:34:eventcountclusterdetector:aminer: unusual occurrence frequencies of dns query records.,aminer:34,4
+25,aminer,aminer:35:valuerangedetector:aminer: cpu value out of expected range in monitoring logs.,aminer:35,0
+26,aminer,aminer:36:matchvalueaveragechangedetector:aminer: cpu value deviates from average in monitoring logs.,aminer:36,1
+27,aminer,aminer:3:newmatchpathdetector:aminer: new event type.,aminer:3,3
+28,aminer,aminer:4:newmatchpathvaluedetector:aminer: new status code in apache access log.,aminer:4,0
+29,aminer,aminer:5:newmatchpathvaluedetector:aminer: new request method in apache access log.,aminer:5,3
+30,aminer,aminer:6:entropydetector:aminer: high entropy in apache access request.,aminer:6,4
+31,aminer,aminer:7:charsetdetector:aminer: new characters in apache access request.,aminer:7,2
+32,aminer,aminer:8:entropydetector:aminer: high entropy in apache access referer.,aminer:8,1
+33,aminer,aminer:9:charsetdetector:aminer: new characters in apache access referer.,aminer:9,1
+34,suricata,suricata:2001569:misc activity:et scan behavioral unusual port 445 traffic potential scan or infection,suricata:2001569,1
+35,suricata,suricata:20100::first time this ids alert is generated.,suricata:20100,3
+36,suricata,suricata:20101::ids event.,suricata:20101,0
+37,suricata,suricata:2011802:potentially bad traffic:et dns dns lookup for localhost.domain.tld,suricata:2011802,1
+38,suricata,suricata:2013504:not suspicious traffic:et policy gnu/linux apt user-agent outbound likely related to package management,suricata:2013504,2
+39,suricata,suricata:2014169:potentially bad traffic:et dns query for .su tld (soviet union) often malware related,suricata:2014169,0
+40,suricata,suricata:20151::multiple ids events from same source ip.,suricata:20151,4
+41,suricata,suricata:20152::multiple ids alerts for same id.,suricata:20152,1
+42,suricata,suricata:2016149:attempted user privilege gain:et info session traversal utilities for nat (stun binding request),suricata:2016149,4
+43,suricata,suricata:2016150:attempted user privilege gain:et info session traversal utilities for nat (stun binding response),suricata:2016150,2
+44,suricata,suricata:20161::multiple ids events from same source ip (ignoring now this srcip and id).,suricata:20161,2
+45,suricata,suricata:20162::multiple ids alerts for same id (ignoring now this id).,suricata:20162,4
+46,suricata,suricata:2016778:potentially bad traffic:et dns query to a *.pw domain - likely hostile,suricata:2016778,4
+47,suricata,suricata:2024364:web application attack:et scan possible nmap user-agent observed,suricata:2024364,1
+48,suricata,suricata:2025105:potentially bad traffic:et info dns query for suspicious .ga domain,suricata:2025105,4
+49,suricata,suricata:2025109:potentially bad traffic:et info suspicious domain (*.ga) in tls sni,suricata:2025109,0
+50,suricata,suricata:2027757:potentially bad traffic:et dns query for .to tld,suricata:2027757,4
+51,suricata,suricata:2027758:potentially bad traffic:et dns query for .cc tld,suricata:2027758,3
+52,suricata,suricata:2027863:potentially bad traffic:et info observed dns query to .biz tld,suricata:2027863,0
+53,suricata,suricata:2027865:potentially bad traffic:et info observed dns query to .cloud tld,suricata:2027865,3
+54,suricata,suricata:2029340:potentially bad traffic:et info tls handshake failure,suricata:2029340,2
+55,suricata,suricata:2029706:potentially bad traffic:et hunting possible covid-19 domain in ssl certificate m2,suricata:2029706,3
+56,suricata,suricata:2029707:potentially bad traffic:et hunting suspicious tls sni request for possible covid-19 domain m1,suricata:2029707,0
+57,suricata,suricata:2029709:potentially bad traffic:et hunting suspicious domain request for possible covid-19 domain m1,suricata:2029709,0
+58,suricata,suricata:2220000:generic protocol command decode:suricata smtp invalid reply,suricata:2220000,4
+59,suricata,suricata:2220006:generic protocol command decode:suricata smtp no server welcome message,suricata:2220006,4
+60,suricata,suricata:2221001:generic protocol command decode:suricata http gzip decompression failed,suricata:2221001,2
+61,suricata,suricata:2221004:generic protocol command decode:suricata http invalid response chunk len,suricata:2221004,4
+62,suricata,suricata:2221010:generic protocol command decode:suricata http unable to match response to request,suricata:2221010,3
+63,suricata,suricata:2230000:generic protocol command decode:suricata tls invalid sslv2 header,suricata:2230000,1
+64,suricata,suricata:2230002:generic protocol command decode:suricata tls invalid record type,suricata:2230002,4
+65,suricata,suricata:2230003:generic protocol command decode:suricata tls invalid handshake message,suricata:2230003,3
+66,suricata,suricata:2230010:generic protocol command decode:suricata tls invalid record/traffic,suricata:2230010,0
+67,suricata,suricata:2230027:generic protocol command decode:suricata tls certificate invalid der,suricata:2230027,3
+68,suricata,suricata:2240001::suricata dns unsolicited response,suricata:2240001,1
+69,wazuh,"wazuh:2501:syslog,access_control,authentication_failed:syslog: user authentication failure.",wazuh:2501,1
+70,wazuh,"wazuh:30305:apache,web,access_denied:apache: attempt to access forbidden file or directory.",wazuh:30305,2
+71,wazuh,"wazuh:30306:apache,web,access_denied:apache: attempt to access forbidden directory index.",wazuh:30306,0
+72,wazuh,"wazuh:31101:web,accesslog,attack:web server 400 error code.",wazuh:31101,1
+73,wazuh,"wazuh:31104:web,accesslog,attack:common web attack.",wazuh:31104,2
+74,wazuh,"wazuh:31122:web,accesslog,system_error:web server 500 error code (internal error).",wazuh:31122,3
+75,wazuh,"wazuh:31151:web,accesslog,web_scan,recon:multiple web server 400 error codes from same source ip.",wazuh:31151,1
+76,wazuh,"wazuh:31509:web,appsec,attack:cms (wordpress or joomla) login attempt.",wazuh:31509,1
+77,wazuh,"wazuh:31510:web,appsec,attack:cms (wordpress or joomla) brute force attempt.",wazuh:31510,4
+78,wazuh,"wazuh:31516:web,appsec,attack:suspicious url access.",wazuh:31516,2
+79,wazuh,"wazuh:52507:clamd,freshclam,virus:clamav database update",wazuh:52507,3
+80,wazuh,"wazuh:5304:syslog,su,authentication_success:user successfully changed uid.",wazuh:5304,1
+81,wazuh,"wazuh:5402:syslog,sudo:successful sudo to root executed.",wazuh:5402,2
+82,wazuh,"wazuh:5403:syslog,sudo:first time user executed sudo.",wazuh:5403,2
+83,wazuh,"wazuh:5501:pam,syslog,authentication_success:pam: login session opened.",wazuh:5501,4
+84,wazuh,"wazuh:5502:pam,syslog:pam: login session closed.",wazuh:5502,4
+85,wazuh,"wazuh:5503:pam,syslog,authentication_failed:pam: user login failed.",wazuh:5503,1
+86,wazuh,"wazuh:5551:pam,syslog,authentication_failures:pam: multiple failed logins in a small period of time.",wazuh:5551,2
+87,wazuh,"wazuh:5706:syslog,sshd,recon:sshd: insecure connection attempt (scan).",wazuh:5706,4
+88,wazuh,"wazuh:5715:syslog,sshd,authentication_success:sshd: authentication success.",wazuh:5715,3
+89,wazuh,"wazuh:80730:audit,audit_selinux:auditd: selinux permission check.",wazuh:80730,2
+90,wazuh,"wazuh:9701:dovecot,authentication_success:dovecot authentication success.",wazuh:9701,4
+91,wazuh,"wazuh:9705:dovecot,invalid_login,authentication_failed:dovecot invalid user login attempt.",wazuh:9705,4
+92,wazuh,"wazuh:9751:dovecot,authentication_failures:dovecot brute force attack (multiple auth failures).",wazuh:9751,2

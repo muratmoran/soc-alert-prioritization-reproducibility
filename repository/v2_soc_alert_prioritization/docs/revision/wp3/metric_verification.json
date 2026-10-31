@@ -1,0 +1,100 @@
+{
+  "work_package": "WP3 metric contract",
+  "verified": true,
+  "generated_at": "2026-09-15T19:07:19+03:00",
+  "scope": "Metrics fully specified and independently checked on hand-built, randomized and synthetic data; real AIT data used only for method-independent label construction and label-free structure. No comparative AIT result was produced.",
+  "gate_note": "This record does not open the comparison gate by itself; docs/revision/wp4/fitting_boundary_verification.json must also be verified.",
+  "regeneration_note": "Regenerated in WP4 stage 1 after the native-score correction (two single-scale native references, registry of 157 candidates), metric contract v1.1 (\u00a79 provenance, \u00a79a subgroup retrieval in the mixed queue) and fitting-code changes; no comparative result had been produced.",
+  "protocol": {
+    "active": "docs/revision/protocol_v1_1.md",
+    "sha256": "a96035f752fa00c03dbb4f2d5947a97558d18f54c5a4d3ae0be182ce9ca7fefb",
+    "frozen_v1_sha256": "2c910b81d41fb34c70f82d18988709e3618842d678e38e2657011362a5837bb8"
+  },
+  "contract": {
+    "path": "docs/revision/wp3/metric_contract.md",
+    "version": "1.1",
+    "sha256": "61059092365c00f3ddd94f0adfba098955f4ea2e6d8023dd57be4a40c9ed04c0"
+  },
+  "code_identity": {
+    "git_head": "7d4806971304c7a575d37be504ae544f691c9f8f",
+    "working_tree_note": "revision code is uncommitted; identity is established by the file hashes below",
+    "file_sha256": {
+      "configs/revision_wp2.yaml": "498290d10990740e488df7f2e42f633719bb8163672646e4157f234634f7035f",
+      "configs/severity_mapping.yaml": "a7c0383b6e69ebed42e3dcfef4c1f58952902fd490e7791f19c3b577be03d17a",
+      "docs/revision/protocol_v1.md": "2c910b81d41fb34c70f82d18988709e3618842d678e38e2657011362a5837bb8",
+      "docs/revision/protocol_v1_1.md": "a96035f752fa00c03dbb4f2d5947a97558d18f54c5a4d3ae0be182ce9ca7fefb",
+      "docs/revision/wp3/metric_contract.md": "61059092365c00f3ddd94f0adfba098955f4ea2e6d8023dd57be4a40c9ed04c0",
+      "docs/revision/wp3/reference_examples.json": "8ffaa5c10005cffee31d610daf7a1c4889d9239648181b19567db4ec28ac9c52",
+      "scripts/revision/wp3_build_reference_examples.py": "3889f8e275d17bf60070b611c63430863358f8e96125a3a5d0e0f486bd098049",
+      "scripts/revision/wp3_label_verification.py": "51095dbf1e43a3c6fff88dcfbf39826c9214ea58634daf6c209ba52250205273",
+      "scripts/revision/wp3_negative_controls.py": "d107bad1bf16f6feb8ba3082ab7cab7f1687b1eacc0e73a6c216fbbd4c26ddc9",
+      "scripts/revision/wp3_structural_audit.py": "232cfd7db100ea8d52fc97cdc6a2a157f74cc2635a9bed85b8a6d610468adafb",
+      "scripts/revision/wp3_write_verification_record.py": "55ba0a7ca61761ef03770ccff828c60300d6155d092b6adc32853ac2d69193d8",
+      "src/soc_alert_ranking/mappings/context.py": "87713f96cbb88eeeac89da4294851fab519658c167e99ae8a4885cbc6c0c114c",
+      "src/soc_alert_ranking/mappings/severity.py": "d8ae811f6ed791a127ec14dccfdc7bef7d635370395e7e50eac69ec71705f687",
+      "src/soc_alert_ranking/rankers/revision_scores.py": "c24b707ecbb2a2d36703dcebcff7b51eaa4193c29fa14e6696095430a3541662",
+      "src/soc_alert_ranking/revision/__init__.py": "1fed24673dccffc3d70d371f6fec5317037f04e9dc8993e72ebff80e94f50a7c",
+      "src/soc_alert_ranking/revision/config.py": "d5f01d47338fc825c22687db74aac614b8f31d202e5815f4ff276c70dda01af7",
+      "src/soc_alert_ranking/revision/duplicates.py": "d58edfc20e168bdb63e6bd1fc1674c9378ce8dec1ff2be85dddd2bfcc22de87a",
+      "src/soc_alert_ranking/revision/evaluation.py": "25a44e6a33ffc85841f3af434b14683d87980ab56004d1b1b38985f196620851",
+      "src/soc_alert_ranking/revision/families.py": "6a4bf3c0a6fbf810681e6de9db064d5d61e6c0a8cf3838ebeaaef892c31b1ced",
+      "src/soc_alert_ranking/revision/features.py": "9fc0909e52f3b86e068f6e7dab91cc01c2beb3bd2fa18c18aca55bc952102036",
+      "src/soc_alert_ranking/revision/labels.py": "4453858fe88ba95c6fd3a839c6d831ce0f4da8be7874222ad2dd814223e7500b",
+      "src/soc_alert_ranking/revision/metrics.py": "c254dcd07774bb3b4ecf3eff156c0540321c86e0d7550df0c4dea094f15911de",
+      "src/soc_alert_ranking/revision/native_scores.py": "60c1ec3374c46e0760ca9dc07b0af4a5f403bde70982aa16607ffa053a2224ab",
+      "src/soc_alert_ranking/revision/paired_stats.py": "06656d51a4b45d35fb474027db52643a6dc6090a41dcbd833820aba8b4945465",
+      "src/soc_alert_ranking/revision/pipeline.py": "055ad6367db49e6aafafcd8f93cd7c01b266714fd788ae2700f57ee029dbf2e4",
+      "src/soc_alert_ranking/revision/replay.py": "94e3bb70f11762b41e8b81b65ddb7dca7b6604b0de66e8e2bf4ad2038630a6a6",
+      "src/soc_alert_ranking/revision/severity_variants.py": "615481e34f46bf9ec9a15c2857d90f8f48d05c2e485de93bdc91c7ae0e3eb836",
+      "src/soc_alert_ranking/revision/splits.py": "5702222d24c807f187db56f8a0c1b7c979827bd9e21d5c48c9c7211d1667a11a",
+      "src/soc_alert_ranking/revision/synthetic.py": "c371a45fecda703e41eb9c139c91197bee982ed7fa4a7ad8ae15bf1a7ad2d62d",
+      "src/soc_alert_ranking/revision/ties.py": "7ad6d01dc70126fdfa5d5c33f1274d222152c7d4497619d916c74566f809f5e3",
+      "src/soc_alert_ranking/revision/tuning.py": "403598af30a23df115d189f1bdc801b9426ae52c671efd98d2106fd222843d88",
+      "tests/test_wp3_constancy_variants.py": "eea3d983633cf71aa39fe5a0fa16a81bca26d088379790d5746f73a5b04f2507",
+      "tests/test_wp3_properties.py": "16ccabb2e24ba418e88cc8280c9c85e574cd83faebd4dd17c67a93ee70267b90",
+      "tests/test_wp3_reference_examples.py": "9e1a8feb2b99f0855f07fb3fae4c7ff4dce3a5bc4a6766143cd5142c28e407df",
+      "tests/wp3_reference_metrics.py": "9affd7c8ec3886a028224a1ee151e0dcaea2b315f125a3fff80c2e30ba8737f6",
+      "tests/wp3_support.py": "93cdeda94068d00d358ed12232c6475d4e867efad1340aa516ab63a532e5fdb9"
+    }
+  },
+  "environment": {
+    "python": "3.10.18",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.0.1",
+    "pandas": "2.3.1",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.1"
+  },
+  "checks": {
+    "unit_tests": {
+      "exit_code": 0,
+      "tests_run": 122,
+      "expected_failures": 1,
+      "passed": true,
+      "expected_failure_meaning": "historical NF-UQ sample inclusion uses true categories (known violation N1)"
+    },
+    "negative_controls": {
+      "exit_code": 0,
+      "controls": 14,
+      "detected": 14,
+      "passed": true
+    },
+    "real_data_label_construction": {
+      "exit_code": 0,
+      "79_rows_79_distinct_no_overlap": true,
+      "critical_counts_consistent": true,
+      "half_open_boundaries": true,
+      "matches_historical_loader_labels": true,
+      "file_order_invariant": true,
+      "passed": true
+    },
+    "real_data_structural_audit": {
+      "exit_code": 0,
+      "passed": true
+    }
+  },
+  "errata_preserved": [
+    "claim_evidence_audit.md Errata (79 non-overlapping intervals)",
+    "protocol_v1_1.md change log erratum"
+  ]
+}

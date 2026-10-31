@@ -1,0 +1,7 @@
+family,id,contrast,source,metric,unit,first_mean,second_mean,n,mean_difference,median_difference,positive,negative,zero,p_two_sided,patterns,min_attainable_p,range_min,range_max,p_holm,reject_at_familywise_0.05
+primary,PF1,S1 - A,static,coverage@100,held-out scenario (n = 8),0.25,0.25,8,0.0,0.0,0,0,8,1.0,256,0.0078125,0.0,0.0,1.0,False
+primary,PF1,S1 - A,static,FP@100,held-out scenario (n = 8),29.75,29.0,8,0.75,0.0,2,1,5,0.75,256,0.0078125,-2.0,6.0,1.0,False
+primary,PF2,S1 - M,static,coverage@100,held-out scenario (n = 8),0.25,0.25,8,0.0,0.0,0,0,8,1.0,256,0.0078125,0.0,0.0,1.0,False
+primary,PF2,S1 - M,static,FP@100,held-out scenario (n = 8),29.75,30.0,8,-0.25,0.0,0,1,7,1.0,256,0.0078125,-2.0,0.0,1.0,False
+primary,PF3,S1 - P,static,coverage@100,held-out scenario (n = 8),0.25,0.25,8,0.0,0.0,0,0,8,1.0,256,0.0078125,0.0,0.0,1.0,False
+primary,PF3,S1 - P,static,FP@100,held-out scenario (n = 8),29.75,29.75,8,0.0,0.0,0,0,8,1.0,256,0.0078125,0.0,0.0,1.0,False

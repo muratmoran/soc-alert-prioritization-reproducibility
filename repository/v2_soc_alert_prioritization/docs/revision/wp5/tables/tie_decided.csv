@@ -1,0 +1,177 @@
+policy,method,rate_per_hour,tie_decided_share
+P1,A_additive (primary rule),6.0,0.9678275019357336
+P1,A_additive (primary rule),12.0,0.9565776136692731
+P1,A_additive (primary rule),30.0,0.9655536027893161
+P1,A_additive (primary rule),60.0,0.9766720746259332
+P1,C_cost_sensitive (primary rule),6.0,0.9701618490590358
+P1,C_cost_sensitive (primary rule),12.0,0.957446423399942
+P1,C_cost_sensitive (primary rule),30.0,0.9660632309886915
+P1,C_cost_sensitive (primary rule),60.0,0.9769515314091151
+P1,H_weighted,6.0,0.9701618490590358
+P1,H_weighted,12.0,0.957446423399942
+P1,H_weighted,30.0,0.9660632309886915
+P1,H_weighted,60.0,0.9769515314091151
+P1,L1_logistic (primary rule),6.0,0.9707418954627482
+P1,L1_logistic (primary rule),12.0,0.9595297567332755
+P1,L1_logistic (primary rule),30.0,0.9663510452064668
+P1,L1_logistic (primary rule),60.0,0.977092099303408
+P1,L2_gradient_boosting (primary rule),6.0,0.9707418954627482
+P1,L2_gradient_boosting (primary rule),12.0,0.9584880900666088
+P1,L2_gradient_boosting (primary rule),30.0,0.9660632309886915
+P1,L2_gradient_boosting (primary rule),60.0,0.9768820869646706
+P1,M_multiplicative (primary rule),6.0,0.9678275019357336
+P1,M_multiplicative (primary rule),12.0,0.9565776136692731
+P1,M_multiplicative (primary rule),30.0,0.9655536027893161
+P1,M_multiplicative (primary rule),60.0,0.9766720746259332
+P1,O_native_rule_level,6.0,0.8619212962962963
+P1,O_native_rule_level,12.0,0.8618180209740719
+P1,O_native_rule_level,30.0,0.9011524302337556
+P1,O_native_rule_level,60.0,0.8895143180637375
+P1,O_native_suricata_severity,6.0,0.9829679636082074
+P1,O_native_suricata_severity,12.0,0.9904423151374372
+P1,O_native_suricata_severity,30.0,0.995619517618189
+P1,O_native_suricata_severity,60.0,0.9942102235909248
+P1,O_newest_first,6.0,0.7381944444444444
+P1,O_newest_first,12.0,0.7388205301421862
+P1,O_newest_first,30.0,0.7657717250324254
+P1,O_newest_first,60.0,0.7903309792703227
+P1,O_oldest_first,6.0,0.60625
+P1,O_oldest_first,12.0,0.6565698152447281
+P1,O_oldest_first,30.0,0.6919813175341314
+P1,O_oldest_first,60.0,0.7047060928959414
+P1,O_reliability,6.0,0.9716099510183037
+P1,O_reliability,12.0,0.9585752727097211
+P1,O_reliability,30.0,0.966480129265512
+P1,O_reliability,60.0,0.9771615437478525
+P1,O_severity,6.0,0.9982608643050717
+P1,O_severity,12.0,0.9991300550649792
+P1,O_severity,30.0,0.9991665122598974
+P1,O_severity,60.0,0.9964094077991519
+P1,P_probability_proxy,6.0,0.9701618490590358
+P1,P_probability_proxy,12.0,0.957446423399942
+P1,P_probability_proxy,30.0,0.9660632309886915
+P1,P_probability_proxy,60.0,0.9769515314091151
+P1,R_key_reliability,6.0,0.8835422574546705
+P1,R_key_reliability,12.0,0.8544651474789591
+P1,R_key_reliability,30.0,0.909975526527083
+P1,R_key_reliability,60.0,0.9439270804015386
+P1,R_severity_key_reliability,6.0,0.8621114226175131
+P1,R_severity_key_reliability,12.0,0.8426562138058837
+P1,R_severity_key_reliability,30.0,0.9073356339941943
+P1,R_severity_key_reliability,60.0,0.9422457156706383
+P1,S0_linear_log_historical[kappa=1],6.0,0.9701618490590358
+P1,S0_linear_log_historical[kappa=1],12.0,0.957446423399942
+P1,S0_linear_log_historical[kappa=1],30.0,0.9660632309886915
+P1,S0_linear_log_historical[kappa=1],60.0,0.9769515314091151
+P1,S0_linear_log_historical_key[kappa=1],6.0,0.8513933197989172
+P1,S0_linear_log_historical_key[kappa=1],12.0,0.8374469152961161
+P1,S0_linear_log_historical_key[kappa=1],30.0,0.9045566209622629
+P1,S0_linear_log_historical_key[kappa=1],60.0,0.941128174156425
+P1,S1_linear_log_constrained (primary rule),6.0,0.9701618490590358
+P1,S1_linear_log_constrained (primary rule),12.0,0.957446423399942
+P1,S1_linear_log_constrained (primary rule),30.0,0.9660632309886915
+P1,S1_linear_log_constrained (primary rule),60.0,0.9769515314091151
+P1,S1_linear_log_constrained_key (primary rule),6.0,0.7404513888888888
+P1,S1_linear_log_constrained_key (primary rule),12.0,0.7631944444444445
+P1,S1_linear_log_constrained_key (primary rule),30.0,0.8689010585690002
+P1,S1_linear_log_constrained_key (primary rule),60.0,0.9274143293154072
+P1,S2_exponential_discount (primary rule),6.0,0.9701618490590358
+P1,S2_exponential_discount (primary rule),12.0,0.957446423399942
+P1,S2_exponential_discount (primary rule),30.0,0.9660632309886915
+P1,S2_exponential_discount (primary rule),60.0,0.9769515314091151
+P1,S2_exponential_discount_key (primary rule),6.0,0.7555555555555555
+P1,S2_exponential_discount_key (primary rule),12.0,0.781675053093928
+P1,S2_exponential_discount_key (primary rule),30.0,0.8810931463452326
+P1,S2_exponential_discount_key (primary rule),60.0,0.9309389970638232
+P1,W_weighted (primary rule),6.0,0.9701618490590358
+P1,W_weighted (primary rule),12.0,0.957446423399942
+P1,W_weighted (primary rule),30.0,0.9660632309886915
+P1,W_weighted (primary rule),60.0,0.9769515314091151
+P2,A_additive (primary rule),6.0,0.9484362915699923
+P2,A_additive (primary rule),12.0,0.9460856813168685
+P2,A_additive (primary rule),30.0,0.9591254142890386
+P2,A_additive (primary rule),60.0,0.9737883888182248
+P2,C_cost_sensitive (primary rule),6.0,0.961574074074074
+P2,C_cost_sensitive (primary rule),12.0,0.9499688835632212
+P2,C_cost_sensitive (primary rule),30.0,0.9594027666428808
+P2,C_cost_sensitive (primary rule),60.0,0.9736267159915576
+P2,H_weighted,6.0,0.9604166666666667
+P2,H_weighted,12.0,0.9499688835632212
+P2,H_weighted,30.0,0.9614889975190978
+P2,H_weighted,60.0,0.9748436840026842
+P2,L1_logistic (primary rule),6.0,0.9528356481481481
+P2,L1_logistic (primary rule),12.0,0.9474755353821918
+P2,L1_logistic (primary rule),30.0,0.9605156550424785
+P2,L1_logistic (primary rule),60.0,0.9741431207056246
+P2,L2_gradient_boosting (primary rule),6.0,0.9333333333333332
+P2,L2_gradient_boosting (primary rule),12.0,0.9410337629114779
+P2,L2_gradient_boosting (primary rule),30.0,0.9667871039466369
+P2,L2_gradient_boosting (primary rule),60.0,0.9744725261969418
+P2,M_multiplicative (primary rule),6.0,0.9493634259259258
+P2,M_multiplicative (primary rule),12.0,0.9447530992414688
+P2,M_multiplicative (primary rule),30.0,0.9586044364006894
+P2,M_multiplicative (primary rule),60.0,0.9732427595804156
+P2,O_native_rule_level,6.0,0.8619212962962963
+P2,O_native_rule_level,12.0,0.8618180209740719
+P2,O_native_rule_level,30.0,0.9011524302337556
+P2,O_native_rule_level,60.0,0.8895143180637375
+P2,O_native_suricata_severity,6.0,0.9829679636082074
+P2,O_native_suricata_severity,12.0,0.9904423151374372
+P2,O_native_suricata_severity,30.0,0.995619517618189
+P2,O_native_suricata_severity,60.0,0.9942102235909248
+P2,O_newest_first,6.0,0.7381944444444444
+P2,O_newest_first,12.0,0.7388205301421862
+P2,O_newest_first,30.0,0.7657717250324254
+P2,O_newest_first,60.0,0.7903309792703227
+P2,O_oldest_first,6.0,0.60625
+P2,O_oldest_first,12.0,0.6565698152447281
+P2,O_oldest_first,30.0,0.6919813175341314
+P2,O_oldest_first,60.0,0.7047060928959414
+P2,O_reliability,6.0,0.9716099510183037
+P2,O_reliability,12.0,0.9585752727097211
+P2,O_reliability,30.0,0.966480129265512
+P2,O_reliability,60.0,0.9771615437478525
+P2,O_severity,6.0,0.9923611111111112
+P2,O_severity,12.0,0.9734986618946283
+P2,O_severity,30.0,0.9680063957430763
+P2,O_severity,60.0,0.9765639812533831
+P2,P_probability_proxy,6.0,0.9604166666666667
+P2,P_probability_proxy,12.0,0.9499688835632212
+P2,P_probability_proxy,30.0,0.9614889975190978
+P2,P_probability_proxy,60.0,0.9748436840026842
+P2,R_key_reliability,6.0,0.8835422574546705
+P2,R_key_reliability,12.0,0.8544651474789591
+P2,R_key_reliability,30.0,0.909975526527083
+P2,R_key_reliability,60.0,0.9439270804015386
+P2,R_severity_key_reliability,6.0,0.8586805555555556
+P2,R_severity_key_reliability,12.0,0.8309027777777778
+P2,R_severity_key_reliability,30.0,0.9056671916496819
+P2,R_severity_key_reliability,60.0,0.941639719517849
+P2,S0_linear_log_historical[kappa=1],6.0,0.9441550925925926
+P2,S0_linear_log_historical[kappa=1],12.0,0.9667002385076394
+P2,S0_linear_log_historical[kappa=1],30.0,0.9800693090109449
+P2,S0_linear_log_historical[kappa=1],60.0,0.9836285479190765
+P2,S0_linear_log_historical_key[kappa=1],6.0,0.8373263888888889
+P2,S0_linear_log_historical_key[kappa=1],12.0,0.8296954942562023
+P2,S0_linear_log_historical_key[kappa=1],30.0,0.9051120221110494
+P2,S0_linear_log_historical_key[kappa=1],60.0,0.9415374917909748
+P2,S1_linear_log_constrained (primary rule),6.0,0.9470486111111112
+P2,S1_linear_log_constrained (primary rule),12.0,0.9442261566017867
+P2,S1_linear_log_constrained (primary rule),30.0,0.9592823223667594
+P2,S1_linear_log_constrained (primary rule),60.0,0.9734910610904282
+P2,S1_linear_log_constrained_key (primary rule),6.0,0.7767361111111111
+P2,S1_linear_log_constrained_key (primary rule),12.0,0.8013044212761851
+P2,S1_linear_log_constrained_key (primary rule),30.0,0.8933021431659564
+P2,S1_linear_log_constrained_key (primary rule),60.0,0.9374881200741771
+P2,S2_exponential_discount (primary rule),6.0,0.9545717592592593
+P2,S2_exponential_discount (primary rule),12.0,0.9450432907678762
+P2,S2_exponential_discount (primary rule),30.0,0.9570397632435266
+P2,S2_exponential_discount (primary rule),60.0,0.9722865704288162
+P2,S2_exponential_discount_key (primary rule),6.0,0.7184027777777777
+P2,S2_exponential_discount_key (primary rule),12.0,0.8121527777777777
+P2,S2_exponential_discount_key (primary rule),30.0,0.9103884058663818
+P2,S2_exponential_discount_key (primary rule),60.0,0.9488399580759677
+P2,W_weighted (primary rule),6.0,0.961574074074074
+P2,W_weighted (primary rule),12.0,0.9499688835632212
+P2,W_weighted (primary rule),30.0,0.9614889975190978
+P2,W_weighted (primary rule),60.0,0.9748436840026842

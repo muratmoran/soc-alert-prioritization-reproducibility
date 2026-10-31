@@ -1,0 +1,13 @@
+run,method,z,alerts,gamma_le_0,gamma_le_0_1,share_le_0,share_le_0_1
+R6,S0_linear_log_historical[kappa=1],False,13233085,6244505,6244505,0.47188580742888,0.47188580742888
+R6,S0_linear_log_historical[kappa=1],True,46020,45492,45492,0.9885267275097783,0.9885267275097783
+R6,S0_linear_log_historical_key[kappa=1],False,13233085,5883170,5888969,0.4445803831835131,0.44501860299393525
+R6,S0_linear_log_historical_key[kappa=1],True,46020,40283,40373,0.8753368100825728,0.8772924815297697
+R6,S1_linear_log_constrained (primary rule),False,13233085,0,0,0.0,0.0
+R6,S1_linear_log_constrained (primary rule),True,46020,0,0,0.0,0.0
+R6,S1_linear_log_constrained_key (primary rule),False,13233085,0,376391,0.0,0.02844317859365371
+R6,S1_linear_log_constrained_key (primary rule),True,46020,0,3417,0.0,0.0742503259452412
+R6,S2_exponential_discount (primary rule),False,13233085,0,296616,0.0,0.022414727933811354
+R6,S2_exponential_discount (primary rule),True,46020,0,4096,0.0,0.08900478053020426
+R6,S2_exponential_discount_key (primary rule),False,13233085,0,1589972,0.0,0.12015127236014883
+R6,S2_exponential_discount_key (primary rule),True,46020,0,6335,0.0,0.13765754019991308

@@ -1,0 +1,291 @@
+{
+  "work_package": "WP4 stage 1: fitting boundaries and input provenance",
+  "verified": true,
+  "generated_at": "2026-09-15T19:12:15+03:00",
+  "scope": "Fitting isolation verified by synthetic fault injection and by executed real-data fitting chains for every declared split and input policy; native-score provenance resolved from raw data. No candidate was scored on AIT and no comparative metric was computed.",
+  "gate_note": "Together with a verified, non-stale docs/revision/wp3/metric_verification.json this record opens the comparison gate in scripts/revision/wp2_run_comparison.py.",
+  "protocol": {
+    "active": "docs/revision/protocol_v1_1.md",
+    "sha256": "a96035f752fa00c03dbb4f2d5947a97558d18f54c5a4d3ae0be182ce9ca7fefb"
+  },
+  "fitting_specification": {
+    "path": "docs/revision/wp4/fitting_specification.md",
+    "version": "1.0",
+    "sha256": "1215a812d9a5f435b1e2588aea4b83ec06d9439869daf831cfc45570af5ec686"
+  },
+  "registry_sha256": "e2f088ed3b8c70f762600069ffd0676cde79a2311403f801526518e9b59cb23a",
+  "code_identity": {
+    "git_head": "7d4806971304c7a575d37be504ae544f691c9f8f",
+    "working_tree_note": "revision code is uncommitted; identity is established by the file hashes below",
+    "file_sha256": {
+      "configs/revision_wp2.yaml": "498290d10990740e488df7f2e42f633719bb8163672646e4157f234634f7035f",
+      "configs/severity_mapping.yaml": "a7c0383b6e69ebed42e3dcfef4c1f58952902fd490e7791f19c3b577be03d17a",
+      "docs/revision/protocol_v1.md": "2c910b81d41fb34c70f82d18988709e3618842d678e38e2657011362a5837bb8",
+      "docs/revision/protocol_v1_1.md": "a96035f752fa00c03dbb4f2d5947a97558d18f54c5a4d3ae0be182ce9ca7fefb",
+      "docs/revision/wp2/grid_registry.json": "17e1bb45894247b561a3941f153e10d24dcb7059033362c02b86f4a6c6d10c22",
+      "docs/revision/wp3/metric_contract.md": "61059092365c00f3ddd94f0adfba098955f4ea2e6d8023dd57be4a40c9ed04c0",
+      "docs/revision/wp3/metric_verification.json": "2b6524f47f088b5f4e1f795c4ac4ccd6cebfe6767026f048e07fcd605d4220d1",
+      "docs/revision/wp4/fitting_specification.md": "1215a812d9a5f435b1e2588aea4b83ec06d9439869daf831cfc45570af5ec686",
+      "docs/revision/wp4/native_score_provenance.json": "c0f2785ce05df8201a99a464dbe445a56a5e728b9732c7f3101ac72546b62f5e",
+      "docs/revision/wp4/negative_controls.json": "699b4c601a7364f9c732842bfea5e05f0442fecfd1046116dae570a88c7fa75d",
+      "docs/revision/wp4/real_data_fitting_check.json": "b72b9ea4f99bd63dfc8353f5aed4e15bb3068ec71ed4197347b2cf6ed72ab680",
+      "docs/revision/wp4/split_manifests.json": "f6ad3ee589e5f135abce6c343468a34af505a472c55d89d62db1fe705f3a54ed",
+      "docs/revision/wp4/stage2_reporting_specification.md": "b50ab1b328ea481580ab425bc7c941e8ecf0b303c8dc5d12a290ebfd4aa2f00a",
+      "scripts/revision/wp2_freeze_grid_registry.py": "50ef2d33e7059ee125e52a512709e806c9325ee4d4375fd5803691bfb4900e96",
+      "scripts/revision/wp2_run_comparison.py": "ee88d3c4753c414756f146071008e13abf6ba04d76ccd72bed17baaf25f9821a",
+      "scripts/revision/wp4_fitting_boundary_check.py": "a4156c83e087954d803414b5092528a59a404578587b6a6ebe6a6cf13c7a48b2",
+      "scripts/revision/wp4_native_score_provenance.py": "68ef3e3aa1c3676ccdab41d7d3d8421470b07a877c0eba28f448d6664de77aa1",
+      "scripts/revision/wp4_negative_controls.py": "e2d741585e9b3f6706a1da8b22768a6eee381b195f586fe0b2db88dbe2eec426",
+      "scripts/revision/wp4_write_verification_record.py": "8c7b1e48d876ffb28068b4e08440dd1ce42c2b8fd2e394f75b8ea73aed3dbf6f",
+      "src/soc_alert_ranking/loaders/ait_alert.py": "c789d63014856a3d17d8c1ea6a83635895a6b2ee3eac6a9679d1660d87029104",
+      "src/soc_alert_ranking/mappings/context.py": "87713f96cbb88eeeac89da4294851fab519658c167e99ae8a4885cbc6c0c114c",
+      "src/soc_alert_ranking/mappings/severity.py": "d8ae811f6ed791a127ec14dccfdc7bef7d635370395e7e50eac69ec71705f687",
+      "src/soc_alert_ranking/revision/__init__.py": "1fed24673dccffc3d70d371f6fec5317037f04e9dc8993e72ebff80e94f50a7c",
+      "src/soc_alert_ranking/revision/config.py": "d5f01d47338fc825c22687db74aac614b8f31d202e5815f4ff276c70dda01af7",
+      "src/soc_alert_ranking/revision/duplicates.py": "d58edfc20e168bdb63e6bd1fc1674c9378ce8dec1ff2be85dddd2bfcc22de87a",
+      "src/soc_alert_ranking/revision/evaluation.py": "25a44e6a33ffc85841f3af434b14683d87980ab56004d1b1b38985f196620851",
+      "src/soc_alert_ranking/revision/families.py": "6a4bf3c0a6fbf810681e6de9db064d5d61e6c0a8cf3838ebeaaef892c31b1ced",
+      "src/soc_alert_ranking/revision/features.py": "9fc0909e52f3b86e068f6e7dab91cc01c2beb3bd2fa18c18aca55bc952102036",
+      "src/soc_alert_ranking/revision/labels.py": "4453858fe88ba95c6fd3a839c6d831ce0f4da8be7874222ad2dd814223e7500b",
+      "src/soc_alert_ranking/revision/metrics.py": "c254dcd07774bb3b4ecf3eff156c0540321c86e0d7550df0c4dea094f15911de",
+      "src/soc_alert_ranking/revision/native_scores.py": "60c1ec3374c46e0760ca9dc07b0af4a5f403bde70982aa16607ffa053a2224ab",
+      "src/soc_alert_ranking/revision/paired_stats.py": "06656d51a4b45d35fb474027db52643a6dc6090a41dcbd833820aba8b4945465",
+      "src/soc_alert_ranking/revision/pipeline.py": "055ad6367db49e6aafafcd8f93cd7c01b266714fd788ae2700f57ee029dbf2e4",
+      "src/soc_alert_ranking/revision/replay.py": "94e3bb70f11762b41e8b81b65ddb7dca7b6604b0de66e8e2bf4ad2038630a6a6",
+      "src/soc_alert_ranking/revision/severity_variants.py": "615481e34f46bf9ec9a15c2857d90f8f48d05c2e485de93bdc91c7ae0e3eb836",
+      "src/soc_alert_ranking/revision/splits.py": "5702222d24c807f187db56f8a0c1b7c979827bd9e21d5c48c9c7211d1667a11a",
+      "src/soc_alert_ranking/revision/synthetic.py": "c371a45fecda703e41eb9c139c91197bee982ed7fa4a7ad8ae15bf1a7ad2d62d",
+      "src/soc_alert_ranking/revision/ties.py": "7ad6d01dc70126fdfa5d5c33f1274d222152c7d4497619d916c74566f809f5e3",
+      "src/soc_alert_ranking/revision/tuning.py": "403598af30a23df115d189f1bdc801b9426ae52c671efd98d2106fd222843d88",
+      "tests/test_wp2_fitting_isolation.py": "4bdf3f07eb36b94a1f7255d5bc2c4ff32286ac4a552669c8d9b16855890fc7ad",
+      "tests/test_wp2_pipeline.py": "5d02759a916c6b7ccb2455a30def2731e9dffc05efb7f5becb73e4fa634d4353",
+      "tests/test_wp4_fitting_boundaries.py": "56bbe9b7baf5d90eccf6e27f06c6d484ab844062d18453b957298313f5faa4c8",
+      "tests/wp2_fixtures.py": "a4cac21187cba08adfc61889348f7303a313e666d2d2797677a9df3ab0c5639f",
+      "tests/wp4_reference_fitting.py": "9bebff1b16731b8b05163a67198c319accf02c1bc57a041e47ba1e3403fbb342"
+    }
+  },
+  "environment": {
+    "python": "3.10.18",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.0.1",
+    "pandas": "2.3.1",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.1"
+  },
+  "checks": {
+    "unit_tests": {
+      "exit_code": 0,
+      "tests_run": 122,
+      "expected_failures": 1,
+      "wp4_tests_run": 27,
+      "wp4_exit_code": 0,
+      "passed": true,
+      "expected_failure_meaning": "historical NF-UQ sample inclusion uses true categories (known violation N1)"
+    },
+    "negative_controls": {
+      "exit_code": 0,
+      "controls": 19,
+      "detected": 19,
+      "not_visible_in_traces": 16,
+      "test_module_matches": true,
+      "passed": true
+    },
+    "native_score_provenance": {
+      "rows_cache": 2655821,
+      "rows_raw": 2655821,
+      "alert_id_equal": true,
+      "scenario_equal": true,
+      "detector_equal": true,
+      "native_key_equal": true,
+      "timestamp_equal": true,
+      "historical_detector_score_rederived": true,
+      "canonical_cache_identity": true,
+      "provenance_cache_identity": true,
+      "provenance_built_from_canonical_cache": true,
+      "raw_files_verified": true,
+      "resolution": "separate single-scale native references (O_native_rule_level, O_native_suricata_severity); pooled score provenance only",
+      "passed": true
+    },
+    "real_data_fitting_chains": {
+      "chains": 141,
+      "expected_chains": 141,
+      "passed_chains": 141,
+      "by_policy_label": {
+        "calibration:detector_only": {
+          "chains": 8,
+          "passed": 8
+        },
+        "calibration:global_class": {
+          "chains": 8,
+          "passed": 8
+        },
+        "calibration:native_key": {
+          "chains": 8,
+          "passed": 8
+        },
+        "calibration:none": {
+          "chains": 8,
+          "passed": 8
+        },
+        "context:asset_profile": {
+          "chains": 8,
+          "passed": 8
+        },
+        "forward:primary": {
+          "chains": 5,
+          "passed": 5
+        },
+        "holdout:primary": {
+          "chains": 40,
+          "passed": 40
+        },
+        "primary": {
+          "chains": 8,
+          "passed": 8
+        },
+        "secondary": {
+          "chains": 8,
+          "passed": 8
+        },
+        "uncertainty:constant_0.5": {
+          "chains": 8,
+          "passed": 8
+        },
+        "uncertainty:historical_combined": {
+          "chains": 8,
+          "passed": 8
+        },
+        "uncertainty:precision_only": {
+          "chains": 8,
+          "passed": 8
+        },
+        "uncertainty:purity_only": {
+          "chains": 8,
+          "passed": 8
+        },
+        "uncertainty:zero": {
+          "chains": 8,
+          "passed": 8
+        }
+      },
+      "trace_verifications_passed": 141,
+      "fit_sets_matched": 141,
+      "held_out_table_reads": 0,
+      "held_out_label_reads": 0,
+      "excluded_rows_in_learned_samples": 0,
+      "holdout_inner_queue_alerts_removed": 18590747,
+      "feature_requests": 7885,
+      "table_reads": 78052,
+      "cached_feature_requests": 3872,
+      "learned_selection_fallbacks": [
+        "forward:russellmitchell: inner_fit_failure_simplest_grid_point"
+      ],
+      "scores_or_metrics_computed": false,
+      "code_hashes_current": true,
+      "stale_files": [],
+      "generated_at": "2026-09-15T11:46:40+03:00",
+      "passed": true
+    },
+    "real_data_independent_arithmetic": {
+      "loso_all_fit_sets": {
+        "fit_sets": 92,
+        "cells_checked": 935,
+        "keys_checked": 17112,
+        "mismatch_count": 0
+      },
+      "loso_outer_fit_sets_all_groupings": {
+        "fit_sets": 8,
+        "cells_checked": 143,
+        "keys_checked": 2976,
+        "mismatch_count": 0
+      },
+      "holdout_group_0_all_fit_sets": {
+        "fit_sets": 92,
+        "cells_checked": 935,
+        "keys_checked": 17112,
+        "mismatch_count": 0
+      },
+      "holdout_group_1_all_fit_sets": {
+        "fit_sets": 92,
+        "cells_checked": 935,
+        "keys_checked": 17112,
+        "mismatch_count": 0
+      },
+      "holdout_group_2_all_fit_sets": {
+        "fit_sets": 92,
+        "cells_checked": 883,
+        "keys_checked": 17112,
+        "mismatch_count": 0
+      },
+      "holdout_group_3_all_fit_sets": {
+        "fit_sets": 92,
+        "cells_checked": 800,
+        "keys_checked": 17112,
+        "mismatch_count": 0
+      },
+      "holdout_group_4_all_fit_sets": {
+        "fit_sets": 92,
+        "cells_checked": 843,
+        "keys_checked": 17112,
+        "mismatch_count": 0
+      },
+      "forward_chaining_fit_sets": {
+        "fit_sets": 34,
+        "cells_checked": 335,
+        "keys_checked": 6324,
+        "mismatch_count": 0
+      },
+      "passed": true
+    },
+    "real_data_adversarial_and_cache": {
+      "held_out_label_mutation_leaves_fits_unchanged": true,
+      "sensitivity_training_label_mutation_changes_fits": true,
+      "excluded_identifier_label_mutation_leaves_fits_unchanged[detector_class]": true,
+      "excluded_identifier_label_mutation_leaves_fits_unchanged[native_key]": true,
+      "excluded_identifier_row_deletion_leaves_fits_unchanged": true,
+      "excluded_identifier_rows_deleted": 1292304,
+      "excluded_identifier_group": {
+        "group": 1,
+        "identifiers": 16,
+        "training_alerts": 1292304
+      },
+      "cache_label_version_invalidates_dependent_fit": true,
+      "cache_label_version_keeps_independent_fit": true,
+      "cache_exclusion_set_is_a_key": true,
+      "cache_reliability_is_a_key": true,
+      "passed": true
+    },
+    "label_free_mapping_coverage": {
+      "folds": 8,
+      "held_out_label_reads": 0,
+      "calibration_quality": "not computed in stage 1 (requires held-out labels; reported in stage 2, separately from mapping coverage)",
+      "passed": true
+    },
+    "grid_registry": {
+      "registry_sha256": "e2f088ed3b8c70f762600069ffd0676cde79a2311403f801526518e9b59cb23a",
+      "candidates": 157,
+      "tuned_per_inner_fold": 145,
+      "reproduced_by_config": true,
+      "revised_results_seen": false,
+      "supersedes": {
+        "registry_sha256": "eab4ca3f86ace522f26f740afee70b31ad7e9099c578b7f2c82ee3e884e363ac",
+        "candidates": 156,
+        "frozen_at": "2026-09-14T12:29:37+03:00",
+        "archived_as": "docs/revision/wp2/superseded/grid_registry_eab4ca3f86ac.json",
+        "reason": "WP4 native-score provenance: pooled O_native_score replaced by single-scale O_native_rule_level and O_native_suricata_severity (protocol v1.1 change log, WP4 stage-1 entry); tuned grids unchanged"
+      },
+      "superseded_archive_exists": true,
+      "passed": true
+    },
+    "wp3_metric_record": {
+      "verified": true,
+      "contract_version": "1.1",
+      "generated_at": "2026-09-15T19:07:19+03:00",
+      "stale_files": [],
+      "passed": true
+    }
+  },
+  "deferred_scope": [
+    "protocol \u00a76.2 expanded operational vector: deferred, unimplemented (protocol amendment 2026-09-15); not a completed or prespecified comparison"
+  ]
+}
